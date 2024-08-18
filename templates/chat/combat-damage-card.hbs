@@ -1,0 +1,82 @@
+<div class="damage-card flexcol">
+    <div class="flexcol">
+        <div class="block-title">{{localize "tor2e.combat.chat.result.title"}}</div>
+        <div class="block-content toggle">
+            {{{resultDescription}}}
+            <div class="collapsible flexcol">
+                <div>
+                    <span class="line-label">{{localize "tor2e.combat.chat.details.attackerRoll"}}</span> {{roll.total}}
+                </div>
+                <div>
+                    <span class="line-label">{{localize "tor2e.combat.chat.details.successLevel"}}</span> {{localize
+                        roll.customResult.result.message}}
+                </div>
+                <div>
+                    <span class="line-label">{{localize
+                            "tor2e.combat.chat.details.specialDamage"}}</span> {{specialDamage}}
+                </div>
+                <div>
+                    <span class="line-label">{{localize "tor2e.combat.chat.details.damage.title"}}</span>
+                    {{damages.total}} {{weaponDamageDetail}}
+                    {{#if damages.extra }}
+                        {{bonusDamageDetail}}
+                    {{/if}}]
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{#if piercingShot}}
+        <div class="flexcol">
+            <div class="block-title">{{localize "tor2e.combat.chat.piercing.title"}}</div>
+            <div class="token block-content" data-token-id="{{target.id}}">
+                {{{piercingShotDescription}}}
+            </div>
+        </div>
+    {{/if}}
+
+    {{#if injuryRoll.needed}}
+        <div class="flexcol">
+            <div class="block-title">{{localize "tor2e.combat.chat.injury.title"}}</div>
+            <div class="token block-content" data-token-id="{{target.id}}">
+                {{{injuryRoll.description}}}
+            </div>
+        </div>
+    {{/if}}
+
+    {{#if state.effects}}
+        <div class="block-title">{{localize "tor2e.combat.chat.effects.title"}}</div>
+        {{#if state.damageDealt}}
+            <div class="block-content">
+                <span class="line-label">{{localize "tor2e.combat.chat.effects.damageDealt"}}</span>
+                {{damages.total}} {{weaponDamageDetail}}
+                {{#if damages.extra }}
+                    {{bonusDamageDetail}}
+                {{/if}}]
+            </div>
+        {{/if}}
+        {{#if state.protectionRolled}}
+            <div class="block-content">
+                <span class="actor-name">{{target.name}}</span> {{localize
+                    "tor2e.combat.chat.effects.protection.is"}} {{#if
+                    state.isWounded}}{{localize "tor2e.combat.chat.effects.protection.wounded"}}{{else}}{{localize
+                    "tor2e.combat.chat.effects.protection.protected"}}{{/if}}
+            </div>
+        {{/if}}
+        {{#if state.isWeary}}
+            <div class="block-content">
+                <span class="actor-name">{{target.name}}</span> {{localize "tor2e.combat.chat.effects.weary.is"}}
+            </div>
+        {{/if}}
+        {{#if state.isOoc}}
+            <div class="block-content">
+                <span class="actor-name">{{target.name}}</span>  {{localize "tor2e.combat.chat.effects.ooc.is"}}
+            </div>
+        {{/if}}
+        {{#if state.injury.rolled}}
+            <div class="block-content">
+                {{{state.injury.message}}}
+            </div>
+        {{/if}}
+    {{/if}}
+</div>

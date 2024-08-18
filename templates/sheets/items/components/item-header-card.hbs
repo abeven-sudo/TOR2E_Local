@@ -1,0 +1,12 @@
+<header class="sheet-header flexcol">
+    <div class="title flexcol">
+        <h2>
+            <label for="name-{{item.id}}">{{localize label}}</label>
+        </h2>
+        <input id="name-{{item.id}}" name="name" type="text" value="{{item.name}}" placeholder="Name"/>
+    </div>
+    <div class="icon">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="164" width="164"
+             alt="{{localize alt}}"/>
+    </div>
+</header>

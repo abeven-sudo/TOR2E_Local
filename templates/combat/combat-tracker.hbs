@@ -1,0 +1,159 @@
+<section class="{{cssClass}} directory flexcol" id="{{cssId}}" data-tab="{{tabName}}">
+    <header class="combat-tracker-header">
+        {{#if user.isGM}}
+            <nav class="encounters flexrow" aria-label="COMBAT.NavLabel">
+                <a class="combat-create" data-tooltip="COMBAT.Create">
+                    <i class="fas fa-plus"></i>
+                </a>
+                {{#if combatCount}}
+                    <a class="combat-button combat-cycle" data-tooltip="COMBAT.EncounterPrevious"
+                        {{#if previousId}}data-document-id="{{previousId}}" {{else}}disabled{{/if}}>
+                        <i class="fas fa-caret-left"></i>
+                    </a>
+                    <h4 class="encounter">{{localize "COMBAT.Encounter"}} {{currentIndex}} / {{combatCount}}</h4>
+                    <a class="combat-button combat-cycle" data-tooltip="COMBAT.EncounterNext"
+                        {{#if nextId}}data-document-id="{{nextId}}" {{else}}disabled{{/if}}>
+                        <i class="fas fa-caret-right"></i>
+                    </a>
+                {{/if}}
+                <a class="combat-button combat-control" data-tooltip="COMBAT.Delete" data-control="endCombat"
+                   {{#unless combatCount}}disabled{{/unless}}>
+                    <i class="fas fa-trash"></i>
+                </a>
+            </nav>
+        {{/if}}
+
+        <nav class="encounters flexrow  {{#if hasCombat}}combat{{/if}}">
+            {{#if user.isGM}}
+                {{#if hasCombat}}
+                    <!-- Rounded switch -->
+                    {{#if combat.step.currentStepIsInitiative}}
+                        <div class="flexrow att-def">
+                            <span data-tooltip="tor2e.combat.step.initiative.defense.title">{{localize
+                                    "tor2e.combat.step.initiative.defense.label"}}</span>
+                            <label for="att-def-role" class="switch"
+                                   data-tooltip="tor2e.combat.step.initiative.toggle.title">
+                                <input id="att-def-role" type="checkbox" name="attackers"
+                                       value="{{combat.flags.tor2e.attackers}}" {{checked
+                                        combat.flags.tor2e.attackers}}>
+                                <span class="slider round"></span>
+                            </label>
+                            <span data-tooltip="tor2e.combat.step.initiative.attack.title">{{localize
+                                    "tor2e.combat.step.initiative.attack.label"}}</span>
+                        </div>
+                    {{/if}}
+                    {{#if combat.step.currentStepIsCloseCombat}}
+                        <div>
+                            <a class="combat-control engagement-btn"
+                               title="{{localize "tor2e.combat.step.closeCombat.engagement"}}"
+                               data-control="engagementAction">
+                                <i class="fas fa-users"></i>
+                            </a>
+                        </div>
+                    {{/if}}
+                {{/if}}
+            {{/if}}
+
+            {{#if combatCount}}
+                {{#if combat.round}}
+                    <h3>{{localize 'COMBAT.Round'}} {{combat.round}}</h3>
+                {{else}}
+                    <h3>{{localize combat.step.title}}</h3>
+                {{/if}}
+            {{else}}
+                <h3>{{localize "COMBAT.None"}}</h3>
+            {{/if}}
+
+            {{#if user.isGM}}
+                <a class="combat-settings" title="{{localize 'COMBAT.Settings'}}" data-control="trackerSettings">
+                    <i class="fas fa-cog"></i>
+                </a>
+            {{/if}}
+        </nav>
+    </header>
+
+    <ol id="combat-tracker" class="directory-list">
+        {{#each turns}}
+            <li class="combatant actor directory-item flexrow {{this.css}}" data-combatant-id="{{this.combatant.id}}"
+                data-token-id="{{this.tokenId}}">
+                <img class="token-image" data-src="{{this.combatant.img}}" title="{{this.combatant.name}}"/>
+                <div class="token-name flexcol">
+                    <h4>{{this.combatant.name}}</h4>
+                    <div class="combatant-controls flexrow">
+                        {{#if ../user.isGM}}
+                            <a class="combatant-control {{#if this.combatant.hidden}}active{{/if}}"
+                               data-tooltip="COMBAT.ToggleVis" data-control="toggleHidden">
+                                <i class="fas fa-eye-slash"></i></a>
+                            <a class="combatant-control {{#if this.combatant.defeated}}active{{/if}}"
+                               data-tooltip="COMBAT.ToggleDead" data-control="toggleDefeated">
+                                <i class="fas fa-skull"></i></a>
+                        {{/if}}
+                        {{#if this.canPing}}
+                            <a class="combatant-control" data-tooltip="COMBAT.PingCombatant"
+                               data-control="pingCombatant">
+                                <i class="fa-solid fa-bullseye-arrow"></i>
+                            </a>
+                        {{/if}}
+                        <div class="token-effects">
+                            {{#each this.effects}}
+                                <img class="token-effect" src="{{this}}"/>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+
+                {{#if this.combatant.hasResource}}
+                    <div class="token-resource">
+                        <span class="resource">{{this.combatant.resource}}</span>
+                    </div>
+                {{/if}}
+
+                {{#if ../combat.step.currentStepIsCloseCombat}}
+                    <div class="flexrow opponents">
+                        {{#each this.combat.engagedWith}}
+                            <img class="actor-foe" src="{{this.img}}" width="36" height="36"
+                                 title="{{localize this.name}}"/>
+                        {{/each}}
+                    </div>
+                {{/if}}
+                {{#if this.isCharacter}}
+                    <div class="stance flexcol">
+                        <img class="stance-icon"
+                             src="{{this.combat.stance.logo}}" width="36" height="36"
+                             title="{{localize this.combat.stance.title}}"/>
+                    </div>
+                {{/if}}
+            </li>
+        {{/each}}
+    </ol>
+
+    <nav id="combat-controls" class="directory-footer flexrow" data-tooltip-direction="UP">
+        {{#if hasCombat}}
+            {{#if user.isGM}}
+                {{#if round}}
+                    <a class="combat-control" data-tooltip="COMBAT.RoundPrev" data-control="previousRound"><i
+                            class="fas fa-step-backward"></i></a>
+                    <a class="combat-control" data-tooltip="COMBAT.TurnPrev" data-control="previousTurn"><i
+                            class="fas fa-arrow-left"></i></a>
+                    <a class="combat-control center" data-control="endCombat">{{localize 'COMBAT.End'}}</a>
+                    <a class="combat-control" data-tooltip="COMBAT.TurnNext" data-control="nextTurn"><i
+                            class="fas fa-arrow-right"></i></a>
+                    <a class="combat-control" data-tooltip="COMBAT.RoundNext" data-control="nextRound"><i
+                            class="fas fa-step-forward"></i></a>
+                {{else}}
+                    {{#if combat.step.currentStepIsOpeningVolley }}
+                        <a class="combat-control center" data-control="startCombat">{{localize 'COMBAT.Begin'}}</a>
+                    {{else}}
+                        <a class="combat-control center" title="{{localize "tor2e.combat.step.openingVolley.label" }}"
+                           data-control="openingVolley">{{localize "tor2e.combat.step.openingVolley.label"}}</a>
+                    {{/if}}
+                {{/if}}
+            {{else if control}}
+                <a class="combat-control" data-tooltip="COMBAT.TurnPrev" data-control="previousTurn"><i
+                        class="fas fa-arrow-left"></i></a>
+                <a class="combat-control center" data-control="nextTurn">{{localize 'COMBAT.TurnEnd'}}</a>
+                <a class="combat-control" data-tooltip="COMBAT.TurnNext" data-control="nextTurn"><i
+                        class="fas fa-arrow-right"></i></a>{{/if}}
+        {{/if}}
+    </nav>
+</section>

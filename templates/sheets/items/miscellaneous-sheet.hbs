@@ -1,0 +1,41 @@
+<div class="sheet-container">
+    <img class="background" src="{{backgroundImages.url}}" title="{{localize backgroundImages.title}}"
+         alt="{{localize 'tor2e.items.miscellaneous.tech.alt'}}"/>
+    <form class="{{cssClass}} flexrow" autocomplete="off">
+
+        {{> "systems/tor2e/templates/sheets/items/components/item-header-card.hbs"
+                item=this.item
+                label="tor2e.items.miscellaneous.title"
+                alt="tor2e.items.miscellaneous.tech.alt"}}
+
+        <div class="sheet-content">
+            <!-- Effect Configuration Tabs -->
+            <nav class="sheet-tabs tabs">
+                <a class="item" data-tab="details"><i class="fas fa-book"></i> {{localize "EFFECT.TabDetails"}}</a>
+                <a class="item" data-tab="effects"><i class="fas fa-cogs"></i> {{localize "EFFECT.TabEffects"}}</a>
+            </nav>
+
+            <div class="sheet-body">
+                <div class="item-row flexcol tab" data-tab="details">
+                    <div class="item-element">
+                        <label for="system.load.value-{{item.id}}">{{localize system.load.label}}</label>
+                        <input id="system.load.value-{{item.id}}" class="number-value attribute-number-value"
+                               name="system.load.value"
+                               type="number"
+                               value="{{system.load.value}}"
+                               data-dtype="{{system.load.type}}" step="1" min="0" max="50" required>
+                        <span class="validity"></span>
+                    </div>
+                    <div class="description flexcol">
+                        <h2>{{localize system.description.label}}</h2>
+                        {{editor  description target="system.description.value" button=true editable=true}}
+                    </div>
+                </div>
+                <div class="tab flexcol" data-tab="effects">
+                    {{> "systems/tor2e/templates/sheets/items/components/item-active-effects-card.hbs"
+                            activeEffects=this.effects}}
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

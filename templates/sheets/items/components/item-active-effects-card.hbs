@@ -1,0 +1,18 @@
+<div class="active-effects">
+    <header class="flexrow">
+        <div class="title">
+            {{localize "tor2e.actors.sections.effects"}}
+        </div>
+        <div class="effect-actions">
+            <a class="effect-control" data-action="create">
+                <i class="fas fa-plus"></i>
+            </a>
+        </div>
+    </header>
+    <ul>
+        {{#each this.effects as |effect| }}
+            {{> "systems/tor2e/templates/sheets/items/components/item-active-effect-card.hbs"
+                    activeEffect=effect}}
+        {{/each}}
+    </ul>
+</div>

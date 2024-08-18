@@ -1,0 +1,14 @@
+{{#if action.available}}
+    <div class="flexcol special-success-element">
+        <input id="success-element-{{special-success-element-index}}-{{special-success-action-index}}"
+               type="radio" name="success-element-{{special-success-element-index}}"
+               value="{{action.id}}" {{checked action.default}}>
+        <label for="success-element-{{special-success-element-index}}-{{special-success-action-index}}">
+            <img src="{{action.icon}}"
+                 title="{{localize action.title}}" height="50" width="50"
+                 alt="{{localize action.alt}}"/>
+            <span class="title">{{localize action.label}}</span>
+            <span class="description">{{localize action.description}}</span>
+        </label>
+    </div>
+{{/if}}

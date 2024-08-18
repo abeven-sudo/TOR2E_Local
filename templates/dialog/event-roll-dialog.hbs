@@ -1,0 +1,27 @@
+<form class="popup" autocomplete="off">
+    <div class="flexrow">
+        <div class="header">
+            <img src="systems/tor2e/assets/images/icons/miscellaneous/dice-roll-event.webp" data-edit="img"
+                 title="{{localize 'tor2e.items.journey-log.event.title'}}" height="180" width="150"
+                 alt="{{localize 'tor2e.items.journey-log.event.description'}}"/>
+
+        </div>
+        <div class="flexcol body">
+            <h2>{{localize "tor2e.items.journey-log.roll-dialog.title"}}</h2>
+            <div class="flexcol content">
+                {{#each config.regionTypes as |regionType index|}}
+                    <label for="region-type-{{index}}" class="flexrow">
+                        <input type="radio" id="region-type-{{index}}" name="region" value="{{index}}"
+                               checked>
+                        <div class="label">
+                            <span class="hex bg-{{index}}"></span>
+                            <span class="title">
+                                {{localize regionType}}
+                            </span>
+                        </div>
+                    </label>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</form>

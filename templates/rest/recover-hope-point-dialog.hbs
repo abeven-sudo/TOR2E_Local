@@ -1,0 +1,31 @@
+<form class="popup" autocomplete="off" data-actor-id={{actorId}} data-community-id={{communityId}}>
+    <div class="flexrow">
+        <div class="header">
+            <img src="systems/tor2e/assets/images/icons/fellowship.webp" data-edit="img"
+                 title="{{item.name}}" height="150" width="150"
+                 alt="{{localize 'tor2e.sheet.actions.rest.dialog-box.title'}}"/>
+            <div class="formula">
+                <p class="label">{{localize "tor2e.sheet.actions.rest.dialog-box.community-point-label"}}</p>
+                <div class="value">
+                    <span>{{fellowshipPoints.value}}/{{fellowshipPoints.max}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="content flexcol">
+            <h2>{{localize "tor2e.sheet.actions.rest.dialog-box.title"}}</h2>
+            <section class="hope flexcol">
+                <div class="actor-stats flexrow">
+                    <span class="label">{{localize "tor2e.sheet.actions.rest.dialog-box.actor-hope-points"}}</span>
+                    <span class="value">{{actorHopePoints.value}}/{{actorHopePoints.max}}</span>
+                </div>
+                <div class="flexrow form-group">
+                    <label for="requiredHopePoints">{{localize
+                            "tor2e.sheet.actions.rest.dialog-box.required-hope-points"}}</label>
+                    <input id="requiredHopePoints" class="number-value" type="number" name="requiredHopePoints"
+                           value="{{requiredHopePoints}}" step="1" min="0" max="{{fellowshipPoints.max}}" required><span
+                        class="validity"></span>
+                </div>
+            </section>
+        </div>
+    </div>
+</form>

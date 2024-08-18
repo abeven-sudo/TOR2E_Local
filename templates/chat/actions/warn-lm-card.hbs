@@ -1,0 +1,22 @@
+<div class="warn-lm-message">
+    <div class="actor {{#if result}}damage-card{{else}}warn-card{{/if}} flexcol"
+         title="{{localize 'tor2e.actors.chat.warn.hint'}}"
+         data-actor-id={{owner.id}}>
+        <div class="block-title">
+            {{localize "tor2e.actors.chat.warn.title"}}
+        </div>
+        <div class="block-content">
+            {{{warn.message}}}
+        </div>
+    </div>
+    {{#if result}}
+        <div class="actor damage-card flexcol" data-actor-id={{owner.id}}>
+            <div class="block-title">
+                {{localize "tor2e.actors.chat.result.title"}}
+            </div>
+            <div class="block-content">
+                {{{result.message}}}
+            </div>
+        </div>
+    {{/if}}
+</div>

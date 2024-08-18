@@ -1,0 +1,15 @@
+<div class="flexcol special-result-row">
+    <div class="special-success-header">
+        <p>Special Success #{{inc @index}}</p>
+    </div>
+    <div class="flexrow special-success-elements">
+
+        {{#each specialSuccess as |specialSuccessAction index|}}
+            {{> "systems/tor2e/templates/combat/component/display-special-success-action.hbs"
+                    action = specialSuccessAction
+                    special-success-action-index = index
+                    special-success-element-index = ../special-success-element-index
+            }}
+        {{/each}}
+    </div>
+</div>

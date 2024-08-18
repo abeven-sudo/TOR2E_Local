@@ -1,0 +1,34 @@
+<div class="display-description-message actor" data-actor-id={{owner.id}}>
+    <div class="display-description-message-header flexrow">
+        <img src="{{item.img}}" title="{{item.type}}" alt="{{item.type}}" height="60" width="60">
+        <div class="flexrow summary">
+            <div class="block flexrow">
+                    <span class="title">
+                        {{localize "tor2e.common.type"}}:
+                    </span>
+                <span class="value">
+                    {{item.type}}
+                </span>
+            </div>
+            <div class="block flexrow">
+                    <span class="title">
+                        {{localize "tor2e.common.group"}}:
+                    </span>
+                <span class="value">
+                    {{item.group}}
+                </span>
+            </div>
+            <div class="block flexrow">
+                    <span class="title">
+                        {{localize "tor2e.common.name"}}:
+                    </span>
+                <span class="value">
+                    {{item.name}}
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="display-description-message-body">
+        {{{item.description}}}
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="combat-stances-wrapper">
+    <div class="combat-stances">
+        {{#each stances}}
+            <div class="control-icon combat-stance {{#if isActive}}active{{/if}}" data-stance-type="{{stance.class}}">
+                <img class="tor2e-hud-togglebutton" src="{{stance.logo}}" width="36" height="36"
+                     title="{{localize stance.title}}"/>
+            </div>
+        {{/each}}
+    </div>
+</div>

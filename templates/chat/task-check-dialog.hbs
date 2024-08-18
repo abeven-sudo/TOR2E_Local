@@ -1,0 +1,147 @@
+<form class="popup" autocomplete="off" name="roll-dialog-window">
+    <div id="roll-dialog-window" class="flexrow">
+        <div class="header">
+            <img src="systems/tor2e/assets/images/icons/miscellaneous/dice-roll.png" data-edit="img"
+                 title="{{item.name}}" height="150" width="150"
+                 alt="{{localize 'tor2e.traits.details.tech.alt'}}"/>
+            {{> "systems/tor2e/templates/roll/display-formula-card.hbs" this.formula}}
+            {{> "systems/tor2e/templates/roll/roll-characteristic-card.hbs" }}
+        </div>
+        <div class="flexcol content">
+            <div class="flexrow">
+                <div class="roll-option-wrapper separation">
+                    <section id="difficulty-block">
+                        <div class="mandatory">
+                            <h2>{{localize "tor2e.chat.taskCheck.options.difficulty"}}</h2>
+                            <div class="form-group">
+                                <label for="difficulty">{{localize "tor2e.chat.taskCheck.options.tn"}}</label>
+                                <input id="difficulty" class="number-value" type="number" name="difficulty"
+                                       value="{{difficulty}}"
+                                       step="1" min="1" max="50" required><span class="validity"></span>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="modifier-block">
+                        <div class="mandatory">
+                            <h2>{{localize "tor2e.chat.taskCheck.options.result-modifier"}}</h2>
+                            <div class="form-group">
+                                <label for="modifier-label">{{localize "tor2e.chat.taskCheck.options.modifier"}}</label>
+                                <input id="modifier-label" class="number-value" type="number" name="modifier"
+                                       value="{{modifier}}"
+                                       step="1" min="-10" max="10" required><span class="validity"></span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="modify-roll">
+                    <h2>{{localize "tor2e.chat.taskCheck.options.health-impacts"}}</h2>
+                    {{> "systems/tor2e/templates/roll/display-weary-not-weary-card.hbs" wearyRoll=this.wearyRoll}}
+                    <hr>
+                    {{> "systems/tor2e/templates/roll/display-miserable-not-miserable-card.hbs" miserableRoll=this.miserableRoll}}
+                </div>
+            </div>
+            <section id="favoured-ill-favoured">
+                <h2>{{localize "tor2e.chat.taskCheck.options.favoured-ill-favoured"}}</h2>
+                <div class="form-group flexrow">
+                    <p class="label">{{localize "tor2e.chat.taskCheck.options.feat-dice"}}</p>
+                    <div class="input">
+                        <label class="tor-dice">
+                            <input id="featDice" type="checkbox" name="featDice" value="{{featDice}}" {{checked
+                                    featDice}}>
+                            <span class="feat-dice"></span>
+                        </label>
+                    </div>
+                    <!-- Rounded switch -->
+                    <div class="flexrow best-worst {{#if featDice}}active{{/if}}">
+                        <span class="right-align">{{localize "tor2e.chat.taskCheck.options.best"}}</span>
+                        <label for="worst-feat-dice" class="switch">
+                            <input id="worst-feat-dice" type="checkbox" name="worstFeatDie"
+                                   value="{{worstFeatDie}}" {{checked worstFeatDie}}>
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="left-align">{{localize "tor2e.chat.taskCheck.options.worst"}}</span>
+                    </div>
+                </div>
+            </section>
+            {{#if isCharacter}}
+                <section id="hope">
+                    <h2>{{localize "tor2e.chat.taskCheck.options.hope"}}</h2>
+                    <div class="flexcol optional">
+                        <div class="form-group">
+                            {{#if canSpendHopePoint}}
+                                <div class="input flexrow principal">
+                                    <p class="label">{{localize
+                                            "tor2e.chat.taskCheck.options.hope-point-bonus-dice"}}</p>
+                                    <label class="tor-dice">
+                                        <input id="hopePointBonusDie" type="checkbox" name="hopePointBonusDie"
+                                               value="{{hopePointBonusDie}}" {{checked hopePointBonusDie}}>
+                                        <span class="bonus-dice"></span>
+                                    </label>
+                                </div>
+                            {{/if}}
+                            <div class="input flexrow secondary inspiration {{#if
+                                    hopePointBonusDie}}active{{else}} {{#if supportDie}}active{{/if}} {{/if}} ">
+                                <label class="state">
+                                    <input id="isInspired" type="checkbox" name="isInspired"
+                                           value="{{isInspired}}" {{checked isInspired}}>
+                                    <span class="state-dice"></span>
+                                </label>
+                                <p class="label">{{localize "tor2e.chat.taskCheck.options.inspired"}}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="label">{{localize "tor2e.chat.taskCheck.options.support-die"}}</p>
+                            <div class="input">
+                                <label class="tor-dice">
+                                    <input id="supportDie" type="checkbox" name="supportDie"
+                                           value="{{supportDie}}" {{checked supportDie}}>
+                                    <span class="bonus-dice"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {{/if}}
+            <section id="bonus-penalty">
+                <h2>{{localize "tor2e.chat.taskCheck.options.bonus-penalty"}}</h2>
+                <div class="form-group">
+                    <p class="label">{{localize "tor2e.chat.taskCheck.options.bonus-penalty-dice"}}</p>
+
+                    {{#each bonusesPenalties}}
+                        <div class="input">
+                            <label for="{{this.fieldId}}" class="tor-dice">
+                                <input type="radio" id="{{this.fieldId}}" class="bonus-penalty-dice"
+                                       name="bonus-penalty" value="{{this.value}}"
+                                       {{#if this.checked}}checked{{/if}}>
+                                <span class="penalty-dice {{this.cssClass}}"></span>
+                            </label>
+                        </div>
+                    {{/each}}
+
+                </div>
+            </section>
+            <section id="advanced-block">
+                <h2 class="toggle {{#if displayExtendedBlock}}show{{/if}}">{{localize
+                        "tor2e.chat.taskCheck.options.advanced"}}</h2>
+                <div class="editor-container form-group" {{#if displayExtendedBlock}}style="display: block;"{{/if}}>
+                    <label for="penaltyDice">{{localize
+                            "tor2e.chat.taskCheck.options.extended-penalty-dice.label"}}</label>
+                    <input id="penaltyDice" class="number-value" type="number" name="penaltyDice"
+                           value="{{penaltyDice}}" step="1" min="-10" max="10" required>
+                    <span class="validity"></span>
+                    <p class="hint">{{localize "tor2e.chat.taskCheck.options.extended-penalty-dice.hint"}}</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="buttons flexrow">
+        <button type="button" class="dialog-button frame-brown" data-button="ok">
+            <i class="fas fa-dice"></i>
+            <label>{{localize "tor2e.chat.actions.roll"}}</label>
+        </button>
+        <button type="button" class="action-button frame-brown" data-action="cancel">
+            <i class="fas fa-window-close"></i>
+            <label>{{localize "tor2e.chat.actions.cancel"}}</label>
+        </button>
+    </footer>
+</form>

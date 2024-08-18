@@ -1,0 +1,35 @@
+<form class="popup" autocomplete="off">
+    <input type="hidden" id="specialSuccessQuantity" name="specialSuccessQuantity" value="{{specialSuccessNumber}}">
+    <div class="flexrow">
+        <div class="header">
+            <img src="systems/tor2e/assets/images/icons/miscellaneous/dice-roll-tengwar.png" data-edit="img"
+                 title="{{item.name}}" height="180" width="150"
+                 alt="{{localize 'tor2e.roll.special-success.tech.title'}}"/>
+
+            <div class="formula">
+                <p class="label">{{localize "tor2e.roll.special-success.label"}}</p>
+                <div class="value">
+                    <span>{{specialSuccessNumber}}</span>
+                    <img src={{specialSuccessImg.icon}}
+                         title="{{localize specialSuccessImg.title}}" height="25" width="25"
+                         alt="{{localize specialSuccessImg.alt}}"/>
+                </div>
+            </div>
+
+            <div class="feat-die-value formula">
+                <p class="label">{{localize "tor2e.chat.taskCheck.options.feat-die-value"}}</p>
+                <div class="value">
+                    {{{featDie.icon}}}
+                </div>
+            </div>
+        </div>
+        <div class="flexcol content">
+            {{#each specialSuccesses as |specialSuccess index|}}
+                {{> "systems/tor2e/templates/combat/component/display-special-success-choice.hbs"
+                        specialSuccess = specialSuccess
+                        special-success-element-index= index
+                }}
+            {{/each}}
+        </div>
+    </div>
+</form>

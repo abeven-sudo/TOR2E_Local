@@ -1,0 +1,60 @@
+<form>
+    <div class="form-group">
+        <label for="token.name">{{ localize "COMBAT.CombatantToken" }}</label>
+        <div class="form-fields">
+            <input id="token.name" type="text" name="token.name" value="{{ object.token.name }}" disabled/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="name">{{ localize "COMBAT.CombatantName" }}</label>
+        <div class="form-fields">
+            <input id="name" type="text" name="name" value="{{ object.name }}"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>{{ localize "COMBAT.CombatantImage" }}</label>
+        <div class="form-fields">
+            {{filePicker target="img" type="image"}}
+            <input class="image" type="text" name="img" placeholder="path/image.png" value="{{object.img}}"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="initiative">{{ localize "COMBAT.CombatantInitiative" }}</label>
+        <div class="form-fields">
+            <input id="initiative" type="number" name="initiative" value="{{ object.initiative }}" step="any"/>
+        </div>
+    </div>
+
+    {{#if object.hasPoolDice}}
+        <div class="form-group">
+            <label for="flags.tor2e.poolDice">{{ localize "tor2e.combat.dicePool.label" }}</label>
+            <div class="form-fields">
+                <input id="flags.tor2e.poolDice" type="number" name="flags.tor2e.poolDice" value="{{ object.poolDice }}"
+                       step="any"/>
+            </div>
+        </div>
+    {{/if}}
+
+    <div class="form-group">
+        <label>Status</label>
+        <div class="form-fields">
+            <label class="checkbox">
+                <input type="checkbox" name="hidden" {{ checked object.hidden }}/>
+                {{ localize "COMBAT.CombatantHidden" }}
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="defeated" {{ checked object.defeated }}/>
+                {{ localize "COMBAT.CombatantDefeated" }}
+            </label>
+        </div>
+    </div>
+
+    <footer>
+        <button type="submit" title="{{ title }}">
+            <i class="fas fa-save"></i> {{ title }}
+        </button>
+    </footer>
+</form>

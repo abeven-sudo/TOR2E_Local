@@ -1,0 +1,136 @@
+{
+  "appearance": {
+    "global": {
+      "labelColor": "#FFD700",
+      "diceColor": "#006400",
+      "outlineColor": "#423800",
+      "edgeColor": "#002900",
+      "texture": "dragon",
+      "material": "wood",
+      "font": "TOR2E-Dice-Font-Regular",
+      "colorset": "custom",
+      "system": "tor2e"
+    },
+    "dt": {
+      "system": "tor2e",
+      "colorset": "sauronic",
+      "texture": "none",
+      "material": "auto"
+    },
+    "dx": {
+      "system": "tor2e",
+      "colorset": "sauronic",
+      "texture": "none",
+      "material": "auto"
+    },
+    "de": {
+      "system": "tor2e",
+      "colorset": "sauronic",
+      "texture": "none",
+      "material": "auto"
+    }
+  },
+  "sfxList": [
+    {
+      "diceType": "ds",
+      "onResult": [
+        "6"
+      ],
+      "specialEffect": "PlayAnimationParticleSparkles",
+      "options": {
+        "isGlobal": true
+      }
+    },
+    {
+      "diceType": "df",
+      "onResult": [
+        "11"
+      ],
+      "specialEffect": "PlayAnimationParticleVortex",
+      "options": {
+        "isGlobal": true
+      }
+    },
+    {
+      "diceType": "df",
+      "onResult": [
+        "12"
+      ],
+      "specialEffect": "PlayAnimationParticleSpiral",
+      "options": {
+        "isGlobal": true
+      }
+    },
+    {
+      "diceType": "dw",
+      "onResult": [
+        "6"
+      ],
+      "specialEffect": "PlayAnimationParticleSparkles",
+      "options": {
+        "isGlobal": true
+      }
+    },
+    {
+      "diceType": "de",
+      "onResult": [
+        "11"
+      ],
+      "specialEffect": "PlayAnimationParticleSpiral",
+      "options": {
+        "isGlobal": true
+      }
+    },
+    {
+      "diceType": "de",
+      "onResult": [
+        "12"
+      ],
+      "specialEffect": "PlayAnimationParticleVortex",
+      "options": {
+        "isGlobal": true
+      }
+    },
+    {
+      "diceType": "dx",
+      "onResult": [
+        "6"
+      ],
+      "specialEffect": "PlayAnimationParticleSparkles",
+      "options": {
+        "isGlobal": false
+      }
+    },
+    {
+      "diceType": "dt",
+      "onResult": [
+        "6"
+      ],
+      "specialEffect": "PlayAnimationParticleSparkles",
+      "options": {
+        "isGlobal": false
+      }
+    }
+  ],
+  "settings": {
+    "enabled": true,
+    "showExtraDice": false,
+    "hideAfterRoll": false,
+    "timeBeforeHide": 2000,
+    "hideFX": "fadeOut",
+    "autoscale": true,
+    "scale": 75,
+    "speed": "1",
+    "shadowQuality": "high",
+    "bumpMapping": true,
+    "sounds": true,
+    "soundsSurface": "felt",
+    "soundsVolume": 0.5,
+    "canvasZIndex": "over",
+    "throwingForce": "medium",
+    "useHighDPI": true,
+    "showOthersSFX": true,
+    "muteSoundSecretRolls": false,
+    "enableFlavorColorset": true
+  }
+}

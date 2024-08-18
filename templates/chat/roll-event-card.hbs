@@ -1,0 +1,24 @@
+<div class="roll-event-message">
+    <h4 class="roll-event-title">Roll Event Result</h4>
+    <div class="flexrow">
+        <div class="roll-event-message-sidebar">
+            <img src="systems/tor2e/assets/images/icons/miscellaneous/dice-roll-event.webp"
+                 title="{{localize 'tor2e.items.journey-log.events.title'}}" height="75" width="75"
+                 alt="{{localize 'tor2e.items.journey-log.event.description'}}"/>
+        </div>
+        <div class="roll-event-message-body flexcol">
+            <div class="event-attribute-row flexrow">
+                <p class="label">{{localize "tor2e.items.journey-log.chat.region-type"}}</p>
+                <p class="value">{{regionType}}</p>
+            </div>
+            <div class="event-attribute-row flexrow">
+                <p class="label">{{localize "tor2e.items.journey-log.chat.target"}}</p>
+                <p class="value">{{target}} <span>({{targetRollResult}})</span></p>
+            </div>
+            <div class="event-attribute-row flexrow">
+                <p class="label">{{localize "tor2e.items.journey-log.chat.event-type"}}</p>
+                <p class="value">{{type}} <span>({{typeRollResult}})</span></p>
+            </div>
+        </div>
+    </div>
+</div>
