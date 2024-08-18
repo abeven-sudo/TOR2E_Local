@@ -1,0 +1,77 @@
+{
+  "id": "tor2e",
+  "name": "tor2e",
+  "title": "The One Ring 2nd edition.",
+  "description": "[Release] - A simple integration of The One Ring 2nd edition (should not be used for games yet).",
+  "version": "3.4.5",
+  "authors": [
+    {
+      "name": "Hervé Darritchon",
+      "discord": "herveDarritchon#7262",
+      "email": "herve.darritchon@gmail.com"
+    }
+  ],
+  "url": "https://gitlab.com/herve.darritchon/foundryvtt-tor2e/",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11",
+    "maximum": "12"
+  },
+  "esmodules": [
+    "./modules/tor2e.mjs"
+  ],
+  "styles": [
+    "./styles/tor2e.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "./lang/en.json"
+    },
+    {
+      "lang": "es",
+      "name": "Spanish",
+      "path": "./lang/es.json"
+    },
+    {
+      "lang": "pt-br",
+      "name": "Português",
+      "path": "./lang/pt.json"
+    },
+    {
+      "lang": "pt-pt",
+      "name": "Portuguese",
+      "path": "./lang/pt.json"
+    },
+    {
+      "lang": "de",
+      "name": "German",
+      "path": "./lang/de.json"
+    },
+    {
+      "lang": "fr",
+      "name": "French",
+      "path": "./lang/fr.json"
+    },
+    {
+      "lang": "it",
+      "name": "Italian",
+      "path": "./lang/it.json"
+    },
+    {
+      "lang": "pl",
+      "name": "Polish",
+      "path": "./lang/pl.json"
+    }
+  ],
+  "socket": true,
+  "manifest": "https://gitlab.com/herve.darritchon/foundryvtt-tor2e/-/raw/main/src/system.json",
+  "download": "https://gitlab.com/herve.darritchon/foundryvtt-tor2e/-/jobs/artifacts/release-3.4.5/raw/tor2e.zip?job=build",
+  "protected": false,
+  "initiative": "1d20",
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "resources.endurance",
+  "secondaryTokenAttribute": "resources.hope"
+}
