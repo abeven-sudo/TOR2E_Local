@@ -1,0 +1,80 @@
+.tor2e.sheet {
+
+  .skill-card-component {
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 0.01em;
+    margin-bottom: 0.01em;
+    padding-top: 0.01em;
+    padding-bottom: 0.01em;
+
+    .identification, .value {
+      flex: none;
+      align-items: center;
+
+      .skill-label {
+        flex: none;
+        margin-left: 0.075em;
+      }
+
+    }
+
+    .identification {
+      margin-left: 0.25em;
+
+      .skill-name {
+        flex: none;
+      }
+
+      a.weapon-name > p {
+        font-weight: normal;
+      }
+
+      a.weapon-name.active > p {
+        font-weight: bold;
+      }
+
+      a.skill-name.active {
+        font-weight: bold;
+      }
+
+      .favoured-wrapper {
+        width: 1.1em;
+        max-width: 1.1em;
+        margin-right: 0.1em;
+
+        div.tor2e-round-checkbox {
+          padding-bottom: 0;
+
+          p.toggle-favoured-state, .toggle-favoured-skill-state {
+
+            span.label {
+              height: 1em;
+              width: 1em;
+            }
+
+            .label:after {
+              height: 0.15em;
+              width: 0.25em;
+            }
+          }
+        }
+      }
+    }
+
+    .value {
+      margin-right: 0.25em;
+    }
+
+    .skill-value {
+      flex: none;
+      margin-left: 0.5em;
+      margin-right: 0.25em;
+      width: 2em;
+      text-align: center;
+    }
+
+  }
+
+}

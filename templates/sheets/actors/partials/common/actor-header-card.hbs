@@ -1,0 +1,17 @@
+{{! This fragment is used to display in a standard way the header of an actor sheet.
+Parameters :
+ - width {Number} : image width
+ - heaight {Number} : image height
+ }}
+<header class="sheet-header flexrow">
+    <img class="sheet-profile" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" width="{{width}}"
+         height="{{height}}"
+         alt="{{ localize 'tor2e.actors.details.tech.alt' }}"/>
+    <div>
+        <h1>
+            <label>
+                <input name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
+            </label>
+        </h1>
+    </div>
+</header>

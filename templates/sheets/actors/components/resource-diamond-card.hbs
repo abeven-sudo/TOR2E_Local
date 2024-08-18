@@ -1,0 +1,26 @@
+{{! This component is used to display a Resource Stat in an Actor, display as a big circle, with a secondary stat in a circle around it.
+Parameters :
+- stat {Object} : stat object
+- reference {String} : the stat name value. Used by FVTT to save the stat value to the System
+- extension-reference {String} : the  extension stat name value. Used by FVTT to save the stat value to the System
+- label-ext {String} : the data path for the term in json traduction files
+}}
+<div class="main-stat flexcol {{extra-css}}">
+    {{#if statLabel}}
+        <label for={{reference}}>{{localize statLabel}}</label>
+    {{else}}
+        <label for={{reference}}>{{localize stat.label}}</label>
+    {{/if}}
+    <div class="main-stat-value flexrow">
+        {{> "systems/tor2e/templates/sheets/actors/components/extensions/resource-diamond-ext.hbs"
+                position="secondary"
+                stat=extension-stat
+                stat-value=extension-stat-value
+                reference=extension-reference
+                label-ext=extension-label}}
+        <div class="input-stat-wrapper">
+            <input id={{reference}} name={{reference}} type="number" value="{{stat.value}}"
+                   data-dtype="{{stat.type}}"/>
+        </div>
+    </div>
+</div>

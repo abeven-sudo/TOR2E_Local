@@ -1,0 +1,20 @@
+{{! This component is used to display and save a Simple Skill in an Actor, with a checkbox side of it (favoured)
+Parameters :
+ - skill : skill object
+ - reference : the skill name value. Used by FVTT to save the skill value to the System
+  - checkbox-reference (String} : the name of the checkbox object value. Used by FVTT to save the checkbox value to the System
+
+ }}
+<div class="section main-section">
+    <h4 class="title">{{localize "tor2e.actors.stats.health"}}</h4>
+    <div class="active-effect-row flexrow">
+        {{#each effects as |effect id|}}
+            {{> "systems/tor2e/templates/sheets/actors/components/effect-card.hbs"
+                    effect=effect
+                    id=id
+                    reference=effect.duration.reference
+                    stat=(lookup ../actor.system.stateOfHealth effect.duration.field)
+            }}
+        {{/each}}
+    </div>
+</div>

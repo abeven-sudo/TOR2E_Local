@@ -1,0 +1,1114 @@
+{
+  "GAME.paused": "Vous ne passerez pas !",
+  "SETTINGS": {
+    "aldDefaultValueDescription": "Précisez l'état par défaut de l'option [ Lié à l'acteur ] pour tout nouveau PNJ.",
+    "aldDefaultValueName": "L'option [ Lié à l'acteur ] pour PNJ est activée par défaut",
+    "disableAltClickDescription": "Désactiver le ALT + Click qui protège de modifications involontaires telles que modifier le rang d'une compétence ou basculer un état de santé.",
+    "disableAltClickName": "Désactiver le ALT + Click",
+    "setAddSkirmish": "Ajouter la Position de Combat Escarmouche à votre jeu",
+    "setAddSkirmishDescription": "Ajouter Escarmouche aux Positions de COmbat autorisées même si vous ne jouez pas mode Strider (Solo)",
+    "setAlwaysShowShieldThrustDescription": "Dégât Special \"Repousser avec le bouclier\" : Afficher cette option même si la condition d'utilisation (Corps > attribut) n'est pas atteinte.",
+    "setAlwaysShowShieldThrustName": "Toujours afficher Repousser avec le bouclier",
+    "setDisplayCommunityInfoAtStartDescription": "Afficher, lors de la connexion au jeu, le nom de la Communauté actuellement active.",
+    "setDisplayCommunityInfoAtStartValue": "Afficher la Communauté active",
+    "setExtendedWeaponSelection": "Liste étendue d'armes",
+    "setExtendedWeaponSelectionDescription": "Ce paramètre ne doit être activé que si le Gardien des Légendes veut utiliser des règles maison (comme de nouvelles compétences de combat). En activant ce paramère, un champ Compétence est ajouté dans la fiche d'arme afin de faire le lien avec la compétence de combat du personnage.",
+    "setInlineElementFromUuidInDescription": "Intégration d'un journal dans la description",
+    "setInlineElementFromUuidInDescriptionDescription": "Vous pouvez intégrer une page de journal dans la description d'un objet. A l'affichage, la description sera automatiquement remplacée par le contenu du journal. Le contenu. La description de l'objet ne doit contenir que le lien vers le journal et rien d'autre ou cela ne fonctionnera pas.",
+    "setModifiedLoadAsRequested": "Modifier le calcul de la Charge",
+    "setModifiedLoadAsRequestedDescription": "Autorisez des règles-maison qui modifient comment la charge des objets portés impacte l'alerte d'état Epuisé. Par défaut, l'alerte apparait lorsque l'Endurance est inférieure ou égale à la Charge. Par exemple, pour diminuer la Charge de la valeur de Force (c'est à dire permettre aux personnages de porter l'équivalent de leur valeur de Corps en charge).  Exemple : saisir attributes.strength or un nombre entier dans le champ).",
+    "setNoneCustomCombatSpecialEffect": "Ajouter le Dégat Spécial [ Aucun ]",
+    "setNoneCustomCombatSpecialEffectDescription": "Ajouter un nouveau Dégat Spécial, nommé [ Aucun ]. Règle maison.",
+    "setOverrideEyeAwareness": "Remplacer la valeur maximale de la Vigilance de l'Oeil.",
+    "setOverrideEyeAwarenessDescription": "Par défaut, la valeur maximale est de 24. Mais vous pouvez la modifier selon votre souhait.",
+    "setPauseMessage": "Message de Pause affiché",
+    "setPauseMessageDescription": "Indiquer ici le message de pause à afficher. Laisser vide pour avoir le message par défaut de Foundry.",
+    "setRawModeForActiveEffectDescription": "Si vous maitrisez la fonctionnalité des Effets Actifs de Foundry VTT et souhaitez implémenter un effet spécifique, vous pouvez alors changer ce mode ici : Coché : mode Liste, Décoché : mode standard (zone de saisie texte).",
+    "setRawModeForActiveEffectName": "Changer le mode de sélection des Effets Actifs",
+    "setShowHideRangeBlockDescription": "Utile pour montrer le bloc des portées des armes à distance.",
+    "setShowHideRangeBlockName": "Montrer les portées des attaques à distance",
+    "setSoloMode": "Mode Strider (Solo)",
+    "setSoloModeDescription": "Quelques fonctionnalités sont adaptées au Mode Strider (examples : ajout de la posture de combat Escarmouche, simplification de la la feuille de Communauté, ...)",
+    "setTnBaseValue": "Définir le SR de base",
+    "setTnBaseValueDescription": "Ce paramètre permet au Gardien des légendes de définir la valeur de base du SR (Seuil de Réussite). La règle officielle conseille la valeur 20 pour une campagne et 18 pour un scénario one-shot.",
+    "setUseAdversarySkills": "Permettre l'utilisation de Compétences pour l'Adversaire",
+    "setUseAdversarySkillsDescription": "Dans la 2nde édition, les Adversaires n'ont pas de Compétences. Activer ce paramètre permet au Gardien des Légendes d'ajouter le bloc de Compétences dans la Feuille d'Adversaire.",
+    "setWarnLoreMasterForCharacterStateDescription": "Utile pour activer un message d'Alerte dans le chat pour chaque personnage qui devrait être dans un état Epuisé ou Mélancolique.",
+    "setWarnLoreMasterForCharacterStateName": "Activer les messages d'Alerte"
+  },
+  "tor2e": {
+    "active-effect": {
+      "toggle": {
+        "help": "ALT + Click pour basculer l'état"
+      }
+    },
+    "actors": {
+      "biography": {
+        "age": "Age",
+        "calling": "Vocation",
+        "culturalBlessing": "Avantage culturel",
+        "culture": "Culture",
+        "fellowshipFocus": "Attachement",
+        "shadowPath": "Voie de l'Ombre",
+        "standardOfLiving": "Niveau de vie",
+        "title": "Titre",
+        "years": "ans"
+      },
+      "chat": {
+        "result": {
+          "miserable": "<strong>{name}</strong> est <strong>Mélancolique</strong>.",
+          "title": "Message de résultat",
+          "weary": "<strong>{name}</strong> est <strong>Epuisé</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> est <strong>Epuisé</strong> et <strong>Mélancolique</strong>."
+        },
+        "warn": {
+          "hint": "Merci de faire un Click Droit pour accéder au menu contextuel permettant d'appliquer les changements.",
+          "miserable": "<strong>{name}</strong> devrait être <strong>Mélancolique</strong>.",
+          "title": "Message d'Alerte",
+          "weary": "<strong>{name}</strong> devrait être <strong>Epuisé</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> devrait être <strong>Epuisé</strong> et <strong>Mélancolique</strong>."
+        }
+      },
+      "combatAttributes": {
+        "armour": "Armure",
+        "damage": "Dégats",
+        "headGear": "Casque",
+        "parry": "Parade",
+        "ranged": "Distance",
+        "shield": "Bouclier"
+      },
+      "combatSkills": {
+        "title": "Compétences de Combat"
+      },
+      "community": {
+        "journey-log": {
+          "duration": "Jours de voyage",
+          "from": "Voyage depuis",
+          "season": "Saison",
+          "to": "Destination",
+          "year": "Année"
+        },
+        "make-default": {
+          "description": "2 personnages liés entre eux",
+          "label": "pour rendre cette Communauté active.",
+          "title": "Rendre Active"
+        },
+        "messages": {
+          "displayDefaultActor": "La Communauté active est '{name}'.",
+          "setDefaultActorAutomatically": "La Communauté '{name}' a été automatiquement mise comme communauté active de ce monde.",
+          "setDefaultActorManually": "Vous avez spécifié la Communauté '{name}' comme Communauté active pour ce monde.",
+          "warnNoCommunityActor": "Attention, il n'y a aucune Communauté dans ce monde, quelques fonctionnalités ne marcheront pas correctement tant que vous n'aurez pas créé de Communauté.",
+          "warnTooManyCommunityActors": "Attention, il y a {size} Communautés dans ce monde et aucune n'est active. Le Système de jeu ne peut pas deviner quel est la bonne. Merci de le préciser dans les feuilles de Communauté."
+        }
+      },
+      "details": {
+        "tech": {
+          "alt": "Image representant le personnage"
+        }
+      },
+      "faction": {
+        "friendly": "Amical",
+        "hostile": "Hostile"
+      },
+      "fellAbilities": {
+        "title": "Capacités Spéciales"
+      },
+      "sections": {
+        "attributes": "Attributs",
+        "available-members": "Membres disponibles",
+        "background": "Origine",
+        "biography": "Biographie",
+        "combat": "Combat",
+        "combatProficiencies": "Compétences de Combat",
+        "commonSkills": "Compétences Communes",
+        "company": "Compagnie",
+        "connections": "Relations",
+        "effects": "Effets",
+        "equipment-gear": "Équipement",
+        "fellowship": "Communauté",
+        "fellowshipPhase": "Phase de Communauté",
+        "heroicStature": "Stature héroïque",
+        "journey-log": "Journal de Voyage",
+        "location": "Localisation",
+        "members": "Membres",
+        "name": "Nom",
+        "notes": "Notes",
+        "occupation": "Occupation",
+        "patrons": "Garants",
+        "resources": "Ressources",
+        "rewards": "Récompenses",
+        "skillGroups": "Groupes",
+        "skillPoints": "Pts de Progression",
+        "taleOfYears": "Le Passage des Années",
+        "traits": "Traits",
+        "travel": "Voyage",
+        "treasure": "Pts de Trésors",
+        "virtues": "Vertus",
+        "war-gear": "Equipement de Guerre",
+        "weaponSkills": "Compétences de Combat"
+      },
+      "skills": {
+        "combatSkills": "Compétences de Combat",
+        "commonSkills": "Compétences Communes",
+        "favoured": "(fav.)",
+        "relevantSkills": "Compétences notables",
+        "title": "Compétences"
+      },
+      "stateOfHealth": {
+        "miserable": "Mélancolique",
+        "poisoned": "Empoisonné",
+        "temporary": "Temporaire",
+        "weary": "Epuisé",
+        "wounded": "Blessé"
+      },
+      "stats": {
+        "armour": "Protection",
+        "attributeLevel": "Niveau d'Attribut",
+        "bonus": {
+          "combat": {
+            "heavyBlow": "Dégâts de Coup Puissant",
+            "injury": "Blessure de l'arme",
+            "pierce": "Perforation",
+            "piercingBlow": "Coup Perforant de l'arme"
+          },
+          "defense": {
+            "protection": "Protection de l'armure",
+            "shieldParry": "Modificateur de Parade"
+          },
+          "tn": {
+            "heart": "SR Coeur",
+            "strength": "SR Corps",
+            "wits": "SR Esprit"
+          }
+        },
+        "canBeAPatron": "Peut être Garant ?",
+        "current": "Actuel",
+        "damage": {
+          "closedCombat": "Dégâts de corps à corps",
+          "rangedCombat": "Dégâts à distance"
+        },
+        "endurance": "Endurance",
+        "eyeAwareness": "Vigilance de l'Oeil",
+        "faction": "Camp",
+        "fellowshipPoints": "Points de Communauté",
+        "hate": "Haine",
+        "health": "Santé",
+        "hope": "Espoir",
+        "initial": "Valeur de départ",
+        "load": "Charge",
+        "max": "Max",
+        "maxEndurance": "Max Endurance",
+        "maxHope": "Espoir Max",
+        "might": "Puissance",
+        "min": "Min",
+        "noArmour": "Pas d'armure",
+        "noHeadgear": "Pas de casque",
+        "noShield": "Pas de bouclier",
+        "parry": "Parade",
+        "rating": "Valeur de départ",
+        "rest": "Repos",
+        "shadow": "Ombre",
+        "shadowScars": "Séquelles",
+        "state": "Etat",
+        "temporary": "Temporaire",
+        "travelLoad": "Fatigue"
+      },
+      "traits": {
+        "distinctiveFeatures": "Particularités",
+        "flaws": "Défauts"
+      },
+      "types": {
+        "adversary": {
+          "title": "Adversaire"
+        },
+        "character": {
+          "title": "Personnage joueur"
+        },
+        "community": {
+          "title": "Communauté"
+        },
+        "lore": {
+          "title": "Personnage de Renom"
+        },
+        "npc": {
+          "title": "Personnage Non Joueur"
+        }
+      }
+    },
+    "armour": {
+      "groups": {
+        "head": "Casque",
+        "leather": "Armure de cuir",
+        "mail": "Armure de mailles",
+        "shield": "Bouclier"
+      },
+      "title": {
+        "group": "Groupe d'armure"
+      }
+    },
+    "callings": {
+      "groups": {
+        "captain": "Capitaine",
+        "champion": "Champion",
+        "messenger": "Messager",
+        "scholar": "Erudit",
+        "treasure-hunter": "Chasseur de Trésors",
+        "warden": "Protecteur"
+      }
+    },
+    "chat": {
+      "actions": {
+        "cancel": "Annuler",
+        "hidden": "action cachée",
+        "roll": "Jet de dés",
+        "roll-result": "Résultat du jet",
+        "save": "Sauver",
+        "test": "Test"
+      },
+      "error": {
+        "actorNotFound": "Aucun personnage trouvé avec l'id : {actorId} et le tokenId : {tokenId}"
+      },
+      "taskCheck": {
+        "options": {
+          "advanced": "Avancé",
+          "best": "Meilleur",
+          "bonus-penalty": "Bonus/Malus",
+          "bonus-penalty-dice": "Dé de Malus/Bonus",
+          "bonus-success-dice": "Dé de Bonus",
+          "difficulty": "Difficulté",
+          "extended-penalty-dice": {
+            "hint": "Entrez une valeur négative pour un Malus et positive pour un Bonus.",
+            "label": "Valeur du Bonus/Malus de Dé"
+          },
+          "favoured-ill-favoured": "Favorisé/Défavorisé",
+          "feat-dice": "Dé du Destin",
+          "feat-die-value": "Valeur du Dé du Destin",
+          "health-impacts": "Impact de la santé",
+          "hope": "Espoir",
+          "hope-point-bonus-dice": "Dé de Bonus de point d'Espoir",
+          "inspired": "Inspiré",
+          "mastery-dice": "Dé de Maitrise",
+          "miserable": "mélancolique",
+          "miserable-not-miserable": "Mélancolique ?",
+          "modifier": "Modificateur",
+          "not-miserable": "non mélancolique",
+          "not-weary": "non épuisé",
+          "result-modifier": "Modificateur du résultat",
+          "roll-characteristics": {
+            "is-favoured": "est favorisé.",
+            "is-ill-favoured": "est défavorisé.",
+            "is-inspired": "est inspiré.",
+            "is-miserable": "est mélancolique.",
+            "is-weary": "est épuisé.",
+            "title": "Caractéristiques du jet"
+          },
+          "roll-formula": "Formule du jet",
+          "support-die": "Aide d'un Companion",
+          "tn": "SR",
+          "weary": "épuisé",
+          "weary-not-weary": "Epuisé ?",
+          "worst": "Plus mauvais"
+        },
+        "title": "Jet : {type}"
+      },
+      "warn": {
+        "characterHasNotBeenUsedToCreateTheAction": "L'action pour laquelle vous voulez dépenser un point d'Espoir n'a pas été créée par un PJ mais par le personnage {actorName} !"
+      }
+    },
+    "combat": {
+      "actions": {
+        "applyAll": "Tout appliquer (Dégats et effets)",
+        "applyAllStates": "Appliquer tous les effets (Epuisé, Blessé & Hors de Combat)",
+        "applyDamage": "Appliquer les dégats",
+        "applyMiserableState": "Appliquer l'effet Mélancolique",
+        "applyOutOfCombat": "Appliquer l'effet Hors de Combat",
+        "applyWeary": "Appliquer l'effet Epuisé",
+        "applyWearyAndMiserableState": "Appliquer le double-effet Epuisé et Mélancolique",
+        "applyWearyState": "Appliquer l'effet Epuisé",
+        "applyWounded": "Appliquer l'effet Blessé"
+      },
+      "chat": {
+        "details": {
+          "attackerRoll": "Jet d'attaque :",
+          "damage": {
+            "bonus": " + bonus aux dégats ({bonusDamage})",
+            "title": "Dégats :",
+            "weapon": "[Arme({weaponDamage})"
+          },
+          "specialDamage": "Dégats spéciaux :",
+          "successLevel": "Niveau de Réussite :"
+        },
+        "effects": {
+          "damageDealt": "Dégats reçus :",
+          "ooc": {
+            "is": " est hors de combat."
+          },
+          "protection": {
+            "is": " est ",
+            "protected": "protégé !",
+            "wounded": "blessé !"
+          },
+          "title": "Effets de l'attaque",
+          "weary": {
+            "is": " est épuisé."
+          }
+        },
+        "injury": {
+          "grievous": {
+            "message": "<span class='actor-name'>{targetName}</span> souffre d'une <b>Blessure graveGrievous Injury</b> et est inconscient et en train de mourir.",
+            "title": "Blessure Grave",
+            "type": "grievous"
+          },
+          "moderate": {
+            "message": "<span class='actor-name'>{targetName}</span> souffre d'une <b>Blessure modérée</b> qui ne dure que pendant le combat.",
+            "title": "Blessure Modérée",
+            "type": "moderate"
+          },
+          "severe": {
+            "message": "<span class='actor-name'>{targetName}</span> souffre d'une <b>Blessure critique</b> pour une durée de {duration} jours.",
+            "title": "Blessure Critique",
+            "type": "severe"
+          },
+          "title": "Blessure"
+        },
+        "injuryRoll": {
+          "description": "<span class='actor-name'>{targetName}</span> est blessé et doit faire un <a class='button-injury-roll'>Jet de Blessure<i class='fas fa-dice'></i></a>.",
+          "title": "Jet de Blessure"
+        },
+        "piercing": {
+          "description": "<span class='actor-name'>{targetName}</span> doit faire un <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>jet de Protection <i class='fas fa-dice'></i></a>against {weaponInjuryValue} TN.",
+          "title": "Coup perforant"
+        },
+        "preparation-roll": {
+          "message": " obtiens <span class='key-point'>{successDiceBonus} dés de bonus </span> pour le combat.",
+          "title": "Résultat du jet de préparation du combat"
+        },
+        "result": {
+          "help": "Merci de faire un click-droit pour utiliser le menu contextuel",
+          "paragraph": "<span class='actor-name'>{attackerName}</span> attaque <span class='actor-name'>{targetName}</span> avec : {weaponName} et enlève <a class='apply-damage-element'>{totalDamage} dégat(s)<i class='fas fa-external-link-alt'></i></a>",
+          "specialResult": " avec <a class='apply-special-result' title='{hint}'>{quantity} résultat(s)s spécial(aux)<i class='fas fa-external-link-alt'></i></a> (<img src='systems/tor2e/assets/images/tengwar.png' data-edit='img' title='tengwar' height='15' width='15' alt='tengwar'/>)",
+          "title": "Résultat de l'attaque"
+        },
+        "warn": {
+          "impossibleToRollInjury": "Il était impossible de faire le jet de Blessure sur la table."
+        }
+      },
+      "dicePool": {
+        "label": "Nombre de dés d'Avantage."
+      },
+      "error": {
+        "itemNotFound": "L'item (nom :{name}, type: {type}) n'existe pas pour ce personnage.",
+        "noActorAttachedToToken": "Impossible d'ajouter le token '{name}' au combat car le token n'st pas rattaché à un personnage. Le personnage lié au token a probablement été supprimé.",
+        "unableToRerollPrepBattle": "il est impossible de refaire le jet de préparation 'Art de la Guerre' pour le token {token} car ce n'est pas un personnage-joueur. C'est un {type}"
+      },
+      "special-success-action": {
+        "break-shield": {
+          "alt": "Un bouclier brisé en morceaux",
+          "description": "L'attaquant réduit le bouclier en morceaux.",
+          "label": "Bouclier brisé",
+          "title": "Bouclier brisé"
+        },
+        "fend-off": {
+          "alt": "Un personnage esquivant un coup",
+          "description": "Ajouter +2 à la Parade contre la prochaine attaque.",
+          "label": "Repositionnement",
+          "title": "Repositionnement"
+        },
+        "gain-ground": {
+          "alt": "Un tir de flèche pour gagner du terrain sur les adversaires",
+          "description": "Tirer sur les ennemis pour gagner du terrain.",
+          "label": "Gagner du terrain",
+          "title": "Gagner du terrain"
+        },
+        "heavy-blow": {
+          "alt": "Une épée portant un puissant coup",
+          "description": "Ajouter {amount} aux dégâts.",
+          "label": "Coup Puissant",
+          "title": "Coup Puissant"
+        },
+        "none-custom": {
+          "alt": "Annuler",
+          "description": "Règle maison",
+          "label": "Aucun",
+          "title": "Aucun"
+        },
+        "piercing-blow": {
+          "alt": "Une lance perçant un corps",
+          "description": "Ajouter {amount} au Dé du Destin ({edge} à atteindre ou dépasser).",
+          "label": "Coup Perforant",
+          "title": "Coup Perforant"
+        },
+        "seize": {
+          "alt": "Une main agrippant quelque chose.",
+          "description": "L'attaquant se saisit de sa cible.",
+          "label": "Saisir",
+          "title": "Saisir"
+        },
+        "shield-thrust": {
+          "alt": "Un bouclier frappant quelqu'un viollement",
+          "description": "Repousser à la place de dégâts.",
+          "label": "Repousser avec le bouclier",
+          "title": "Repousser avec le bouclier"
+        }
+      },
+      "stance": {
+        "default": {
+          "label": "Posture de combat inconnue"
+        },
+        "defensive": {
+          "label": "Défensive"
+        },
+        "forward": {
+          "label": "Avancée"
+        },
+        "open": {
+          "label": "Exposée"
+        },
+        "rearward": {
+          "label": "Arrière"
+        },
+        "skirmish": {
+          "label": "Escarmouche"
+        }
+      },
+      "step": {
+        "closeCombat": {
+          "engagement": "Engagement",
+          "label": "Combat rapproché"
+        },
+        "default": {
+          "label": "Etape de combat inconnue"
+        },
+        "initiative": {
+          "attack": {
+            "label": "Adv.",
+            "title": "Les adversaires ont l'initiative."
+          },
+          "defense": {
+            "label": "PJs.",
+            "title": "Les héros ont l'initiative."
+          },
+          "toggle": {
+            "title": "Basculer l'initiative entre les héros et les adversaires."
+          }
+        },
+        "openingVolley": {
+          "label": "Premières volées",
+          "roll": {
+            "label": "Premières volées",
+            "title": "Lancer un jet de tir à distance."
+          }
+        },
+        "preparation": {
+          "label": "Préparation",
+          "roll": {
+            "label": "Prépation du Combat",
+            "reroll": "Relancer le jet de préparation du combat",
+            "title": "Lancer un jet de préparation du combat."
+          }
+        }
+      },
+      "warn": {
+        "combatantDoesntExistInCombat": "Le Personnage avec l'identifiant ({id}) ne fait pas partie du combat en cours.",
+        "combatantNotInCombat": "Le Token ({name}) avec l'identifiant ({id})que vous voulez engagez ne fait pas partie du combat en cours ou est hors-combat.",
+        "impossibleForComplexEngagement": "Vous devez sélectionner 1 et 1 seul token de chacune des 2 factions, pas plusieurs tokens de chacune.",
+        "impossibleForMonoFaction": "Vous devez sélectionner au moins 1 token de chaque faction.",
+        "incompleteItem": "Aucun {element} valide pour l'objet ({item}). Vous devez sélectionner l'objet {element}.",
+        "noActorFound": "Aucun personnage avec le nom {name}.",
+        "noCombatProficiencyFound": "Le personnage {actorName} ne possède pas la compétene de combat ({name}). Vous devez en ajouter une pour pouvoir combattre.",
+        "noSkillNameAvailableWithExtendedWeaponSelection": "Le personnage {actorName} ne possède pas la compétence de combat ({name}) et vous ne lui avez pas non plus donné la compétence du même nom.",
+        "noSkillNameFoundWithExtendedWeaponSelection": "Le personnage {actorName} ne possède pas la compétence de combat ({name}) et vous avez donné une compétence dont le nom n'est pas dans les compétences de combat.",
+        "noTokenSelectedForEngagement": "Vous devez sélectionner des tokens pour l'engagement mutuel.",
+        "noValidCombatTarget": "Vous devez sélectionner un token qui est inclu dans le Combat Tracker.",
+        "noValidTarget": "Vous devez sélectionner 1 et 1 seule token à attaquer.",
+        "noValidWeaponEquipped": "Vous n'avez pas d'arme valide et équipée pour ce type de compétence ({skill}).",
+        "numberOfTengwarNotCorrect": "Quelque chose d'anormal s'est passé. Le nombre de Tengwar ({tengwar}) est 0 ou inférieur ! Cela ne devrait pas arriver.",
+        "tnIsWeird": "Le SR calculé n'est pas valide. Peut-être avez-vous oublié de définir la valeur de Parade de la cible ({foeName})."
+      }
+    },
+    "combatProficiencies": {
+      "axes": "Haches",
+      "bows": "Arcs",
+      "brawling": "Bagarre",
+      "spears": "Lances",
+      "swords": "Epées"
+    },
+    "common": {
+      "description": "Description",
+      "group": "Groupe",
+      "name": "Nom",
+      "type": "Type"
+    },
+    "commonSkills": {
+      "athletics": "Athlétisme",
+      "awareness": "Vigilance",
+      "awe": "Présence",
+      "battle": "Art de la Guerre",
+      "courtesy": "Courtoisie",
+      "craft": "Artisanat",
+      "enhearten": "Inspiration",
+      "explore": "Exploration",
+      "healing": "Soins",
+      "hunting": "Chasse",
+      "insight": "Intuition",
+      "lore": "Connaissances",
+      "persuade": "Persuasion",
+      "riddle": "Enigmes",
+      "scan": "Inspection",
+      "song": "Chant",
+      "stealth": "Discrétion",
+      "travel": "Voyage"
+    },
+    "dice": {
+      "feat": {
+        "1": "dé du destin un",
+        "2": "dé du destin deux",
+        "3": "dé du destin trois",
+        "4": "dé du destin quatre",
+        "5": "dé du destin cinq",
+        "6": "dé du destin six",
+        "7": "dé du destin sept",
+        "8": "dé du destin huit",
+        "9": "dé du destin neuf",
+        "10": "dé du destin dix",
+        "11": "dé Oeil de Sauron",
+        "12": "dé Rune de Gandalf",
+        "description": "Un Dé du Destin D12",
+        "label": "Destin"
+      },
+      "gandalf": "Rune de Gandalf",
+      "sauron": "Oeil de Sauron",
+      "standard": {
+        "1": "dé de maitrise un",
+        "2": "dé de maitrise deux",
+        "3": "dé de maitrise trois",
+        "4": "dé de maitrise quater",
+        "5": "dé de maitrise cinq",
+        "6": "dé de maitrise six avec tengwar",
+        "label": "Maitrise"
+      },
+      "tengwar": "Rune Tengwar",
+      "weary": {
+        "1": "dé fatigué un",
+        "2": "dé fatigué deux",
+        "3": "dé fatigué trois",
+        "4": "dé de maitrise quatre",
+        "5": "dé de maitrise cinq",
+        "6": "dé de maitrise six avec tengwar",
+        "label": "Maitrise Epuisé"
+      }
+    },
+    "effects": {
+      "miserable": "Mélancolique",
+      "poisoned": "Empoisonné",
+      "unit": {
+        "days": "Jours"
+      },
+      "weary": "Epuisé",
+      "wounded": "Blessé"
+    },
+    "evenTypes": {
+      "chance-meeting": "Rencontre heureuse",
+      "despair": "Désespoir",
+      "ill-choices": "Mauvais choix",
+      "joyful-sight": "Joyeuse vue",
+      "mishap": "Mésaventure",
+      "short-cut": "Raccourci",
+      "terrible-misfortune": "Terrible malheur"
+    },
+    "fellAbilities": {
+      "details": {
+        "active": "Active",
+        "cost": "Coût",
+        "fellAbilityGroup": "Groupe de Capacité Spéciale",
+        "tech": {
+          "alt": "Image représentant la capacité spéciale."
+        }
+      },
+      "groups": {
+        "hate": "Haine"
+      }
+    },
+    "items": {
+      "armours": {
+        "armour": "Armure",
+        "group": "Type",
+        "protection": "Protection",
+        "protection-roll": "Jet de Protection",
+        "tech": {
+          "alt": "Image représentant l'armure.",
+          "title": "Image représentant l'armure."
+        },
+        "title": "Armure"
+      },
+      "common": {
+        "dropped": "Non porté",
+        "equipped": "Équipé",
+        "load": "Charge"
+      },
+      "fellowship": {
+        "tech": {
+          "alt": "Image représentant la Communauté.",
+          "title": "Image de la Communauté représentant 2 anneaux liés ensemble."
+        },
+        "title": "Communauté"
+      },
+      "journey-log": {
+        "actions": {
+          "add-event": {
+            "title": "Ajouter un événement à Compagnie (ALT+Click)."
+          },
+          "add-event-with-roll": {
+            "title": "Ajouter un événement à la Compagnie avec un jet d'Evénement automatique (ALT+Click)."
+          },
+          "add-member": {
+            "title": "Ajouter un membre à la Compagnie (ALT+Click)."
+          },
+          "add-mount": {
+            "title": "Ajouter une montureà la Compagnie (ALT+Click)."
+          },
+          "delete-event": {
+            "title": "Supprimer un événement de la Compagnie (ALT+Click)."
+          },
+          "delete-member": {
+            "title": "Retirer un membre de la Compagnie (ALT+Click)."
+          },
+          "delete-mount": {
+            "title": "Retirer une monture de la Compagnie (ALT+Click)."
+          },
+          "import": {
+            "title": "Importer les données dans une Compagnie (ALT+Click). Attention, cela va écraser les données existantes."
+          },
+          "re-roll-event": {
+            "title": "Relancer le jet d'Evénement et prendre en compte le nouveau résultat (ALT+Click)."
+          }
+        },
+        "attributes": {
+          "": "Fatigue de Voyage",
+          "name": "Nom",
+          "role": "Rôle",
+          "travel-fatigue": "Fatigue de Voyage",
+          "vigour": "Vigueur"
+        },
+        "chat": {
+          "event-type": "Type d'événement:",
+          "region-type": "Type de région:",
+          "target": "Cible:"
+        },
+        "company": "Compagnie",
+        "event": {
+          "description": "Quelques jets de dés sur le chemin du voyage",
+          "name": "Evénement",
+          "region": "Région",
+          "result": "Résultat",
+          "target": "Cible"
+        },
+        "events": {
+          "name": "Evénements",
+          "title": "Jet d'événement"
+        },
+        "journal": "Journal",
+        "journey-path": "Chemin du voyage",
+        "mounts": "Montures",
+        "region-types": {
+          "border-land": "Terre Frontalière",
+          "dark-land": "Terre Sombre",
+          "wild-land": "Terre Sauvage"
+        },
+        "roll-dialog": {
+          "title": "Sélectionnez un type de région"
+        },
+        "tech": {
+          "alt": "Image représentant un Journal de Voyage.",
+          "title": "Fond 'image d'un Journal de Voyage représentant un chemin."
+        },
+        "title": "Journal de Voyage"
+      },
+      "miscellaneous": {
+        "equipment": "Equipement",
+        "tech": {
+          "alt": "Image représentant l'équipement.",
+          "title": "Image représentant l'équipement."
+        },
+        "title": "Equipement"
+      },
+      "rewards": {
+        "tech": {
+          "alt": "Image représentant la récompense.",
+          "title": "Image représentant la récompense."
+        },
+        "title": "Récompense"
+      },
+      "shields": {
+        "buckler": "Rondache",
+        "greatShield": "Grand bouclier",
+        "none": "Aucun",
+        "shield": "Bouclier"
+      },
+      "skills": {
+        "tech": {
+          "alt": "Image représentant la compétence.",
+          "title": "Image représentant la compétence."
+        },
+        "title": "Compétence"
+      },
+      "special-abilities": {
+        "tech": {
+          "alt": "Image représentant la Capacité Spéciale.",
+          "title": "Image représentant la Capacité Spéciale."
+        },
+        "title": "Capacités Spéciales"
+      },
+      "traits": {
+        "tech": {
+          "alt": "Image représentant le trait.",
+          "title": "Image représentant le trait."
+        },
+        "title": "Trait"
+      },
+      "virtues": {
+        "tech": {
+          "alt": "Image représentant la vertu.",
+          "title": "Image représentant la vertu."
+        },
+        "title": "Vertu"
+      },
+      "weapons": {
+        "tech": {
+          "alt": "Image représentant l'arme.",
+          "title": "Image représentant l'arme."
+        },
+        "title": "Arme"
+      }
+    },
+    "journey-log": {
+      "log": {
+        "duration": "Jours de voyage",
+        "from": "Voyager depuis",
+        "season": "Saison",
+        "to": "Destination",
+        "year": "Année"
+      },
+      "sheet": {
+        "title": "Nom"
+      }
+    },
+    "macro": {
+      "error": {
+        "itemIsMissing": "L'objet {itemName} n'est pas présent pour le personnage sélectionné : {actorName} !",
+        "missingLoremasterRole": "Seul le Gardien des Légendes peut faire cette action.",
+        "noActorAvailable": "Merci de sélectionner un token avant d'utiliser cette macro !",
+        "skillIsMissing": "La compétence {skillName} n'est pas présente pour le personnage sélectionné : {actorName} !",
+        "wrongStatusEffect": "Le statut '{statusEffect}' n'existe pas."
+      }
+    },
+    "popup": {
+      "actions": {
+        "cancel": "Annuler",
+        "save": "Sauver"
+      },
+      "taskCheck": {
+        "armour": {},
+        "title": "{type} popup pour éditer"
+      }
+    },
+    "reward": {
+      "details": {
+        "tech": {
+          "alt": "Image représentant la récompense."
+        },
+        "type": "Type de Récompense"
+      },
+      "groups": {
+        "cultural": "Récompense Culturelle",
+        "qualities": "Qualités"
+      }
+    },
+    "roles": {
+      "guide": "Guide",
+      "hunter": "Chasseur",
+      "lookout": "Guetteur",
+      "scout": "Eclaireur"
+    },
+    "roll": {
+      "details": {
+        "tech": {
+          "title": "Un jet de dés."
+        }
+      },
+      "difficulty": "Difficulté",
+      "result": {
+        "automatic-failure": "Échec automatique",
+        "automatic-success": "Réussite automatique",
+        "extraordinary-success": "Réussite Extraordinaire",
+        "failure": "Échec",
+        "great-success": "Grande Réussite",
+        "hidden": "Caché",
+        "success": "Réussite"
+      },
+      "skill": "Cliquez pour faire un jet de cette compétence",
+      "special-success": {
+        "actions": {
+          "cancel": "Annuler",
+          "submit": "Envoyer"
+        },
+        "label": "Nombre de Réussites Spéciales",
+        "tech": {
+          "title": "Un jet avec des Tengwar(s)."
+        },
+        "title": "Utilisation des Réussites Spéciales"
+      },
+      "target": "Cible",
+      "warn": {
+        "clickOnWeaponInstead": "Vous devez cliquer sur l'arme que vous utilisez plutôt que la compétence de combat.",
+        "impossibleToFavouredAWeapon": "Il n'est pas possible de rendre favorite une arme pour un PJ.",
+        "noSkillFound": "La compétence {skillName} n'existe pas pour le personnage {actorName}"
+      }
+    },
+    "rolls": {
+      "corruption": "Corruption",
+      "fear": "Peur",
+      "protection": "Protection"
+    },
+    "seasons": {
+      "autumn": "Automne",
+      "spring": "Printemps",
+      "summer": "Eté",
+      "winter": "Hiver"
+    },
+    "sheet": {
+      "actions": {
+        "rest": {
+          "dialog-box": {
+            "actor-hope-points": "Points d'Espoir (actuel/max):",
+            "cancel-button": "Annuler",
+            "community-point-label": "Points de Communauté disponibles",
+            "required-hope-points": "Combien de points voulez-vous récupérer ?",
+            "submit-button": "Récupérer",
+            "title": "Récupérer des points d'Espoir depuis la Communauté",
+            "warn": {
+              "not-enough-hope-points-available": "Pas assez de points disponibles (réclamé: {required}, disponible: {available})",
+              "one-community_actor_expected": "Une et une seule Communauté doit exister dans un Monde !",
+              "too-many-hope-points-required": "Trop de points d'Espoir réclamés (total: {target}, max disponible: {max})"
+            }
+          },
+          "prolonged": {
+            "description": "Cliquer pour récupérer de l'Endurance après un repos prolongé (une nuit)",
+            "label": "Prolongé",
+            "noRestoredMessage": "Après un repos prolongé, {name} <b>ne récupère </b> aucun point d'Endurance, ({name} est en <b>parfaite santé</b>).",
+            "restoredMessage": "Après un repos prolongé, {name} <b>récupère toute son endurance</b>, ({name} est en <b>parfaite santé</b>).",
+            "title": "Repos prolongé",
+            "woundedRestoredMessage": "Après un repos prolongé, {name} <b>récupère {amount} points d'Endurance</b>, blessé ({name} <b>a {endurance}</b> points d'Endurance)."
+          },
+          "short": {
+            "description": "Cliquer pour récupérer de l'Endurance après un court repos (une heure)",
+            "label": "Court",
+            "noRestoredMessage": "Après un court repos, {name} <b>ne récupère pas</b> d'Endurance, ({name} est <b>parfaite santé</b>).",
+            "restoredMessage": "Après un court repos, {name} <b>récupère {amount} points d'Endurance</b> ({name} <b>a {endurance}</b> points d'Endurance).",
+            "title": "Court repos",
+            "woundedRestoredMessage": "Après un court repos, {name} <b>ne récupère </b> aucun point d'Endurance, ({name} est <b>blessé</b>)."
+          }
+        },
+        "roll": {
+          "fatigue": "Faire un test de Fatigue",
+          "hope": "Dépenser 1 point d'Espoir pour ajouter",
+          "lore": "Faire un test de Connaissance",
+          "skill": " à tester."
+        },
+        "toggle": {
+          "add-remove-skill": "Alt + Click pour ajouter un rang, Shift + Alt + Click pour retirer un rang.",
+          "favoured": "Appuyez sur ALT + Click pour inverser l'état Favori"
+        }
+      },
+      "skill": {
+        "chat": "Envoyer dans le chat",
+        "delete": "[ALT + Click] Supprimer la compétence",
+        "edit": "Editer la compétence",
+        "roll": "Jet de compétence"
+      }
+    },
+    "skillGroups": {
+      "combat": "Combat",
+      "custom": "Coutume",
+      "movement": "Déplacement",
+      "perception": "Perception",
+      "personality": "Personalité",
+      "survival": "Survie",
+      "vocation": "Métier"
+    },
+    "skills": {
+      "details": {
+        "associatedStat": "Stat associée",
+        "skillGroup": "Groupe de compétences",
+        "tech": {
+          "alt": "Image représentant la compétence."
+        }
+      },
+      "groups": {
+        "combat": "Combat",
+        "custom": "Coutume",
+        "movement": "Déplacement",
+        "perception": "Perception",
+        "personality": "Personnalité",
+        "survival": "Survie",
+        "vocation": "Métier"
+      }
+    },
+    "specialAbilities": {
+      "details": {
+        "active": "Active",
+        "cost": "Cout",
+        "specialAbilityGroup": "Groupe de Capacités Spéciales",
+        "tech": {
+          "alt": "Image representant la Capacité Spéciale."
+        }
+      },
+      "groups": {
+        "hate": "Haine",
+        "valour": "Vaillance",
+        "virtues": "Vertus"
+      }
+    },
+    "standardOfLivingGroups": {
+      "common": "Courant",
+      "frugal": "Modeste",
+      "poor": "Pauvre",
+      "prosperous": "Prospère",
+      "rich": "Riche",
+      "veryRich": "Très Riche"
+    },
+    "stats": {
+      "favoured": "Amélioré",
+      "heart": "Coeur",
+      "strength": "Corps",
+      "wits": "Esprit"
+    },
+    "statureStats": {
+      "adventurePoints": "Points d'Aventure",
+      "total": "Total",
+      "valour": "Vaillance",
+      "wisdom": "Sagesse"
+    },
+    "traits": {
+      "details": {
+        "tech": {
+          "alt": "Image représentant le groupe de traits."
+        },
+        "traitGroup": "Groupe de Traits"
+      },
+      "groups": {
+        "distinctiveFeature": "Particularité",
+        "flaw": "Défaut"
+      }
+    },
+    "travel": {
+      "roles": {
+        "guide": {
+          "label": "Guide",
+          "skill": "Voyage"
+        },
+        "hunters": {
+          "label": "Chasseurs",
+          "skill": "Chasse"
+        },
+        "lookouts": {
+          "label": "Guetteurs",
+          "skill": "Vigilance"
+        },
+        "scouts": {
+          "label": "Eclaireurs",
+          "skill": "Exploration"
+        }
+      }
+    },
+    "types": {
+      "armour": "Armure",
+      "axes": "Haches",
+      "bows": "Arcs",
+      "brawling": "Bagarre",
+      "distinctiveFeature": "Particularité",
+      "fell-ability": "Capacité Spéciale",
+      "flaw": "Défaut",
+      "head": "Casque",
+      "journey-log": "Carnet de Voyage",
+      "leather": "Cuir",
+      "mail": "Maille",
+      "miscellaneous": "Divers",
+      "reward": "Récompense",
+      "shield": "Boucliers",
+      "skill": "Compétence",
+      "spears": "Lances",
+      "swords": "Epées",
+      "trait": "Trait",
+      "virtues": "Vertu",
+      "weapon": "Arme"
+    },
+    "virtues": {
+      "details": {
+        "tech": {
+          "alt": "Image représentant la vertu."
+        },
+        "type": "Type de Vertu"
+      },
+      "groups": {
+        "cultural": "Vertus Culturelles",
+        "masteries": "Vertues de Départ"
+      }
+    },
+    "weapons": {
+      "details": {
+        "actions": "Actions",
+        "damage": "Dégats",
+        "description": "Description",
+        "edge": "Taille",
+        "extendedWeaponSelectionHint": "(option. Uniquement pour des armes non officielles pour PJ)",
+        "group": "Groupe",
+        "injury": "Blessure",
+        "long": "Longue portée",
+        "medium": "Moyenne portée",
+        "notes": "Notes",
+        "ranged": "Distance",
+        "ranks": "Rangs",
+        "short": "Courte portée",
+        "skill-name": "Compétence",
+        "tech": {
+          "alt": "Image representant l'arme.",
+          "caption": "Attributs",
+          "title": "Image représentant l'arme."
+        },
+        "twoHandWeapon": "Deux mains",
+        "type": "Type",
+        "weapon": "Arme"
+      },
+      "groups": {
+        "axes": "Haches",
+        "bestial": "Bestial",
+        "bows": "Arcs",
+        "brawling": "Bagarre",
+        "none": "-",
+        "spears": "Lances",
+        "swords": "Epées"
+      }
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "adversary": "Adversaire",
+      "character": "Personnage Joueur (PJ)",
+      "community": "Communauté",
+      "lore": "Maitre des Connaissances",
+      "npc": "Personnage Non Joueur (PNJ)"
+    },
+    "Item": {
+      "armour": "Armure",
+      "fell-ability": "Capacité Spéciale",
+      "journey-log": "Carnet de Route",
+      "miscellaneous": "Divers",
+      "reward": "Récompense",
+      "skill": "Compétence",
+      "trait": "Trait",
+      "virtues": "Vertu",
+      "weapon": "Arme"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.active-effects {
+
+  header {
+    height: 28px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #7a7971;
+    font-weight: bold;
+    align-content: center;
+
+    .title {
+      padding-left: 4px;
+      flex: 6;
+    }
+
+    .effect-actions {
+      text-align: center;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    .active-effect {
+      background: rgba(0, 0, 0, 0.1);
+      padding: 0.1em 0.2em;
+
+      .data {
+        align-items: center;
+        flex: 6;
+
+        img {
+          flex: 0 0 32px;
+          height: 32px;
+          margin-right: 6px;
+          border: none;
+        }
+
+        p {
+          padding-left: 0.5em;
+        }
+      }
+
+      .actions {
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          flex: none;
+          padding: 0.2em;
+        }
+      }
+    }
+  }
+}
+
+.raw-mode-switch {
+  width: 60%;
+}

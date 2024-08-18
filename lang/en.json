@@ -1,0 +1,1115 @@
+{
+  "GAME.paused": "You shall not pass!",
+  "TYPES": {
+    "Actor": {
+      "community": "Community",
+      "character": "Player Character (PC)",
+      "npc": "Non Player Character (NPC)",
+      "lore": "Lore Character",
+      "adversary": "Adversary"
+    },
+    "Item": {
+      "trait": "Trait",
+      "fell-ability": "Fell ability",
+      "skill": "Skill",
+      "armour": "Armour",
+      "weapon": "Weapon",
+      "miscellaneous": "Miscellaneous",
+      "reward": "Reward",
+      "virtues": "Virtue",
+      "journey-log": "Journey log"
+    }
+  },
+  "tor2e": {
+    "types": {
+      "distinctiveFeature": "Distinctive Feature",
+      "flaw": "Flaw",
+      "trait": "Trait",
+      "fell-ability": "Fell ability",
+      "skill": "Skill",
+      "armour": "Armour",
+      "weapon": "Weapon",
+      "miscellaneous": "Miscellaneous",
+      "reward": "Reward",
+      "virtues": "Virtue",
+      "journey-log": "Journey log",
+      "swords": "Swords",
+      "axes": "Axes",
+      "brawling": "Brawling",
+      "spears": "Spears",
+      "bows": "Bows",
+      "shield": "Shields",
+      "head": "Headgear",
+      "leather": "Leather",
+      "mail": "Mail"
+    },
+    "actors": {
+      "biography": {
+        "age": "Age",
+        "fellowshipFocus": "Fellowship Focus",
+        "title": "Title",
+        "years": "Years",
+        "culture": "Culture",
+        "standardOfLiving": "Standard of Living",
+        "culturalBlessing": "Cultural Blessing",
+        "calling": "Calling",
+        "shadowPath": "Shadow Path"
+      },
+      "sections": {
+        "biography": "Biography",
+        "traits": "Traits",
+        "effects": "Effects",
+        "attributes": "Attributes",
+        "skillGroups": "Skill Groups",
+        "combatProficiencies": "Combat Proficiencies",
+        "commonSkills": "Skills",
+        "weaponSkills": "Combat Skills",
+        "rewards": "Rewards",
+        "virtues": "Virtues",
+        "war-gear": "War Gear",
+        "equipment-gear": "Equipment Gear",
+        "resources": "Resources",
+        "combat": "Combat",
+        "fellowship": "Fellowship",
+        "skillPoints": "Skill Points",
+        "heroicStature": "Heroic Stature",
+        "treasure": "Treasure",
+        "background": "Background",
+        "company": "Company",
+        "fellowshipPhase": "Fellowship Phase",
+        "members": "Members",
+        "available-members": "Available Members",
+        "patrons": "Patrons",
+        "name": "Name",
+        "location": "Location",
+        "connections": "Connections",
+        "travel": "Travel",
+        "taleOfYears": "Tale of Years",
+        "notes": "Notes",
+        "journey-log": "Journey Log",
+        "occupation": "Occupation"
+      },
+      "details": {
+        "tech": {
+          "alt": "Image representing the actor"
+        }
+      },
+      "fellAbilities": {
+        "title": "Fell Abilities"
+      },
+      "traits": {
+        "distinctiveFeatures": "Distinctive Features",
+        "flaws": "Flaws"
+      },
+      "combatSkills": {
+        "title": "Combat Skills"
+      },
+      "skills": {
+        "title": "Skills",
+        "commonSkills": "Common Skills",
+        "combatSkills": "Combat Skills",
+        "relevantSkills": "Relevant Skills",
+        "favoured": "(fav.)"
+      },
+      "types": {
+        "community": {
+          "title": "Community"
+        },
+        "lore": {
+          "title": "Lore"
+        },
+        "npc": {
+          "title": "Npc"
+        },
+        "adversary": {
+          "title": "Adversary"
+        },
+        "character": {
+          "title": "Character"
+        }
+      },
+      "faction": {
+        "hostile": "Hostile",
+        "friendly": "Friendly"
+      },
+      "stats": {
+        "attributeLevel": "Attribute Level",
+        "damage": {
+          "closedCombat": "Closed Damage",
+          "rangedCombat": "Ranged Damage"
+        },
+        "hate": "Hate",
+        "might": "Might",
+        "parry": "Parry",
+        "noShield": "no shield",
+        "noHeadgear": "no headgear",
+        "noArmour": "no armour",
+        "armour": "Armour",
+        "endurance": "Endurance",
+        "load": "Load",
+        "hope": "Hope",
+        "maxHope": "Max Hope",
+        "maxEndurance": "Max Endurance",
+        "rating": "Initial Value",
+        "travelLoad": "Fatigue",
+        "shadow": "Shadow",
+        "temporary": "Temporary",
+        "shadowScars": "Shadow Scars",
+        "canBeAPatron": "Can be a Patron ?",
+        "initial": "Initial",
+        "fellowshipPoints": "Fellowship Points",
+        "eyeAwareness": "Eye Awareness",
+        "current": "Current",
+        "faction": "Faction",
+        "health": "Health",
+        "state": "State",
+        "rest": "Rest",
+        "max": "Max",
+        "min": "Min",
+        "bonus": {
+          "combat": {
+            "injury": "Weapon Injury",
+            "piercingBlow": "Weapon Piercing Blow",
+            "heavyBlow": "Heavy Blow Damage",
+            "pierce": "Pierce"
+          },
+          "defense": {
+            "protection": "Armour Protection",
+            "shieldParry": "Parry Modifier"
+          },
+          "tn": {
+            "strength": "Strength TN",
+            "heart": "Heart TN",
+            "wits": "Wits TN"
+          }
+        }
+      },
+      "stateOfHealth": {
+        "weary": "Weary",
+        "poisoned": "Poisoned",
+        "miserable": "Miserable",
+        "wounded": "Wounded",
+        "temporary": "Temporary"
+      },
+      "combatAttributes": {
+        "damage": "Damage",
+        "ranged": "Ranged",
+        "parry": "Parry",
+        "shield": "Shield",
+        "armour": "Armour",
+        "headGear": "Head Gear"
+      },
+      "chat": {
+        "warn": {
+          "title": "Warn Message",
+          "hint": "Please right click to use the contextual menu to apply required changes.",
+          "weary": "<strong>{name}</strong> should be <strong>Weary</strong>.",
+          "miserable": "<strong>{name}</strong> should be <strong>Miserable</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> should be <strong>Weary</strong> and <strong>Miserable</strong>."
+        },
+        "result": {
+          "title": "Result Message",
+          "weary": "<strong>{name}</strong> is <strong>Weary</strong>.",
+          "miserable": "<strong>{name}</strong> is <strong>Miserable</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> is <strong>Weary</strong> and <strong>Miserable</strong>."
+        }
+      },
+      "community": {
+        "messages": {
+          "setDefaultActorManually": "You have set the Community '{name}' as active for this world.",
+          "setDefaultActorAutomatically": "The Community '{name}' has been automatically set as active for this world.",
+          "displayDefaultActor": "The active Community is '{name}' .",
+          "warnNoCommunityActor": "Warning, there is no Community in this World, some features features won't work properly till you create one.",
+          "warnTooManyCommunityActors": "Warning, there is {size} Communities in this world. The system can't guess the good one. Please set it manually in the Community Sheets."
+        },
+        "journey-log": {
+          "year": "Year",
+          "season": "Season",
+          "from": "Journey from",
+          "to": "Destination",
+          "duration": "Days of travel"
+        },
+        "make-default": {
+          "title": "Make default",
+          "description": "2 characters connected each other",
+          "label": "to make this community actor the community by default."
+        }
+      }
+    },
+    "travel": {
+      "roles": {
+        "guide": {
+          "label": "Guide",
+          "skill": "travel"
+        },
+        "scouts": {
+          "label": "Scouts",
+          "skill": "explore"
+        },
+        "hunters": {
+          "label": "Hunters",
+          "skill": "hunting"
+        },
+        "lookouts": {
+          "label": "Lookouts",
+          "skill": "awareness"
+        }
+      }
+    },
+    "common": {
+      "type": "Type",
+      "group": "Group",
+      "name": "Name",
+      "description": "Description"
+    },
+    "items": {
+      "common": {
+        "load": "Load",
+        "equipped": "Equipped",
+        "dropped": "Dropped"
+      },
+      "shields": {
+        "none": "None",
+        "buckler": "Buckler",
+        "shield": "Shield",
+        "greatShield": "Great Shield"
+      },
+      "armours": {
+        "title": "Armour",
+        "armour": "Armour",
+        "protection": "Protection",
+        "group": "Type",
+        "protection-roll": "Protection Roll",
+        "tech": {
+          "title": "Background Image of the Armour Item representing an armour Icon.",
+          "alt": "Image representing the armour item."
+        }
+      },
+      "miscellaneous": {
+        "title": "Miscellaneous",
+        "equipment": "Equipment",
+        "tech": {
+          "title": "Background Image of the Miscellaneous Item representing a bag Icon.",
+          "alt": "Image representing the miscellaneous item."
+        }
+      },
+      "traits": {
+        "title": "Trait",
+        "tech": {
+          "title": "Background Image of the Trait Item representing a bag Icon.",
+          "alt": "Image representing the trait item."
+        }
+      },
+      "special-abilities": {
+        "title": "Special Ability",
+        "tech": {
+          "title": "Background Image of the Special Ability Item representing a bag Icon.",
+          "alt": "Image representing the Special Ability item."
+        }
+      },
+      "journey-log": {
+        "roll-dialog": {
+          "title": "Select a region type"
+        },
+        "chat": {
+          "region-type": "Region Type:",
+          "event-type": "Event Type:",
+          "target": "Target:"
+        },
+        "title": "Journey Log",
+        "company": "Company",
+        "mounts": "Mounts",
+        "journal": "Journal",
+        "journey-path": "Journey Path",
+        "events": {
+          "title": "Roll Event",
+          "name": "Events"
+        },
+        "event": {
+          "name": "Event",
+          "result": "Result",
+          "target": "Target",
+          "region": "Region",
+          "description": "Some dice rolling on a journey path"
+        },
+        "region-types": {
+          "border-land": "Border Land",
+          "wild-land": "Wild Land",
+          "dark-land": "Dark Land"
+        },
+        "attributes": {
+          "name": "Name",
+          "role": "Role",
+          "vigour": "Vigour",
+          "": "Travel Fatigue",
+          "travel-fatigue": "Travel Fatigue"
+        },
+        "actions": {
+          "import": {
+            "title": "Import data from Company Actor (ALT+Click). Warning, Company Item Data will be overriden."
+          },
+          "add-member": {
+            "title": "Add a member to the Company (ALT+Click)."
+          },
+          "delete-member": {
+            "title": "Delete a member from the Company (ALT+Click)."
+          },
+          "add-mount": {
+            "title": "Add a mount to the Company (ALT+Click)."
+          },
+          "delete-mount": {
+            "title": "Delete a mount from the Company (ALT+Click)."
+          },
+          "add-event": {
+            "title": "Add an event to the Company (ALT+Click)."
+          },
+          "add-event-with-roll": {
+            "title": "Add an event to the Company with automatic event rolls (ALT+Click)."
+          },
+          "delete-event": {
+            "title": "Delete an event from the Company (ALT+Click)."
+          },
+          "re-roll-event": {
+            "title": "Reroll the event and replace with the new result (ALT+Click)."
+          }
+        },
+        "tech": {
+          "title": "Background Image of the Journey Log representing a path.",
+          "alt": "Image representing a Journey Log."
+        }
+      },
+      "fellowship": {
+        "title": "Fellowship",
+        "tech": {
+          "title": "Background Image of the Fellowship representing two rings bounded together.",
+          "alt": "Image representing a Fellowship."
+        }
+      },
+      "skills": {
+        "title": "Skill",
+        "tech": {
+          "title": "Background Image of the Skill Item representing a bag Icon.",
+          "alt": "Image representing the Skill item."
+        }
+      },
+      "virtues": {
+        "title": "Virtue",
+        "tech": {
+          "title": "Background Image of the Virtue Item representing a bag Icon.",
+          "alt": "Image representing the Virtue item."
+        }
+      },
+      "rewards": {
+        "title": "Reward",
+        "tech": {
+          "title": "Background Image of the Reward Item representing a bag Icon.",
+          "alt": "Image representing the Reward item."
+        }
+      },
+      "weapons": {
+        "title": "Weapon",
+        "tech": {
+          "title": "Background Image of the Weapon Item representing a bag Icon.",
+          "alt": "Image representing the Weapon item."
+        }
+      }
+    },
+    "skills": {
+      "groups": {
+        "personality": "Personality",
+        "movement": "Movement",
+        "perception": "Perception",
+        "survival": "Survival",
+        "custom": "Custom",
+        "vocation": "Vocation",
+        "combat": "Combat"
+      },
+      "details": {
+        "skillGroup": "Skill Group",
+        "associatedStat": "Associated Stat",
+        "tech": {
+          "alt": "Image representing the skill."
+        }
+      }
+    },
+    "traits": {
+      "groups": {
+        "distinctiveFeature": "Distinctive Feature",
+        "flaw": "Flaw"
+      },
+      "details": {
+        "traitGroup": "Trait Group",
+        "tech": {
+          "alt": "Image representing the trait."
+        }
+      }
+    },
+    "reward": {
+      "groups": {
+        "cultural": "Cultural reward",
+        "qualities": "Qualities"
+      },
+      "details": {
+        "type": "Reward Type",
+        "tech": {
+          "alt": "Image representing the reward."
+        }
+      }
+    },
+    "virtues": {
+      "groups": {
+        "cultural": "Cultural virtues",
+        "masteries": "Starting Virtues"
+      },
+      "details": {
+        "type": "Virtue Type",
+        "tech": {
+          "alt": "Image representing the virtue."
+        }
+      }
+    },
+    "specialAbilities": {
+      "groups": {
+        "hate": "Hate",
+        "virtues": "Virtues",
+        "valour": "Valour"
+      },
+      "details": {
+        "specialAbilityGroup": "Special Ability Group",
+        "active": "Active",
+        "cost": "Cost",
+        "tech": {
+          "alt": "Image representing the special ability."
+        }
+      }
+    },
+    "fellAbilities": {
+      "groups": {
+        "hate": "Hate"
+      },
+      "details": {
+        "fellAbilityGroup": "Fell Abilities Group",
+        "active": "Active",
+        "cost": "Cost",
+        "tech": {
+          "alt": "Image representing the fell ability."
+        }
+      }
+    },
+    "weapons": {
+      "groups": {
+        "none": "-",
+        "brawling": "Brawling",
+        "swords": "Swords",
+        "axes": "Axes",
+        "bows": "Bows",
+        "spears": "Spears",
+        "bestial": "Bestial"
+      },
+      "details": {
+        "weapon": "Weapon",
+        "damage": "Damage",
+        "edge": "Edge",
+        "injury": "Injury",
+        "extendedWeaponSelectionHint": "(option. Dedicated to PC custom weapon.)",
+        "type": "Type",
+        "group": "Group",
+        "ranks": "Ranks",
+        "notes": "Notes",
+        "skill-name": "Skill",
+        "ranged": "Ranged",
+        "actions": "Actions",
+        "twoHandWeapon": "Two Hands",
+        "short": "Short Range",
+        "medium": "Medium Range",
+        "long": "Long Range",
+        "description": "Description",
+        "tech": {
+          "alt": "Image representing the weapon.",
+          "title": "Background Image of the Weapon Item representing the Weapon Icon.",
+          "caption": "Attributes"
+        }
+      }
+    },
+    "callings": {
+      "groups": {
+        "captain": "Captain",
+        "scholar": "Scholar",
+        "champion": "Champion",
+        "treasure-hunter": "Treasure Hunter",
+        "messenger": "Messenger",
+        "warden": "Warden"
+      }
+    },
+    "armour": {
+      "title": {
+        "group": "Armour Group"
+      },
+      "groups": {
+        "leather": "Leather Armour",
+        "mail": "Mail Armour",
+        "head": "Headgear",
+        "shield": "Shield"
+      }
+    },
+    "stats": {
+      "strength": "Strength",
+      "heart": "Heart",
+      "wits": "Wits",
+      "favoured": "favoured"
+    },
+    "statureStats": {
+      "adventurePoints": "Adventure Points",
+      "total": "total",
+      "valour": "Valour",
+      "wisdom": "Wisdom"
+    },
+    "commonSkills": {
+      "awe": "Awe",
+      "enhearten": "Enhearten",
+      "persuade": "Persuade",
+      "athletics": "Athletics",
+      "travel": "Travel",
+      "stealth": "Stealth",
+      "awareness": "Awareness",
+      "insight": "Insight",
+      "scan": "Scan",
+      "explore": "Explore",
+      "healing": "Healing",
+      "hunting": "Hunting",
+      "song": "Song",
+      "courtesy": "Courtesy",
+      "riddle": "Riddle",
+      "craft": "Craft",
+      "battle": "Battle",
+      "lore": "Lore"
+    },
+    "combatProficiencies": {
+      "brawling": "Brawling",
+      "axes": "Axes",
+      "swords": "Swords",
+      "spears": "Spears",
+      "bows": "Bows"
+    },
+    "standardOfLivingGroups": {
+      "poor": "Poor",
+      "frugal": "Frugal",
+      "common": "Common",
+      "prosperous": "Prosperous",
+      "rich": "Rich",
+      "veryRich": "Very Rich"
+    },
+    "skillGroups": {
+      "personality": "Personality",
+      "movement": "Movement",
+      "perception": "Perception",
+      "survival": "Survival",
+      "custom": "Custom",
+      "vocation": "Vocation",
+      "combat": "Combat"
+    },
+    "sheet": {
+      "actions": {
+        "rest": {
+          "dialog-box": {
+            "title": "Recover Hope point(s) from Fellowship",
+            "community-point-label": "Community Points available",
+            "required-hope-points": "How many points do you want to recover ?",
+            "actor-hope-points": "Hope points (current/max):",
+            "submit-button": "Recover",
+            "cancel-button": "Cancel",
+            "warn": {
+              "one-community_actor_expected": "One and only one Community Actor should exist in the World !",
+              "not-enough-hope-points-available": "Not enough Hope points available in the Pool (required: {required}, available: {available})",
+              "too-many-hope-points-required": "Too many Hope points required (total: {target}, max available: {max})"
+            }
+          },
+          "short": {
+            "label": "Short",
+            "noRestoredMessage": "After a short rest, {name} <b>does not recover</b> any Endurance ({name} is in <b>full health</b>).",
+            "restoredMessage": "After a short rest, {name} <b>recovers {amount} endurance</b> ({name} <b>has {endurance}</b> endurance).",
+            "woundedRestoredMessage": "After a short rest, {name} <b>does not recover</b> any Endurance ({name} is <b>wounded</b>).",
+            "description": "click to recover endurance after a short rest (one hour)",
+            "title": "Short rest"
+          },
+          "prolonged": {
+            "label": "Prolonged",
+            "noRestoredMessage": "After a prolonged rest, {name} <b>does not recover</b> any Endurance ({name} is in <b>full health</b>).",
+            "restoredMessage": "After a prolonged rest, {name} <b>recovers all endurance</b> ({name} is in <b>full health</b>).",
+            "woundedRestoredMessage": "After a prolonged rest, {name} <b>recovers {amount} endurance</b>, they are wounded ({name} <b>has {endurance}</b> endurance).",
+            "description": "click to recover endurance after a prolonged rest (one night)",
+            "title": "Prolonged rest"
+          }
+        },
+        "roll": {
+          "hope": "Spend a point of hope to add",
+          "lore": "Roll a Lore skill test",
+          "fatigue": "Roll a Fatigue test",
+          "skill": " roll"
+        },
+        "toggle": {
+          "favoured": "Press Alt+Click to toggle favoured state",
+          "add-remove-skill": "Press Alt+Click to add a skill level and Shift+Alt+Click to remove a level."
+        }
+      },
+      "skill": {
+        "delete": "[ALT+Click] Delete Item",
+        "edit": "Edit Item",
+        "roll": "Roll Item",
+        "chat": "Send to chat"
+      }
+    },
+    "roll": {
+      "warn": {
+        "noSkillFound": "The skill {skillName} in not found for actor {actorName}",
+        "clickOnWeaponInstead": "You should click on the weapon you use instead of the combat skill.",
+        "impossibleToFavouredAWeapon": "It's impossible to favoured a weapon for a character."
+      },
+      "skill": "Press Click to roll the skill",
+      "difficulty": "Difficulty",
+      "target": "Target",
+      "result": {
+        "success": "Success",
+        "great-success": "Great Success",
+        "extraordinary-success": "Extraordinary Success",
+        "automatic-success": "Automatic Success",
+        "failure": "Failure",
+        "hidden": "Hidden",
+        "automatic-failure": "Automatic Failure"
+      },
+      "details": {
+        "tech": {
+          "title": "A task check roll."
+        }
+      },
+      "special-success": {
+        "title": "Special success(es) usage",
+        "label": "Number of Special success(es)",
+        "actions": {
+          "submit": "Submit",
+          "cancel": "Cancel"
+        },
+        "tech": {
+          "title": "A task check roll with Tengwar(s)."
+        }
+      }
+    },
+    "dice": {
+      "tengwar": "Tengwar Rune",
+      "gandalf": "Gandalf Rune",
+      "sauron": "Eye of Sauron",
+      "standard": {
+        "label": "Success",
+        "1": "dice standard one",
+        "2": "dice standard two",
+        "3": "dice standard three",
+        "4": "dice standard four",
+        "5": "dice standard five",
+        "6": "dice standard six with tengwar"
+      },
+      "weary": {
+        "label": "Weary success",
+        "1": "dice weary one",
+        "2": "dice weary two",
+        "3": "dice weary three",
+        "4": "dice standard four",
+        "5": "dice standard five",
+        "6": "dice standard six with tengwar"
+      },
+      "feat": {
+        "label": "Feat",
+        "description": "A D12 Feat Die",
+        "1": "dice feat one",
+        "2": "dice feat two",
+        "3": "dice feat three",
+        "4": "dice feat four",
+        "5": "dice feat five",
+        "6": "dice feat six",
+        "7": "dice feat seven",
+        "8": "dice feat eight",
+        "9": "dice feat nine",
+        "10": "dice feat ten",
+        "11": "dice eye of sauron",
+        "12": "dice gandalf rune"
+      }
+    },
+    "popup": {
+      "actions": {
+        "save": "Save",
+        "cancel": "Cancel"
+      },
+      "taskCheck": {
+        "armour": {
+        },
+        "title": "{type} edit popup"
+      }
+    },
+    "chat": {
+      "actions": {
+        "roll": "Roll",
+        "roll-result": "Roll result",
+        "test": "Test",
+        "save": "Save",
+        "cancel": "Cancel",
+        "hidden": "hidden action"
+      },
+      "taskCheck": {
+        "options": {
+          "roll-characteristics": {
+            "title": "Roll Characteristics",
+            "is-weary": "is weary.",
+            "is-miserable": "is miserable.",
+            "is-inspired": "is inspired.",
+            "is-favoured": "is favoured.",
+            "is-ill-favoured": "is ill-favoured."
+          },
+          "roll-formula": "Roll formula",
+          "difficulty": "Difficulty",
+          "tn": "TN",
+          "feat-die-value": "Feat Die Value",
+          "feat-dice": "Feat Dice",
+          "bonus-success-dice": "Bonus Die",
+          "bonus-penalty-dice": "Penalty/Bonus Dice",
+          "extended-penalty-dice": {
+            "label": "Bonus/Penalty Dice Value",
+            "hint": "enter a negative value for penalties and a positive value for bonuses"
+          },
+          "hope-point-bonus-dice": "Hope Point Bonus Die",
+          "inspired": "Inspired",
+          "mastery-dice": "Mastery Dice",
+          "favoured-ill-favoured": "Favoured/Ill-Favoured",
+          "bonus-penalty": "Bonus/Penalty",
+          "support-die": "Support from a Companion",
+          "advanced": "Advanced",
+          "hope": "Hope",
+          "worst": "worst",
+          "best": "best",
+          "health-impacts": "Health impacts",
+          "weary-not-weary": "Weary Roll ?",
+          "miserable-not-miserable": "Miserable Roll ?",
+          "weary": "weary",
+          "result-modifier": "Result modifier",
+          "modifier": "Modifier",
+          "not-weary": "not weary",
+          "miserable": "miserable",
+          "not-miserable": "not miserable"
+        },
+        "title": "{type} Roll"
+      },
+      "error": {
+        "actorNotFound": "No actor has been found with actorID: {actorId} and tokenId:{tokenId}"
+      },
+      "warn": {
+        "characterHasNotBeenUsedToCreateTheAction": "The action you want to spend hope point on has not been created by a Character, but by {actorName} !"
+      }
+    },
+    "rolls": {
+      "protection": "Protection",
+      "fear": "Fear",
+      "corruption": "Corruption"
+    },
+    "combat": {
+      "error": {
+        "unableToRerollPrepBattle": "it's impossible to reroll preparation battle roll for token {token} because it is not a character. It's a {type}",
+        "itemNotFound": "The item (name :{name}, type: {type}) is not found for this actor.",
+        "noActorAttachedToToken": "Impossible to add token '{name}' to combat because this Token has no Actor attached to it. You should have deleted the actor linked to the token."
+      },
+      "warn": {
+        "noActorFound": "No actor found with name {name}.",
+        "combatantNotInCombat": "The Token ({name}) with id ({id}) you want to make an engagement with is not part of the active Combat or is Out of Combat.",
+        "combatantDoesntExistInCombat": "The Actor with id ({id}) is not part of the active Combat.",
+        "noSkillNameAvailableWithExtendedWeaponSelection": "The character {actorName} has no combat proficiency ({name}) and neither a skill name of name ({name}).",
+        "noSkillNameFoundWithExtendedWeaponSelection": "The character {actorName} has no combat proficiency ({name}) and has no skill with the expected name ({name}).",
+        "noCombatProficiencyFound": "The character {actorName} has no combat profeciency ({name}). You should either add a proficiency or use the extendable combat skill settings to add one.",
+        "incompleteItem": "No valid {element} for this item ({item}). You need select a(n) {element}.",
+        "noValidTarget": "You need to select one and only one token to attack.",
+        "noValidCombatTarget": "You need to select a token that is included in the Combat Tracker.",
+        "noValidWeaponEquipped": "You don't have any valid weapon equipped for this type of Skill ({skill}).",
+        "tnIsWeird": "The TN computed has an invalid value. Maybe you forgot to set the parry stat of the target ({foeName}).",
+        "noTokenSelectedForEngagement": "You need to select some tokens to be engaged with each other.",
+        "numberOfTengwarNotCorrect": "Something weird happened. Number of Tengwar ({tengwar}) is 0 or less ! This should not happen.",
+        "impossibleForMonoFaction": "You need to select at least one Token from each faction.",
+        "impossibleForComplexEngagement": "You need to select one and only one token for one of the two factions, not several tokens for both."
+      },
+      "actions": {
+        "applyDamage": "Apply Damages",
+        "applyWeary": "Apply Weary",
+        "applyWounded": "Apply Wounded",
+        "applyAll": "Apply all (Damages and all states)",
+        "applyAllStates": "Apply all states (Weary, Wounded & OoC)",
+        "applyOutOfCombat": "Apply Out of Combat",
+        "applyWearyState": "Apply Weary",
+        "applyMiserableState": "Apply Miserable",
+        "applyWearyAndMiserableState": "Apply Weary and Miserable"
+      },
+      "special-success-action": {
+        "heavy-blow": {
+          "title": "Heavy Blow",
+          "alt": "A sword landing a heavy blow",
+          "label": "Heavy Blow",
+          "description": "Add {amount} to damage."
+        },
+        "fend-off": {
+          "title": "Fend Off",
+          "alt": "A character dodging a blow",
+          "label": "Fend Off",
+          "description": "Add +2 to Parry against next attack."
+        },
+        "piercing-blow": {
+          "title": "Pierce",
+          "alt": "A spear piercing someone",
+          "label": "Pierce",
+          "description": "Add {amount} to Feat Die ({edge} to beat)."
+        },
+        "gain-ground": {
+          "title": "Gain Ground",
+          "alt": "An arrow shot to gain ground on adversaries",
+          "label": "Gain Ground",
+          "description": "Firing at foes to gain ground."
+        },
+        "shield-thrust": {
+          "title": "Shield Thrust",
+          "alt": "A shield bashing violently someone",
+          "label": "Shield Thrust",
+          "description": "Pushed back instead of damage."
+        },
+        "seize": {
+          "title": "Seize",
+          "alt": "A hand grasping something.",
+          "label": "Seize",
+          "description": "The attacker holds on to the target."
+        },
+        "break-shield": {
+          "title": "Break Shield",
+          "alt": "A shield broken in pieces",
+          "label": "Break Shield",
+          "description": "The attacker smashes the shield to pieces."
+        },
+        "none-custom": {
+          "title": "None/Custom",
+          "alt": "A cancel cross",
+          "label": "None/Custom",
+          "description": "Homebrew situations."
+        }
+      },
+      "dicePool": {
+        "label": "Success Dice Pool size."
+      },
+      "step": {
+        "initiative": {
+          "attack": {
+            "label": "Att.",
+            "title": "Group of heros is in an attacking position."
+          },
+          "defense": {
+            "label": "Def.",
+            "title": "Group of heros is in a defending position."
+          },
+          "toggle": {
+            "title": "Toggle between defending and attacking position."
+          }
+        },
+        "preparation": {
+          "label": "Preparation",
+          "roll": {
+            "reroll": "Reroll combat preparation",
+            "label": "Combat preparation",
+            "title": "Roll a combat preparation test."
+          }
+        },
+        "openingVolley": {
+          "label": "Opening Volley",
+          "roll": {
+            "label": "Opening volley",
+            "title": "Roll an opening volley test."
+          }
+        },
+        "closeCombat": {
+          "engagement": "Engagement",
+          "label": "Close Combat"
+        },
+        "default": {
+          "label": "Unknown Combat Step"
+        }
+      },
+      "stance": {
+        "forward": {
+          "label": "Forward"
+        },
+        "open": {
+          "label": "Open"
+        },
+        "defensive": {
+          "label": "Defensive"
+        },
+        "rearward": {
+          "label": "Rearward"
+        },
+        "skirmish": {
+          "label": "Skirmish"
+        },
+        "default": {
+          "label": "Unknown Combat Stance"
+        }
+      },
+      "chat": {
+        "warn": {
+          "impossibleToRollInjury": "It was impossible to roll the injury on the table."
+        },
+        "preparation-roll": {
+          "title": "Combat preparation roll result",
+          "message": " gets <span class='key-point'>{successDiceBonus} bonus dice</span> for the fight."
+        },
+        "result": {
+          "title": "Attack result",
+          "help": "Please right click to use the contextual menu",
+          "paragraph": "<span class='actor-name'>{attackerName}</span> attacks <span class='actor-name'>{targetName}</span> using their {weaponName} and deals <a class='apply-damage-element' title='{hint}'>{totalDamage} damage(s)<i class='fas fa-external-link-alt'></i></a>",
+          "specialResult": " with <a class='apply-special-result' title='{hint}'>{quantity} special result(s)<i class='fas fa-external-link-alt'></i></a> (<img src='systems/tor2e/assets/images/tengwar.png' data-edit='img' title='tengwar' height='15' width='15' alt='tengwar'/>)"
+        },
+        "details": {
+          "attackerRoll": "Attacker roll :",
+          "successLevel": "Success level :",
+          "specialDamage": "Special Damage :",
+          "damage": {
+            "title": "Damage :",
+            "weapon": "[Weapon({weaponDamage})",
+            "bonus": " + Result bonus({bonusDamage})"
+          }
+        },
+        "piercing": {
+          "title": "Piercing blow",
+          "description": "<span class='actor-name'>{targetName}</span> needs to make a <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>Protection Roll Test<i class='fas fa-dice'></i></a> against {weaponInjuryValue} TN (edge beaten {edge})."
+        },
+        "injuryRoll": {
+          "title": "Injury Roll",
+          "description": "<span class='actor-name'>{targetName}</span> is wounded and needs to make an <a class='button-injury-roll'>Injury Roll <i class='fas fa-dice'></i></a>."
+        },
+        "injury": {
+          "title": "Injury",
+          "moderate": {
+            "type": "moderate",
+            "title": "Moderate Injury",
+            "message": "<span class='actor-name'>{targetName}</span> suffers a <b>Moderate Injury</b> that last for the combat only."
+          },
+          "severe": {
+            "type": "severe",
+            "title": "Severe Injury",
+            "message": "<span class='actor-name'>{targetName}</span> suffers a <b>Severe Injury</b> for a duration of {duration} days."
+          },
+          "grievous": {
+            "type": "grievous",
+            "title": "Grievous Injury",
+            "message": "<span class='actor-name'>{targetName}</span> suffers a <b>Grievous Injury</b> and is unconscious and dying."
+          }
+        },
+        "effects": {
+          "title": "Effects of the attack",
+          "damageDealt": "Damage dealt:",
+          "protection": {
+            "is": " is ",
+            "wounded": "wounded !",
+            "protected": "protected !"
+          },
+          "weary": {
+            "is": " is weary."
+          },
+          "ooc": {
+            "is": " is out of combat."
+          }
+        }
+      }
+    },
+    "macro": {
+      "error": {
+        "noActorAvailable": "Please select an actor before using this macro !",
+        "itemIsMissing": "Item {itemName} of type {itemType} is not available for the selected actor - {actorName} !",
+        "skillIsMissing": "Skill {skillName} is not available for the selected actor - {actorName} !",
+        "missingLoremasterRole": "Only the Lore Master can do this action.",
+        "wrongStatusEffect": "The status '{statusEffect}' doesn't exist."
+      }
+    },
+    "effects": {
+      "wounded": "Wounded",
+      "poisoned": "Poisoned",
+      "miserable": "Miserable",
+      "weary": "Weary",
+      "unit": {
+        "days": "Days"
+      }
+    },
+    "journey-log": {
+      "sheet": {
+        "title": "Name"
+      },
+      "log": {
+        "year": "Year",
+        "season": "Season",
+        "from": "Journey from",
+        "to": "Destination",
+        "duration": "Days of travel"
+      }
+    },
+    "seasons": {
+      "winter": "Winter",
+      "spring": "Spring",
+      "summer": "Summer",
+      "autumn": "Autumn"
+    },
+    "roles": {
+      "guide": "Guide",
+      "scout": "Scout",
+      "lookout": "Lookout",
+      "hunter": "Hunter"
+    },
+    "evenTypes": {
+      "terrible-misfortune": "Terrible Misfortune",
+      "despair": "Despair",
+      "ill-choices": "Ill Choices",
+      "mishap": "Mishap",
+      "short-cut": "Short Cut",
+      "chance-meeting": "Chance Meeting",
+      "joyful-sight": "Joyful Sight"
+    },
+    "active-effect": {
+      "toggle": {
+        "help": "use ALT+Click to toggle state"
+      }
+    }
+  },
+  "SETTINGS": {
+    "setPauseMessage": "Pause message displayed",
+    "setPauseMessageDescription": "To change the message displayed over the pause image, change the content. To have the default message, please let it blank.",
+    "setSoloMode": "Strider Mode (Solo)",
+    "setSoloModeDescription": "Some features are adapted to Strider Mode (eg. Skirmish stance only, community actor is simplified, ...)",
+    "setAddSkirmish": "Add skirmish stance to your game",
+    "setAddSkirmishDescription": "Add skirmish to the stances allowed even if you are not playing Strider Mode (Solo)",
+    "setNoneCustomCombatSpecialEffect": "Add none/custom combat special effect",
+    "setNoneCustomCombatSpecialEffectDescription": "Add a new combat special effect, called none/custom, to homebrew some situations.",
+    "setTnBaseValue": "Set the TN base value",
+    "setTnBaseValueDescription": "This setting allows the LM to set the base value they want. From the book, it is advised that you put 20 for campaign mode and 18 for one-shot",
+    "setExtendedWeaponSelection": "Extended weapon list",
+    "setExtendedWeaponSelectionDescription": "This parameter should only be activated if the Loremaster wants to use homebrew rules for combat (ie. new combat proficiencies). By activating this parameter, a new field will appear in the weapon sheet to make a link with the new combat proficiency instead of the weapon group name.",
+    "setUseAdversarySkills": "Allow the use of Skills for Adversary",
+    "setUseAdversarySkillsDescription": "In 2nd edition, adversaries don't have skills in their sheet anymore. Toggling this setting to true allows the LM to add the block back to the Adversary Sheet.",
+    "setOverrideEyeAwareness": "Override Eye Awareness Max value",
+    "setOverrideEyeAwarenessDescription": "By default, max value is 24 but if you want you can modify this value to another value depending on your needs.",
+    "setRawModeForActiveEffectName": "Change Active Effect selection mode",
+    "setRawModeForActiveEffectDescription": "If you need to do some specific stuff and you know what you are doing, you can toggle the Active selection mode (Checked : List mode/Unchecked: Raw mode (text input box)).",
+    "setAlwaysShowShieldThrustName": "Always show Shield Thrust",
+    "setAlwaysShowShieldThrustDescription": "Special Damage \"Shield Thrust\" : Propose this option even if the display rule (strength > attribute) is not reached.",
+    "setWarnLoreMasterForCharacterStateName": "Active Warn Message",
+    "setWarnLoreMasterForCharacterStateDescription": "To activate a warn message in the Chat for each character that should have a Weary or Miserable state.",
+    "setShowHideRangeBlockName": "Show Distance Range",
+    "setShowHideRangeBlockDescription": "Used to show the Distance Range Block in the Weapon sheet and Character/Adversary sheet.",
+    "disableAltClickName": "Disable ALT Click",
+    "disableAltClickDescription": "Disable the ALT Click to protect some modification actions like upgrading skill or toggling health status.",
+    "aldDefaultValueName": "Actor Link Data for Npc is checked by default",
+    "aldDefaultValueDescription": "Set up the Actor Link Data default value for new Npc Actor.",
+    "setDisplayCommunityInfoAtStartValue": "Display the current active Community",
+    "setDisplayCommunityInfoAtStartDescription": "Display, when connecting to the game, the name of the active Community",
+    "setModifiedLoadAsRequested": "Modify Load calculation",
+    "setModifiedLoadAsRequestedDescription": "Useful for homebrew rules that change how much carried Load relative to Endurance triggers the Weary warning. By default, the Weary status shows when Endurance is equal or less than Load. For example, to lower Load by Strength (i.e. allow Actors to carry their Strength in Load for free without affecting Endurance, e.g. put attributes.strength or integer constant value in the field).",
+    "setInlineElementFromUuidInDescription": "Inline Journal into Description",
+    "setInlineElementFromUuidInDescriptionDescription": "You can inline any journal page into item description. The description will be replaced by the journal content. The item description should only be the Journal link (nothing else) other why it won't work."
+  }
+}

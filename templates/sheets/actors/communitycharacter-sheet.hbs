@@ -1,0 +1,136 @@
+<div class="sheet-container">
+    <img class="background" src="{{backgroundImages.url}}" title="{{localize backgroundImages.title}}"
+         alt="{{localize 'tor2e.weapons.details.tech.alt'}}"/>
+    <form class="{{cssClass}}" autocomplete="off">
+        {{> "systems/tor2e/templates/sheets/actors/partials/common/actor-header-card.hbs"
+                width = 125
+                height = 125}}
+
+        {{#unless soloMode}}
+            <img class="actor-banner" src="{{system.banner.img}}" data-edit="system.banner.img"
+                 title="{{system.banner.label}}"
+                 width="450" height="150"
+                 alt="{{ localize 'tor2e.actors.details.tech.alt' }}"/>
+        {{/unless}}
+
+        <div class="sheet-content">
+            <section id="attributes" class="flexrow">
+                {{> "systems/tor2e/templates/sheets/actors/components/resource-diamond-card.hbs"
+                        stat=system.fellowshipPoints
+                        extension-stat=system.fellowshipPoints
+                        extension-stat-value=system.fellowshipPoints.max
+                        reference="system.fellowshipPoints.value"
+                        extension-reference="system.fellowshipPoints.max"
+                        extension-label="tor2e.actors.stats.max"}}
+
+                {{#if user.isGM}}
+                    {{> "systems/tor2e/templates/sheets/actors/components/resource-diamond-card.hbs"
+                            stat=system.eyeAwareness
+                            reference="system.eyeAwareness.value"
+                            extension-reference="system.eyeAwareness.initial.value"
+                            extension-stat=system.eyeAwareness.initial
+                            extension-stat-value=system.eyeAwareness.initial.value
+                            extension-label="tor2e.actors.stats.rating"}}
+
+                    {{#unless isDefault}}
+                        <div>{{localize "tor2e.actors.community.make-default.title"}}
+                            <img class="action-button"
+                                 src="systems/tor2e/assets/images/icons/miscellaneous/default-community-actor.svg"
+                                 title="{{localize "tor2e.actors.community.make-default.description"}}"
+                                 alt="{{localize "tor2e.actors.community.make-default.label"}}"
+                                 width="35" height="35">
+                        </div>
+                    {{/unless}}
+
+                {{/if}}
+
+            </section>
+            {{#unless soloMode}}
+                <section id="members">
+                    <h2>{{localize "tor2e.actors.sections.members"}}</h2>
+                    <div class="character-actor-drop">
+                        {{#each memberLists as |members id|}}
+                            <div class="flexrow actor-row">
+                                {{#each members as |member id|}}
+                                    {{> "systems/tor2e/templates/sheets/actors/partials/common/member-card.hbs" member}}
+                                {{/each}}
+                            </div>
+                        {{/each}}
+                    </div>
+                </section>
+            {{/unless}}
+            <section id="patrons">
+                <h2>{{localize "tor2e.actors.sections.patrons"}}</h2>
+                <ul class="connectionsList">
+                    <div class="flexrow">
+                        <p class="table-caption table-main-column">{{localize "tor2e.actors.sections.name"}}</p>
+                        <p class="table-caption">{{localize "tor2e.actors.sections.location"}}</p>
+                        <p class="table-caption"></p>
+                    </div>
+                    {{#each patrons as |patron id|}}
+                        {{> "systems/tor2e/templates/sheets/actors/partials/common/patron-card.hbs" patron}}
+                    {{/each}}
+                </ul>
+            </section>
+            <section id="connections">
+                <h2>{{localize "tor2e.actors.sections.connections"}}</h2>
+                <ul class="connectionsList">
+                    <div class="flexrow">
+                        <p class="table-caption table-main-column">{{localize "tor2e.actors.sections.name"}}</p>
+                        <p class="table-caption">{{localize "tor2e.actors.sections.location"}}</p>
+                        <p class="table-caption"></p>
+                    </div>
+                    {{#each connections as |connection id|}}
+                        {{> "systems/tor2e/templates/sheets/actors/partials/common/connection-card.hbs" connection}}
+                    {{/each}}
+                </ul>
+            </section>
+            {{#unless soloMode}}
+                <section id="travel">
+                    <h2>{{localize "tor2e.actors.sections.travel"}}</h2>
+                    {{> "systems/tor2e/templates/sheets/actors/partials/common/travel-card.hbs" travel}}
+                </section>
+            {{/unless}}
+            <section id="journey-log">
+                <h2>{{localize "tor2e.actors.sections.journey-log"}}</h2>
+                <div class="flexrow">
+                    <p class="table-caption">{{localize "tor2e.actors.community.journey-log.season"}}</p>
+                    <p class="table-caption">{{localize "tor2e.actors.community.journey-log.from"}}</p>
+                    <p class="table-caption">{{localize "tor2e.actors.community.journey-log.to"}}</p>
+                    <p class="table-caption">{{localize "tor2e.actors.community.journey-log.duration"}}</p>
+                    <p class="table-caption actions"></p>
+                </div>
+                <div class="journey-logs flexcol">
+                    {{#each journeyLogsByYear as |logByYear lbyId|}}
+                        <div class="wrap-collabsible">
+                            <input id="collapsible-{{lbyId}}" class="year-toggle" type="checkbox">
+                            <label for="collapsible-{{lbyId}}" class="lbl-toggle">{{logByYear.year}}</label>
+                            <div class="collapsible-content">
+                                <div class="content-inner">
+                                    {{#each this.logs as |log id|}}
+                                        {{> "systems/tor2e/templates/sheets/actors/partials/community/journey-log-card.hbs"
+                                                user = ../../user
+                                                log = log
+                                        }}
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </section>
+            <section class="flexcol" id="notes">
+                <h2 class="toggle">{{localize system.notes.label}}</h2>
+                <div class="editor-container">
+                    {{editor notes target="system.notes.value" button=true editable=true}}
+                </div>
+            </section>
+            <section class="flexcol" id="description">
+                <h2 class="toggle">{{localize system.description.label}}</h2>
+                <div class="editor-container">
+                    {{editor description target="system.description.value" button=true editable=true}}
+                </div>
+            </section>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,12 @@
+{{! This component is used to display a Resource in an Actor, display as a big circle, with a secondary stat in a circle around it.
+Parameters :
+ - stat {Object} : stat object
+ - reference {String} : the stat name value. Used by FVTT to save the stat value to the System
+ }}
+<div class="{{position}}-stat flexcol">
+    <div class="input-stat-wrapper">
+        <input id={{reference}} name={{reference}} type="number"
+               value="{{stat-value}}" data-dtype="{{stat.type}}"/>
+        <label for={{reference}}>{{localize label-ext}}</label>
+    </div>
+</div>

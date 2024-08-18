@@ -1,0 +1,25 @@
+<div class="formula">
+    <p class="label">{{localize "tor2e.chat.taskCheck.options.roll-formula"}}</p>
+    <div class="value">
+        <div>
+            <span class="featValue">{{feat.value}}</span>
+            <img src={{feat.img}}
+                 title="{{item.name}}" height="25" width="25"
+                 alt="{{localize 'tor2e.traits.details.tech.alt'}}"/>
+        </div>
+        {{#if success.display }}
+            <div class="part">
+                <span class="successValue">{{success.value}}</span>
+                <img src={{success.img}}
+                     title="{{item.name}}" height="23"
+                     width="23"
+                     alt="{{localize 'tor2e.traits.details.tech.alt'}}"/>
+            </div>
+        {{/if}}
+        {{#if modifier.display }}
+            <div class="part {{ modifier.cssClass}}">
+                <span class="modifierValue">{{modifier.absValue}}</span>
+            </div>
+        {{/if}}
+    </div>
+</div>

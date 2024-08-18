@@ -1,0 +1,21 @@
+<div class="flexrow">
+
+    {{> "systems/tor2e/templates/sheets/actors/components/stat-diamond-card.hbs"
+            stat=model.combatAttributes.parry
+            reference="system.combatAttributes.parry.value"
+            extension-item=shieldDTO
+            extension-item-value=shield.model.protection.value
+            extension-css-class="bonus"
+            extra-css="secondary-block"}}
+
+    {{> "systems/tor2e/templates/sheets/actors/components/item-diamond-card.hbs"
+            title="tor2e.items.armours.armour"
+            rollable= true
+            stat=armourDTO
+            extension-item=headgearDTO
+            extension-item-value=headgear.model.protection.value
+            extra-css="primary-block"
+            draggable=true
+            key="protection"}}
+
+</div>

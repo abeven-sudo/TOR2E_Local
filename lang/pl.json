@@ -1,0 +1,1114 @@
+{
+  "GAME.paused": "You shall not pass!",
+  "TYPES": {
+    "Actor": {
+      "community": "Drużyna",
+      "character": "Postać Gracza (PC)",
+      "npc": "Postać Niezależna (NPC)",
+      "lore": "Postać Fabularna",
+      "adversary": "Przeciwnik"
+    },
+    "Item": {
+      "trait": "Cecha",
+      "fell-ability": "Mroczny Atrybut",
+      "skill": "Umiejętność",
+      "armour": "Pancerz",
+      "weapon": "Broń",
+      "miscellaneous": "Różne",
+      "reward": "Nagroda",
+      "virtues": "Przymiot",
+      "journey-log": "Dziennik Podróży"
+    }
+  },
+  "tor2e": {
+    "types": {
+      "distinctiveFeature": "Wyróżnik",
+      "flaw": "Wada",
+      "trait": "Cecha",
+      "fell-ability": "Mroczny Atrybut",
+      "skill": "Umiejętność",
+      "armour": "Pancerz",
+      "weapon": "Broń",
+      "miscellaneous": "Różne",
+      "reward": "Nagroda",
+      "virtues": "Przymiot",
+      "journey-log": "Dziennik Podróży",
+      "swords": "Miecz",
+      "axes": "Topór",
+      "brawling": "Bijatyka",
+      "spears": "Włócznia",
+      "bows": "Łuk",
+      "shield": "Tarcza",
+      "head": "Hełm",
+      "leather": "Skurzany",
+      "mail": "Kolczuga"
+    },
+    "actors": {
+      "biography": {
+        "age": "Wiek",
+        "fellowshipFocus": "Wyjątkowy Towarzysz",
+        "title": "Przydomek/Tytuł",
+        "years": "Lat",
+        "culture": "Rodzima Kultura",
+        "standardOfLiving": "Poziom Życia",
+        "culturalBlessing": "Rodzima Korzyść",
+        "calling": "Powołanie",
+        "shadowPath": "Ścieżka Cienia"
+      },
+      "sections": {
+        "biography": "Biografia",
+        "traits": "Cechy",
+        "effects": "Efekty",
+        "attributes": "Atrybuty",
+        "skillGroups": "Grupa Umiejętności",
+        "combatProficiencies": "Biegłości Bojowe",
+        "commonSkills": "Umiejętności",
+        "weaponSkills": "Combat Skills",
+        "rewards": "Nagrody",
+        "virtues": "Przymioty",
+        "war-gear": "Rynsztunek",
+        "equipment-gear": "Ekwipunek",
+        "resources": "Zasoby",
+        "combat": "Obrona",
+        "fellowship": "Pkt. Zażyłości",
+        "skillPoints": "Pkt. Umiejętności",
+        "heroicStature": "Heroizm",
+        "treasure": "Skarb",
+        "background": "Historia Postaci",
+        "company": "Drużyna",
+        "fellowshipPhase": "Faza Drużyny",
+        "members": "Członkowie",
+        "available-members": "Dostępni Członkowie",
+        "patrons": "Patroni",
+        "name": "Imię",
+        "location": "Lokacja",
+        "connections": "Znajomości",
+        "travel": "Podróż",
+        "taleOfYears": "Kalendarium",
+        "notes": "Notatki",
+        "journey-log": "Dziennik Podróży",
+        "occupation": "Zajęcie"
+      },
+      "details": {
+        "tech": {
+          "alt": "Rysunek przedstawiający aktora"
+        }
+      },
+      "fellAbilities": {
+        "title": "Mroczny Atrybut"
+      },
+      "traits": {
+        "distinctiveFeatures": "Wyróżniki",
+        "flaws": "Przywary"
+      },
+      "combatSkills": {
+        "title": "Biegłości Bojowe"
+      },
+      "skills": {
+        "title": "Umiejętności",
+        "commonSkills": "Powszechne Umiejętności",
+        "combatSkills": "Bojowe Umiejętności",
+        "relevantSkills": "Istotne Umiejętności",
+        "favoured": "(wzm.)"
+      },
+      "types": {
+        "community": {
+          "title": "Drużyna"
+        },
+        "lore": {
+          "title": "Postać Fabularna"
+        },
+        "npc": {
+          "title": "Postać Niezależna (NPC)"
+        },
+        "adversary": {
+          "title": "Przeciwnik"
+        },
+        "character": {
+          "title": "Postać Gracza (PC)"
+        }
+      },
+      "faction": {
+        "hostile": "Wrogi",
+        "friendly": "Przyjazny"
+      },
+      "stats": {
+        "attributeLevel": "Poziom",
+        "damage": {
+          "closedCombat": "Obrażenia w zwarciu",
+          "rangedCombat": "Obrażenia z dystansu"
+        },
+        "hate": "Nienawiść",
+        "might": "Potęga",
+        "parry": "Obrona",
+        "noShield": "bez tarczy",
+        "noHeadgear": "bez hełmu",
+        "noArmour": "bez pancerza",
+        "armour": "Pancerz",
+        "endurance": "Wytrzymałość",
+        "load": "Obciążenie",
+        "hope": "Nadzieja",
+        "maxHope": "Maks. Nadzieja",
+        "maxEndurance": "Maks. Wytrzymałość",
+        "rating": "Wartość Początkowa",
+        "travelLoad": "Znurzenie",
+        "shadow": "Cień",
+        "temporary": "Obecny",
+        "shadowScars": "Piętno Cienia",
+        "canBeAPatron": "Może być Patronem?",
+        "initial": "Początkowy",
+        "fellowshipPoints": "Pkt. Zażyłości",
+        "eyeAwareness": "Uwaga Oka",
+        "current": "Obecna",
+        "faction": "Odłam",
+        "health": "Statusy",
+        "state": "Stan",
+        "rest": "Odpoczynek",
+        "max": "Maks.",
+        "min": "Min.",
+        "bonus": {
+          "combat": {
+            "injury": "Obrażenia",
+            "piercingBlow": "Celny Atak",
+            "heavyBlow": "Potężny Atak",
+            "pierce": "Przebicie"
+          },
+          "defense": {
+            "protection": "Ochrona Pancerza",
+            "shieldParry": "Blokowanie Tarczą"
+          },
+          "tn": {
+            "strength": "Siła PT",
+            "heart": "Serce PT",
+            "wits": "Rozum PT"
+          }
+        }
+      },
+      "stateOfHealth": {
+        "weary": "Wyczerpany",
+        "poisoned": "Zatruty",
+        "miserable": "Przygnębiony",
+        "wounded": "Ranny",
+        "temporary": "Obecny"
+      },
+      "combatAttributes": {
+        "damage": "Obrażenia",
+        "ranged": "Dystansowe",
+        "parry": "Obrona",
+        "shield": "Tarcza",
+        "armour": "Pancerz",
+        "headGear": "Hełm"
+      },
+      "chat": {
+        "warn": {
+          "title": "Ostrzeżenie",
+          "hint": "Kliknij PPM, aby użyć menu kontekstowego i zastosować wymagane zmiany.",
+          "weary": "<strong>{name}</strong> powinien być <strong>Wyczerpany</strong>.",
+          "miserable": "<strong>{name}</strong> powinien być <strong>Przygnębiony</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> powinien być <strong>Wyczerpany</strong> i <strong>Przygnębiony</strong>."
+        },
+        "result": {
+          "title": "Rezultat",
+          "weary": "<strong>{name}</strong> jest <strong>Wyczerpany</strong>.",
+          "miserable": "<strong>{name}</strong> jest <strong>Przygnębiony</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> jest <strong>Wyczerpany</strong> i <strong>Przygnębiony</strong>."
+        }
+      },
+      "community": {
+        "messages": {
+          "setDefaultActorManually": "Ustawiłeś ({name}) jako Domyślną Drużynę dla tego świata.",
+          "setDefaultActorAutomatically": "({name}) ustawiono uatomatycznie jako Domyślną Drużynę dla tego świata.",
+          "displayDefaultActor": "Domyślną Drużyną dla tego świata jest (name: '{name}' / id: '{id}').",
+          "warnNoCommunityActor": "UWAGA, brak Drużyny w tym świecie. Niektóre funkcje nie będą działać poprawnie póki jej nie utworzysz.",
+          "warnTooManyCommunityActors": "UWAGA, zbyt wiele Drużyn ({size}) w tym świecie. System nie może wybrać odpowiedniej. Proszę wybrać ręcznie."
+        },
+        "journey-log": {
+          "year": "Rok",
+          "season": "Pora roku",
+          "from": "Podróż z",
+          "to": "Podróż do",
+          "duration": "Dni podróży"
+        },
+        "make-default": {
+          "title": "Ustaw domyślne",
+          "description": "Dwie połączone postacie",
+          "label": "by ustawić tą Drużynę jako domyślną."
+        }
+      }
+    },
+    "travel": {
+      "roles": {
+        "guide": {
+          "label": "Przewodnik",
+          "skill": "Wędrówka"
+        },
+        "scouts": {
+          "label": "Zwiadowca",
+          "skill": "Rekonesans"
+        },
+        "hunters": {
+          "label": "Myśliwy",
+          "skill": "Polowanie"
+        },
+        "lookouts": {
+          "label": "Wartownik",
+          "skill": "Czujność"
+        }
+      }
+    },
+    "common": {
+      "type": "Typ",
+      "group": "Grupa",
+      "name": "Nazwa",
+      "description": "Opis"
+    },
+    "items": {
+      "common": {
+        "load": "Obciążenie",
+        "equipped": "Wyekwipowany",
+        "dropped": "Upuszczony"
+      },
+      "shields": {
+        "none": "Brak",
+        "buckler": "Puklerz",
+        "shield": "Tarcza",
+        "greatShield": "Wielka Tarcza"
+      },
+      "armours": {
+        "title": "Pancerz",
+        "armour": "Pancerz",
+        "protection": "Obrona",
+        "group": "Rodzaj",
+        "protection-roll": "Rzut Obronny",
+        "tech": {
+          "title": "Rysunek tła obiektu: Pancerz, przedstawiający ikonę pancerza.",
+          "alt": "Rysunek przedstawiający Pancerz."
+        }
+      },
+      "miscellaneous": {
+        "title": "Przedmiot",
+        "equipment": "Wyposażenie",
+        "tech": {
+          "title": "Rysunek tła obiektu: Przedmiot, przedstawiający ikonę woreczka.",
+          "alt": "Rysunek przedstawiający Przedmiot."
+        }
+      },
+      "traits": {
+        "title": "Cecha",
+        "tech": {
+          "title": "Rysunek tła obiektu: Cecha, przedstawiający ikonę woreczka.",
+          "alt": "Rysunek przedstawiający Cechę."
+        }
+      },
+      "special-abilities": {
+        "title": "Specjalna Umiejętność",
+        "tech": {
+          "title": "Rysunek tła obiektu: Specjalna Umiejętność, przedstawiający ikonę woreczka.",
+          "alt": "Rysunek przedstawiający Specjalną Umiejętność."
+        }
+      },
+      "journey-log": {
+        "roll-dialog": {
+          "title": "Wybierz typ regionu"
+        },
+        "chat": {
+          "region-type": "Typ Regionu:",
+          "event-type": "Typ Wydarzenia:",
+          "target": "Cel:"
+        },
+        "title": "Dziennik Podróży",
+        "company": "Drużyna",
+        "mounts": "Wierzchowce",
+        "journal": "Podróż",
+        "journey-path": "Trasa Podróży",
+        "events": {
+          "title": "Losuj Wydarzenie",
+          "name": "Wydarzenia"
+        },
+        "event": {
+          "name": "Wydarzenie",
+          "result": "Rezultat",
+          "target": "Cel",
+          "region": "Region",
+          "description": "Rzuty kością na Trasie Podróży"
+        },
+        "region-types": {
+          "border-land": "Spokojna Kraina",
+          "wild-land": "Dzika Kraina",
+          "dark-land": "Mroczna Kraina"
+        },
+        "attributes": {
+          "name": "Imię",
+          "role": "Rola",
+          "vigour": "Wigor",
+          "": "Znurzenie",
+          "travel-fatigue": "Znurzenie"
+        },
+        "actions": {
+          "import": {
+            "title": "Importuj dane z Karty Drużyny (ALT+Click). UWAGA, dane zostaną nadpisane."
+          },
+          "add-member": {
+            "title": "Dodaj Postać do Drużyny (ALT+Click)."
+          },
+          "delete-member": {
+            "title": "Usuń Postać z Drużyny (ALT+Click)."
+          },
+          "add-mount": {
+            "title": "Dodaj Wierzchowca do Drużyny (ALT+Click)."
+          },
+          "delete-mount": {
+            "title": "Usuń Wierzchowca z Drużyny (ALT+Click)."
+          },
+          "add-event": {
+            "title": "Dodaj Wydarzenie dla Drużyny (ALT+Click)."
+          },
+          "add-event-with-roll": {
+            "title": "Dodaj Wydarzenie dla Drużyny z automatycznym losowaniem (ALT+Click)."
+          },
+          "delete-event": {
+            "title": "Usuń Wydarzenie dla Drużyny (ALT+Click)."
+          },
+          "re-roll-event": {
+            "title": "Wylosuj ponownie Wydarzenie i zastąp poprzednie (ALT+Click)."
+          }
+        },
+        "tech": {
+          "title": "Rysunek tła obiektu: Dziennik Podróży, przedstawiający ikonę ścieżki.",
+          "alt": "Rysunek przedstawiający Dzinnik Podróży."
+        }
+      },
+      "fellowship": {
+        "title": "Drużyna",
+        "tech": {
+          "title": "Rysunek tła obiektu: Drużyna, przedstawiający ikonę dwóch połączonych pierścieni.",
+          "alt": "Rysunek przedstawiający Drużynę."
+        }
+      },
+      "skills": {
+        "title": "Umiejętność",
+        "tech": {
+          "title": "Rysunek tła obiektu: Umiejętność, przedstawiający ikonę woreczka.",
+          "alt": "Rysunek przedstawiający Umiejętność."
+        }
+      },
+      "virtues": {
+        "title": "Przymiot",
+        "tech": {
+          "title": "Rysunek tła obiektu: Przedmiot, przedstawiający ikonę woreczka.",
+          "alt": "Rysunek przedstawiający Przymiot."
+        }
+      },
+      "rewards": {
+        "title": "Nagroda",
+        "tech": {
+          "title": "Rysunek tła obiektu: Nagroda, przedstawiający ikonę woreczka.",
+          "alt": "Rysunek przedstawiający Nagrodę."
+        }
+      },
+      "weapons": {
+        "title": "Broń",
+        "tech": {
+          "title": "Rysunek tła obiektu: Broń, przedstawiający ikonę woreczka.",
+          "alt": "Rysunek przedstawiający Broń."
+        }
+      }
+    },
+    "skills": {
+      "groups": {
+        "personality": "Osobowość",
+        "movement": "Ruchliwość",
+        "perception": "Obserwacja",
+        "survival": "Przetrwanie",
+        "custom": "Obyczaje",
+        "vocation": "Profesja",
+        "combat": "Walka"
+      },
+      "details": {
+        "skillGroup": "Grupa Umiejętnośći",
+        "associatedStat": "Atrybut",
+        "tech": {
+          "alt": "Rysunek przedstawiający Umiejętność."
+        }
+      }
+    },
+    "traits": {
+      "groups": {
+        "distinctiveFeature": "Wyróżnik",
+        "flaw": "Przywara"
+      },
+      "details": {
+        "traitGroup": "Grupa Cech",
+        "tech": {
+          "alt": "Rysunek przedstawiający Cechę."
+        }
+      }
+    },
+    "reward": {
+      "groups": {
+        "cultural": "Rodzima Nagroda",
+        "qualities": "Właściwości"
+      },
+      "details": {
+        "type": "Typ Nagrody",
+        "tech": {
+          "alt": "Rysunek przedstawiający Nagrodę."
+        }
+      }
+    },
+    "virtues": {
+      "groups": {
+        "cultural": "Rodzimy Przymiot",
+        "masteries": "Początkowy Przymiot"
+      },
+      "details": {
+        "type": "Typ Przymiotu",
+        "tech": {
+          "alt": "Rysunek przedstawiający Przymiot."
+        }
+      }
+    },
+    "specialAbilities": {
+      "groups": {
+        "hate": "Nienawiść",
+        "virtues": "Przymioty",
+        "valour": "Męstwo"
+      },
+      "details": {
+        "specialAbilityGroup": "Grupa Specjalnych Umiejętności",
+        "active": "Aktywny",
+        "cost": "Koszt",
+        "tech": {
+          "alt": "Rysunek przedstawiający Specjalną Umiejętność."
+        }
+      }
+    },
+    "fellAbilities": {
+      "groups": {
+        "hate": "Nienawiść"
+      },
+      "details": {
+        "fellAbilityGroup": "Grupa Mrocznych Atrybutów",
+        "active": "Aktywny",
+        "cost": "Koszt",
+        "tech": {
+          "alt": "Rysunek przedstawiający Mroczny Atrybut."
+        }
+      }
+    },
+    "weapons": {
+      "groups": {
+        "none": "-",
+        "brawling": "Bijatyka",
+        "swords": "Miecze",
+        "axes": "Topory",
+        "bows": "Łuki",
+        "spears": "Włócznie",
+        "bestial": "Zwierzęce"
+      },
+      "details": {
+        "weapon": "Broń",
+        "damage": "Obrażenia",
+        "edge": "Ostrze",
+        "injury": "Przebicie",
+        "extendedWeaponSelectionHint": "(opcja. Dedykowane dla stworzonej broni.)",
+        "group": "Grupa",
+        "ranks": "Rangi",
+        "notes": "Notatki",
+        "skill-name": "Umiejętność",
+        "ranged": "Dystansowy",
+        "actions": "Działania",
+        "twoHandWeapon": "2-ręczny",
+        "short": "Krótki Zasięg",
+        "medium": "Średni Zasięg",
+        "long": "Długi Zasięg",
+        "description": "Opis",
+        "tech": {
+          "alt": "Rysunek przedstawiający Broń.",
+          "title": "Rysunek tła obiektu: Broń, przedstawiający ikonę oręża.",
+          "caption": "Atrybuty"
+        }
+      }
+    },
+    "callings": {
+      "groups": {
+        "captain": "Przywódca",
+        "scholar": "Uczony",
+        "champion": "Pogromca",
+        "treasure-hunter": "Poszukiwacz Skarbów",
+        "messenger": "Posłaniec",
+        "warden": "Obrońca"
+      }
+    },
+    "armour": {
+      "title": {
+        "group": "Grupa Pancerzy"
+      },
+      "groups": {
+        "leather": "Skórzany",
+        "mail": "Kolczuga",
+        "head": "Hełm",
+        "shield": "Tarcza"
+      }
+    },
+    "stats": {
+      "strength": "SIŁA",
+      "heart": "SERCE",
+      "wits": "ROZUM",
+      "favoured": "wzmocniony"
+    },
+    "statureStats": {
+      "adventurePoints": "Pkt. Przygody",
+      "total": "całk.",
+      "valour": "MĘSTWO",
+      "wisdom": "MĄDROŚĆ"
+    },
+    "commonSkills": {
+      "awe": "Respekt",
+      "enhearten": "Inspiracja",
+      "persuade": "Przekonywanie",
+      "athletics": "Zwinność",
+      "travel": "Wędrówka",
+      "stealth": "Skradanie",
+      "awareness": "Czujność",
+      "insight": "Przenikliwość",
+      "scan": "Szukanie",
+      "explore": "Rekonesans",
+      "healing": "Uzdrawianie",
+      "hunting": "Polowanie",
+      "song": "Pieśni",
+      "courtesy": "Uprzejmość",
+      "riddle": "Zagadki",
+      "craft": "Rzemiosło",
+      "battle": "Wojaczka",
+      "lore": "Wiedza"
+    },
+    "combatProficiencies": {
+      "brawling": "Bijatyka",
+      "axes": "Topory",
+      "swords": "Miecze",
+      "spears": "Włócznie",
+      "bows": "Łuki"
+    },
+    "standardOfLivingGroups": {
+      "poor": "Ubogi",
+      "frugal": "Skromny",
+      "common": "Pospolity",
+      "prosperous": "Dostatni",
+      "rich": "Zamożny",
+      "veryRich": "Bogaty"
+    },
+    "skillGroups": {
+      "personality": "Osobowość",
+      "movement": "Ruchliwość",
+      "perception": "Obserwacja",
+      "survival": "Przetrwanie",
+      "custom": "Obyczaje",
+      "vocation": "Profesja",
+      "combat": "Walka"
+    },
+    "sheet": {
+      "actions": {
+        "rest": {
+          "dialog-box": {
+            "title": "Odzyskaj pkt. Nadziei z Zażyłości",
+            "community-point-label": "Dostępne ptk. Zażyłości",
+            "required-hope-points": "Jak dużo pkt. Nadziei chcesz odzyskać",
+            "actor-hope-points": "Nadzieja (obecna/maks.):",
+            "submit-button": "Odzyskaj",
+            "cancel-button": "Anuluj",
+            "warn": {
+              "one-community_actor_expected": "Tylko jedna Drużyna powinna istnieć na tym świecie",
+              "not-enough-hope-points-available": "Zbyt mało dostępnych pkt. Nadziei (wymagane: {required}, dostępne: {available})",
+              "too-many-hope-points-required": "Zbyt dużo wymaganych pkt. Nadziei (całk.: {target}, maks. dostępne: {max})"
+            }
+          },
+          "short": {
+            "label": "Krótki",
+            "noRestoredMessage": "Po Krótkim Odpoczynku, {name} <b>nie odzyskuje</b> Wytrzymałości. ({name} ma <b>pełną Wytrzymałość</b>).",
+            "restoredMessage": "Po Krótkim Odpoczynku, {name} <b>odzyskuje {amount} Wytrzymałości.</b> ({name} <b>ma {endurance}</b> Wytrzymałości).",
+            "woundedRestoredMessage": "Po Krótkim Odpoczynku, {name} <b>nie odzyskuje</b> Wytrzymałości. ({name} jest <b>Ranny</b>).",
+            "description": "kliknij by odzyskać Wytrzymałość po Krótkim Odpoczynku (ok. 1 godzina)",
+            "title": "Krótki Odpoczynek"
+          },
+          "prolonged": {
+            "label": "Długi",
+            "noRestoredMessage": "Po Długim Odpoczynku, {name} <b>nie odzyskuje</b> Wytrzymałości. ({name} ma <b>pełną Wytrzymałość</b>).",
+            "restoredMessage": "Po Długim Odpoczynku, {name} <b>odzyskuje pełną Wytrzymałość.</b> ({name} ma <b>pełną Wytrzymałość</b>).",
+            "woundedRestoredMessage": "Po Długim Odpoczynku, {name} <b>odzyskuje tylko {amount} Wytrzymałości</b>z powodu Rany. ({name} <b>ma {endurance}</b> Wytrzymałości).",
+            "description": "kliknij by odzyskać Wytrzymałość po Długim Odpoczynku (ok. 8 godzin)",
+            "title": "Długi Odpoczynek"
+          }
+        },
+        "roll": {
+          "hope": "Wykorzystaj pkt. Nadziei by dodać",
+          "lore": "Wykonaj rzut na Wiedzę",
+          "fatigue": "Wykonaj rzut na Znurzenie",
+          "skill": " rzut"
+        },
+        "toggle": {
+          "favoured": "Wciśnij Alt+Click by przełączyć wzmocnienie",
+          "add-remove-skill": "Wciśnij Alt+Click by zwiększyć poziom Umiejętności lub Shift+Alt+Click by zmniejszyć poziom."
+        }
+      },
+      "skill": {
+        "delete": "[ALT+Klik] Usuń",
+        "edit": "Edytuj",
+        "roll": "Losuj",
+        "chat": "Wyślij na Czat"
+      }
+    },
+    "roll": {
+      "warn": {
+        "noSkillFound": "Umiejętności {skillName} nie znaleziono u {actorName}",
+        "clickOnWeaponInstead": "Kliknij na używaną Broń zamiast na Biegłość Bojową.",
+        "impossibleToFavouredAWeapon": "Nie jest możliwe wzmocnienie Broni dla Postaci."
+      },
+      "skill": "Wciśnij by użyć Umiejętności",
+      "difficulty": "Trudność",
+      "target": "Cel",
+      "result": {
+        "success": "Sukces",
+        "great-success": "Wielki Sukces",
+        "extraordinary-success": "Niesamowity Sukces",
+        "automatic-success": "Automatyczny Sukces",
+        "failure": "Porażka",
+        "hidden": "Ukryty",
+        "automatic-failure": "Automatyczna Porażka"
+      },
+      "details": {
+        "tech": {
+          "title": "Rzut na powodzenie."
+        }
+      },
+      "special-success": {
+        "title": "Użycie Znaków Sukcesu",
+        "label": "Liczba Znaków Sukcesu",
+        "actions": {
+          "submit": "Wykonaj",
+          "cancel": "Anuluj"
+        },
+        "tech": {
+          "title": "Rzut na powodzenie ze Znakiem Sukcesu."
+        }
+      }
+    },
+    "dice": {
+      "tengwar": "Znak Sukcesu",
+      "gandalf": "Runa Gandalfa",
+      "sauron": "Oko Saurona",
+      "standard": {
+        "label": "Sukcesu",
+        "1": "Jedynka",
+        "2": "Dwójka",
+        "3": "Trójka",
+        "4": "Czwórka",
+        "5": "Piątka",
+        "6": "Szóstka ze Znakiem Sukcesu"
+      },
+      "weary": {
+        "label": "Sukcesu (wyczerpanie)",
+        "1": "Jedynka (wyczepany)",
+        "2": "Dwójka (wyczepany)",
+        "3": "Trójka (wyczerpany)",
+        "4": "Czwórka",
+        "5": "Piątka",
+        "6": "Szóstka ze Znakiem Sukcesu"
+      },
+      "feat": {
+        "label": "Działania",
+        "description": "Kość Działania k12",
+        "1": "Jedynka",
+        "2": "Dwójka",
+        "3": "Trójka",
+        "4": "Czwórka",
+        "5": "Piątka",
+        "6": "Szóstka",
+        "7": "Siódemka",
+        "8": "Ósemka",
+        "9": "Dziewiątka",
+        "10": "Dziesiątka",
+        "11": "Oko Saurona",
+        "12": "Runa Gandalfa"
+      }
+    },
+    "popup": {
+      "actions": {
+        "save": "Zapisz",
+        "cancel": "Anuluj"
+      },
+      "taskCheck": {
+        "armour": {
+        },
+        "title": "{type} edytuj popup"
+      }
+    },
+    "chat": {
+      "actions": {
+        "roll": "Rzut",
+        "roll-result": "Wynik rzutu",
+        "test": "Test",
+        "save": "Zapisz",
+        "cancel": "Anuluj",
+        "hidden": "ukryta akcja"
+      },
+      "taskCheck": {
+        "options": {
+          "roll-characteristics": {
+            "title": "Charakterystyka rzutu",
+            "is-weary": "Wyczerpanie",
+            "is-miserable": "Przygnębienie",
+            "is-inspired": "Pod natchnieniem",
+            "is-favoured": "Wzmocnienie",
+            "is-ill-favoured": "Osłabienie"
+          },
+          "roll-formula": "Rzucane Kości",
+          "difficulty": "Trudność",
+          "tn": "PT",
+          "feat-die-value": "Wynik Kości Działania",
+          "feat-dice": "Kość Działania",
+          "bonus-success-dice": "Dodatkowa Kość",
+          "bonus-penalty-dice": "Odjęte/Dodane Kości",
+          "extended-penalty-dice": {
+            "label": "Odejmij/Dodaj liczbę Kości k6",
+            "hint": "wpisz wartość ujemną by odjąć kości lub dodatnią by dodać kości"
+          },
+          "hope-point-bonus-dice": "Użycie Nadziei",
+          "inspired": "Natchnienie",
+          "mastery-dice": "Mastery Dice",
+          "favoured-ill-favoured": "Wzmocnionienie lub Osłabienie rzutu",
+          "bonus-penalty": "Modyfikacja liczby Kości k6",
+          "support-die": "Wsparcie Towarzysza",
+          "advanced": "Zaawansowane",
+          "hope": "Nadzieja",
+          "worst": "Gorszy",
+          "best": "Lepszy",
+          "health-impacts": "Wpływ Statusów",
+          "weary-not-weary": "Wyczepany?",
+          "miserable-not-miserable": "Przygnębiony?",
+          "weary": "Tak",
+          "result-modifier": "Modyfikator Rzutu",
+          "modifier": "Modyfikator",
+          "not-weary": "Nie",
+          "miserable": "Tak",
+          "not-miserable": "Nie"
+        },
+        "title": "Rzut na {type}"
+      },
+      "error": {
+        "actorNotFound": "Nie znaleziono Aktora z actorID: {actorId} i tokenId:{tokenId}"
+      },
+      "warn": {
+        "characterHasNotBeenUsedToCreateTheAction": "Akcja, na którą chcesz wydać Nadzieję nie została stworzona przez tą Postać, ale przez {actorName} !"
+      }
+    },
+    "rolls": {
+      "protection": "Ochrona",
+      "fear": "Groza",
+      "corruption": "Spaczenie"
+    },
+    "combat": {
+      "error": {
+        "unableToRerollPrepBattle": "nie można przerzucić przygotowania do walki dla tokena {token} ponieważ nie jest to Postać, ale {type}",
+        "itemNotFound": "Przedmiotu (nazwa: {name}, typ: {type}) nie odnaleziono dla tego Aktora.",
+        "noActorAttachedToToken": "Nie można dodać tokenu '{name}' do walki ponieważ nie ma przypisanego Actora."
+      },
+      "warn": {
+        "noActorFound": "Nie znaleziono Aktora z imieniem: {name}.",
+        "combatantNotInCombat": "Token ({name}) z id ({id}), z którym chcesz związać walką nie bierze udziału w walce.",
+        "combatantDoesntExistInCombat": "Actor z id ({id}) nie bierze udziału w walce.",
+        "noSkillNameAvailableWithExtendedWeaponSelection": "Postać {actorName} nie posiada Biegłości Bojowej ({name}), a także Umiejętności o nazwie ({name}).",
+        "noSkillNameFoundWithExtendedWeaponSelection": "Postać {actorName} nie posiada Biegłości Bojowej ({name}) i nie posiada Umiejętności z oczekiwaną nazwą ({name}).",
+        "noCombatProficiencyFound": "Postać {actorName} nie posiada Biegłości Bojowej ({name}). Dodaj Biegłość albo użyj rozszerzonych opcji dla Biegłości Bojowych by dodać jedną.",
+        "incompleteItem": "Niewłaściwy {element} dla tego przedmiotu ({item}). Powino być wybrane {element}.",
+        "noValidTarget": "Powinien być wybrany tylko jeden Token do Ataku.",
+        "noValidCombatTarget": "Powinien być wybrany Token, który jest uwzględniony w Trackerze Walki.",
+        "noValidWeaponEquipped": "Nie posiadasz w ekwipunku odpowiedniej Broni dla Umiejętności ({skill}).",
+        "tnIsWeird": "Nieprawidłowe wyliczenie wartości PT. Sprawdź ustawienie Obrony przeciwnika ({foeName}).",
+        "noTokenSelectedForEngagement": "Musisz wybrać Tokeny by je związać walką.",
+        "numberOfTengwarNotCorrect": "Stało się coś dziwnego. Liczba Znaków Sukcesu ({tengwar}) wynosi 0 lub mniej! Nie powinno się to stać.",
+        "impossibleForMonoFaction": "Wybierz przynajmniej jeden Token z każdej ze stron.",
+        "impossibleForComplexEngagement": "Wybierz tylko jeden Token dla jednej z dwóch stron, a nie kilka Tokenów dla obu."
+      },
+      "actions": {
+        "applyDamage": "Zastosuj Obrażenia",
+        "applyWeary": "Zastosuj Wyczepanie",
+        "applyWounded": "Zastosuj Ranę",
+        "applyAll": "Zastosuj wszystko (Obrażęnia i wszystkie Statusy)",
+        "applyAllStates": "Zastosuj wszystkie Statusy (Wyczerpany, Ranny i Wyłączony z Walki)",
+        "applyOutOfCombat": "Zastosuj Wyłączenie z Walki",
+        "applyWearyState": "Zastosuj Wyczepanie",
+        "applyMiserableState": "Zastosuj Przygnębienie",
+        "applyWearyAndMiserableState": "Zastosuj Wyczepanie i Przygnębienie"
+      },
+      "special-success-action": {
+        "heavy-blow": {
+          "title": "Potężny Atak",
+          "alt": "Miecz zadał potężny cios.",
+          "label": "Potężny Atak",
+          "description": "Dodaj {amount} do Obrażeń."
+        },
+        "fend-off": {
+          "title": "Odparcie",
+          "alt": "Postać unika ciosu.",
+          "label": "Odparcie",
+          "description": "Dodaj +2 do Obrony przeciwko następnemu Atakowi."
+        },
+        "piercing-blow": {
+          "title": "Celny Atak",
+          "alt": "Włócznia kogoś przeszywa.",
+          "label": "Celny Atak",
+          "description": "Dodaj {amount} do Kości Działania ({edge} do przebicia)."
+        },
+        "gain-ground": {
+          "title": "Zdobycie Przewagi",
+          "alt": "Strzała poszybowała by zyskać przewagę nad przeciwnikami.",
+          "label": "Zdobycie Przewagi",
+          "description": "Ostrzelanie przeciwnika by zdobyć przewagę."
+        },
+        "shield-thrust": {
+          "title": "Uderzenie Tarczą",
+          "alt": "Tarcza uderza kogoś niepohamowanie.",
+          "label": "Uderzenie Tarczą",
+          "description": "Odepchnij zamiast zadać Obrażenia."
+        },
+        "seize": {
+          "title": "Pochwycenie",
+          "alt": "Dłoń coś chwyta.",
+          "label": "Pochwycenie",
+          "description": "Atakujący trzyma swój cel."
+        },
+        "break-shield": {
+          "title": "Strzaskanie Tarczy",
+          "alt": "Tarcza roztrzaskuje się na kawałki.",
+          "label": "Strzaskanie Tarczy",
+          "description": "Atakujący roztrzaskuje Tarczę na kawałki."
+        },
+        "none-custom": {
+          "title": "Pomiń/Inny",
+          "alt": "Znak X.",
+          "label": "Pomiń/Inny",
+          "description": "Na potrzeby własnych mechanik (homebrew)."
+        }
+      },
+      "dicePool": {
+        "label": "Liczba Kości Sukcesu."
+      },
+      "step": {
+        "initiative": {
+          "attack": {
+            "label": "Ata.",
+            "title": "Bohaterowie atakują przeciwnika."
+          },
+          "defense": {
+            "label": "Obr.",
+            "title": "Bohaterowie zostali zaatakowani i się bronią."
+          },
+          "toggle": {
+            "title": "Przełącz pomiędzy atakowaniem, a bronieniem się."
+          }
+        },
+        "preparation": {
+          "label": "Inicjacjatywa",
+          "roll": {
+            "reroll": "Przerzuć Przygotowanie do Walki",
+            "label": "Przygotowanie do Walki",
+            "title": "Wykonaj test Przygotowania do Walki."
+          }
+        },
+        "openingVolley": {
+          "label": "Faza Ostrzału",
+          "roll": {
+            "label": "Faza Ostrzału",
+            "title": "Wykonaj test Fazy Ostrzału."
+          }
+        },
+        "closeCombat": {
+          "engagement": "Związanie Walką",
+          "label": "Walka w zwarciu"
+        },
+        "default": {
+          "label": "Nieznany etap Walki"
+        }
+      },
+      "stance": {
+        "forward": {
+          "label": "Zapalczywa"
+        },
+        "open": {
+          "label": "Wyważona"
+        },
+        "defensive": {
+          "label": "Ostrożna"
+        },
+        "rearward": {
+          "label": "Bezpieczna"
+        },
+        "skirmish": {
+          "label": "Pojedynkowa"
+        },
+        "default": {
+          "label": "Nieznana Postawa"
+        }
+      },
+      "chat": {
+        "warn": {
+          "impossibleToRollInjury": "Nie można było wylosować Rany z tabeli."
+        },
+        "preparation-roll": {
+          "title": "Wynik rzutu Przygotowania do Walki",
+          "message": " zyskano <span class='key-point'>{successDiceBonus} Kości Sukcesu</span> w tej walce."
+        },
+        "result": {
+          "title": "Wynik Ataku",
+          "help": "Kliknij prawym na menu rozwijane",
+          "paragraph": "<span class='actor-name'>{attackerName}</span> zaatakował <span class='actor-name'>{targetName}</span> używając {weaponName} i zadał <a class='apply-damage-element' title='{hint}'>{totalDamage} Obrażeń<i class='fas fa-external-link-alt'></i></a>",
+          "specialResult": " z <a class='apply-special-result' title='{hint}'>{quantity} Znakami Sukcesu<i class='fas fa-external-link-alt'></i></a> (<img src='systems/tor2e/assets/images/tengwar.png' data-edit='img' title='tengwar' height='15' width='15' alt='tengwar'/>)"
+        },
+        "details": {
+          "attackerRoll": "Rzut Atakującego :",
+          "successLevel": "Poziom Sukcesu :",
+          "specialDamage": "Specjalne Obrażenia :",
+          "damage": {
+            "title": "Obrażenia :",
+            "weapon": "[Broń({weaponDamage})",
+            "bonus": " + Dodatkowe({bonusDamage})"
+          }
+        },
+        "piercing": {
+          "title": "Przebicie",
+          "description": "<span class='actor-name'>{targetName}</span> musi wykonać <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>Rzut na Pancerz<i class='fas fa-dice'></i></a> przeciwko {weaponInjuryValue} PT (wartość graniczna {edge})."
+        },
+        "injuryRoll": {
+          "title": "Rzut na Ranę",
+          "description": "<span class='actor-name'>{targetName}</span> otrzymuje Ranę i musi wykonać <a class='button-injury-roll'>Rzut na Ranę <i class='fas fa-dice'></i></a>."
+        },
+        "injury": {
+          "title": "Rana",
+          "moderate": {
+            "type": "powierzchowna",
+            "title": "Powierzchowna Rana",
+            "message": "<span class='actor-name'>{targetName}</span> otrzymuje <b>Powierzchowną Ranę</b>, która zagoi się do końca Walki."
+          },
+          "severe": {
+            "type": "poważna",
+            "title": "Poważna Rana",
+            "message": "<span class='actor-name'>{targetName}</span> otrzymuje <b>Poważną Ranę</b> na {duration} dni."
+          },
+          "grievous": {
+            "type": "śmiertelna",
+            "title": "Śmiertelna Rana",
+            "message": "<span class='actor-name'>{targetName}</span> otrzymuje <b>Śmiertelną Ranę</b> i pada bez przytomności wykrwawiając się."
+          }
+        },
+        "effects": {
+          "title": "Skutki Ataku",
+          "damageDealt": "Zadane Obrażenia:",
+          "protection": {
+            "is": " jest ",
+            "wounded": "Ranny!",
+            "protected": "Chroniony!"
+          },
+          "weary": {
+            "is": " jest Wyczerpany."
+          },
+          "ooc": {
+            "is": " jest Wyłączony z Walki."
+          }
+        }
+      }
+    },
+    "macro": {
+      "error": {
+        "noActorAvailable": "Wybierz Postać znim użyjesz to macro!",
+        "itemIsMissing": "Przedmiot {itemName} typu {itemType} nie jest dostępny dla wybranego Aktora - {actorName}!",
+        "skillIsMissing": "Umiejętność {skillName} nie jest dostępna dla wybranego Aktora - {actorName}!",
+        "missingLoremasterRole": "Jedynie Loremaster może wykonać tą akcję.",
+        "wrongStatusEffect": "Status: '{statusEffect}' nie istnieje."
+      }
+    },
+    "effects": {
+      "wounded": "Rana",
+      "poisoned": "Zatrucie",
+      "miserable": "Przygnębienie",
+      "weary": "Wyczerpanie",
+      "unit": {
+        "days": "Dni"
+      }
+    },
+    "journey-log": {
+      "sheet": {
+        "title": "Nazwa"
+      },
+      "log": {
+        "year": "Rok",
+        "season": "Sezon",
+        "from": "Podróż z",
+        "to": "Podróż do",
+        "duration": "Dni Podróży"
+      }
+    },
+    "seasons": {
+      "winter": "Zima",
+      "spring": "Wiosna",
+      "summer": "Lato",
+      "autumn": "Jesień"
+    },
+    "roles": {
+      "guide": "Przewodnik",
+      "scout": "Zwiadowca",
+      "lookout": "Wartownik",
+      "hunter": "Myśliwy"
+    },
+    "evenTypes": {
+      "terrible-misfortune": "Nieszczęście",
+      "despair": "Zgroza",
+      "ill-choices": "Błędny wybór",
+      "mishap": "Przeszkoda",
+      "short-cut": "Skrót",
+      "chance-meeting": "Zbieg okoliczności",
+      "joyful-sight": "Wspaniały widok"
+    },
+    "active-effect": {
+      "toggle": {
+        "help": "użyj ALT+Klik by znienić"
+      }
+    }
+  },
+  "SETTINGS": {
+    "setPauseMessage": "Tekst podczas wstrzymania gry",
+    "setPauseMessageDescription": "Zmiana tekstu wyświetlanego gdy gra jest wstrzymana. Pozostaw puste by wyświetlać domyślny tekst.",
+    "setSoloMode": "Strider Mode (Solo)",
+    "setSoloModeDescription": "Niektóre ustawienia są dostosowane dla Strider Mode (Solo) (np. tylko Postawa pojedynkowa, uproszczona Karta Drużyny, itd.).",
+    "setAddSkirmish": "Dodaj do gry Postawę Pojedynkową",
+    "setAddSkirmishDescription": "Dodaje Postawę Pojedynkowową nawet jeżeli nie jest to rozgrywka Strider Mode (Solo).",
+    "setNoneCustomCombatSpecialEffect": "Dodaj Pomiń/Własny do Specjalnych efektów",
+    "setNoneCustomCombatSpecialEffectDescription": "Dodaj nowy Specjalny efekt dla Znaku sukcesu, który można użyć dla własnych mechanik (homebrew). Wybranie tego efektu powoduje pominięcie Znaku sukcesu.",
+    "setTnBaseValue": "Ustaw bazową wartość PT",
+    "setTnBaseValueDescription": "Pozwala zmienić bazową wartość PT. Domyślna wartość dla kampanii: 20, dla jednostrzałów: 18.",
+    "setExtendedWeaponSelection": "Rozszerzona lista Broni",
+    "setExtendedWeaponSelectionDescription": "Ta opcja powinna być włączona tylko jeśli Loremaster chce używać swoich zasad Walki (np. nowe Biegłości Bojowe). Pojawi się nowe pole w Karcie Broni, które pozwoli na przypisanie jej do nowej Biegłości Bojowej.",
+    "setUseAdversarySkills": "Zezwól na używanie Umiejętności przez Przeciwników",
+    "setUseAdversarySkillsDescription": "W Drugiej Edycji, Przeciwnicy nie posiadają Umiejętności na swojej Karcie. Przełączenie pozwala na dodanie bloku Umiejętności do Karty Przeciwników.",
+    "setOverrideEyeAwareness": "Maks. wartość Uwagi Oka",
+    "setOverrideEyeAwarenessDescription": "Domyślnie, maksymalna wartość wynosi 24 ale może zostać zmieniona wg potrzeb.",
+    "setRawModeForActiveEffectName": "Tryb wyboru Aktywnego Efektu",
+    "setRawModeForActiveEffectDescription": "Umożliwia wybór zdefiniowanego Aktywnego Efektu z listy albo ręczne wpisanie nazwy modyfikowanej zmiennej (Zaznaczone: Lista / Odznaczone: Pole tekstowe (nazwa zmiennej)).",
+    "setAlwaysShowShieldThrustName": "Zawsze pokazuj Uderzenie Tarczą",
+    "setAlwaysShowShieldThrustDescription": "Specjalne obrażenia \"Uderzenie Tarczą\": proponuj tą opcję nawet gdy zasada (Siła > Poziom) nie została spełniona.",
+    "setWarnLoreMasterForCharacterStateName": "Aktywuj Ostrzeżenia",
+    "setWarnLoreMasterForCharacterStateDescription": "Aktywuje ostrzeżenia na Czacie dla każdej Postaci, która powinna być Wyczerpana lub Przygnębiona.",
+    "setShowHideRangeBlockName": "Pokaż zasięg",
+    "setShowHideRangeBlockDescription": "Używane do wyświetlania Znacznika zasięgu w Karcie Broni i Karcie Postaci/Przeciwnika.",
+    "disableAltClickName": "Wyłącz ALT+Click",
+    "disableAltClickDescription": "Wyłącz ALT+Click zapobiegające przypadkowym akcjom tj. podniesienie poziomu Umiejętności lub zmiana Statusów.",
+    "aldDefaultValueName": "Połączenie danych aktora NPC zaznaczone domyślnie",
+    "aldDefaultValueDescription": "Zaznacz by Połączenie danych aktora dla Prototypu tokena NPC było domyślnie zaznaczone.",
+    "setDisplayCommunityInfoAtStartValue": "Wyświetlaj nazwę aktywnej Drużyny",
+    "setDisplayCommunityInfoAtStartDescription": "Przy połączeniu do gry, wyświetla nazwę aktualnie aktywnej Drużyny.",
+    "setModifiedLoadAsRequested": "Modyfikacja obliczania Obciążenia",
+    "setModifiedLoadAsRequestedDescription": "Pozwala Loremasterowi na zmianę sposobu obliczania Obciążenia na potrzeby własnych mechanik (homebrew).",
+    "setInlineElementFromUuidInDescription": "Osadzanie Strony Dziennika w Opisie Przedmiotu",
+    "setInlineElementFromUuidInDescriptionDescription": "Możesz wkleić do Opisu przedmiotu link UUID do dowolnej strony z Dziennika. Zaznaczenie opcji spowoduje wyświetlenie zawartości strony zamiast przycisku łącza do wstawionej strony. W opisie musi znajdować się jedynie link UUID i nic więcej, w innym przypadku osadzenie zawartości nie zadziała."
+  }
+}

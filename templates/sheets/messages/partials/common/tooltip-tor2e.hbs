@@ -1,0 +1,27 @@
+<div class="dice-roll">
+    <div class="dice-result">
+        {{{tooltip}}}
+        <div class="dice-tooltip flexcol">
+            <div class="tor2e-dice-tooltip flexrow">
+                {{#each parts}}
+                    <div class="tor2e-tooltip-part">
+                        <div class="dice">
+                            <header class="part-header flexrow">
+                                <span class="part-formula">{{this.formula}}</span>
+                                {{#if this.flavor}}<span class="part-flavor">{{this.flavor}}</span>{{/if}}
+                                <span class="part-total">{{this.total}}</span>
+                            </header>
+                            <ol class="dice-rolls">
+                                {{#each this.rolls}}
+                                    <li class="tor2e-roll {{this.classes}}">{{{this.result}}}</li>
+                                {{/each}}
+                            </ol>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+            {{> "systems/tor2e/templates/roll/roll-characteristic-card.hbs" this.parts.0.data }}
+        </div>
+        <h4 class="dice-total">{{total}}</h4>
+    </div>
+</div>

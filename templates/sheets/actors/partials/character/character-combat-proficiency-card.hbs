@@ -1,0 +1,30 @@
+<li class="skill-item item">
+    <div class="skill-item-row flexrow">
+        <div class="identification">
+            <div class=" flexrow">
+                <img src="{{combatProficiency.icon}}" title="{{localize combatProficiency.label}}" height="32"
+                     width="32"
+                     alt="{{localize 'tor2e.skills.details.tech.alt'}}"/>
+                <a class="skill-name"
+                   data-action-id="{{id}}"
+                   data-action-name="{{localize combatProficiency.label}}"
+                   data-action-value="{{combatProficiency.value}}"
+                   data-associate-attribute-name="strength">
+                    <p>{{localize combatProficiency.label}}</p>
+                </a>
+            </div>
+        </div>
+        <div class="stat-value">
+            <div class="flexrow skill-element-row {{#if
+                    combatProficiency.inactive}}inactive{{else}}inline-skill-modify{{/if}}"
+                 data-field="system.combatProficiencies.{{id}}.value"
+                 data-action-value="{{combatProficiency.value}}"
+                 data-action-max-value="6">
+                {{#skill-dots combatProficiency.value 6}}
+                {{/skill-dots}}
+            </div>
+        </div>
+        <div class="actions">
+        </div>
+    </div>
+</li>

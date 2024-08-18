@@ -1,0 +1,132 @@
+<div class="sheet-container">
+    <img class="background" src="{{backgroundImages.url}}" title="{{localize backgroundImages.title}}"
+         alt="{{localize 'tor2e.weapons.details.tech.alt'}}"/>
+    <form class="{{cssClass}}" autocomplete="off">
+
+        {{> "systems/tor2e/templates/sheets/actors/partials/common/actor-header-card.hbs"
+                width = 125
+                height = 125}}
+        <section class="hostile-friendly">
+            {{> "systems/tor2e/templates/sheets/actors/partials/common/faction-slider-card.hbs"
+                    reference="system.faction.value"
+                    attribute=system.faction}}
+        </section>
+        <div class="sheet-content">
+            <section id="main-stats">
+                <div class="flexrow simple-stat-row" id="resources">
+                    {{> "systems/tor2e/templates/sheets/actors/components/stat-diamond-card.hbs"
+                            stat=system.attributeLevel
+                            reference="system.attributeLevel.value"}}
+                    {{> "systems/tor2e/templates/sheets/actors/components/resource-diamond-card.hbs"
+                            stat=system.endurance
+                            extension-stat=system.endurance
+                            extension-stat-value=system.endurance.max
+                            reference="system.endurance.value"
+                            extension-reference="system.endurance.max"
+                            extension-label="tor2e.actors.stats.max"}}
+                    {{> "systems/tor2e/templates/sheets/actors/components/resource-diamond-card.hbs"
+                            stat=system.might
+                            extension-stat=system.might
+                            extension-stat-value=system.might.max
+                            reference="system.might.value"
+                            extension-reference="system.might.max"
+                            extension-label="tor2e.actors.stats.max"}}
+                    {{> "systems/tor2e/templates/sheets/actors/components/resource-diamond-card.hbs"
+                            stat=system.hate
+                            extension-stat=system.hate
+                            extension-stat-value=system.hate.max
+                            reference="system.hate.value"
+                            extension-reference="system.hate.max"
+                            extension-label="tor2e.actors.stats.max"}}
+                </div>
+                <div id="defense" class="flexrow simple-stat-row">
+                    {{> "systems/tor2e/templates/sheets/actors/components/stat-diamond-card.hbs"
+                            stat=system.parry
+                            reference="system.parry.value"
+                            extension-item=shieldDTO
+                            extension-canBeDeleted=true
+                            extension-css-class="bonus"}}
+
+                    {{> "systems/tor2e/templates/sheets/actors/components/item-diamond-card.hbs"
+                            title="tor2e.items.armours.armour"
+                            rollable=true
+                            canBeDeleted=true
+                            stat=armourDTO
+                            extension-item=headgearDTO
+                            extension-canBeDeleted=true
+                            extra-css="primary-block"
+                            draggable=true
+                            key="protection"}}
+
+                    {{> "systems/tor2e/templates/sheets/actors/components/effects-card.hbs"
+                            effects=effects}}
+                </div>
+            </section>
+            {{#if useSkillBlock}}
+                <section id="skills">
+                    <h2>{{localize "tor2e.actors.skills.title"}}</h2>
+                    {{> "systems/tor2e/templates/sheets/actors/partials/adversary/adversary-skill-card.hbs"}}
+                </section>
+            {{/if}}
+            <section id="combat-skills">
+                <h2>{{localize "tor2e.actors.combatSkills.title"}}</h2>
+                <ul class="collapsibleList">
+                    <div class="flexrow">
+                        <p class="table-main-column table-caption">{{localize "tor2e.weapons.details.weapon"}}</p>
+                        <p class="table-caption table-complex-column">{{localize "tor2e.weapons.details.ranks"}}</p>
+                        <p class="table-caption">{{localize "tor2e.weapons.details.damage"}}</p>
+                        <p class="table-caption">{{localize "tor2e.weapons.details.injury"}}</p>
+                        <p class="table-caption"></p>
+                    </div>
+                    {{#each weapons as |weapon id|}}
+                        {{> "systems/tor2e/templates/sheets/actors/partials/common/weapon-card.hbs" weapon}}
+                    {{/each}}
+                </ul>
+            </section>
+            <section id="fellAbilities">
+                <h2>{{localize "tor2e.actors.fellAbilities.title"}}</h2>
+                <div class="flexrow">
+                    <div class="flexcol">
+                        <ul class="collapsibleList">
+                            {{#each leftFellAbilities as |fellAbility id|}}
+                                {{> "systems/tor2e/templates/sheets/actors/partials/adversary/fell-ability-card.hbs" fellAbility}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                    <div class="flexcol">
+                        <ul class="collapsibleList">
+                            {{#each rightFellAbilities as |fellAbility id|}}
+                                {{> "systems/tor2e/templates/sheets/actors/partials/adversary/fell-ability-card.hbs" fellAbility}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="distinctiveFeatures">
+                <h2>{{localize "tor2e.actors.traits.distinctiveFeatures"}}</h2>
+                <div class="flexrow">
+                    <div class="flexcol">
+                        <ul class="collapsibleList">
+                            {{#each leftDistinctiveFeatures as | distinctiveFeature id|}}
+                                {{> "systems/tor2e/templates/sheets/actors/partials/common/simple-talent-card-with-description.hbs" distinctiveFeature}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                    <div class="flexcol">
+                        <ul class="collapsibleList">
+                            {{#each rightDistinctiveFeatures as |distinctiveFeature id|}}
+                                {{> "systems/tor2e/templates/sheets/actors/partials/common/simple-talent-card-with-description.hbs" distinctiveFeature}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="description">
+                <h2 class="toggle">{{localize "tor2e.common.description"}}</h2>
+                <div class="editor-container">
+                    {{editor description target="system.description.value" button=true editable=true}}
+                </div>
+            </section>
+        </div>
+    </form>
+</div>

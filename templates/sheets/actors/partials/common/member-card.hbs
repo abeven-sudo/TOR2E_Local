@@ -1,0 +1,21 @@
+<div class="list-actor actor actor-emblem" data-actor-id="{{id}}">
+    <div class="flexcol actor-wrapper">
+        <div class="token-wrapper">
+            <img class="member-token" src="{{token}}" title="{{name}}" height="75" width="75"
+                 alt="{{localize 'tor2e.traits.details.tech.alt'}}"/>
+        </div>
+        <div class="member-name flexcol">
+            <p>{{name}}</p>
+            {{#if owner}}
+                <div class="actions">
+                    <a class="actor-edit action" title="{{ localize "tor2e.sheet.skill.edit"}}">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                    <a class="actor-delete action" title="{{localize "tor2e.sheet.deleteSkill"}}">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</div>

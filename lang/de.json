@@ -1,0 +1,1114 @@
+{
+  "GAME.paused": "Du kannst nicht vorbei!",
+  "TYPES": {
+    "Actor": {
+      "community": "Gemeinschaft",
+      "character": "Spielercharakter (SC)",
+      "npc": "Nichtspielercharakter (NSC)",
+      "lore": "berühmter Charakter",
+      "adversary": "Widersacher"
+    },
+    "Item": {
+      "trait": "Einzigartiges Merkmal / Makel",
+      "fell-ability": "Grausame Fähigkeit",
+      "skill": "Fertigkeit",
+      "armour": "Rüstung",
+      "weapon": "Waffe",
+      "miscellaneous": "Sonstige",
+      "reward": "Belohnung",
+      "virtues": "Vorteil",
+      "journey-log": "Reisetagebuch"
+    }
+  },
+  "tor2e": {
+    "types": {
+      "distinctiveFeature": "Einzigartiges Merkmale",
+      "flaw": "Makel",
+      "trait": "Wesenszug",
+      "fell-ability": "Grausame Fähigkeit",
+      "skill": "Fertigkeit",
+      "armour": "Rüstung",
+      "weapon": "Waffe",
+      "miscellaneous": "Sonstige",
+      "reward": "Belohnung",
+      "virtues": "Vorteil",
+      "journey-log": "Reisetagebuch",
+      "swords": "Schwerter",
+      "axes": "Äxte",
+      "brawling": "Raufen",
+      "spears": "Speere",
+      "bows": "Bögen",
+      "shield": "Schilde",
+      "head": "Kopfschutz",
+      "leather": "Lederpanzer",
+      "mail": "Kettenpanzer"
+    },
+    "actors": {
+      "biography": {
+        "age": "Alter",
+        "fellowshipFocus": "Fokus der Gemeinschaft",
+        "title": "Titel",
+        "years": "Jahre",
+        "culture": "Kultur",
+        "standardOfLiving": "Lebensstandard",
+        "culturalBlessing": "Kulturelle Gabe",
+        "calling": "Berufung",
+        "shadowPath": "Schattenpfad"
+      },
+      "sections": {
+        "biography": "Biographie",
+        "traits": "Merkmale",
+        "effects": "Effekte",
+        "attributes": "Attribute",
+        "skillGroups": "Fertigkeitsgruppen",
+        "combatProficiencies": "Kampffähigkeiten",
+        "commonSkills": "Fertigkeiten",
+        "weaponSkills": "Kampffähigkeiten",
+        "rewards": "Belohnungen",
+        "virtues": "Vorteile",
+        "war-gear": "Kampfausrüstung",
+        "equipment-gear": "Ausrüstung",
+        "resources": "Ressourcen",
+        "combat": "Kampf",
+        "fellowship": "Gemeinschaftspunkte",
+        "skillPoints": "Fertigkeitspunkte",
+        "heroicStature": "Heldentum",
+        "treasure": "Schatz",
+        "background": "Hintergrund",
+        "company": "Gemeinschaft",
+        "fellowshipPhase": "Gemeinschaftsphase",
+        "members": "Mitglieder",
+        "available-members": "Verfügbare Mitglieder",
+        "patrons": "Gönner*in",
+        "name": "Name",
+        "location": "Ort",
+        "connections": "Verbindungen",
+        "travel": "Reise",
+        "taleOfYears": "Geschichte der Jahre",
+        "notes": "Notizen",
+        "journey-log": "Reise Log",
+        "occupation": "Beruf"
+      },
+      "details": {
+        "tech": {
+          "alt": "Bild, das einen Akteur darstellt."
+        }
+      },
+      "fellAbilities": {
+        "title": "Grausame Fähigkeit"
+      },
+      "traits": {
+        "distinctiveFeatures": "Einzigartiges Merkmale",
+        "flaws": "Makel"
+      },
+      "combatSkills": {
+        "title": "Kampffähigkeiten"
+      },
+      "skills": {
+        "title": "Fertigkeiten",
+        "commonSkills": "Gemeinsame Fertigkeiten",
+        "combatSkills": "Kampffähigkeiten",
+        "relevantSkills": "Relevante Fertigkeiten",
+        "favoured": "(bev.)"
+      },
+      "types": {
+        "community": {
+          "title": "Gemeinschaft"
+        },
+        "lore": {
+          "title": "Berühmtheit"
+        },
+        "npc": {
+          "title": "NSC"
+        },
+        "adversary": {
+          "title": "Widersacher"
+        },
+        "character": {
+          "title": "Charakter"
+        }
+      },
+      "faction": {
+        "hostile": "Feindlich",
+        "friendly": "Freundlich"
+      },
+      "stats": {
+        "attributeLevel": "Attributsstufe",
+        "damage": {
+          "closedCombat": "Nahkampfschaden",
+          "rangedCombat": "Fernkampfschaden"
+        },
+        "hate": "Hass",
+        "might": "Macht",
+        "parry": "Parade",
+        "noShield": "kein Schild",
+        "noHeadgear": "kein Kopfschutz",
+        "noArmour": "keine Rüstung",
+        "armour": "Rüstung",
+        "endurance": "Ausdauer",
+        "load": "Belastung",
+        "hope": "Hoffnung",
+        "maxHope": "max. Hoffnung",
+        "maxEndurance": "max. Ausdauer",
+        "rating": "Anfangswert",
+        "travelLoad": "Erschöpfung",
+        "shadow": "Schatten",
+        "temporary": "vorübergehend",
+        "shadowScars": "Schattenmal",
+        "canBeAPatron": "Kann ein*e Gönner*in sein?",
+        "initial": "Ursprüngliche",
+        "fellowshipPoints": "Gemeinschaftspunkte",
+        "eyeAwareness": "Saurons Blick",
+        "current": "aktuell",
+        "faction": "Fraktion",
+        "health": "Gesundheit",
+        "state": "Zustand",
+        "rest": "Rast",
+        "max": "max.",
+        "min": "min.",
+        "bonus": {
+          "combat": {
+            "injury": "Wunde",
+            "piercingBlow": "Durchbohrender Treffer",
+            "heavyBlow": "Schwerer Treffer",
+            "pierce": "Durchstoßen"
+          },
+          "defense": {
+            "protection": "Schutz durch Rüstung",
+            "shieldParry": "Schildparade"
+          },
+          "tn": {
+            "strength": "Kraft SG",
+            "heart": "Mut SG",
+            "wits": "Verstand SG"
+          }
+        }
+      },
+      "stateOfHealth": {
+        "weary": "erschöpft",
+        "poisoned": "vergiftet",
+        "miserable": "verzweifelt",
+        "wounded": "verwundet",
+        "temporary": "vorübergehend"
+      },
+      "combatAttributes": {
+        "damage": "Schaden",
+        "ranged": "Fernkampf",
+        "parry": "Parade",
+        "shield": "Schild",
+        "armour": "Rüstung",
+        "headGear": "Kopfschutz"
+      },
+      "chat": {
+        "warn": {
+          "title": "Warnhinweis",
+          "hint": "Bitte klicke mit der rechten Maustaste, um das Kontextmenü zu verwenden und die gewünschten Änderungen vorzunehmen.",
+          "weary": "<strong>{name}</strong> sollte <strong>erschöpft</strong>  sein.",
+          "miserable": "<strong>{name}</strong> sollte <strong>verzweifelt</strong> sein.",
+          "wearyAndMiserable": "<strong>{name}</strong> sollte <strong>erschöpft</strong> und <strong>verzweifelt</strong> sein."
+        },
+        "result": {
+          "title": "Ergebnishinweis",
+          "weary": "<strong>{name}</strong> ist <strong>erschöpft</strong>.",
+          "miserable": "<strong>{name}</strong> ist <strong>verzweifelt</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> ist <strong>erschöpft</strong> und <strong>verzweifelt</strong>."
+        }
+      },
+      "community": {
+        "messages": {
+          "setDefaultActorManually": "Du hast die Gemeinschaft '{name}' als für diese Welt aktiv gesetzt.",
+          "setDefaultActorAutomatically": "Die Gemeinschaft '{name}' wurde automatisch für diese Welt als aktiv gesetzt.",
+          "displayDefaultActor": "Die aktive Gemeinschaft ist '{name}' .",
+          "warnNoCommunityActor": "Warnung: Es gibt keine Gemeinschaft in dieser Spielwelt. Einige Funktionen werden nicht richtig funktionieren, bis eine erstellt wurde.",
+          "warnTooManyCommunityActors": "Warnung: Es gibt {size} Gemeinschaften in dieser Spielwelt. Das System kann die richtige nicht erraten. Bitte manuell im Gemeinschaftsbogen einstellen."
+        },
+        "journey-log": {
+          "year": "Jahr",
+          "season": "Jahreszeit",
+          "from": "Reise von",
+          "to": "Reiseziel",
+          "duration": "Reisetage"
+        },
+        "make-default": {
+          "title": "Zum Standard machen",
+          "description": "2 Charaktere miteinander verbinden",
+          "label": "um diese Akteur-Gemeinschaft zur Standard-Gemeinschaft zu machen."
+        }
+      }
+    },
+    "travel": {
+      "roles": {
+        "guide": {
+          "label": "Anführer",
+          "skill": "Reisen"
+        },
+        "scouts": {
+          "label": "Kundschafter",
+          "skill": "Erkunden"
+        },
+        "hunters": {
+          "label": "Jäger",
+          "skill": "Jagen"
+        },
+        "lookouts": {
+          "label": "Späher",
+          "skill": "Wahrnehmung"
+        }
+      }
+    },
+    "common": {
+      "type": "Typ",
+      "group": "Gruppe",
+      "name": "Name",
+      "description": "Beschreibung"
+    },
+    "items": {
+      "common": {
+        "load": "Belastung",
+        "equipped": "ausgestattet",
+        "dropped": "abgelegt"
+      },
+      "shields": {
+        "none": "Kein",
+        "buckler": "Faustschild",
+        "shield": "Schild",
+        "greatShield": "Großer Schild"
+      },
+      "armours": {
+        "title": "Rüstung",
+        "armour": "Rüstung",
+        "protection": "Schutz",
+        "group": "Typ",
+        "protection-roll": "Schutzwurf",
+        "tech": {
+          "title": "Hintergrundbild eines Rüstungsgegenstands, das ein Rüstungsicon darstellt.",
+          "alt": "Bild, das einen Rüstungsgegenstand zeigt."
+        }
+      },
+      "miscellaneous": {
+        "title": "Sonstiges",
+        "equipment": "Ausrüstung",
+        "tech": {
+          "title": "Hintergrundbild eines sonstigen Gegenstands, das ein Taschenicon zeigt.",
+          "alt": "Bild, das einen sonstigen Gegenstand zeigt."
+        }
+      },
+      "traits": {
+        "title": "Merkmal",
+        "tech": {
+          "title": "Hintergrundbild eines Merkmal- / Makel-Eintrags, das ein Taschenicon zeigt.",
+          "alt": "Bild, das einen Merkmal- / Makel-Eintrags zeigt."
+        }
+      },
+      "special-abilities": {
+        "title": "Besondere Fähigkeit",
+        "tech": {
+          "title": "Hintergrundbild eines Spezialfertigkeitseintrags, das ein Taschenicon zeigt.",
+          "alt": "Bild, das einen Spezialfertigkeitseintrags zeigt."
+        }
+      },
+      "journey-log": {
+        "roll-dialog": {
+          "title": "Wähle die Gebietsart aus."
+        },
+        "chat": {
+          "region-type": "Gebietsart:",
+          "event-type": "Ereignisart:",
+          "target": "Ziel:"
+        },
+        "title": "Reisebuch",
+        "company": "Gemeinschaft",
+        "mounts": "Reittiere",
+        "journal": "Tagebuch",
+        "journey-path": "Reisepfad",
+        "events": {
+          "title": "Ereignis würfeln",
+          "name": "Ereignis"
+        },
+        "event": {
+          "name": "Ereignis",
+          "result": "Ergebnis",
+          "target": "Ziel",
+          "region": "Gebiet",
+          "description": "Einige Proben auf dem Reisepfad ablegen."
+        },
+        "region-types": {
+          "border-land": "Grenzland",
+          "wild-land": "Wildes Land",
+          "dark-land": "Dunkles Land"
+        },
+        "attributes": {
+          "name": "Name",
+          "role": "Rolle",
+          "vigour": "Lebenskraft",
+          "": "Reisemüdigkeit",
+          "travel-fatigue": "Reisemüdigkeit"
+        },
+        "actions": {
+          "import": {
+            "title": "Importiere die Daten eines Gemeinschaftsakteurs [ALT+Klick]. Warnung, Gemeinschaftseintragsdaten werden überschritten."
+          },
+          "add-member": {
+            "title": "Füge der Gemeinschaft ein Mitglied hinzu [ALT+Klick]."
+          },
+          "delete-member": {
+            "title": "Lösche ein Mitglied der Gemeinschaft [ALT+Klick]."
+          },
+          "add-mount": {
+            "title": "Füge ein Reittier der Gemeinschaft hinzu [ALT+Klick]."
+          },
+          "delete-mount": {
+            "title": "Lösche ein Reittier der Gemeinschaft [ALT+Klick]."
+          },
+          "add-event": {
+            "title": "Füge ein Ereignis dem Reisetagebuch hinzu [ALT+Klick]."
+          },
+          "add-event-with-roll": {
+            "title": "Füge ein Ereignis mit automatischer Ereignisprobe dem Reisetagebuch hinzu [ALT+Klick]."
+          },
+          "delete-event": {
+            "title": "Lösche ein Ereignis aus dem Reisetagebuch [ALT+Klick]."
+          },
+          "re-roll-event": {
+            "title": "Würfle die Ereignisprobe erneut und ersetze diesen Eintrag durch das neue Ergebnis.[ALT+Klick]."
+          }
+        },
+        "tech": {
+          "title": "Hintergrund eines Reisetagebuchs, das einen Pfad zeigt.",
+          "alt": "Bild, das ein Reisetagebuch zeigt."
+        }
+      },
+      "fellowship": {
+        "title": "Gemeinschaft",
+        "tech": {
+          "title": "Hintergrundbild einer Gemeinschaft, das zwei miteinander verbundene Ringe zeigt.",
+          "alt": "Bild, das die Gemeinschaft zeigt."
+        }
+      },
+      "skills": {
+        "title": "Fertigkeit",
+        "tech": {
+          "title": "Hintergrundbild eines Fertigkeitseintrags, das ein Taschenicon zeigt.",
+          "alt": "Bild, das einen Fertigkeitseintrags zeigt."
+        }
+      },
+      "virtues": {
+        "title": "Vorteil",
+        "tech": {
+          "title": "Hintergrundbild eines Vorteilseintrags, das ein Taschenicon zeigt.",
+          "alt": "Bild, das einen Vorteilseintrags zeigt."
+        }
+      },
+      "rewards": {
+        "title": "Belohnung",
+        "tech": {
+          "title": "Hintergrundbild eines Belohnungseintrags, das ein Taschenicon zeigt.",
+          "alt": "Bild, das einen Belohnungseintrags zeigt."
+        }
+      },
+      "weapons": {
+        "title": "Waffe",
+        "tech": {
+          "title": "Hintergrundbild eins Waffengegenstand, das ein Taschenicon zeigt.",
+          "alt": "Bild, das einen Waffengegenstand zeigt."
+        }
+      }
+    },
+    "skills": {
+      "groups": {
+        "personality": "Persönlichkeit",
+        "movement": "Bewegung",
+        "perception": "Wahrnehmung",
+        "survival": "Überleben",
+        "custom": "Benutzerdefiniert",
+        "vocation": "Berufung",
+        "combat": "Kämpfen"
+      },
+      "details": {
+        "skillGroup": "Fertigkeitsgruppe",
+        "associatedStat": "Assoziierter Wert",
+        "tech": {
+          "alt": "Bild, das eine Fertigkeit darstellt."
+        }
+      }
+    },
+    "traits": {
+      "groups": {
+        "distinctiveFeature": "Einzigartiges Merkmal",
+        "flaw": "Makel"
+      },
+      "details": {
+        "traitGroup": "Merkmalsgruppe",
+        "tech": {
+          "alt": "Bild, das ein Merkmal oder Makel zeigt."
+        }
+      }
+    },
+    "reward": {
+      "groups": {
+        "cultural": "Kulturelle Belohnung",
+        "qualities": "Qualitäten"
+      },
+      "details": {
+        "type": "Belohnungsart",
+        "tech": {
+          "alt": "Bild, das eine Belohnung zeigt."
+        }
+      }
+    },
+    "virtues": {
+      "groups": {
+        "cultural": "Kulturelle Vorteile",
+        "masteries": "Start-Vorteile"
+      },
+      "details": {
+        "type": "Vorteilsart",
+        "tech": {
+          "alt": "Bild, das einen Vorteil zeigt."
+        }
+      }
+    },
+    "specialAbilities": {
+      "groups": {
+        "hate": "Hass",
+        "virtues": "Vorteile",
+        "valour": "Tapferkeit"
+      },
+      "details": {
+        "specialAbilityGroup": "Gruppe für bes. Fähigk.",
+        "active": "Aktiv",
+        "cost": "Kosten",
+        "tech": {
+          "alt": "Bild das eine Spezialfertigkeit zeigt."
+        }
+      }
+    },
+    "fellAbilities": {
+      "groups": {
+        "hate": "Hass"
+      },
+      "details": {
+        "fellAbilityGroup": "Gruppe spezieller Fertigkeiten",
+        "active": "Aktiv",
+        "cost": "Kosten",
+        "tech": {
+          "alt": "Bild, das eine spezielle Fertigkeit zeigt."
+        }
+      }
+    },
+    "weapons": {
+      "groups": {
+        "none": "-",
+        "brawling": "Raufen",
+        "swords": "Schwerter",
+        "axes": "Äxte",
+        "bows": "Bögen",
+        "spears": "Speere",
+        "bestial": "Bestialisch"
+      },
+      "details": {
+        "weapon": "Waffe",
+        "damage": "Schaden",
+        "edge": "Schneide",
+        "injury": "Verletzung",
+        "extendedWeaponSelectionHint": "(Option: Einer SC-benutzerdefinierten Waffe zugeordnet.)",
+        "group": "Gruppe",
+        "ranks": "Ränge",
+        "notes": "Anmerkungen",
+        "skill-name": "Fertigkeit",
+        "ranged": "Fernkampf",
+        "actions": "Aktionen",
+        "twoHandWeapon": "Zweihändig",
+        "short": "Kurze Reichweite",
+        "medium": "Mittlere Reichweite",
+        "long": "Große Reichweite",
+        "description": "Beschreibung",
+        "tech": {
+          "alt": "Bild, das eine Waffe zeigt.",
+          "title": "Hintergrundbild einer Waffe, das ein Waffenicon zeigt.",
+          "caption": "Attribute"
+        }
+      }
+    },
+    "callings": {
+      "groups": {
+        "captain": "Befehlshaber",
+        "scholar": "Gelehrter",
+        "champion": "Streiter",
+        "treasure-hunter": "Schatzsucher",
+        "messenger": "Bote",
+        "warden": "Hüter"
+      }
+    },
+    "armour": {
+      "title": {
+        "group": "Rüstungsgruppe"
+      },
+      "groups": {
+        "leather": "Lederpanzer",
+        "mail": "Kettenpanzer",
+        "head": "Kopfschutz",
+        "shield": "Schild"
+      }
+    },
+    "stats": {
+      "strength": "Kraft",
+      "heart": "Mut",
+      "wits": "Verstand",
+      "favoured": "begünstigt"
+    },
+    "statureStats": {
+      "adventurePoints": "Abenteuerpunkte",
+      "total": "insgesamt",
+      "valour": "Tapferkeit",
+      "wisdom": "Weisheit"
+    },
+    "commonSkills": {
+      "awe": "Beeindrucken",
+      "enhearten": "Ermutigen",
+      "persuade": "Überreden",
+      "athletics": "Athletik",
+      "travel": "Reisen",
+      "stealth": "Heimlichkeit",
+      "awareness": "Wahrnehmung",
+      "insight": "Verständnis",
+      "scan": "Untersuchen",
+      "explore": "Erkunden",
+      "healing": "Heilen",
+      "hunting": "Jagen",
+      "song": "Musizieren",
+      "courtesy": "Auftreten",
+      "riddle": "Rätseln",
+      "craft": "Handwerk",
+      "battle": "Kriegskunst",
+      "lore": "Wissen"
+    },
+    "combatProficiencies": {
+      "brawling": "Raufen",
+      "axes": "Äxte",
+      "swords": "Schwerter",
+      "spears": "Speere",
+      "bows": "Bögen"
+    },
+    "standardOfLivingGroups": {
+      "poor": "arm",
+      "frugal": "bescheiden",
+      "common": "gewöhnlich",
+      "prosperous": "wohlhabend",
+      "rich": "reich",
+      "veryRich": "sehr reich"
+    },
+    "skillGroups": {
+      "personality": "Persönlichkeit",
+      "movement": "Bewegung",
+      "perception": "Wahrnehmung",
+      "survival": "Überleben",
+      "custom": "Benutzerdefiniert",
+      "vocation": "Berufung",
+      "combat": "Kampf"
+    },
+    "sheet": {
+      "actions": {
+        "rest": {
+          "dialog-box": {
+            "title": "Hoffnungspunkt(e) aus der Gemeinschaft zurückgewinnen",
+            "community-point-label": "Gemeinschaftspunkte verfügbar",
+            "required-hope-points": "Wie viele Punkte möchtest du zurückgewinnen?",
+            "actor-hope-points": "Hoffnungspunkte (aktuell/max):",
+            "submit-button": "Wiederherstellen",
+            "cancel-button": "Abbrechen",
+            "warn": {
+              "one-community_actor_expected": "In der Welt sollte es nur einen einzigen Akteur der Gemeinschaft geben.!",
+              "not-enough-hope-points-available": "Nicht genügend Hoffnungspunkte im Pool verfügbar (benötigt: {required}, verfügbar: {available})",
+              "too-many-hope-points-required": "Zu viele Hoffnungspunkte erforderlich (Planziel: {target}, max. verfügbar: {max})"
+            }
+          },
+          "short": {
+            "label": "Kurz",
+            "noRestoredMessage": "Nach einer kurzen Rast hat {name} <b>keine Ausdauer regeneriert</b> ({name} hat <b>volle Ausdauer</b>).",
+            "restoredMessage": "Nach einer kurzen Rast hat {name} <b>{amount} Ausdauerpunkte regeneriert</b> ({name} <b>hat {endurance}</b> Ausdauerpunkte).",
+            "woundedRestoredMessage": "Nach einer kurzen Rast hat {name} <b>keine Ausdauer regeneriert</b> ({name} ist <b>verwundet</b>).",
+            "description": "anklicken, um Ausdauer durch eine kurze Rast zu regenerieren (eine Stunde)",
+            "title": "Kurze Rast"
+          },
+          "prolonged": {
+            "label": "Lange",
+            "noRestoredMessage": "Nach einer ausgedehnten Rast hat {name} <b>keine Ausdauer regeneriert</b> ({name} hat <b>volle Ausdauer</b>).",
+            "restoredMessage": "Nach einer ausgedehnten Rast hat {name} <b>alle Ausdauerpunkte regeneriert</b> ({name} hat <b>volle Ausdauer</b>).",
+            "woundedRestoredMessage": "Nach einer ausgedehnten Rast hat {name} aufgrund der Verwundung <b>{amount} Ausdauerpunkte regeneriert</b> ({name} <b>hat {endurance}</b> Ausdauerpunkte).",
+            "description": "anklicken, um Ausdauer durch eine ausgedehnte Rast zu regenerieren (durchgeschlafene Nacht)",
+            "title": "Ausgedehnte Rast"
+          }
+        },
+        "roll": {
+          "hope": "Einen Punkt Hoffnung hinzufügen",
+          "lore": "Würfle eine Probe auf die Fertigkeit Wissen.",
+          "fatigue": "Einen Erschöpfungstest würfeln",
+          "skill": " würfel"
+        },
+        "toggle": {
+          "favoured": "Drücke [ALT+Klick], um den Status 'bevorzugt' zu ändern",
+          "add-remove-skill": "Drücken Sie [ALT+Klick], um eine Fertigkeitsstufe hinzuzufügen und [UMSCHALT+ALT+Klick], um eine Stufe zu entfernen."
+        }
+      },
+      "skill": {
+        "delete": "[ALT+Klick] Eintrag löschen",
+        "edit": "Eintrag bearbeiten",
+        "roll": "Probe ablegen",
+        "chat": "an Chat senden"
+      }
+    },
+    "roll": {
+      "warn": {
+        "noSkillFound": "Die Fertigkeit {skillName} wurde für den Akteur {actorName} nicht gefunden.",
+        "clickOnWeaponInstead": "Man sollte auf die Waffe klicken, die man nutzt, statt auf die Kampffähigkeit.",
+        "impossibleToFavouredAWeapon": "Es ist unmöglich eine Waffenfähigkeit zu bevorzugen."
+      },
+      "skill": "Anklicken, um eine Probe abzulegen.",
+      "difficulty": "Schwierigkeitsgrad",
+      "target": "Ziel",
+      "result": {
+        "success": "Erfolg",
+        "great-success": "Großer Erfolg",
+        "extraordinary-success": "Außergewöhnlicher Erfolg",
+        "automatic-success": "Automatischer Erfolg",
+        "failure": "Misserfolg",
+        "hidden": "Versteckt",
+        "automatic-failure": "Automatischer Fehlschlag"
+      },
+      "details": {
+        "tech": {
+          "title": "Eine Probe ablegen."
+        }
+      },
+      "special-success": {
+        "title": "Besondere Erfolg(e) verwenden",
+        "label": "Anzahl der besonderen Erfolg(e)",
+        "actions": {
+          "submit": "übermitteln",
+          "cancel": "abbrechen"
+        },
+        "tech": {
+          "title": "Ein Probenwurf mit Tengwar-Rune(n)."
+        }
+      }
+    },
+    "dice": {
+      "tengwar": "Tengwar-Rune",
+      "gandalf": "Gandalf-Rune",
+      "sauron": "Das Auge Saurons",
+      "standard": {
+        "label": "Erfolg",
+        "1": "Erfolgswürfel eins",
+        "2": "Erfolgswürfel zwei",
+        "3": "Erfolgswürfel drei",
+        "4": "Erfolgswürfel vier",
+        "5": "Erfolgswürfel Fünf",
+        "6": "Erfolgswürfel sechs mit Tengwar-Rune"
+      },
+      "weary": {
+        "label": "Erfolg (erschöpft)",
+        "1": "Heldenwürfel erschöpft eins",
+        "2": "Heldenwürfel erschöpft zwei",
+        "3": "Heldenwürfel erschöpft drei",
+        "4": "Heldenwürfel vier",
+        "5": "Heldenwürfel fünf",
+        "6": "Heldenwürfel sechs mit Tengwar-Rune"
+      },
+      "feat": {
+        "label": "Heldenwürfel",
+        "description": "Ein W12 Heldenwürfel",
+        "1": "Heldenwürfel eins",
+        "2": "Heldenwürfel zwei",
+        "3": "Heldenwürfel drei",
+        "4": "Heldenwürfel vier",
+        "5": "Heldenwürfel fünf",
+        "6": "Heldenwürfel sechs",
+        "7": "Heldenwürfel sieben",
+        "8": "Heldenwürfel acht",
+        "9": "Heldenwürfel neun",
+        "10": "Heldenwürfel zehn",
+        "11": "Heldenwürfel Saurons Auge",
+        "12": "Heldenwürfel Gandalf-Rune"
+      }
+    },
+    "popup": {
+      "actions": {
+        "save": "speichern",
+        "cancel": "abbrechen"
+      },
+      "taskCheck": {
+        "armour": {
+        },
+        "title": "{type} Popup-Fenster bearbeiten"
+      }
+    },
+    "chat": {
+      "actions": {
+        "roll": "Probe",
+        "roll-result": "Probenergebnis",
+        "test": "Probe",
+        "save": "speichern",
+        "cancel": "abbrechen",
+        "hidden": "verdeckte Probe"
+      },
+      "taskCheck": {
+        "options": {
+          "roll-characteristics": {
+            "title": "Probencharakteristik",
+            "is-weary": "ist erschöpft.",
+            "is-miserable": "ist verzweifelt.",
+            "is-inspired": "ist inspiriert.",
+            "is-favoured": "ist bevorzugt.",
+            "is-ill-favoured": "ist benachteiligt."
+          },
+          "roll-formula": "Würfelpool",
+          "difficulty": "Schwierigkeitsgrad",
+          "tn": "SG",
+          "feat-die-value": "Heldenwürfelwert",
+          "feat-dice": "Heldenwürfel",
+          "bonus-success-dice": "Bonuswürfel",
+          "bonus-penalty-dice": "Bonus-/Maluswürfel",
+          "extended-penalty-dice": {
+            "label": "Bonus-/Maluswürfelwert",
+            "hint": "einen negativen Wert für Mali und einen positiven Wert für Boni eingeben"
+          },
+          "hope-point-bonus-dice": "Hoffnung-Bonuswürfel",
+          "inspired": "inspiriert",
+          "mastery-dice": "Meisterschaft Würfel",
+          "favoured-ill-favoured": "begünstigt/benachteiligt",
+          "bonus-penalty": "Bonus/Mali",
+          "support-die": "Unterstützung durch einen Gefährten",
+          "advanced": "Fortgeschritten",
+          "hope": "Hoffnung",
+          "worst": "schlechtester",
+          "best": "bester",
+          "health-impacts": "Zustandseinflüsse",
+          "weary-not-weary": "erschöpft?",
+          "miserable-not-miserable": "verzweifelt?",
+          "weary": "erschöpft",
+          "result-modifier": "Ergebnismodifikator",
+          "modifier": "Modifikator",
+          "not-weary": "nicht erschöpft",
+          "miserable": "verzweifelt",
+          "not-miserable": "nicht verzweifelt"
+        },
+        "title": "{type} Probe ablegen"
+      },
+      "error": {
+        "actorNotFound": "Es wurde kein Akteur mit der actorID: {actorId} und tokenId:{tokenId} gefunden."
+      },
+      "warn": {
+        "characterHasNotBeenUsedToCreateTheAction": "Die Aktion für die ein Hoffnungspunkt ausgegeben werden soll, wurde nicht durch einen Charakter initiiert, sondern durch {actorName}!"
+      }
+    },
+    "rolls": {
+      "protection": "Schutz",
+      "fear": "Furcht",
+      "corruption": "Korruption"
+    },
+    "combat": {
+      "error": {
+        "unableToRerollPrepBattle": "Es ist unmöglich, den Kampfvorbereitungswurf für den Token {token} zu wiederholen, da es sich nicht um einen Charakter handelt. Es ist ein {type}",
+        "itemNotFound": "Der Eintrag (name :{name}, type: {type}) wurde für diesen Charakter nicht gefunden.",
+        "noActorAttachedToToken": "Es ist unmöglich, den Token '{name}' dem Kampf hinzuzufügen, da diesem Token kein Akteur zugeordnet ist. Du hättest den mit dem Token verlinkten Akteur löschen sollen."
+      },
+      "warn": {
+        "noActorFound": "Kein Akteur mit dem Namen {name} gefunden.",
+        "combatantNotInCombat": "Der Token ({name}) mit der ID ({id}) mit dem du ins Gefecht gehen möchtest, ist nicht Teil des aktiven Kampfes oder befindet sich außerhalb des Gefechts.",
+        "combatantDoesntExistInCombat": "Der Akteur mit der ID ({id}) ist nicht Teil des aktiven Kampfes.",
+        "noSkillNameAvailableWithExtendedWeaponSelection": "Der Charakter  {actorName} hat weder eine Kampffähigkeit  ({name}) noch eine Fertigkeit mit dem Namen ({name}).",
+        "noSkillNameFoundWithExtendedWeaponSelection": "Der Charakter  {actorName} hat weder eine Kampffähigkeit  ({name}) und keine Fertigkeit mit dem gesuchten Name ({name}).",
+        "noCombatProficiencyFound": "Der Charakter  {actorName} hat weder eine Kampffähigkeit  ({name}). Du solltest entweder eine Fähigkeit hinzufügen oder die erweiterbaren Einstellungen für Kampffertigkeiten verwenden, um eine hinzuzufügen.",
+        "incompleteItem": "Kein gültiges {element} für diesen Eintrag ({item}). Du musst ein {element} auswählen.",
+        "noValidTarget": "Du darfst nur ein einzelnes Token auswählen, das Sie angreifen wollen.",
+        "noValidCombatTarget": "Du musst einen Token auswählen, der in der Kampfübersicht vorhanden ist.",
+        "noValidWeaponEquipped": "Du hast keine gültige Waffe für diese Art von Fertigkeit ({skill}) ausgerüstet.",
+        "tnIsWeird": "Die berechnete SG hat einen ungültigen Wert. Vielleicht hast Du vergessen, den Parade-Status des Ziels ({foeName}) zu setzen.",
+        "noTokenSelectedForEngagement": "Du musst mehrere Token auswählen, damit sie sich untereinander im Gefecht befinden.",
+        "numberOfTengwarNotCorrect": "Etwas Merkwürdiges ist passiert. Die Anzahl der Tengwar-Runen ({tengwar}) ist kleiner oder gleich 0! Dies sollte nicht passieren.",
+        "impossibleForMonoFaction": "Du musst von jeder Fraktion mindestens einen Token auswählen.",
+        "impossibleForComplexEngagement": "Du darfst nur ein einziges Token für eine der beiden Fraktionen auswählen, nicht mehrere Token für beide."
+      },
+      "actions": {
+        "applyDamage": "Schaden anwenden",
+        "applyWeary": "Erschöpfung anwenden",
+        "applyWounded": "Wunden anwenden",
+        "applyAll": "Alles anwenden (Schaden und Zustände)",
+        "applyAllStates": "Wende alle Zustände an (Erschöpft, Verwundet & außer Gefecht)",
+        "applyOutOfCombat": "Bestätige außer Gefecht",
+        "applyWearyState": "Bestätige Erschöpfung",
+        "applyMiserableState": "Bestätige Verzweiflung",
+        "applyWearyAndMiserableState": "Bestätige Erschöpfung und Verzweiflung"
+      },
+      "special-success-action": {
+        "heavy-blow": {
+          "title": "Schwerer Treffer",
+          "alt": "Ein Schwert landet einen schweren Schlag",
+          "label": "Schwerer Treffer",
+          "description": "Addiere {amount} zum Schaden."
+        },
+        "fend-off": {
+          "title": "Abwehren",
+          "alt": "Ein Charakter weicht einem Schlag aus",
+          "label": "Abwehren",
+          "description": "Addiere +2 zu Parade gegen den nächsten Angriff."
+        },
+        "piercing-blow": {
+          "title": "Durchstoßen",
+          "alt": "Ein Speer durchbohrt jemanden",
+          "label": "Durchstoßen",
+          "description": "Addiere {amount} zum Heldenwürfel, um die ({edge}) zu erreichen."
+        },
+        "gain-ground": {
+          "title": "Boden gewinnen",
+          "alt": "Ein Pfeil wird abgefeuert um Boden gegenüber Gegnern zu gewinnen",
+          "label": "Boden gewinnen",
+          "description": "Auf Feinde schießen, um Boden zu gewinnen."
+        },
+        "shield-thrust": {
+          "title": "Schildstoß",
+          "alt": "Ein Schild schlägt heftig auf jemanden ein",
+          "label": "Schildstoß",
+          "description": "Zurückgedrängt statt Schaden."
+        },
+        "seize": {
+          "title": "Ergreifen",
+          "alt": "Eine Hand ergreift etwas.",
+          "label": "Ergreifen",
+          "description": "Der Angreifer hält das Ziel fest."
+        },
+        "break-shield": {
+          "title": "Schildbrecher",
+          "alt": "Der Schild bricht in Stücke",
+          "label": "Schildbrecher",
+          "description": "Der Angreifer zertrümmert den Schild."
+        },
+        "none-custom": {
+          "title": "keine/benutzerdefiniert",
+          "alt": "Ein Kreuz entwerten",
+          "label": "keine/benutzerdefiniert",
+          "description": "Hausregelanwendungen."
+        }
+      },
+      "dicePool": {
+        "label": "Größe Erfolgswürfelpool."
+      },
+      "step": {
+        "initiative": {
+          "attack": {
+            "label": "Angr.",
+            "title": "Gemeinschaft ist in Angriffsposition."
+          },
+          "defense": {
+            "label": "Vert.",
+            "title": "Gemeinschaft ist in Verteidigungsposition."
+          },
+          "toggle": {
+            "title": "Wechsel zwischen Angriffs- und Verteidigungsposition."
+          }
+        },
+        "preparation": {
+          "label": "Vorbereitung",
+          "roll": {
+            "reroll": "Wiederhole Kampfvorbereitung",
+            "label": "Kampfvorbereitung",
+            "title": "Würfle eine Kampfvorbereitungsprobe."
+          }
+        },
+        "openingVolley": {
+          "label": "Auftaktsalve",
+          "roll": {
+            "label": "Auftaktsalve",
+            "title": "Lege Proben für die Auftaktsalven ab."
+          }
+        },
+        "closeCombat": {
+          "engagement": "Nahkampfrunden",
+          "label": "Nahkampfrunden"
+        },
+        "default": {
+          "label": "Unbekannter Kampfschritt"
+        }
+      },
+      "stance": {
+        "forward": {
+          "label": "offensiv"
+        },
+        "open": {
+          "label": "Bereitschaft"
+        },
+        "defensive": {
+          "label": "defensiv"
+        },
+        "rearward": {
+          "label": "hinten"
+        },
+        "skirmish": {
+          "label": "Scharmützel"
+        },
+        "default": {
+          "label": "Unbekannte Kampfhaltung"
+        }
+      },
+      "chat": {
+        "warn": {
+          "impossibleToRollInjury": "Es war unmöglich, die Verletzung aus der Tabelle zu würfeln."
+        },
+        "preparation-roll": {
+          "title": "Ergebnis des Kampfvorbereitungswurfs",
+          "message": " bekommt <span class='key-point'>{successDiceBonus} Bonuswürfel</span> für den Kampf."
+        },
+        "result": {
+          "title": "Angriffsergebnis",
+          "help": "Bitte mit der rechten Maustaste klicken, um das Kontextmenü zu verwenden",
+          "paragraph": "<span class='actor-name'>{attackerName}</span> attackiert <span class='actor-name'>{targetName}</span> mit seinem {weaponName} und verursacht <a class='apply-damage-element' title='{hint}'>{totalDamage} Schaden<i class='fas fa-external-link-alt'></i></a>",
+          "specialResult": " mit <a class='apply-special-result' title='{hint}'>{quantity} besonderen Erfolgen <i class='fas fa-external-link-alt'></i></a> (<img src='systems/tor2e/assets/images/tengwar.png' data-edit='img' title='tengwar' height='15' width='15' alt='tengwar'/>)"
+        },
+        "details": {
+          "attackerRoll": "Wurf des Angreifers :",
+          "successLevel": "Erfolgslevel :",
+          "specialDamage": "Spezialschaden :",
+          "damage": {
+            "title": "Schaden :",
+            "weapon": "[Waffe({weaponDamage})",
+            "bonus": " + Ergebnisbonus({bonusDamage})"
+          }
+        },
+        "piercing": {
+          "title": "durchstoßen",
+          "description": "<span class='actor-name'>{targetName}</span> muss einen <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>Schutzprobe<i class='fas fa-dice'></i></a> gegen {weaponInjuryValue} SG ({edge}) ablegen."
+        },
+        "injuryRoll": {
+          "title": "Verletzungswurf",
+          "description": "<span class='actor-name'>{targetName}</span> ist verwundet und muss eine <a class='button-injury-roll'>Probe auf Verletzung<i class='fas fa-dice'></i></a> ablegen."
+        },
+        "injury": {
+          "title": "Verletzung",
+          "moderate": {
+            "type": "leichte",
+            "title": "Leichte Verletzung",
+            "message": "<span class='actor-name'>{targetName}</span> erleidet eine <b>Leichte Verletzung</b>, die kurz nach dem Kampf abgeheilt ist."
+          },
+          "severe": {
+            "type": "ernste",
+            "title": "Ernste Verletzung",
+            "message": "<span class='actor-name'>{targetName}</span> erleidet eine <b>Ernste Verletzung</b> für die Zeit von {duration} Tagen."
+          },
+          "grievous": {
+            "type": "üble",
+            "title": "Üble Verletzung",
+            "message": "<span class='actor-name'>{targetName}</span> erleidet eine <b>Üble Verletzung</b>, ist bewusstlos und liegt im Sterben (Ausdauer von Null)."
+          }
+        },
+        "effects": {
+          "title": "Effekte des Angriffs",
+          "damageDealt": "Verursachter Schaden:",
+          "protection": {
+            "is": " ist ",
+            "wounded": "verwundet!",
+            "protected": "geschützt!"
+          },
+          "weary": {
+            "is": " ist erschöpft."
+          },
+          "ooc": {
+            "is": " ist außer Gefecht."
+          }
+        }
+      }
+    },
+    "macro": {
+      "error": {
+        "noActorAvailable": "Bitte einen Akteur auswählen, bevor Du dieses Makro verwendest!",
+        "itemIsMissing": "Der Eintrag {itemName} des Typs {itemType} ist für den ausgewählten Akteur {actorName} nicht verfügbar!",
+        "skillIsMissing": "Die Fertigkeit {skillName} ist für den ausgewählten Akteur {actorName} nicht verfügbar!",
+        "missingLoremasterRole": "Nur der Spielleiter kann diese Aktion durchführen.",
+        "wrongStatusEffect": "Der Status '{statusEffect}' existiert nicht."
+      }
+    },
+    "effects": {
+      "wounded": "Verwundet",
+      "poisoned": "Vergiftet",
+      "miserable": "Verzweifelt",
+      "weary": "Erschöpft",
+      "unit": {
+        "days": "Tage"
+      }
+    },
+    "journey-log": {
+      "sheet": {
+        "title": "Name"
+      },
+      "log": {
+        "year": "Jahr",
+        "season": "Jahreszeit",
+        "from": "Reise von",
+        "to": "Ziel",
+        "duration": "Reisetage"
+      }
+    },
+    "seasons": {
+      "winter": "Winter",
+      "spring": "Frühling",
+      "summer": "Sommer",
+      "autumn": "Herbst"
+    },
+    "roles": {
+      "guide": "Anführer",
+      "scout": "Kundschafter",
+      "lookout": "Späher",
+      "hunter": "Jäger"
+    },
+    "evenTypes": {
+      "terrible-misfortune": "Schreckliches Unglück",
+      "despair": "Verzweiflung",
+      "ill-choices": "Schlechte Entscheidungen",
+      "mishap": "Missgeschick",
+      "short-cut": "Abkürzung",
+      "chance-meeting": "Zufallsbegegnung",
+      "joyful-sight": "Erfreulicher Anblick"
+    },
+    "active-effect": {
+      "toggle": {
+        "help": "[ALT+Klick] zum Umschalten des Status verwenden"
+      }
+    }
+  },
+  "SETTINGS": {
+    "setPauseMessage": "Pausenmeldung, die angezeigt wird",
+    "setPauseMessageDescription": "Um die Nachricht zu ändern, die über dem Pausenbild angezeigt wird, ändere den Inhalt. Um die Standardnachricht beizubehalten, das Feld bitte leer lassen.",
+    "setSoloMode": "Strider-Modus (Solo)",
+    "setSoloModeDescription": "Einige Funktionen sind an den Strider-Modus angepasst (z. B. nur Scharmützel-Haltung, Gemeinschaftsdarsteller ist vereinfacht, ...)",
+    "setAddSkirmish": "Füge Scharmützel-Stellung dem Spiel hinzu",
+    "setAddSkirmishDescription": "Füge Scharmützel als erlaubte Haltung hinzu, selbst wenn nicht im Strider-Modus (Solo) gespielt wird.",
+    "setNoneCustomCombatSpecialEffect": "Keinen/angepassten Kampfspezialeffekt hinzufügen",
+    "setNoneCustomCombatSpecialEffectDescription": "Hinzufügen eines neuen Kampf-Spezialeffekts, genannt none/custom, um einige Situationen hauszuregeln.",
+    "setTnBaseValue": "Setze den SG-Basiswert",
+    "setTnBaseValueDescription": "Diese Einstellung erlaubt es dem SL, den gewünschten Basiswert festzulegen. Im Buch wird empfohlen, 20 für den Kampagnenmodus und 18 für den One-Shot-Modus zu wählen.",
+    "setExtendedWeaponSelection": "Erweiterte Waffenliste",
+    "setExtendedWeaponSelectionDescription": "Dieser Parameter sollte nur aktiviert werden, wenn der Spielleiter selbst erstellte Regeln für den Kampf verwenden möchte (z.B. neue Kampffähigkeiten). Wenn dieser Parameter aktiviert wird, erscheint ein neues Feld im Waffenblatt, um eine Verlinkung mit der neuen Kampffähigkeit anstelle des Waffengruppennamens herzustellen.",
+    "setUseAdversarySkills": "Erlaube die Verwendung von Fertigkeiten für Widersacher",
+    "setUseAdversarySkillsDescription": "In der 2. Edition haben Widersacher keine Fertigkeiten mehr auf ihrem Charakterblatt. Wenn man diese Einstellung auf 'an' setzt, kann der SL den Block wieder zum Charakterblatt des Widersachers hinzufügen.",
+    "setOverrideEyeAwareness": "Überschreibe den Maximalwert von Saurons Blick",
+    "setOverrideEyeAwarenessDescription": "Standardmäßig ist der Maximalwert 24, aber wenn gewünscht, kann dieser Wert auf einen anderen Wert geändert werden, je nach den eigenen Bedürfnissen.",
+    "setRawModeForActiveEffectName": "Auswahlmodus des aktiven Effekts ändern",
+    "setRawModeForActiveEffectDescription": "Wenn Du bestimmte Dinge tun musst und Du weißt, was Du tust, kannst Du den aktiven Auswahlmodus umschalten (aktiviert: Listenmodus/deaktiviert: Originalmodus (Texteingabefeld)).",
+    "setAlwaysShowShieldThrustName": "Schildstoß immer anzeigen",
+    "setAlwaysShowShieldThrustDescription": "Besonderen Kampfeffekt \"Schild´stoß\": Diese Option auch dann vorschlagen, wenn die Regelvoraussetzung (Stärke > Attributsstufe) nicht erreicht wird.",
+    "setWarnLoreMasterForCharacterStateName": "Aktive Warnmeldung",
+    "setWarnLoreMasterForCharacterStateDescription": "aktiviert eine Warnmeldung im Chat für jeden Charakter, der sich in einem erschöpften oder verzweifelten Zustand befindet.",
+    "setShowHideRangeBlockName": "Entfernungsbereich anzeigen",
+    "setShowHideRangeBlockDescription": "Dient zur Anzeige des Reichweitenblocks auf dem Waffenblatt und dem Charakter-/Abenteurerblatt.",
+    "disableAltClickName": "Deaktiviert ALT-Klick",
+    "disableAltClickDescription": "Deaktiviert den ALT-Klick, um einige Veränderungen wie das Verbessern von Fähigkeiten oder das Umschalten des Gesundheitsstatus zu schützen.",
+    "aldDefaultValueName": "Die Akteurlinkdaten für NSCs wird standardmäßig überprüft",
+    "aldDefaultValueDescription": "Lege den Standardwert für die Akteurlinkdaten für neue NSC-Akteure fest.",
+    "setDisplayCommunityInfoAtStartValue": "Zeige die aktuell aktive Gemeinschaft an",
+    "setDisplayCommunityInfoAtStartDescription": "Zeige bei der Verbindung zum Spiel den Namen der aktiven Gemeinschaft an",
+    "setModifiedLoadAsRequested": "Modifiziere die Belastungsberechnung",
+    "setModifiedLoadAsRequestedDescription": "Erlaubt Hausregeln, die ändern, wie viel Belastung im Verhältnis zur Ausdauer die Ermüdungswarnung auslöst. Standardmäßig wird der Ermüdungsstatus angezeigt, wenn die Ausdauer gleich oder kleiner als die Belastung ist. Zum Beispiel, um die Belastung durch die Stärke zu senken (d. h. um den Akteuren zu erlauben, ihren Stärkewert als Last ohne Auswirkung auf die Ausdauer zu tragen, indem z. B. attributes.strength oder ein ganzzahliger konstanter Wert in das Feld eingetragen wird).",
+    "setInlineElementFromUuidInDescription": "Journal in Beschreibung einfügen",
+    "setInlineElementFromUuidInDescriptionDescription": "Sie können jede Journalseite in die Artikelbeschreibung einfügen. Die Beschreibung wird dann durch den Inhalt der Journals ersetzt. Die Artikelbeschreibung sollte nur den Link zum Journal enthalten (nichts anderes), sonst wird es nicht funktionieren."
+  }
+}

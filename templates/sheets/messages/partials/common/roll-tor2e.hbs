@@ -1,0 +1,54 @@
+<div class="dice-roll">
+    <div class="skill-roll-item actor flexcol" data-actor-id="{{flavor.owner.id}}">
+        <div class="context flexrow">
+            <div class="roll-message-sidebar">
+                <img src="{{flavor.owner.img}}" title="{{flavor.owner.name}}"
+                     alt="{{localize 'tor2e.skills.details.tech.alt'}}"/>
+            </div>
+            <div class="flexcol roll-message-content">
+                <div class="roll-message-body">
+                    <div class="flexrow roll-information-row">
+                        <p class="label">
+                            {{localize "tor2e.chat.actions.test"}}:
+                        </p>
+                        <p class="value">
+                            {{flavor.action}}
+                        </p>
+                    </div>
+                    <div class="flexrow roll-information-row">
+                        <p class="label">
+                            {{localize "tor2e.roll.difficulty"}}:
+                        </p>
+                        <p class="value">
+                            {{difficulty}}
+                        </p>
+                    </div>
+                    {{#if flavor.targetName}}
+                        <div class="flexrow roll-information-row">
+                            <p class="label">
+                                {{localize "tor2e.roll.target"}}:
+                            </p>
+                            <p class="value">
+                                {{flavor.targetName}}
+                            </p>
+                        </div>
+                    {{/if}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dice-result">
+        <div class="dice-formula">
+            {{{this.formula}}}
+        </div>
+        {{{tooltip}}}
+        <h5 class="dice-total">
+            {{localize "tor2e.chat.actions.roll-result"}}:
+            <span class="{{result.cssClass}}">({{total}})</span>
+        </h5>
+        <h5 class="dice-total">
+            <span class="{{result.cssClass}}">{{localize result.message}}</span>
+        </h5>
+    </div>
+</div>

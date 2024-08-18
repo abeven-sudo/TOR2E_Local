@@ -1,0 +1,35 @@
+<div class="sheet-container">
+    <img class="background" src="{{backgroundImages.url}}" title="{{localize backgroundImages.title}}"
+         alt="{{localize 'tor2e.weapons.details.tech.alt'}}"/>
+    <form class="{{cssClass}} flexrow" autocomplete="off">
+
+        {{> "systems/tor2e/templates/sheets/items/components/item-header-card.hbs"
+                item=this.item
+                label="tor2e.actors.fellAbilities.title"
+                alt="tor2e.fellAbilities.details.tech.alt"}}
+
+        <div class="sheet-content flexcol">
+            <div class="flexrow item-row separated">
+                <div class="item-element">
+                    <label for="system.active.value-{{item.id}}">{{localize system.active.label}}</label>
+                    <input id="system.active.value-{{item.id}}" class="attribute-value" name="system.active.value"
+                           type="checkbox"
+                           value="{{system.active.value}}"
+                           data-dtype="{{system.active.type}}" {{checked system.active.value}}/>
+                </div>
+                <div class="item-element">
+                    <label for="system.cost.value-{{item.id}}">{{localize system.cost.label}}</label>
+                    <input id="system.cost.value-{{item.id}}" class="number-value attribute-number-value"
+                           name="system.cost.value"
+                           type="number" value="{{system.cost.value}}"
+                           data-dtype="{{system.cost.type}}" step="1" min="0" max="10" required><span
+                        class="validity"></span>
+                </div>
+            </div>
+            <div class="description flexcol">
+                <h2>{{localize system.description.label}}</h2>
+                {{editor description target="system.description.value" button=true editable=true}}
+            </div>
+        </div>
+    </form>
+</div>

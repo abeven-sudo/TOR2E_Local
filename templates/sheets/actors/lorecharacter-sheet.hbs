@@ -1,0 +1,65 @@
+<div class="lore sheet-container">
+    <img class="background" src="{{backgroundImages.url}}" title="{{localize backgroundImages.title}}"
+         alt="{{localize 'tor2e.weapons.details.tech.alt'}}"/>
+    <form class="{{cssClass}}" autocomplete="off">
+
+        {{> "systems/tor2e/templates/sheets/actors/partials/common/actor-header-card.hbs"
+                width = 125
+                height = 125}}
+        <section class="hostile-friendly">
+            {{> "systems/tor2e/templates/sheets/actors/partials/common/faction-slider-card.hbs"
+                    reference = "system.faction.value"
+                    attribute = system.faction}}
+        </section>
+        <div class="sheet-content">
+            <section id="sections" class="flexrow">
+                <div class="item-row flexrow">
+                    <label class="attribute-label" for="system.occupation.name-{{item.id}}">{{localize
+                            "tor2e.actors.sections.occupation"}}</label>
+                    <input id="system.occupation.name-{{item.id}}" class="attribute-text-value"
+                           name="system.occupation.value"
+                           type="text"
+                           value="{{system.occupation.value}}"
+                           data-dtype="{{system.occupation.type}}"/>
+                </div>
+            </section>
+            <section id="details" class="flexrow">
+                <div class="item-row flexrow">
+                    <label class="attribute-label" for="system.canBeAPatron.value">{{localize
+                            system.canBeAPatron.label}}
+                        :</label>
+                    <input id="system.canBeAPatron.value" name="system.canBeAPatron.value" type="checkbox"
+                           value="{{system.canBeAPatron.value}}" data-dtype="{{system.canBeAPatron.type}}" {{checked
+                            system.canBeAPatron.value}}/>
+                </div>
+                {{> "systems/tor2e/templates/sheets/actors/components/effects-card.hbs"
+                        effects=effects}}
+            </section>
+            <section class="flexrow" id="traits">
+                <div class="flexcol" id="distinctive-features">
+                    <h2>{{localize "tor2e.actors.traits.distinctiveFeatures"}}</h2>
+                    <ul class="collapsibleList">
+                        {{#each distinctiveFeatures as |distinctiveFeature id|}}
+                            {{> "systems/tor2e/templates/sheets/actors/partials/common/simple-talent-card-with-description.hbs" distinctiveFeature}}
+                        {{/each}}
+                        {{#each flaws as |flaw id|}}
+                            {{> "systems/tor2e/templates/sheets/actors/partials/common/simple-talent-card-with-description.hbs" flaw}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </section>
+            <section class="flexcol" id="notes">
+                <h2 class="toggle">{{localize system.notes.label}}</h2>
+                <div class="editor-container">
+                    {{editor notes target="system.notes.value" button=true editable=true}}
+                </div>
+            </section>
+            <section class="flexcol" id="description">
+                <h2 class="toggle">{{localize system.description.label}}</h2>
+                <div class="editor-container">
+                    {{editor description target="system.description.value" button=true editable=true}}
+                </div>
+            </section>
+        </div>
+    </form>
+</div>

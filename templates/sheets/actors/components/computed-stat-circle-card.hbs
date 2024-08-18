@@ -1,0 +1,33 @@
+{{! This component is used to display a Complex Stat in an Actor, display as a big circle, possibly with a szecondary stat in a circle around it.
+Parameters :
+- rollable {Boolean} : can we use the label of the stat to make a roll
+- stat {Object} : stat object
+- reference {String} : the stat name value. Used by FVTT to save the stat value to the System
+- extension-stat {Object} : extension-stat object
+- extension-reference {String} : the  extension stat name value. Used by FVTT to save the stat value to the System
+}}
+<div class="main-stat flexcol {{extra-css}}">
+    <p class="label">{{localize title}}</p>
+    <div class="computed main-stat-value flexrow">
+        {{#if tertiary-stat}}
+            {{> "systems/tor2e/templates/sheets/actors/components/extensions/stat-circle-ext.hbs"
+                    position="tertiary"
+                    stat=tertiary-stat
+                    reference=tertiary-reference}}
+        {{/if}}
+        <p class="item-value main-stat-value {{stat.css}}">{{stat.value}}</p>
+        {{#if secondary-stat}}
+            {{> "systems/tor2e/templates/sheets/actors/components/extensions/stat-circle-ext.hbs"
+                    position="secondary"
+                    stat=secondary-stat
+                    reference=secondary-reference}}
+        {{else}}
+            {{#if extension-computed-stat}}
+                {{> "systems/tor2e/templates/sheets/actors/components/extensions/computed-stat-circle-ext.hbs"
+                        position="secondary"
+                        stat=extension-computed-stat
+                        label=label-extension-computed-stat}}
+            {{/if}}
+        {{/if}}
+    </div>
+</div>

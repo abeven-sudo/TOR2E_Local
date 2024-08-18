@@ -1,0 +1,31 @@
+<div class="flexrow big-row">
+    {{> "systems/tor2e/templates/sheets/actors/components/resource-diamond-card.hbs"
+            stat=model.resources.endurance
+            extension-stat-value=model.resources.endurance.max
+            extension-stat=model.resources.endurance
+            reference="system.resources.endurance.value"
+            extension-reference="system.resources.endurance.max"
+            extension-label="tor2e.actors.stats.max"}}
+
+    {{> "systems/tor2e/templates/sheets/actors/components/computed-stat-diamond-card.hbs"
+            title= "tor2e.actors.stats.load"
+            stat=load
+            tertiary-reference="system.resources.travelLoad.value"
+            tertiary-stat=model.resources.travelLoad}}
+
+    {{> "systems/tor2e/templates/sheets/actors/components/resource-diamond-card.hbs"
+            stat=model.resources.hope
+            extension-stat=model.resources.hope
+            extension-stat-value=model.resources.hope.max
+            reference="system.resources.hope.value"
+            extension-reference="system.resources.hope.max"
+            extension-label="tor2e.actors.stats.max"}}
+
+    {{> "systems/tor2e/templates/sheets/actors/components/computed-stat-diamond-card.hbs"
+            title= "tor2e.actors.stats.shadow"
+            stat=shadow
+            secondary-reference="system.resources.shadow.shadowScars.value"
+            secondary-stat=model.resources.shadow.shadowScars
+            tertiary-reference="system.resources.shadow.temporary.value"
+            tertiary-stat=model.resources.shadow.temporary}}
+</div>

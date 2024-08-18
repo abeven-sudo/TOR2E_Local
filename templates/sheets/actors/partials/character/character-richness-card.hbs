@@ -1,0 +1,21 @@
+<section class="flexrow">
+    {{> "systems/tor2e/templates/sheets/actors/components/stat-diamond-card.hbs"
+            stat=system.fellowship
+            reference="system.fellowship.value"}}
+
+    {{> "systems/tor2e/templates/sheets/actors/components/stat-diamond-card.hbs"
+            stat=system.skillPoints
+            reference="system.skillPoints.value"
+            extension-stat=system.skillPoints.total
+            extension-reference="system.skillPoints.total.value"}}
+
+    {{> "systems/tor2e/templates/sheets/actors/components/stat-diamond-card.hbs"
+            stat=system.adventurePoints
+            reference="system.adventurePoints.value"
+            extension-stat=system.adventurePoints.total
+            extension-reference="system.adventurePoints.total.value"}}
+
+    {{> "systems/tor2e/templates/sheets/actors/components/stat-diamond-card.hbs"
+            stat=system.treasure
+            reference="system.treasure.value"}}
+</section>

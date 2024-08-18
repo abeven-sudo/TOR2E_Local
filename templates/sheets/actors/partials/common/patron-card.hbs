@@ -1,0 +1,26 @@
+<li class="list-actor actor" data-actor-id="{{id}}">
+    <div class="list-actor-row flexrow">
+        <div class="identification">
+            <div class=" flexrow">
+                <img class="member-token" src="{{token}}" title="{{name}}" height="50" width="50"
+                     alt="{{localize 'tor2e.traits.details.tech.alt'}}"/>
+                <p>{{name}}</p>
+            </div>
+        </div>
+        <div>
+            <input class="patron-inline-edit" type="text" id="location" name="{{location}}"
+                   data-field="location" value="{{location}}" data-dtype="{{location}}"/>
+        </div>
+        <div class="actions">
+            <a class="to-connection action" title="{{localize "tor2e.sheet.skill.edit"}}">
+                <i class="fas fa-angle-double-down"></i>
+            </a>
+            <a class="actor-edit action" title="{{localize "tor2e.sheet.skill.edit"}}">
+                <i class="fas fa-edit"></i>
+            </a>
+            <a class="patron-delete action" title="{{localize "tor2e.sheet.deleteSkill"}}">
+                <i class="fas fa-trash"></i>
+            </a>
+        </div>
+    </div>
+</li>

@@ -1,0 +1,92 @@
+<section class="biography">
+
+    <div class="flexrow">
+        <div class="flexcol biography-element">
+            <label class="attribute-label" for="model.biography.age.value">{{localize
+                    model.biography.age.label}}</label>
+            <div class="flexrow">
+                <input id="model.biography.age.value" class="attribute-number-value" name="system.biography.age.value"
+                       type="number"
+                       data-dtype="{{model.biography.age.type}}"
+                       value="{{model.biography.age.value}}" placeholder="{{localize model.biography.age.label}}"/>
+                <span>{{localize "tor2e.actors.biography.years"}}</span>
+            </div>
+        </div>
+
+        <div class="flexcol double-biography-element">
+            <label class="attribute-label" for="model.biography.title.value">{{localize
+                    model.biography.title.label}}</label>
+            <input id="model.biography.title.value" class="attribute-text-value" name="system.biography.title.value"
+                   type="text"
+                   data-dtype="{{model.biography.title.type}}"
+                   value="{{model.biography.title.value}}"/>
+        </div>
+        <div class="flexcol double-biography-element">
+            <label class="attribute-label double-biography-element"
+                   for="model.biography.fellowshipFocus.value">{{localize
+                    model.biography.fellowshipFocus.label}}</label>
+            <input id="model.biography.fellowshipFocus.value" class="attribute-text-value"
+                   name="system.biography.fellowshipFocus.value" type="text"
+                   data-dtype="{{model.biography.fellowshipFocus.type}}"
+                   value="{{model.biography.fellowshipFocus.value}}"/>
+        </div>
+    </div>
+
+    <div class="flexrow">
+        <div class="flexcol biography-element double-biography-element">
+            <label class="attribute-label" for="model.biography.culture.value">{{localize
+                    model.biography.culture.label}}</label>
+            <input id="model.biography.culture.value" class="attribute-text-value" name="system.biography.culture.value"
+                   type="text"
+                   value="{{model.biography.culture.value}}"
+                   data-dtype="{{model.biography.culture.type}}"/>
+        </div>
+
+        <div class="flexcol biography-element">
+            <label class="attribute-label" for="model.biography.standardOfLiving.value">{{localize
+                    model.biography.standardOfLiving.label}}</label>
+            <select id="model.biography.standardOfLiving.value" class="attribute-text-value auto-sizeable"
+                    name="system.biography.standardOfLiving.value">
+                {{#select model.biography.standardOfLiving.value}}
+                    {{#each config.standardOfLivingGroups as |name group|}}
+                        <option value="{{group}}">{{localize name}}</option>
+                    {{/each}}
+                {{/select}}
+            </select>
+        </div>
+
+        <div class="flexcol biography-element double-biography-element">
+            <label class="attribute-label" for="model.biography.culturalBlessing.value">{{localize
+                    model.biography.culturalBlessing.label}}</label>
+            <input id="model.biography.culturalBlessing.value" class="attribute-text-value"
+                   name="system.biography.culturalBlessing.value" type="text"
+                   value="{{model.biography.culturalBlessing.value}}"
+                   data-dtype="{{model.biography.culturalBlessing.type}}"/>
+        </div>
+    </div>
+
+
+    <div class="flexrow">
+        <div class="flexcol biography-element">
+            <label class="attribute-label" for="model.biography.calling.value">{{localize
+                    model.biography.calling.label}}</label>
+            <select id="model.biography.calling.value" class="auto-sizeable attribute-text-value"
+                    name="system.biography.calling.value">
+                {{#select model.biography.calling.value}}
+                    {{#each config.callingGroups as |name group|}}
+                        <option value="{{group}}">{{localize name}}</option>
+                    {{/each}}
+                {{/select}}
+            </select>
+        </div>
+
+        <div class="flexcol double-biography-element">
+            <label class="attribute-label" for="model.biography.shadowPath.value">{{localize
+                    model.biography.shadowPath.label}}</label>
+            <input id="model.biography.shadowPath.value" class="attribute-text-value"
+                   name="system.biography.shadowPath.value" type="text"
+                   value="{{model.biography.shadowPath.value}}" data-dtype="{{model.biography.shadowPath.type}}"/>
+        </div>
+    </div>
+
+</section>

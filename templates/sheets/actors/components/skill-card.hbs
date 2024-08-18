@@ -1,0 +1,51 @@
+{{! This component is used to display and save a Simple Skill in an Actor, with a checkbox side of it (favoured)
+Parameters :
+ - skill : skill object
+ - reference : the skill name value. Used by FVTT to save the skill value to the System
+  - checkbox-reference (String} : the name of the checkbox object value. Used by FVTT to save the checkbox value to the System
+
+ }}
+<div class="skill-draggable skill-card-component flexrow" data-skill-id="{{localize skill.label}}"
+     data-skill-key="{{key}}">
+    <div class="identification flexrow">
+        <div class="favoured-wrapper" title="{{ localize 'tor2e.sheet.actions.toggle.favoured' }}">
+            <div class="tor2e-round-checkbox">
+                <p class="toggle-favoured-state {{#if skill.favoured.value}}active{{/if}}"
+                   data-primary-attribute={{checkbox-reference}}>
+                    <span class="label"></span>
+                </p>
+            </div>
+        </div>
+        <a class="skill-name {{#if skill.favoured.value}}active{{/if}}"
+           title="{{ localize 'tor2e.roll.skill' }}"
+           data-action-name="{{localize skill.label}}"
+           data-action-value="{{skill.value}}"
+           data-action-bonus-value="{{skillBonus}}"
+           data-associate-attribute-name="{{skill.roll.associatedAttribute}}"
+           data-action-favoured-name="{{checkbox-reference}}"
+           data-action-favoured-value="{{skill.favoured.value}}">
+            <p class="skill-label">{{localize skill.label}}</p>
+        </a>
+    </div>
+    <div class="value flexcol">
+        <div class="pips-value flexrow">
+            <div class="stat-value">
+                <div class="inline-skill-modify flexrow skill-element-row" data-field={{reference}}
+                     data-action-value="{{skill.value}}" data-action-max-value="6"
+                     title="{{ localize 'tor2e.sheet.actions.toggle.add-remove-skill' }}">
+                    {{#skill-dots skill.value 6}}
+                    {{/skill-dots}}
+                </div>
+            </div>
+        </div>
+        {{#if (neq skillBonus 0)}}
+            <div class="stat-bonus flexrow">
+                <div class="flexrow skillBonus-element-row"
+                     title="Extra pips">
+                    {{#skill-dots skillBonus 6}}
+                    {{/skill-dots}}
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</div>

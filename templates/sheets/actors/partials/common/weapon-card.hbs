@@ -1,0 +1,84 @@
+<li class="item item-draggable" data-item-id="{{id}}">
+    <div class="skill-item-row flexrow skill-card-component">
+        <div class="flexrow identification table-main-column flexrow">
+            <img class="editor-toggle" src="{{img}}" title="{{name}}" height="32" width="32"
+                 alt="{{localize 'tor2e.skills.details.tech.alt'}}"/>
+            <div class="favoured-wrapper" title="{{ localize 'tor2e.sheet.actions.toggle.favoured' }}">
+                <div class="tor2e-round-checkbox">
+                    <p class="toggle-favoured-state {{#if system.skill.favoured.value}}active{{/if}}"
+                       data-primary-attribute="system.skill.favoured.value">
+                        <span class="label"></span>
+                    </p>
+                </div>
+            </div>
+            <a class="weapon-name"
+               title="{{ localize 'tor2e.roll.skill' }}"
+               data-action-name="{{localize .label}}"
+               data-action-value="{{system.skill.value}}"
+               data-action-favoured-name="system.skill.favoured.value"
+               data-action-favoured-value="{{system.skill.favoured.value}}">
+                <p>{{name}}</p>
+            </a>
+        </div>
+        <div class="inline-item-skill-modify flexrow skill-element-row table-complex-column"
+             data-field="system.skill.value"
+             data-action-value="{{system.skill.value}}"
+             data-action-max-value="6">
+            {{#skill-dots system.skill.value 6}}{{/skill-dots}}
+        </div>
+        <div class="stat-value">
+            <p class="attribute-value">{{system.damage.value}}
+        </div>
+        <div class="stat-value">
+            <p class="attribute-value">{{system.injury.value}}
+        </div>
+        <div>
+            <a class="item-edit action" title="{{localize "tor2e.sheet.skill.edit"}}">
+                <i class="fas fa-edit"></i>
+            </a>
+            <a class="item-delete action" title="{{ localize 'tor2e.sheet.skill.delete' }}">
+                <i class="fas fa-trash"></i>
+            </a>
+        </div>
+    </div>
+    <div class="flexcol editor-container-toggelable">
+        <div class="flexcol">
+            <div class="flexrow">
+                <p class="table-caption">{{localize "tor2e.weapons.details.group"}}</p>
+                <p class="table-caption">{{localize "tor2e.weapons.details.notes"}}</p>
+            </div>
+            <div class="flexrow">
+                <p class="attribute-value">{{localize system.group.value}}</p>
+                <p class="attribute-value">{{system.notes.value}}</p>
+            </div>
+        </div>
+        {{#if system.ranged.value}}
+            <div class="flexcol">
+                <div class="flexrow">
+                    <p class="table-caption">{{localize system.ranged.short.label}}</p>
+                    <p class="table-caption">{{localize system.ranged.medium.label}}</p>
+                    <p class="table-caption">{{localize system.ranged.long.label}}</p>
+                </div>
+                <div class="flexrow">
+                    <p class="attribute-value">{{system.ranged.short.value}} + {{localize
+                            "tor2e.stats.strength"}}</p>
+                    <p class="attribute-value">{{system.ranged.medium.value}}  + {{localize
+                            "tor2e.stats.strength"}}</p>
+                    <p class="attribute-value">{{system.ranged.long.value}}  + {{localize
+                            "tor2e.stats.strength"}}</p>
+                </div>
+            </div>
+        {{/if}}
+        <div>
+            <div class="flexrow">
+                <h3>{{localize 'tor2e.common.description'}}</h3>
+                <div class="actions">
+                    <a class="item-display" data-tooltip="tor2e.sheet.skill.chat">
+                        <i class="fas fa-comments"></i>
+                    </a>
+                </div>
+            </div>
+            {{{description}}}
+        </div>
+    </div>
+</li>

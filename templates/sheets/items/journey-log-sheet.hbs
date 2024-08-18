@@ -1,0 +1,284 @@
+<div class="sheet-container">
+    <img class="background" src="{{backgroundImages.url}}" title="{{localize backgroundImages.title}}"
+         alt="{{localize 'tor2e.items.journey-log.tech.alt'}}"/>
+    <form class="{{cssClass}} flexrow" autocomplete="off">
+
+        <div class="sheet-content flexcol">
+            <div class="flexrow top">
+                <section id="log" class="flexcol">
+                    <h2>{{toUpperCase (localize "tor2e.items.journey-log.title")}}</h2>
+                    <div class="flexcol">
+                        <div class="flexcol">
+                            <label class="attribute-label" for="name-{{item.id}}">{{localize
+                                    "tor2e.journey-log.sheet.title"}}</label>
+                            <div class="flexrow">
+                                <input id="name-{{item.id}}" class="attribute-number-value" name="name" type="text"
+                                       data-dtype="string"
+                                       value="{{item.name}}" placeholder="{{localize "tor2e.actors.sections.name"}}"/>
+                            </div>
+                        </div>
+                        <div class="flexcol">
+                            <label class="attribute-label" for="system.log.year.value">{{localize
+                                    system.log.year.label}}</label>
+                            <div class="flexrow">
+                                <input id="system.log.year.value" class="attribute-number-value"
+                                       name="system.log.year.value" type="number"
+                                       data-dtype="{{system.log.year.type}}"
+                                       value="{{system.log.year.value}}"
+                                       placeholder="{{localize system.log.year.label}}"/>
+                            </div>
+                        </div>
+                        <div class="flexcol">
+                            <label class="attribute-label" for="system.log.season.value">{{localize
+                                    system.log.season.label}}</label>
+                            <div class="flexrow">
+                                <select id="system.log.season.value" class="auto-sizeable"
+                                        name="system.log.season.value">
+                                    {{#select system.log.season.value}}
+                                        {{#each config.seasons as |name idx|}}
+                                            <option value="{{idx}}">{{localize name}}</option>
+                                        {{/each}}
+                                    {{/select}}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flexcol">
+                            <label class="attribute-label" for="system.log.from.value">{{localize
+                                    system.log.from.label}}</label>
+                            <div class="flexrow">
+                                <input id="system.log.from.value" class="attribute-number-value"
+                                       name="system.log.from.value" type="text"
+                                       data-dtype="{{system.log.from.type}}"
+                                       value="{{system.log.from.value}}"
+                                       placeholder="{{localize system.log.from.label}}"/>
+                            </div>
+                        </div>
+                        <div class="flexcol">
+                            <label class="attribute-label" for="system.log.to.value">{{localize
+                                    system.log.to.label}}</label>
+                            <div class="flexrow">
+                                <input id="system.log.to.value" class="attribute-number-value"
+                                       name="system.log.to.value" type="text"
+                                       data-dtype="{{system.log.to.type}}"
+                                       value="{{system.log.to.value}}" placeholder="{{localize system.log.to.label}}"/>
+                            </div>
+                        </div>
+                        <div class="flexcol">
+                            <label class="attribute-label" for="system.log.duration.value">{{localize
+                                    system.log.duration.label}}</label>
+                            <div class="flexrow">
+                                <input id="system.log.duration.value" class="attribute-number-value"
+                                       name="system.log.duration.value" type="number"
+                                       data-dtype="{{system.log.duration.type}}"
+                                       value="{{system.log.duration.value}}"
+                                       placeholder="{{localize system.log.duration.label}}"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="company" class="flexcol">
+                    <h2 class="flexrow">{{toUpperCase (localize "tor2e.items.journey-log.company")}}
+                        {{#if user.isGM}}
+                            <a class="import-action-button"
+                               title="{{localize "tor2e.items.journey-log.actions.import.title"}}"
+                               data-action="importFromCommunity">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        {{/if}}
+                    </h2>
+                    <div class="flexrow table-heading">
+                        <div>
+                            {{localize "tor2e.items.journey-log.attributes.name"}}
+                        </div>
+                        <div>
+                            {{localize "tor2e.items.journey-log.attributes.role"}}
+                        </div>
+                        <div>
+                            {{localize "tor2e.items.journey-log.attributes.travel-fatigue"}}
+                        </div>
+                        {{#if user.isGM}}
+                            <div class="action-zone">
+                                <a class="action-button"
+                                   title="{{localize "tor2e.items.journey-log.actions.add-member.title"}}"
+                                   data-action="addMember">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        {{/if}}
+                    </div>
+                    <div>
+                        {{#each system.company as |member i|}}
+                            <div class="data-row skill-item-row flexrow">
+                                <div class="input">
+                                    <label for="member-name-{{member.id}}">
+                                        <input type="text" id="member-name-{{member.id}}"
+                                               name="system.company.{{i}}.name"
+                                               value="{{member.name}}" data-dtype="String">
+                                    </label>
+                                </div>
+                                <select id="member-role-{{member.id}}" class="auto-sizeable"
+                                        name="system.company.{{i}}.role">
+                                    {{#select member.role}}
+                                        {{#each ../config.roles as |role idx|}}
+                                            <option value="{{idx}}">{{localize role}}</option>
+                                        {{/each}}
+                                    {{/select}}
+                                </select>
+                                <div class="input numeric-centered">
+                                    <label for="member-fatigue-{{member.id}}">
+                                        <input type="number" id="member-fatigue-{{member.id}}"
+                                               name="system.company.{{i}}.fatigue"
+                                               value="{{member.fatigue}}" data-dtype="Number">
+                                    </label>
+                                </div>
+                                {{#if ../user.isGM}}
+                                    <div class="actions action-zone">
+                                        <a class="action action-button"
+                                           title="{{localize "tor2e.items.journey-log.actions.delete-member.title"}}"
+                                           data-action="deleteMember"
+                                           data-index="{{i}}">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </div>
+                                {{/if}}
+                            </div>
+                        {{/each}}
+                    </div>
+                </section>
+                <section id="mounts" class="flexcol">
+                    <h2>{{toUpperCase (localize "tor2e.items.journey-log.mounts")}}</h2>
+                    <div class="flexrow table-heading">
+                        <div>
+                            {{localize "tor2e.items.journey-log.attributes.name"}}
+                        </div>
+                        <div>
+                            {{localize "tor2e.items.journey-log.attributes.vigour"}}
+                        </div>
+                        {{#if user.isGM}}
+                            <div class="action-zone">
+                                <a class="action-button"
+                                   title="{{localize "tor2e.items.journey-log.actions.add-mount.title"}}"
+                                   data-action="addMount">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        {{/if}}
+                    </div>
+                    <div>
+                        {{#each system.mounts as |mount i|}}
+                            <div class="data-row skill-item-row flexrow">
+                                <div class="input">
+                                    <label for="mount-name-{{i}}">
+                                        <input type="text" id="mount-name-{{i}}" name="system.mounts.{{i}}.name"
+                                               value="{{mount.name}}" data-dtype="String">
+                                    </label>
+                                </div>
+                                <div class="input numeric-centered">
+                                    <label for="mount-vigour-{{i}}">
+                                        <input type="number" id="mount-vigour-{{i}}" name="system.mounts.{{i}}.vigour"
+                                               value="{{mount.vigour}}" data-dtype="Number">
+                                    </label>
+                                </div>
+                                {{#if ../user.isGM}}
+                                    <div class="actions action-zone">
+                                        <a class="action action-button"
+                                           title="{{localize "tor2e.items.journey-log.actions.delete-mount.title"}}"
+                                           data-action="deleteMount"
+                                           data-index="{{i}}">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </div>
+                                {{/if}}
+                            </div>
+                        {{/each}}
+                    </div>
+                </section>
+                <section id="journal" class="flexcol">
+                    <h2>{{toUpperCase (localize "tor2e.items.journey-log.journal")}}</h2>
+                    {{editor description target="system.description.value" button=true editable=true}}
+                </section>
+            </div>
+            <div class="flexrow bottom">
+                <section id="path" class="flexcol">
+                    <h2>{{toUpperCase (localize "tor2e.items.journey-log.journey-path")}}</h2>
+                    <div>
+                        <img src="{{item.img}}" data-edit="img" title="{{item.name}}"
+                             alt="{{ localize 'tor2e.actors.details.tech.alt' }}"/>
+                    </div>
+                </section>
+                <section id="events" class="flexcol">
+                    <h2>{{toUpperCase (localize "tor2e.items.journey-log.events.name")}}
+                        {{#if user.isGM}}
+                            <a class="action-button"
+                               title="{{localize "tor2e.items.journey-log.actions.add-event.title"}}"
+                               data-action="addEvent">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                            <a class="action-button"
+                               title="{{localize "tor2e.items.journey-log.actions.add-event-with-roll.title"}}"
+                               data-action="addEventWithRoll">
+                                <i class="fas fa-dice"></i>
+                            </a>
+                        {{/if}}
+                    </h2>
+
+                    {{#each system.events as |event i|}}
+                        <div class="skill-item-row event flexcol">
+                            <h3>
+                                {{localize 'tor2e.items.journey-log.event.name'}} {{inc i}}
+                                {{#if ../user.isGM}}
+                                    <div class="actions action-zone">
+                                        <a class="action action-button"
+                                           title="{{localize "tor2e.items.journey-log.actions.delete-event.title"}}"
+                                           data-action="deleteEvent"
+                                           data-index="{{i}}">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                        <a class="action action-button"
+                                           title="{{localize "tor2e.items.journey-log.actions.re-roll-event.title"}}"
+                                           data-action="reRollEvent"
+                                           data-index="{{i}}">
+                                            <i class="fas fa-dice"></i>
+                                        </a>
+
+                                    </div>
+                                {{/if}}
+                            </h3>
+                            <div class="input-field flexrow">
+                                <label for="event-target-{{i}}" class="input-inline">{{localize
+                                        'tor2e.items.journey-log.event.target'}}</label>
+                                <input type="text" id="event-target-{{i}}" name="system.events.{{i}}.target"
+                                       value="{{event.target}}" data-dtype="String">
+                            </div>
+                            <label for="event-type-{{i}}">{{localize 'tor2e.items.journey-log.event.name'}}
+                                <select id="event-type-{{i}}" class="auto-sizeable" name="system.events.{{i}}.type">
+                                    {{#select event.type}}
+                                        {{#each ../config.eventTypes as |type idx|}}
+                                            <option value="{{idx}}">{{localize type}}</option>
+                                        {{/each}}
+                                    {{/select}}
+                                </select>
+                            </label>
+                            <label for="event-region-type-{{i}}">{{localize 'tor2e.items.journey-log.event.region'}}
+                                <select id="event-region--type-{{i}}" class="auto-sizeable"
+                                        name="system.events.{{i}}.regionType">
+                                    {{#select event.regionType}}
+                                        {{#each ../config.regionTypes as |regionType idx|}}
+                                            <option value="{{idx}}">{{localize regionType}}</option>
+                                        {{/each}}
+                                    {{/select}}
+                                </select>
+                            </label>
+                            <div class="input-field flexrow">
+                                <label for="event-result-{{i}}" class="input-inline">{{localize
+                                        'tor2e.items.journey-log.event.result'}}</label>
+                                <input type="text" id="event-result-{{event.id}}" name="system.events.{{i}}.result"
+                                       value="{{event.result}}" data-dtype="String">
+                            </div>
+                        </div>
+                    {{/each}}
+                </section>
+            </div>
+        </div>
+    </form>
+</div>

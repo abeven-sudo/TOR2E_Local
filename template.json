@@ -1,0 +1,998 @@
+{
+  "Actor": {
+    "types": [
+      "community",
+      "character",
+      "npc",
+      "lore",
+      "adversary"
+    ],
+    "templates": {
+      "descriptionBlock": {
+        "description": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.common.description"
+        }
+      },
+      "bonusesBlock": {
+        "bonuses": {
+          "defense": {
+            "protection": 0,
+            "shieldParry": 0
+          },
+          "tn": {
+            "strength": 0,
+            "heart": 0,
+            "wits": 0
+          },
+          "combat": {
+            "injury": 0,
+            "piercingBlow": 10,
+            "heavyBlow": 0,
+            "pierce": 0,
+            "damage": {
+              "rangedCombat": 0,
+              "closedCombat": 0
+            }
+          },
+          "commonSkills": {
+            "awe": 0,
+            "athletics": 0,
+            "awareness": 0,
+            "hunting": 0,
+            "song": 0,
+            "craft": 0,
+            "enhearten": 0,
+            "travel": 0,
+            "insight": 0,
+            "healing": 0,
+            "courtesy": 0,
+            "battle": 0,
+            "persuade": 0,
+            "stealth": 0,
+            "scan": 0,
+            "explore": 0,
+            "riddle": 0,
+            "lore": 0
+          }
+        },
+        "penalties": {
+          "dice": {
+            "feat": 0,
+            "success": 0
+          }
+        }
+      },
+      "commonStats": {
+        "stateOfHealth": {
+          "weary": {
+            "value": false,
+            "type": "Boolean",
+            "label": "tor2e.actors.stateOfHealth.weary"
+          }
+        },
+        "attributeLevel": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.actors.stats.attributeLevel"
+        },
+        "endurance": {
+          "value": 0,
+          "max": 0,
+          "type": "Number",
+          "label": "tor2e.actors.stats.endurance"
+        }
+      }
+    },
+    "community": {
+      "templates": [
+        "descriptionBlock"
+      ],
+      "banner": {
+        "img": "icons/svg/mystery-man.svg",
+        "type": "String",
+        "label": "tor2e.actors.stats.banner"
+      },
+      "fellowshipPoints": {
+        "max": 0,
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.actors.stats.fellowshipPoints"
+      },
+      "notes": {
+        "value": "",
+        "type": "String",
+        "label": "tor2e.actors.sections.notes"
+      },
+      "eyeAwareness": {
+        "initial": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.actors.stats.initial"
+        },
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.actors.stats.eyeAwareness",
+        "max": 24
+      },
+      "members": [],
+      "patrons": [],
+      "connections": [],
+      "travel": {
+        "guide": {},
+        "hunters": [],
+        "scouts": [],
+        "lookouts": []
+      }
+    },
+    "lore": {
+      "templates": [
+        "descriptionBlock"
+      ],
+      "faction": {
+        "value": false,
+        "type": "Boolean",
+        "label": "tor2e.actors.stats.faction"
+      },
+      "canBeAPatron": {
+        "value": false,
+        "type": "Boolean",
+        "label": "tor2e.actors.stats.canBeAPatron"
+      },
+      "notes": {
+        "value": "",
+        "type": "String",
+        "label": "tor2e.actors.sections.notes"
+      },
+      "occupation": {
+        "value": "",
+        "type": "String",
+        "label": "tor2e.actors.sections.occupation"
+      }
+    },
+    "character": {
+      "templates": [
+        "descriptionBlock",
+        "bonusesBlock"
+      ],
+      "biography": {
+        "age": {
+          "value": 18,
+          "type": "Number",
+          "label": "tor2e.actors.biography.age"
+        },
+        "title": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.actors.biography.title"
+        },
+        "fellowshipFocus": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.actors.biography.fellowshipFocus"
+        },
+        "culture": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.actors.biography.culture"
+        },
+        "standardOfLiving": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.actors.biography.standardOfLiving"
+        },
+        "culturalBlessing": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.actors.biography.culturalBlessing"
+        },
+        "calling": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.actors.biography.calling"
+        },
+        "shadowPath": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.actors.biography.shadowPath"
+        }
+      },
+      "attributes": {
+        "strength": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.stats.strength"
+        },
+        "heart": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.stats.heart"
+        },
+        "wits": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.stats.wits"
+        }
+      },
+      "stature": {
+        "valour": {
+          "value": 1,
+          "type": "Number",
+          "label": "tor2e.statureStats.valour",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "label": "tor2e.rolls.fear",
+            "associatedAttribute": "heart"
+          }
+        },
+        "wisdom": {
+          "value": 1,
+          "type": "Number",
+          "label": "tor2e.statureStats.wisdom",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "label": "tor2e.rolls.corruption",
+            "associatedAttribute": "wits"
+          }
+        }
+      },
+      "commonSkills": {
+        "awe": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.awe",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "strength"
+          }
+        },
+        "enhearten": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.enhearten",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "heart"
+          }
+        },
+        "persuade": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.persuade",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "wits"
+          }
+        },
+        "athletics": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.athletics",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "strength"
+          }
+        },
+        "travel": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.travel",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "heart"
+          }
+        },
+        "stealth": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.stealth",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "wits"
+          }
+        },
+        "awareness": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.awareness",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "strength"
+          }
+        },
+        "insight": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.insight",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "heart"
+          }
+        },
+        "scan": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.scan",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "wits"
+          }
+        },
+        "explore": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.explore",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "wits"
+          }
+        },
+        "healing": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.healing",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "heart"
+          }
+        },
+        "hunting": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.hunting",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "strength"
+          }
+        },
+        "song": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.song",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "strength"
+          }
+        },
+        "courtesy": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.courtesy",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "heart"
+          }
+        },
+        "riddle": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.riddle",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "wits"
+          }
+        },
+        "craft": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.craft",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "strength"
+          }
+        },
+        "battle": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.battle",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "heart"
+          }
+        },
+        "lore": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.commonSkills.lore",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          },
+          "roll": {
+            "associatedAttribute": "wits"
+          }
+        }
+      },
+      "skillGroups": {
+        "personality": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.personality"
+        },
+        "movement": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.movement"
+        },
+        "perception": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.perception"
+        },
+        "survival": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.survival"
+        },
+        "custom": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.custom"
+        },
+        "vocation": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.vocation"
+        }
+      },
+      "combatAttributes": {
+        "damage": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.actors.combatAttributes.damage",
+          "ranged": {
+            "value": 0,
+            "type": "Number",
+            "label": "tor2e.actors.combatAttributes.ranged"
+          }
+        },
+        "parry": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.actors.combatAttributes.parry"
+        },
+        "armour": {
+          "favoured": {
+            "value": false,
+            "type": "Boolean",
+            "label": "tor2e.stats.favoured"
+          }
+        }
+      },
+      "combatProficiencies": {
+        "axes": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.combatProficiencies.axes",
+          "icon": "systems/tor2e/assets/images/icons/weapons/axes.png",
+          "roll": {
+            "associatedAttribute": "strength"
+          }
+        },
+        "swords": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.combatProficiencies.swords",
+          "icon": "systems/tor2e/assets/images/icons/weapons/swords.png",
+          "roll": {
+            "associatedAttribute": "heart"
+          }
+        },
+        "spears": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.combatProficiencies.spears",
+          "icon": "systems/tor2e/assets/images/icons/weapons/spears.png",
+          "roll": {
+            "associatedAttribute": "wits"
+          }
+        },
+        "bows": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.combatProficiencies.bows",
+          "icon": "systems/tor2e/assets/images/icons/weapons/bows.png",
+          "roll": {
+            "associatedAttribute": "wits"
+          }
+        }
+      },
+      "resources": {
+        "endurance": {
+          "value": 1,
+          "max": 1,
+          "type": "Number",
+          "label": "tor2e.actors.stats.endurance"
+        },
+        "travelLoad": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.actors.stats.travelLoad"
+        },
+        "hope": {
+          "value": 1,
+          "max": 1,
+          "type": "Number",
+          "label": "tor2e.actors.stats.hope"
+        },
+        "shadow": {
+          "shadowScars": {
+            "value": 0,
+            "type": "Number",
+            "label": "tor2e.actors.stats.shadowScars"
+          },
+          "temporary": {
+            "value": 0,
+            "type": "Number",
+            "label": "tor2e.actors.stats.temporary"
+          }
+        }
+      },
+      "stateOfHealth": {
+        "miserable": {
+          "value": 0,
+          "type": "String",
+          "label": "tor2e.actors.stateOfHealth.miserable"
+        },
+        "wounded": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.actors.stateOfHealth.wounded"
+        },
+        "poisoned": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.actors.stateOfHealth.poisoned"
+        },
+        "weary": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.actors.stateOfHealth.weary"
+        }
+      },
+      "fellowship": {
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.actors.sections.fellowship"
+      },
+      "adventurePoints": {
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.statureStats.adventurePoints",
+        "total": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.statureStats.total"
+        }
+      },
+      "skillPoints": {
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.actors.sections.skillPoints",
+        "total": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.statureStats.total"
+        }
+      },
+      "treasure": {
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.actors.sections.treasure"
+      },
+      "history": {
+        "background": {
+          "value": "",
+          "type": "String"
+        },
+        "company": {
+          "value": "",
+          "type": "String"
+        },
+        "fellowshipPhase": {
+          "value": "",
+          "type": "String"
+        },
+        "taleOfYears": {
+          "value": "",
+          "type": "String"
+        },
+        "notes": {
+          "value": "",
+          "type": "String"
+        }
+      }
+    },
+    "npc": {
+      "templates": [
+        "commonStats",
+        "descriptionBlock"
+      ],
+      "faction": {
+        "value": false,
+        "type": "Boolean",
+        "label": "tor2e.actors.stats.faction"
+      },
+      "occupation": {
+        "value": "",
+        "type": "String",
+        "label": "tor2e.actors.sections.occupation"
+      }
+    },
+    "adversary": {
+      "templates": [
+        "commonStats",
+        "descriptionBlock",
+        "bonusesBlock"
+      ],
+      "faction": {
+        "value": true,
+        "type": "Boolean",
+        "label": "tor2e.actors.stats.faction"
+      },
+      "might": {
+        "value": 1,
+        "max": 0,
+        "type": "Number",
+        "label": "tor2e.actors.stats.might"
+      },
+      "hate": {
+        "value": 0,
+        "max": 0,
+        "type": "Number",
+        "label": "tor2e.actors.stats.hate"
+      },
+      "parry": {
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.actors.stats.parry"
+      },
+      "armour": {
+        "favoured": {
+          "value": false,
+          "type": "Boolean",
+          "label": "tor2e.stats.favoured"
+        }
+      },
+      "skills": {
+        "personality": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.personality",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          }
+        },
+        "movement": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.movement",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          }
+        },
+        "perception": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.perception",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          }
+        },
+        "survival": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.survival",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          }
+        },
+        "custom": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.custom",
+          "favoured": {
+            "value": false,
+            "type": "Boolean"
+          }
+        },
+        "vocation": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.skillGroups.vocation",
+          "favoured": {
+            "value": false,
+            "type": "Boolean",
+            "label": "tor2e.stats.favoured"
+          }
+        }
+      }
+    }
+  },
+  "Item": {
+    "types": [
+      "trait",
+      "fell-ability",
+      "skill",
+      "armour",
+      "weapon",
+      "miscellaneous",
+      "reward",
+      "virtues",
+      "journey-log"
+    ],
+    "templates": {
+      "commonItemStats": {
+        "load": {
+          "value": 0,
+          "type": "Number",
+          "label": "tor2e.items.common.load"
+        },
+        "dropped": {
+          "value": false,
+          "type": "Boolean",
+          "label": "tor2e.items.common.dropped"
+        },
+        "equipped": {
+          "value": false,
+          "type": "Boolean",
+          "label": "tor2e.items.common.equipped"
+        }
+      },
+      "descriptionBlock": {
+        "description": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.common.description"
+        }
+      }
+    },
+    "skill": {
+      "templates": [
+        "descriptionBlock"
+      ],
+      "group": {
+        "value": "",
+        "type": "String",
+        "label": "tor2e.skills.details.skillGroup"
+      },
+      "associatedStat": {
+        "value": "",
+        "type": "String",
+        "label": "tor2e.skills.details.associatedStat"
+      },
+      "favoured": {
+        "value": false,
+        "type": "Boolean",
+        "label": "tor2e.stats.favoured"
+      },
+      "value": 0,
+      "type": "Number"
+    },
+    "trait": {
+      "templates": [
+        "descriptionBlock"
+      ],
+      "group": {
+        "value": "",
+        "type": "String",
+        "label": "tor2e.traits.details.traitGroup"
+      }
+    },
+    "virtues": {
+      "templates": [
+        "descriptionBlock"
+      ],
+      "type": {
+        "value": "",
+        "type": "String",
+        "label": "tor2e.virtues.details.type"
+      }
+    },
+    "reward": {
+      "templates": [
+        "descriptionBlock"
+      ]
+    },
+    "journey-log": {
+      "templates": [
+        "descriptionBlock"
+      ],
+      "log": {
+        "year": {
+          "value": "2946",
+          "type": "String",
+          "label": "tor2e.journey-log.log.year"
+        },
+        "season": {
+          "value": 2,
+          "type": "Number",
+          "label": "tor2e.journey-log.log.season"
+        },
+        "from": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.journey-log.log.from"
+        },
+        "to": {
+          "value": "",
+          "type": "String",
+          "label": "tor2e.journey-log.log.to"
+        },
+        "duration": {
+          "value": 10,
+          "type": "Number",
+          "label": "tor2e.journey-log.log.duration"
+        }
+      },
+      "company": [],
+      "mounts": [],
+      "events": []
+    },
+    "fell-ability": {
+      "templates": [
+        "descriptionBlock"
+      ],
+      "active": {
+        "value": false,
+        "type": "Boolean",
+        "label": "tor2e.fellAbilities.details.active"
+      },
+      "cost": {
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.fellAbilities.details.cost"
+      }
+    },
+    "weapon": {
+      "templates": [
+        "descriptionBlock",
+        "commonItemStats"
+      ],
+      "damage": {
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.weapons.details.damage"
+      },
+      "injury": {
+        "value": 12,
+        "type": "Number",
+        "label": "tor2e.weapons.details.injury"
+      },
+      "group": {
+        "value": "",
+        "type": "String",
+        "label": "tor2e.weapons.details.group"
+      },
+      "skill": {
+        "name": "",
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.weapons.details.skill",
+        "favoured": {
+          "value": false,
+          "type": "Boolean",
+          "label": "tor2e.stats.favoured"
+        },
+        "roll": {
+          "associatedAttribute": "strength"
+        }
+      },
+      "ranged": {
+        "value": false,
+        "type": "Boolean",
+        "label": "tor2e.weapons.details.ranged",
+        "short": {
+          "value": 5,
+          "type": "Number",
+          "label": "tor2e.weapons.details.short"
+        },
+        "medium": {
+          "value": 10,
+          "type": "Number",
+          "label": "tor2e.weapons.details.medium"
+        },
+        "long": {
+          "value": 20,
+          "type": "Number",
+          "label": "tor2e.weapons.details.long"
+        }
+      },
+      "twoHandWeapon": {
+        "value": false,
+        "type": "Boolean",
+        "label": "tor2e.weapons.details.twoHandWeapon"
+      },
+      "notes": {
+        "value": "-",
+        "type": "String",
+        "label": "tor2e.weapons.details.notes"
+      }
+    },
+    "armour": {
+      "templates": [
+        "commonItemStats",
+        "descriptionBlock"
+      ],
+      "protection": {
+        "value": 0,
+        "type": "Number",
+        "label": "tor2e.items.armours.protection"
+      },
+      "group": {
+        "value": "",
+        "type": "String",
+        "label": "tor2e.armour.title.group"
+      }
+    },
+    "miscellaneous": {
+      "templates": [
+        "descriptionBlock",
+        "commonItemStats"
+      ],
+      "quantity": 1
+    }
+  }
+}

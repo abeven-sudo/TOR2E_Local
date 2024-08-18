@@ -1,0 +1,35 @@
+<div class="flexrow skill-container">
+    <div class="flexcol common-skill-column">
+        {{> "systems/tor2e/templates/sheets/actors/components/skill-card.hbs"
+                skill=system.skills.personality
+                reference="system.skills.personality.value"
+                checkbox-reference="system.skills.personality.favoured.value"}}
+
+        {{> "systems/tor2e/templates/sheets/actors/components/skill-card.hbs"
+                skill=system.skills.movement
+                reference="system.skills.movement.value"
+                checkbox-reference="system.skills.movement.favoured.value"}}
+
+        {{> "systems/tor2e/templates/sheets/actors/components/skill-card.hbs"
+                skill=system.skills.perception
+                reference="system.skills.perception.value"
+                checkbox-reference="system.skills.perception.favoured.value"}}
+    </div>
+
+    <div class="flexcol common-skill-column">
+        {{> "systems/tor2e/templates/sheets/actors/components/skill-card.hbs"
+                skill=system.skills.survival
+                reference="system.skills.survival.value"
+                checkbox-reference="system.skills.survival.favoured.value"}}
+
+        {{> "systems/tor2e/templates/sheets/actors/components/skill-card.hbs"
+                skill=system.skills.custom
+                reference="system.skills.custom.value"
+                checkbox-reference="system.skills.custom.favoured.value"}}
+
+        {{> "systems/tor2e/templates/sheets/actors/components/skill-card.hbs"
+                skill=system.skills.vocation
+                reference="system.skills.vocation.value"
+                checkbox-reference="system.skills.vocation.favoured.value"}}
+    </div>
+</div>

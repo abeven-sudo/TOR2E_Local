@@ -1,0 +1,158 @@
+@import "../variables";
+
+.att-def {
+  font-size: @smaller;
+  flex: 3.5;
+
+  .switch {
+    height: 1.5em;
+  }
+
+  .slider:before {
+    height: 1em;
+    width: 1em;
+    left: 2px;
+  }
+
+}
+
+li.combatant.actor.directory-item {
+  border-bottom: 1px solid #222;
+  height: 60px;
+  padding: 0.2em 0;
+
+  div.opponents {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #666;
+    font-size: @small;
+    line-height: 14px;
+
+    img.actor-foe {
+      border: none;
+      object-fit: contain;
+      object-position: 50% 0;
+      height: 25px;
+      flex: none;
+      margin: 0 0.1em;
+      padding: 0;
+      width: 25px;
+    }
+  }
+
+  .stance {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-left: 1px solid #222;
+
+    img.stance-icon {
+      border: none;
+      object-fit: contain;
+      object-position: 50% 0;
+      height: 30px;
+      flex: none;
+      margin: 0 0.1em;
+      padding: 0;
+      width: 30px;
+    }
+
+    span.stance-label {
+      font-size: @normal;
+      text-align: center;
+      flex: none;
+      display: block;
+      line-height: 1em;
+    }
+  }
+}
+
+.header {
+  .formula {
+    padding-bottom: .5em;
+  }
+
+  .feat-die-value {
+    img {
+      width: 40px;
+    }
+  }
+}
+
+.special-result-row {
+
+  .special-success-header {
+    background: #262626;
+    margin-bottom: 0.2em;
+    color: white;
+    font-weight: bold;
+    flex: none;
+
+    p {
+      padding-left: 0.75em;
+      margin: 0.2em;
+    }
+  }
+
+  .special-success-elements {
+    justify-content: space-evenly;
+    margin-top: 0.2em;
+    flex: none;
+
+    .special-success-element {
+      flex: none;
+      width: 100px;
+      text-align: center;
+      align-items: center;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      label > * {
+        opacity: 0.25;
+        cursor: pointer;
+      }
+
+      input:checked + label > * {
+        opacity: 1;
+        cursor: default;
+      }
+
+      span {
+        padding: 0;
+        margin: 0;
+        display: block;
+      }
+
+      span.title {
+        font-size: @small;
+        font-weight: bold;
+        padding-top: 0;
+      }
+
+      span.description {
+        font-size: @smaller;
+      }
+    }
+
+    .special-success-element > * {
+      flex: none;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+.special-result-row:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.flexcol.special-result-row:not(:first-child) {
+  padding-top: 0.5em;
+}

@@ -1,0 +1,220 @@
+<div class="sheet-container">
+    <img class="background" src="{{backgroundImages.url}}" title="{{localize backgroundImages.title}}"
+         alt="{{localize 'tor2e.weapons.details.tech.alt'}}"/>
+    <form class="{{cssClass}}" autocomplete="off">
+
+        {{> "systems/tor2e/templates/sheets/actors/partials/common/actor-header-card.hbs"
+                width = 125
+                height = 125}}
+
+        <div class="sheet-content">
+            <div class="header flexrow">
+                <div class="central">
+                    <section id="biography">
+                        <h2>{{localize "tor2e.actors.sections.biography"}}</h2>
+                        {{> "systems/tor2e/templates/sheets/actors/partials/character/character-biography-card.hbs"}}
+                    </section>
+                </div>
+                <div class="sidebar flexcol">
+                    {{> "systems/tor2e/templates/sheets/actors/partials/character/character-attribute-sidebar-card.hbs"}}
+                </div>
+            </div>
+
+            <div class="header flexrow">
+                <div class="central">
+                    <section id="attributes">
+                        <h2>{{localize "tor2e.actors.sections.attributes"}}</h2>
+                        {{> "systems/tor2e/templates/sheets/actors/partials/character/character-attributes-card.hbs"}}
+                    </section>
+                </div>
+            </div>
+
+            <div class="flexrow">
+                <div class="central">
+                    <section id="skills" class="flexcol">
+                        <h2>{{localize "tor2e.actors.sections.commonSkills"}}</h2>
+                        {{> "systems/tor2e/templates/sheets/actors/partials/character/character-common-skills-card.hbs"}}
+                    </section>
+                </div>
+            </div>
+
+            <div class="flexrow">
+                <section class="flexcol" id="distinctive-features">
+                    <h2>{{localize "tor2e.actors.traits.distinctiveFeatures"}}</h2>
+                    <ul class="collapsibleList">
+                        {{#each distinctiveFeatures as |distinctiveFeature id|}}
+                            {{> "systems/tor2e/templates/sheets/actors/partials/common/simple-talent-card-with-description.hbs" distinctiveFeature}}
+                        {{/each}}
+                    </ul>
+                </section>
+                <section class="flexcol" id="flaws">
+                    <h2>{{localize "tor2e.actors.traits.flaws"}}</h2>
+                    <ul class="collapsibleList">
+                        {{#each flaws as |flaw id|}}
+                            {{> "systems/tor2e/templates/sheets/actors/partials/common/simple-talent-card-with-description.hbs" flaw}}
+                        {{/each}}
+                    </ul>
+                </section>
+            </div>
+            <div class="flexrow">
+                <section id="rewards">
+                    <h2>{{localize "tor2e.actors.sections.rewards"}}</h2>
+                    <ul class="collapsibleList">
+                        {{#each rewards as |reward id|}}
+                            {{> "systems/tor2e/templates/sheets/actors/partials/common/simple-talent-card-with-description.hbs" reward}}
+                        {{/each}}
+                    </ul>
+                </section>
+
+                <section id="virtues">
+                    <h2>{{localize "tor2e.actors.sections.virtues"}}</h2>
+                    <ul class="collapsibleList">
+
+                        {{#each virtues as |virtue id|}}
+                            {{> "systems/tor2e/templates/sheets/actors/partials/common/simple-talent-card-with-description.hbs" virtue}}
+                        {{/each}}
+                    </ul>
+                </section>
+            </div>
+            <section id="resources" class="flexcol">
+                <h2>{{localize "tor2e.actors.sections.resources"}}</h2>
+                {{> "systems/tor2e/templates/sheets/actors/partials/character/character-resources-card.hbs"}}
+            </section>
+            <section id="health" class="flexrow">
+                {{> "systems/tor2e/templates/sheets/actors/components/health-card.hbs"}}
+                {{> "systems/tor2e/templates/sheets/actors/components/effects-card.hbs"
+                        effects=effects}}
+            </section>
+            <div class="flexrow">
+                <section class="flexcol secondary-section" id="combat-skills">
+                    <h2>{{localize "tor2e.actors.sections.combatProficiencies"}}</h2>
+                    <ul class="collapsibleList">
+                        {{#eachInMap combatProficiencies}}
+                            {{> "systems/tor2e/templates/sheets/actors/partials/character/character-combat-proficiency-card.hbs"
+                                    combatProficiency=value
+                                    id=key
+                            }}
+                        {{/eachInMap}}
+                        {{#if homebrew.extendedWeaponSelection}}
+                            {{#each weaponSkills as |weaponSkill id|}}
+                                {{> "systems/tor2e/templates/sheets/actors/partials/character/character-item-skill-card.hbs" weaponSkill}}
+                            {{/each}}
+                        {{/if}}
+                    </ul>
+                </section>
+                <section class="flexcol primary-section" id="combat">
+                    <h2>{{localize "tor2e.actors.sections.combat"}}</h2>
+                    {{> "systems/tor2e/templates/sheets/actors/partials/character/character-combat-attributes-card.hbs"}}
+                </section>
+            </div>
+            <div class="footer flexrow">
+                <div class="central">
+                    <h2>{{localize "tor2e.actors.sections.war-gear"}}</h2>
+                    <section class="flexcol" id="weapons">
+                        <ul class="collapsibleList">
+                            <div class="flexrow table-caption-row">
+                                <p class="table-caption table-complex-column">{{localize
+                                        "tor2e.weapons.details.weapon"}} </p>
+                                <p class="table-caption">{{localize "tor2e.weapons.details.damage"}} </p>
+                                <p class="table-caption">{{localize "tor2e.weapons.details.injury"}} </p>
+                                <p class="table-caption">{{localize "tor2e.items.common.load"}} </p>
+                                <p class="table-caption">{{localize "tor2e.items.common.equipped"}} </p>
+                                <p class="table-caption">{{localize "tor2e.items.common.dropped"}} </p>
+                                <p class="table-caption actions">&nbsp;</p>
+                            </div>
+                            {{#each weapons as |weapon id|}}
+                                {{> "systems/tor2e/templates/sheets/actors/partials/character/character-weapon-card.hbs"
+                                        weapon = weapon
+                                        custom = ../custom
+                                }}
+                            {{/each}}
+                        </ul>
+                    </section>
+                    <section id="armours" class="flexcol">
+                        <ul class="collapsibleList">
+                            <div class="flexrow table-caption-row">
+                                <p class="table-caption table-complex-column">{{localize
+                                        "tor2e.items.armours.armour"}} </p>
+                                <p class="table-caption">{{localize "tor2e.items.armours.group"}} </p>
+                                <p class="table-caption">{{localize "tor2e.items.armours.protection"}} </p>
+                                <p class="table-caption">{{localize "tor2e.items.common.load"}} </p>
+                                <p class="table-caption">{{localize "tor2e.items.common.equipped"}} </p>
+                                <p class="table-caption">{{localize "tor2e.items.common.dropped"}} </p>
+                                <p class="table-caption actions">&nbsp;</p>
+                            </div>
+                            {{#each armours as |armour id|}}
+                                {{> "systems/tor2e/templates/sheets/actors/partials/character/character-armour-card.hbs" armour}}
+                            {{/each}}
+                        </ul>
+                    </section>
+                    <section class="equipment-gear">
+                        <h2>{{localize "tor2e.actors.sections.equipment-gear"}}</h2>
+                        <div class="flexrow">
+                            <div class="flexcol">
+                                <ul class="collapsibleList">
+                                    <div class="flexrow table-caption-row">
+                                        <p class="table-caption table-complex-column">{{localize
+                                                "tor2e.items.miscellaneous.equipment"}} </p>
+                                        <p class="table-caption">{{localize "tor2e.items.common.load"}} </p>
+                                        <p class="table-caption actions">&nbsp;</p>
+                                    </div>
+                                    {{#each leftMiscItem as |miscItem id|}}
+                                        {{> "systems/tor2e/templates/sheets/actors/partials/character/miscellaneous-item-card.hbs" miscItem}}
+                                    {{/each}}
+                                </ul>
+                            </div>
+                            <div class="flexcol">
+                                <ul class="collapsibleList">
+                                    <div class="flexrow table-caption-row">
+                                        <p class="table-caption table-complex-column">{{localize
+                                                "tor2e.items.miscellaneous.equipment"}} </p>
+                                        <p class="table-caption">{{localize "tor2e.items.common.load"}} </p>
+                                        <p class="table-caption actions">&nbsp;</p>
+                                    </div>
+                                    {{#each rightMiscItem as |miscItem id|}}
+                                        {{> "systems/tor2e/templates/sheets/actors/partials/character/miscellaneous-item-card.hbs" miscItem}}
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section id="Possessions">
+                {{> "systems/tor2e/templates/sheets/actors/partials/character/character-richness-card.hbs" actor}}
+            </section>
+
+            <section id="background">
+                <h2 class="toggle">{{localize "tor2e.actors.sections.background"}}</h2>
+                <div class="editor-container">
+                    {{editor background target="system.history.background.value" button=true editable=true }}
+                </div>
+            </section>
+            <section id="company">
+                <h2 class="toggle">{{localize "tor2e.actors.sections.company"}}</h2>
+                <div class="editor-container">
+                    {{editor company target="system.history.company.value" button=true editable=true }}
+                </div>
+            </section>
+            <section id="fellowship-phase">
+                <h2 class="toggle">{{localize "tor2e.actors.sections.fellowshipPhase"}}</h2>
+                <div class="editor-container">
+                    {{editor fellowshipPhase target="system.history.fellowshipPhase.value" button=true editable=true }}
+                </div>
+            </section>
+            <section id="tale-of-the-years">
+                <h2 class="toggle">{{localize "tor2e.actors.sections.taleOfYears"}}</h2>
+                <div class="editor-container">
+                    {{editor taleOfYears target="system.history.taleOfYears.value" button=true editable=true }}
+                </div>
+            </section>
+            <section id="notes">
+                <h2 class="toggle">{{localize "tor2e.actors.sections.notes"}}</h2>
+                <div class="editor-container">
+                    {{editor notes target="system.history.notes.value" button=true editable=true }}
+                </div>
+            </section>
+        </div>
+    </form>
+</div>

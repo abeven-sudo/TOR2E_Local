@@ -1,0 +1,2571 @@
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+.unmutable {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.hide {
+  display: none !important;
+  visibility: hidden;
+}
+.tor2e.sheet input {
+  background: rgba(245, 245, 245, 0.5);
+  padding: 1px 3px;
+  margin: 0;
+  color: #AC323BFF;
+  border-radius: 0;
+  border: unset;
+  border-bottom: 2px solid #D6D6D6FF;
+}
+.tor2e.sheet select {
+  background: rgba(245, 245, 245, 0.5);
+  border: unset;
+  border-bottom: 2px solid #D6D6D6FF;
+  border-radius: 0;
+  padding: 0 3px;
+  color: #AC323BFF;
+}
+.tor2e.sheet .window-content {
+  background: url("../assets/images/sheet/Tor2e-Background-Sheet.webp") repeat;
+  background-size: cover;
+  background-origin: padding-box;
+}
+.tor2e.sheet .sheet-container {
+  position: relative;
+  padding: 0.2em;
+}
+.tor2e.sheet .sheet-container img.background {
+  width: auto;
+  height: 100%;
+  opacity: 0.075;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.tor2e.sheet section {
+  margin: 0.5em 0;
+}
+.tor2e.sheet .toggle,
+.tor2e.sheet .editor-toggle {
+  cursor: pointer;
+  align-items: center;
+}
+.tor2e.sheet .toggle::after {
+  margin-left: 0.25em;
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 400;
+  content: "\f151";
+}
+.tor2e.sheet .toggle.expanded::after {
+  margin-left: 0.25em;
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 400;
+  content: "\F150";
+}
+.tor2e.sheet .toggle + .editor-container {
+  display: none;
+}
+.tor2e.sheet div.editor-container-toggelable {
+  display: none;
+}
+.tor2e.sheet div.editor-container-toggelable.show {
+  display: block;
+}
+.tor2e.sheet .favoured-attribute p,
+.tor2e.sheet .favoured-attribute label {
+  text-decoration-line: underline;
+}
+.tor2e.sheet .skill-item-row:hover .action,
+.tor2e.sheet .list-actor:hover .action {
+  visibility: visible;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  text-align: right;
+  flex: 0;
+  font-size: 0.8em;
+}
+.tor2e.sheet .action {
+  visibility: hidden;
+}
+.tor2e.sheet .collapsibleList,
+.tor2e.sheet .connectionsList {
+  padding-inline-start: 0;
+  list-style-type: none;
+  background: rgba(0, 0, 0, 0.05);
+  margin-right: 0.2em;
+  padding: 0.2em;
+  flex: none;
+}
+.tor2e.sheet .collapsibleList li,
+.tor2e.sheet .connectionsList li {
+  margin-bottom: 0.25em;
+}
+.tor2e.sheet .collapsibleList li .skill-item-row,
+.tor2e.sheet .connectionsList li .skill-item-row,
+.tor2e.sheet .collapsibleList li .list-actor-row,
+.tor2e.sheet .connectionsList li .list-actor-row {
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.tor2e.sheet .collapsibleList li .skill-item-row .identification,
+.tor2e.sheet .connectionsList li .skill-item-row .identification,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification,
+.tor2e.sheet .connectionsList li .list-actor-row .identification {
+  display: flex;
+  flex: 1.7;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+}
+.tor2e.sheet .collapsibleList li .skill-item-row .identification img,
+.tor2e.sheet .connectionsList li .skill-item-row .identification img,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification img,
+.tor2e.sheet .connectionsList li .list-actor-row .identification img {
+  width: auto;
+  border-style: none;
+  margin: 0 0.25em;
+  max-width: unset;
+  flex: none;
+  height: 32px;
+}
+.tor2e.sheet .collapsibleList li .skill-item-row .identification a,
+.tor2e.sheet .connectionsList li .skill-item-row .identification a,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification a,
+.tor2e.sheet .connectionsList li .list-actor-row .identification a,
+.tor2e.sheet .collapsibleList li .skill-item-row .identification p,
+.tor2e.sheet .connectionsList li .skill-item-row .identification p,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification p,
+.tor2e.sheet .connectionsList li .list-actor-row .identification p {
+  flex: none;
+  font-weight: bold;
+}
+.tor2e.sheet .collapsibleList li .skill-item-row .identification div,
+.tor2e.sheet .connectionsList li .skill-item-row .identification div,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification div,
+.tor2e.sheet .connectionsList li .list-actor-row .identification div {
+  align-items: center;
+}
+.tor2e.sheet .collapsibleList li .skill-item-row .identification.table-complex-column,
+.tor2e.sheet .connectionsList li .skill-item-row .identification.table-complex-column,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification.table-complex-column,
+.tor2e.sheet .connectionsList li .list-actor-row .identification.table-complex-column {
+  flex: 2;
+}
+.tor2e.sheet .collapsibleList li .skill-item-row .identification.table-main-column,
+.tor2e.sheet .connectionsList li .skill-item-row .identification.table-main-column,
+.tor2e.sheet .collapsibleList li .list-actor-row .identification.table-main-column,
+.tor2e.sheet .connectionsList li .list-actor-row .identification.table-main-column {
+  flex: 3;
+}
+.tor2e.sheet .collapsibleList li .skill-item-row .stat-value,
+.tor2e.sheet .connectionsList li .skill-item-row .stat-value,
+.tor2e.sheet .collapsibleList li .list-actor-row .stat-value,
+.tor2e.sheet .connectionsList li .list-actor-row .stat-value {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex: 1.1;
+}
+.tor2e.sheet .collapsibleList li .skill-item-row .stat-value input[type=text],
+.tor2e.sheet .connectionsList li .skill-item-row .stat-value input[type=text],
+.tor2e.sheet .collapsibleList li .list-actor-row .stat-value input[type=text],
+.tor2e.sheet .connectionsList li .list-actor-row .stat-value input[type=text] {
+  width: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+.tor2e.sheet .collapsibleList li .skill-item-row label,
+.tor2e.sheet .connectionsList li .skill-item-row label,
+.tor2e.sheet .collapsibleList li .list-actor-row label,
+.tor2e.sheet .connectionsList li .list-actor-row label {
+  cursor: pointer;
+}
+.tor2e.sheet .table-main-column,
+.tor2e.sheet .object-name {
+  flex: 3;
+}
+.tor2e.sheet .table-caption-row {
+  background: rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.25em;
+}
+.tor2e.sheet .table-caption {
+  font-weight: bold;
+  text-align: center;
+}
+.tor2e.sheet .table-row {
+  text-align: center;
+}
+.tor2e.sheet .table-row select,
+.tor2e.sheet .table-row input {
+  margin: 0 0.5em;
+}
+.tor2e.sheet .table-attribute {
+  width: 3em;
+  text-align: center;
+}
+.tor2e.sheet .editor {
+  min-height: 150px;
+  height: 100%;
+}
+.tor2e.sheet .editor .tox-tinymce {
+  min-height: 150px;
+}
+.tor2e.sheet .tox .tox-editor-container {
+  background-color: rgba(177, 177, 130, 0.5);
+}
+.tor2e.sheet .tox .tox-toolbar__primary {
+  background-color: rgba(130, 130, 100, 0.5);
+  border: 1px solid #333333;
+}
+.tor2e.sheet .tox .tox-sidebar-wrap {
+  border: 1px solid #333333;
+  min-height: 100px;
+}
+.tor2e.sheet .attribute-table-caption {
+  text-align: center;
+}
+.tor2e.sheet .attribute-table-caption label,
+.tor2e.sheet .attribute-table-caption p {
+  margin: 0.5em 0 0 0;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.tor2e.sheet .actions {
+  text-align: right;
+  flex: 0.5;
+}
+input.number-value:invalid + span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+input.number-value:valid + span:after {
+  content: '✓';
+  padding-left: 5px;
+}
+.att-def {
+  font-size: 0.7em;
+  flex: 3.5;
+}
+.att-def .switch {
+  height: 1.5em;
+}
+.att-def .slider:before {
+  height: 1em;
+  width: 1em;
+  left: 2px;
+}
+li.combatant.actor.directory-item {
+  border-bottom: 1px solid #222;
+  height: 60px;
+  padding: 0.2em 0;
+}
+li.combatant.actor.directory-item div.opponents {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: #666;
+  font-size: 0.8em;
+  line-height: 14px;
+}
+li.combatant.actor.directory-item div.opponents img.actor-foe {
+  border: none;
+  object-fit: contain;
+  object-position: 50% 0;
+  height: 25px;
+  flex: none;
+  margin: 0 0.1em;
+  padding: 0;
+  width: 25px;
+}
+li.combatant.actor.directory-item .stance {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-left: 1px solid #222;
+}
+li.combatant.actor.directory-item .stance img.stance-icon {
+  border: none;
+  object-fit: contain;
+  object-position: 50% 0;
+  height: 30px;
+  flex: none;
+  margin: 0 0.1em;
+  padding: 0;
+  width: 30px;
+}
+li.combatant.actor.directory-item .stance span.stance-label {
+  font-size: 1em;
+  text-align: center;
+  flex: none;
+  display: block;
+  line-height: 1em;
+}
+.header .formula {
+  padding-bottom: 0.5em;
+}
+.header .feat-die-value img {
+  width: 40px;
+}
+.special-result-row .special-success-header {
+  background: #262626;
+  margin-bottom: 0.2em;
+  color: white;
+  font-weight: bold;
+  flex: none;
+}
+.special-result-row .special-success-header p {
+  padding-left: 0.75em;
+  margin: 0.2em;
+}
+.special-result-row .special-success-elements {
+  justify-content: space-evenly;
+  margin-top: 0.2em;
+  flex: none;
+}
+.special-result-row .special-success-elements .special-success-element {
+  flex: none;
+  width: 100px;
+  text-align: center;
+  align-items: center;
+}
+.special-result-row .special-success-elements .special-success-element input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.special-result-row .special-success-elements .special-success-element label > * {
+  opacity: 0.25;
+  cursor: pointer;
+}
+.special-result-row .special-success-elements .special-success-element input:checked + label > * {
+  opacity: 1;
+  cursor: default;
+}
+.special-result-row .special-success-elements .special-success-element span {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.special-result-row .special-success-elements .special-success-element span.title {
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-top: 0;
+}
+.special-result-row .special-success-elements .special-success-element span.description {
+  font-size: 0.7em;
+}
+.special-result-row .special-success-elements .special-success-element > * {
+  flex: none;
+}
+.special-result-row .special-success-elements img {
+  cursor: pointer;
+}
+.special-result-row:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+.flexcol.special-result-row:not(:first-child) {
+  padding-top: 0.5em;
+}
+.tor2e.sheet .skill-card-component {
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 0.01em;
+  margin-bottom: 0.01em;
+  padding-top: 0.01em;
+  padding-bottom: 0.01em;
+}
+.tor2e.sheet .skill-card-component .identification,
+.tor2e.sheet .skill-card-component .value {
+  flex: none;
+  align-items: center;
+}
+.tor2e.sheet .skill-card-component .identification .skill-label,
+.tor2e.sheet .skill-card-component .value .skill-label {
+  flex: none;
+  margin-left: 0.075em;
+}
+.tor2e.sheet .skill-card-component .identification {
+  margin-left: 0.25em;
+}
+.tor2e.sheet .skill-card-component .identification .skill-name {
+  flex: none;
+}
+.tor2e.sheet .skill-card-component .identification a.weapon-name > p {
+  font-weight: normal;
+}
+.tor2e.sheet .skill-card-component .identification a.weapon-name.active > p {
+  font-weight: bold;
+}
+.tor2e.sheet .skill-card-component .identification a.skill-name.active {
+  font-weight: bold;
+}
+.tor2e.sheet .skill-card-component .identification .favoured-wrapper {
+  width: 1.1em;
+  max-width: 1.1em;
+  margin-right: 0.1em;
+}
+.tor2e.sheet .skill-card-component .identification .favoured-wrapper div.tor2e-round-checkbox {
+  padding-bottom: 0;
+}
+.tor2e.sheet .skill-card-component .identification .favoured-wrapper div.tor2e-round-checkbox p.toggle-favoured-state span.label,
+.tor2e.sheet .skill-card-component .identification .favoured-wrapper div.tor2e-round-checkbox .toggle-favoured-skill-state span.label {
+  height: 1em;
+  width: 1em;
+}
+.tor2e.sheet .skill-card-component .identification .favoured-wrapper div.tor2e-round-checkbox p.toggle-favoured-state .label:after,
+.tor2e.sheet .skill-card-component .identification .favoured-wrapper div.tor2e-round-checkbox .toggle-favoured-skill-state .label:after {
+  height: 0.15em;
+  width: 0.25em;
+}
+.tor2e.sheet .skill-card-component .value {
+  margin-right: 0.25em;
+}
+.tor2e.sheet .skill-card-component .skill-value {
+  flex: none;
+  margin-left: 0.5em;
+  margin-right: 0.25em;
+  width: 2em;
+  text-align: center;
+}
+.combat-stances-wrapper {
+  position: relative;
+}
+.combat-stances-wrapper .combat-stances {
+  position: absolute;
+  left: -3.75em;
+  top: 0.25em;
+}
+.dialog.window-app > .window-content {
+  background: url("../assets/images/sheet/Tor2e-Background-Sheet.webp") repeat;
+}
+/* Flaired edges, by Tomas Theunissen */
+hr.style-seven {
+  overflow: visible;
+  /* For IE */
+  height: 15px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 0.75em;
+  width: 100%;
+  flex: none;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+hr.style-seven:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 15px;
+  margin-top: -16px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 0.75em;
+}
+.popup .header {
+  flex: none;
+  width: 155px;
+  border-right: 1px solid #333;
+  padding-right: 0.5em;
+}
+.popup .content {
+  margin-left: 1em;
+  flex: 2;
+}
+.popup .content .best-worst {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.popup .content .best-worst label {
+  flex: none;
+  margin: 0;
+  padding: 0;
+}
+.popup .content .best-worst span.right-align {
+  text-align: right;
+  padding-right: 0.5em;
+  flex: none;
+}
+.popup .content .best-worst span.left-align {
+  text-align: left;
+  padding-left: 0.5em;
+  flex: none;
+}
+.popup .content .input {
+  flex: 1;
+}
+.popup .content .principal {
+  flex: 2;
+}
+.popup img {
+  border: none;
+  object-fit: contain;
+  object-position: 50% 0;
+}
+.popup input {
+  width: 3em;
+  flex: none;
+  text-align: center;
+}
+.popup .form-group .label,
+.popup .form-group label {
+  margin-right: 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+  flex: none;
+  color: #AC323BFF;
+}
+.popup .double-attribute {
+  flex: 2;
+  text-align: center;
+}
+.popup .tor-dice {
+  align-items: center;
+}
+.dialog .dialog-buttons {
+  flex: none;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.25em;
+  height: 1.7em;
+}
+.switch + span {
+  margin-left: 0.2em;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2e6635;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.25em;
+  width: 1.25em;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #e50b28;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #e50b28;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 1em;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.form-group label.switch {
+  flex: none;
+}
+/* The Dice - the box around the slider */
+.tor-dice {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  /* Hide default HTML checkbox */
+}
+.tor-dice input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.tor-dice .feat-dice,
+.tor-dice .bonus-dice,
+.tor-dice .penalty-dice {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.tor-dice .feat-dice:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 4px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/chat/dice_icons/chat_f_gandalf.png");
+  background-size: 2em;
+  opacity: 0.25;
+}
+.tor-dice .bonus-dice:before,
+.tor-dice .penalty-dice:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 4px;
+  background: url("../assets/images/chat/dice_icons/chat_s_6.png") no-repeat;
+  background-size: 2em;
+  opacity: 0.25;
+}
+.tor-dice .minus-three:before {
+  background-image: url("../assets/images/chat/dice_icons/chat_s_three_penalty.png");
+}
+.tor-dice .minus-two:before {
+  background-image: url("../assets/images/chat/dice_icons/chat_s_two_penalty.png");
+}
+.tor-dice .minus-one:before {
+  background-image: url("../assets/images/chat/dice_icons/chat_s_one_penalty.png");
+}
+.tor-dice .blank:before {
+  background-image: url("../assets/images/chat/dice_icons/chat_s_zero.png");
+}
+.tor-dice .plus-one:before {
+  background-image: url("../assets/images/chat/dice_icons/chat_s_one_bonus.png");
+}
+.tor-dice .plus-two:before {
+  background-image: url("../assets/images/chat/dice_icons/chat_s_two_bonus.png");
+}
+.tor-dice .plus-three:before {
+  background-image: url("../assets/images/chat/dice_icons/chat_s_three_bonus.png");
+}
+.tor-dice input:checked + .feat-dice:before,
+.tor-dice input:checked + .bonus-dice:before,
+.tor-dice input:checked + .penalty-dice:before {
+  opacity: 1;
+}
+.state {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  /* Hide default HTML checkbox */
+}
+.state input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.state .state-dice {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.state .state-dice:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 4px;
+  background: url("../assets/images/icons/miscellaneous/inspired.svg") no-repeat;
+  background-size: 2em;
+  opacity: 0.2;
+}
+.state input:checked + .state-dice:before {
+  opacity: 1;
+}
+.mandatory {
+  margin-bottom: 2em;
+}
+.formula p.label,
+.roll-characteristic-card p.label {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  background: #333;
+  margin-bottom: 0;
+}
+.formula div.value,
+.roll-characteristic-card div.value,
+.formula div.roll-characteristics,
+.roll-characteristic-card div.roll-characteristics {
+  text-align: center;
+  border: 1px solid #333333;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2em;
+  align-items: center;
+}
+.formula div.value div,
+.roll-characteristic-card div.value div,
+.formula div.roll-characteristics div,
+.roll-characteristic-card div.roll-characteristics div {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+.formula div.value div span,
+.roll-characteristic-card div.value div span,
+.formula div.roll-characteristics div span,
+.roll-characteristic-card div.roll-characteristics div span {
+  display: inline-block;
+}
+.formula div.value div.part.positive:before,
+.roll-characteristic-card div.value div.part.positive:before,
+.formula div.roll-characteristics div.part.positive:before,
+.roll-characteristic-card div.roll-characteristics div.part.positive:before {
+  content: "+";
+}
+.formula div.value div.part.negative:before,
+.roll-characteristic-card div.value div.part.negative:before,
+.formula div.roll-characteristics div.part.negative:before,
+.roll-characteristic-card div.roll-characteristics div.part.negative:before {
+  content: "-";
+}
+.formula div.roll-characteristics,
+.roll-characteristic-card div.roll-characteristics {
+  font-size: 1em;
+  text-align: left;
+  justify-content: flex-start;
+}
+li.roll-characteristic {
+  color: #adadad;
+  opacity: 0.5;
+}
+li.roll-characteristic.active {
+  color: unset;
+  opacity: 1;
+}
+li.roll-characteristic.active.positive {
+  color: #018572;
+}
+li.roll-characteristic.active.negative {
+  color: #AC323BFF;
+}
+.roll-characteristic-card p.label {
+  font-size: 1em;
+}
+div#modify-roll {
+  flex: 1;
+}
+div#modify-roll hr {
+  text-align: center;
+  width: 80%;
+}
+div.roll-option-wrapper {
+  flex: 0.75 !important;
+}
+section#weary-not-weary {
+  padding-left: 0.5em;
+}
+.separation:not(:last-child) {
+  border-right: 1px solid #AC323BFF;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+}
+.centered {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+section#favoured-ill-favoured .form-group {
+  justify-content: flex-start;
+}
+section#favoured-ill-favoured .form-group .best-worst {
+  display: none;
+}
+section#favoured-ill-favoured .form-group .best-worst.active {
+  display: block;
+}
+section#favoured-ill-favoured .input {
+  flex: none;
+  margin: 0 2em 0 1em;
+}
+section#hope .form-group .inspiration {
+  display: none;
+}
+section#hope .form-group .inspiration.active {
+  display: flex;
+}
+.tor2e.sheet.item h2 {
+  color: #800000;
+}
+.tor2e.sheet.item span.hint {
+  flex: none;
+}
+.tor2e.sheet.item .hint {
+  color: #313c48;
+  opacity: 0.75;
+  font-style: italic;
+  font-size: 0.8em;
+}
+.tor2e.sheet.item form {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+  margin: auto;
+  position: absolute;
+}
+.tor2e.sheet.item .sheet-header {
+  flex: 1;
+  border-right: 5px double #AC323BFF;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-right: 0.5em;
+  min-width: 180px;
+  flex-direction: column;
+}
+.tor2e.sheet.item .sheet-header .title h2 {
+  text-align: center;
+  flex: none;
+}
+.tor2e.sheet.item .sheet-header .title h2 > label {
+  border: none;
+}
+.tor2e.sheet.item .sheet-header .title input {
+  flex: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tor2e.sheet.item .sheet-header img {
+  width: 100%;
+  flex: 0 0 164px;
+  height: 164px;
+  margin-right: 6px;
+  border: none;
+  object-fit: contain;
+  object-position: 50% 0;
+}
+.tor2e.sheet.item .sheet-content {
+  height: 100%;
+  flex: 3;
+  margin-left: 1em;
+}
+.tor2e.sheet.item .sheet-content select.auto-sizeable {
+  width: fit-content;
+  block-size: fit-content;
+}
+.tor2e.sheet.item .sheet-content .item-row {
+  justify-content: space-evenly;
+  flex: none;
+}
+.tor2e.sheet.item .sheet-content .item-row .item-element {
+  align-items: center;
+  align-content: center;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+.tor2e.sheet.item .sheet-content .item-row.separated > .item-element:not(:last-child) {
+  border-right: 1px solid #AC323BFF;
+  padding-right: 0.5em;
+}
+.tor2e.sheet.item .sheet-content .description {
+  flex: none;
+  height: 80%;
+}
+.tor2e.sheet.item .sheet-content .description h2 {
+  flex: none;
+}
+.tor2e.sheet.item .sheet-content .separated {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5em 0;
+}
+.tor2e.sheet.item .sheet-content .separated label {
+  flex: none;
+  padding: 0 0.5em;
+}
+.tor2e.sheet.item .sheet-content input.number-value {
+  width: 3em;
+  text-align: center;
+}
+.tor2e.sheet.item .sheet-content select {
+  width: 10em;
+}
+.item-sheet section {
+  margin-top: 2em;
+}
+.item-sheet .item-row {
+  justify-content: space-evenly;
+  margin: 1em 0.5em;
+  align-items: center;
+}
+.item-sheet .simple-attribute {
+  flex: 1;
+}
+.item-sheet .double-attribute {
+  flex: 2;
+}
+.item-sheet .attribute {
+  flex: none;
+  align-items: center;
+}
+.item-sheet .attribute-label {
+  flex: none;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+.item-sheet .attribute-number-value {
+  flex: none;
+  width: 4em;
+  text-align: center;
+}
+.item-sheet .attribute-text-value {
+  flex: none;
+  text-align: left;
+}
+.item-sheet .description-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 1px solid #782e22;
+}
+.weapon-details-container {
+  display: flex;
+  /* or inline-flex */
+  justify-content: space-around;
+}
+.tor2e.sheet.item.journey-log .top {
+  flex: 1;
+}
+.tor2e.sheet.item.journey-log .bottom {
+  flex: 2;
+}
+.tor2e.sheet.item.journey-log h2,
+.tor2e.sheet.item.journey-log h3 {
+  flex: none;
+}
+.tor2e.sheet.item.journey-log h2 *,
+.tor2e.sheet.item.journey-log h3 * {
+  margin-left: 0.2em;
+}
+.tor2e.sheet.item.journey-log input {
+  flex: none;
+}
+.tor2e.sheet.item.journey-log label {
+  flex: none;
+}
+.tor2e.sheet.item.journey-log label select {
+  width: auto;
+}
+.tor2e.sheet.item.journey-log .input-inline {
+  width: auto;
+  display: inherit;
+}
+.tor2e.sheet.item.journey-log .input-inline label {
+  margin-left: 0.1em;
+}
+.tor2e.sheet.item.journey-log .table-heading {
+  flex: none;
+  text-align: center;
+}
+.tor2e.sheet.item.journey-log .numeric-centered {
+  text-align: center;
+}
+.tor2e.sheet.item.journey-log .action-zone {
+  text-align: center;
+  flex: none;
+  width: 2em;
+}
+.tor2e.sheet.item.journey-log .action-button {
+  font-size: 0.8em;
+}
+.tor2e.sheet.item.journey-log .actions {
+  display: inline;
+}
+.tor2e.sheet.item.journey-log section:not(:last-child) {
+  border-right: 1px solid #D67177FF;
+}
+.tor2e.sheet.item.journey-log section {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+.tor2e.sheet.item.journey-log section#log {
+  flex: 0.5;
+}
+.tor2e.sheet.item.journey-log section#company {
+  flex: 1.5;
+}
+.tor2e.sheet.item.journey-log section#mounts {
+  flex: 0.75;
+}
+.tor2e.sheet.item.journey-log section#journal {
+  flex: 1.5;
+}
+.tor2e.sheet.item.journey-log section#path {
+  flex: 3;
+}
+.tor2e.sheet.item.journey-log section#event {
+  flex: 1;
+}
+.tor2e.sheet.item.journey-log .input-field {
+  align-items: center;
+}
+.tor2e.sheet.item.journey-log .input-field label {
+  flex: none;
+}
+.tor2e.sheet.item.journey-log .input-field input {
+  padding-left: 0.25em;
+  flex: 1;
+}
+.tor2e.sheet.item.journey-log .data-row {
+  align-items: center;
+}
+.tor2e.sheet.item.journey-log .event {
+  border-bottom: 1px solid #D67177FF;
+  flex: none;
+  padding: 0.1em 0.1em 0.5em;
+}
+.tor2e.sheet.dialog.journey-log .content {
+  align-items: flex-start;
+}
+.tor2e.sheet.dialog.journey-log .content label {
+  height: 65px;
+  flex: none;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* CHECKED STYLES */
+}
+.tor2e.sheet.dialog.journey-log .content label .label {
+  display: flex;
+  align-items: center;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .hex:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  position: absolute;
+  top: -15px;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .hex {
+  width: 52px;
+  height: 30px;
+  position: relative;
+  opacity: 0.3;
+  flex: none;
+  margin-right: 1em;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -15px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .bg-1.hex:before {
+  border-bottom: 15px solid #76763f;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .bg-1.hex {
+  background-color: #76763f;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .bg-1.hex:after {
+  border-top: 15px solid #76763f;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .bg-2.hex:before {
+  border-bottom: 15px solid #a28742;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .bg-2.hex {
+  background-color: #a28742;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .bg-2.hex:after {
+  border-top: 15px solid #a28742;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .bg-3.hex:before {
+  border-bottom: 15px solid #aa732f;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .bg-3.hex {
+  background-color: #aa732f;
+}
+.tor2e.sheet.dialog.journey-log .content label input[type="radio"] + div.label > .bg-3.hex:after {
+  border-top: 15px solid #aa732f;
+}
+.tor2e.sheet.dialog.journey-log .content label [type=radio] + .label .title {
+  font-weight: normal;
+}
+.tor2e.sheet.dialog.journey-log .content label [type=radio]:checked + .label .title {
+  font-weight: bold;
+}
+.tor2e.sheet.dialog.journey-log .content label [type=radio]:checked + .label .hex {
+  opacity: 1;
+}
+.tor2e.sheet.actor.community #journey-log .year {
+  background: #E1D1D2;
+  padding-left: 0.5em;
+}
+.tor2e.sheet.actor.community .data-row {
+  align-items: center;
+}
+.tor2e.sheet.actor.community input[type='checkbox'] {
+  display: none;
+}
+.tor2e.sheet.actor.community .lbl-toggle {
+  display: block;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.1em;
+  color: #3b3838;
+  background: #E1D1D2;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+.tor2e.sheet.actor.community .lbl-toggle:hover {
+  color: #8c8c8c;
+}
+.tor2e.sheet.actor.community .lbl-toggle::after {
+  margin-left: 0.5em;
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 400;
+  content: "\f151";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.7rem;
+  transition: transform 0.2s ease-out;
+}
+.tor2e.sheet.actor.community .collapsible-content .content-inner {
+  background: rgba(165, 165, 165, 0.2);
+  border-bottom: 1px solid rgba(179, 179, 179, 0.45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 0.2em 0.5em;
+}
+.tor2e.sheet.actor.community .collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+}
+.tor2e.sheet.actor.community .year-toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+.tor2e.sheet.actor.community .year-toggle:checked + .lbl-toggle::after {
+  margin-left: 0.5em;
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 400;
+  content: "\F150";
+}
+.tor2e.sheet.actor.community .year-toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.tor2e.sheet.actor h2 {
+  color: #800000;
+}
+.tor2e.sheet.actor .hostile-friendly {
+  display: flex;
+}
+.tor2e.sheet.actor .hostile-friendly .hf-slider {
+  width: 150px;
+}
+.tor2e.sheet.actor .section {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.tor2e.sheet.actor .section h4 {
+  font-weight: bold;
+  font-size: 1.4em;
+  text-align: center;
+  flex: none;
+}
+.tor2e.sheet.actor .section .active-effect {
+  margin: 0 0.1em;
+  flex: none;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.tor2e.sheet.actor .section .active-effect img {
+  opacity: 0.1;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  flex: none;
+  background-color: black;
+}
+.tor2e.sheet.actor .section .active-effect img.active {
+  opacity: 1;
+}
+.tor2e.sheet.actor .section .active-effect .label {
+  text-align: center;
+  font-size: 0.8em;
+  flex: none;
+}
+.tor2e.sheet.actor .section .active-effect .active-effect-header {
+  flex: none;
+  justify-content: end;
+  align-items: center;
+  align-content: center;
+}
+.tor2e.sheet.actor .section .active-effect .active-effect-value {
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 2.5em;
+  align-self: end;
+}
+.tor2e.sheet.actor .section .active-effect .active-effect-value input,
+.tor2e.sheet.actor .section .active-effect .active-effect-value label {
+  flex: none;
+}
+.tor2e.sheet.actor .section .active-effect .active-effect-value label {
+  margin: 0.5em 0;
+}
+.tor2e.sheet.actor .section.main-section {
+  flex: 3;
+}
+.tor2e.sheet.actor .section.main-section .active-effect-row {
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px 5px 5px 5px;
+}
+.tor2e.sheet.actor .section.secondary-section {
+  flex: 1;
+}
+.tor2e.sheet.actor .three-states-checkbox {
+  cursor: pointer;
+}
+.tor2e.sheet.actor .three-states-checkbox p {
+  font-size: 1.2em;
+}
+.tor2e.sheet.actor .three-states-checkbox .empty-square::before {
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border: none;
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 400;
+  content: "\f111";
+}
+.tor2e.sheet.actor .three-states-checkbox .check-square::before {
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border: none;
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 400;
+  content: "\f058";
+}
+.tor2e.sheet.actor .three-states-checkbox .times-square::before {
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border: none;
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 400;
+  content: "\f057";
+}
+.tor2e.sheet.actor input[type="checkbox"] {
+  flex: 0 0 20px;
+  width: auto;
+  height: auto;
+  margin: 0.1em;
+}
+.tor2e.sheet.actor .attribute-label {
+  flex: none;
+  margin-right: 0.5em;
+  margin-bottom: 0.1em;
+}
+.tor2e.sheet.actor .attribute-number-value {
+  flex: none;
+  width: 4em;
+  text-align: center;
+  margin-right: 0.5em;
+}
+.tor2e.sheet.actor .attribute-text-value {
+  flex: none;
+  text-align: left;
+}
+.tor2e.sheet.actor form {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+  margin: auto;
+  position: absolute;
+}
+.tor2e.sheet.actor img.actor-banner {
+  flex: 0;
+  width: auto;
+  object-fit: cover;
+  object-position: 100% 65%;
+  border: none;
+}
+.tor2e.sheet.actor img.member-token {
+  flex: 0;
+  width: auto;
+  object-fit: cover;
+  object-position: 100% 65%;
+  border: none;
+}
+.tor2e.sheet.actor .list-actor {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.tor2e.sheet.actor .list-actor .member-name {
+  align-items: center;
+  align-content: center;
+}
+.tor2e.sheet.actor .list-actor .member-name p {
+  flex: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 7em;
+  display: inline-block;
+  overflow: hidden;
+}
+.tor2e.sheet.actor .list-actor .member-name .actions {
+  flex: 0;
+  min-width: fit-content;
+}
+.tor2e.sheet.actor .sheet-header img {
+  flex: 0 0 125px;
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
+  object-position: 50% 0;
+  border: 5px double darkgray;
+  background: lightgray;
+  padding: 2px 0;
+}
+.tor2e.sheet.actor .sheet-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.tor2e.sheet.actor .sheet-content #health .section:first-of-type {
+  padding-right: 1em;
+}
+.tor2e.sheet.actor .sheet-content .sidebar {
+  text-align: center;
+  margin-bottom: 0.5em;
+  flex: 1.1;
+}
+.tor2e.sheet.actor .sheet-content .sidebar .complex-stat-container {
+  justify-content: space-evenly;
+}
+.tor2e.sheet.actor .sheet-content .sidebar .complex-stat-container .main-stat {
+  flex: none;
+}
+.tor2e.sheet.actor .sheet-content .central {
+  flex: 4.5;
+}
+.tor2e.sheet.actor .sheet-content .central .attributes {
+  justify-content: space-around;
+}
+.tor2e.sheet.actor .sheet-content .complex-stat {
+  justify-content: center;
+}
+.tor2e.sheet.actor .sheet-content .main-stat {
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .skill-name {
+  flex: none;
+  margin-bottom: 0.25em;
+}
+.tor2e.sheet.actor .sheet-content .main-stat label,
+.tor2e.sheet.actor .sheet-content .main-stat .label {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 0.25em;
+  margin-top: 0;
+  flex: none;
+}
+.tor2e.sheet.actor .sheet-content .main-stat label a,
+.tor2e.sheet.actor .sheet-content .main-stat .label a {
+  font-size: initial;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .main-stat-value {
+  position: relative;
+  align-items: center;
+  flex: none;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .main-stat-value .main-stat-label {
+  position: absolute;
+  left: -1.5em;
+  top: 1.5em;
+  color: #AC323BFF;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .main-stat-value.warn {
+  background: radial-gradient(circle, rgba(236, 6, 12, 0) 25%, #f6030f 75%, rgba(255, 0, 18, 0) 100%) !important;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .computed > .main-stat-value {
+  background: #D6D6D6FF;
+  flex: none;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .item-name:hover .action {
+  visibility: visible;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .item-name {
+  position: absolute;
+  left: -5em;
+  top: -1em;
+  font-size: 0.75em;
+  font-weight: initial;
+  text-align: left;
+  align-items: center;
+  width: 6em;
+  max-width: 90px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #AC323BFF;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .item-name p {
+  margin-left: 0.25em;
+  white-space: break-spaces;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .item-name img {
+  border: none;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .item-name .action {
+  flex: none;
+  visibility: hidden;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper,
+.tor2e.sheet.actor .sheet-content .main-stat .item-value {
+  width: 1.75em;
+  height: 1.75em;
+  text-align: center;
+  border: 4px double #AC323BFF;
+  background: #F5F5F5FF;
+  padding: 0;
+  font-size: 1.4em;
+  box-sizing: content-box;
+  min-width: unset;
+  transform: rotate(45deg);
+  color: #AC323BFF;
+  margin: 0.25em 0 0;
+  flex: none;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper input,
+.tor2e.sheet.actor .sheet-content .main-stat .item-value input,
+.tor2e.sheet.actor .sheet-content .main-stat .input-stat-wrapper .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .item-value .input-stat-value {
+  font-size: 1em;
+  align-items: center;
+  transform: rotate(-45deg);
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;
+  color: #AC323BFF;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .item-value {
+  background: #D6D6D6FF;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat label,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item label {
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: initial;
+  text-align: left;
+  width: 10em;
+  margin-top: 0;
+  left: 2.1em;
+  top: -2.5em;
+  transform: rotate(-45deg);
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat label p,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item label p {
+  max-width: 8em;
+  display: inline-block;
+  margin-top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-name,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-name {
+  transform: rotate(0deg);
+  left: 6em;
+  color: #AC323BFF;
+  top: -1em;
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: initial;
+  text-align: left;
+  width: 10em;
+  margin-top: 0;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-name p,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-name p {
+  max-width: 8em;
+  display: inline-block;
+  margin-top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .input-stat-wrapper,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .input-stat-wrapper,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value {
+  position: absolute;
+  right: -1.9em;
+  top: -0.65em;
+  background: #F5F5F5FF repeat;
+  text-align: center;
+  border: 2px solid #AC323BFF;
+  padding: 0;
+  font-size: 0.8em;
+  box-sizing: content-box;
+  flex: none;
+  color: #AC323BFF;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .input-stat-wrapper input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .input-stat-wrapper input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value input,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .input-stat-wrapper .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .input-stat-wrapper .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value .input-stat-value {
+  font-size: 1em;
+  align-items: center;
+  transform: rotate(-45deg);
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;
+  color: #AC323BFF;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .item-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .item-value {
+  background: #D6D6D6FF;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .stat-name,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .stat-name {
+  position: absolute;
+  left: 5.5em;
+  top: 2.25em;
+  font-size: 0.8em;
+  font-weight: initial;
+  min-width: fit-content;
+  text-align: left;
+  width: 10em;
+  margin-top: 0;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .stat-value {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0;
+  position: absolute;
+  right: -1.5em;
+  top: -0.5em;
+  background: #F5F5F5FF;
+  text-align: center;
+  border-radius: 50%;
+  border: solid black;
+  padding: 0.15em;
+  font-size: initial;
+  box-sizing: content-box;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-stat .stat-value p,
+.tor2e.sheet.actor .sheet-content .main-stat .secondary-item .stat-value p {
+  background: #D6D6D6FF;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat label {
+  position: absolute;
+  right: -9.5em;
+  top: -3.5em;
+  font-size: 0.8em;
+  font-weight: initial;
+  min-width: fit-content;
+  text-align: left;
+  width: 10em;
+  transform: rotate(-45deg);
+}
+.tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat .input-stat-wrapper,
+.tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat .item-value {
+  position: absolute;
+  right: -2em;
+  bottom: -0.75em;
+  background: #F5F5F5FF repeat;
+  text-align: center;
+  border: 2px solid #AC323BFF;
+  padding: 0;
+  font-size: 0.8em;
+  box-sizing: content-box;
+  flex: none;
+  color: #AC323BFF;
+}
+.tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat .input-stat-wrapper input,
+.tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat .item-value input,
+.tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat .input-stat-wrapper .input-stat-value,
+.tor2e.sheet.actor .sheet-content .main-stat .tertiary-stat .item-value .input-stat-value {
+  font-size: 1em;
+  align-items: center;
+  transform: rotate(-45deg);
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;
+  color: #AC323BFF;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+}
+.tor2e.sheet.actor .sheet-content .stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0.5em;
+}
+.tor2e.sheet.actor .sheet-content .stat {
+  align-items: center;
+}
+.tor2e.sheet.actor .sheet-content .stat label {
+  font-size: 1.4em;
+}
+.tor2e.sheet.actor .sheet-content .stat .skill-label {
+  font-size: 1em;
+}
+.tor2e.sheet.actor .sheet-content .stat input {
+  text-align: center;
+  width: 4em;
+}
+.tor2e.sheet.actor .sheet-content .stat div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tor2e.sheet.actor .sheet-content .stat div label {
+  font-size: 0.8em;
+}
+.tor2e.sheet.actor .sheet-content .stat .sibling {
+  margin-left: 0.1em;
+}
+.tor2e.sheet.actor .sheet-content .stat .sibling label {
+  text-transform: lowercase;
+  font-size: 0.8em;
+}
+.tor2e.sheet.actor .sheet-content .stat .sibling input[type=checkbox] {
+  width: auto;
+}
+.tor2e.sheet.actor .sheet-content label.favoured {
+  display: inline;
+  text-transform: lowercase;
+  font-size: 0.8em;
+}
+.tor2e.sheet.actor .sheet-content label.favoured input[type="checkbox"] {
+  width: auto;
+  height: auto;
+}
+.tor2e.sheet.actor .sheet-content .dice {
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tor2e.sheet.actor .sheet-content .dice::after {
+  content: "D";
+}
+.tor2e.sheet.actor .sheet-content .bonus {
+  align-self: center;
+}
+.tor2e.sheet.actor .sheet-content .bonus::before {
+  content: "+";
+}
+.tor2e.sheet.actor .sheet-content .attribute-table-value {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+.tor2e.sheet.actor .sheet-content .attribute-table-value .secondary-stat {
+  position: absolute;
+  right: 2.5em;
+}
+.tor2e.sheet.actor .sheet-content .attribute-table-value label {
+  text-align: center;
+  margin-right: 0.2em;
+}
+.tor2e.sheet.actor .sheet-content .attribute-table-value label input {
+  text-align: center;
+  width: 4em;
+}
+.tor2e.sheet.actor .sheet-content .attribute-table-value .item-value {
+  padding: 0.5em;
+  border: 1px solid black;
+  width: fit-content;
+  margin: 0;
+}
+.tor2e.sheet.actor .sheet-content .attribute-table-value .main {
+  text-align: center;
+  margin-right: 0.2em;
+}
+.tor2e.sheet.actor .sheet-content .attribute-table-value .accessory {
+  text-align: center;
+  margin-left: 0.2em;
+}
+.tor2e.sheet.actor .lore .hostile-friendly .hf-slider {
+  width: 200px;
+}
+.tor2e.sheet.actor .lore .hostile-friendly .hf-slider .slider.round {
+  width: 50px;
+}
+.tor2e.sheet.actor .lore .sheet-content .item-row {
+  flex: 2;
+  align-items: center;
+}
+.tor2e.sheet.actor .lore .sheet-content .item-row .attribute-label {
+  font-weight: bold;
+}
+.tor2e.sheet.actor .state-of-health-sidebar {
+  align-items: flex-end;
+  display: flex;
+}
+.tor2e.sheet.actor .state-of-health-sidebar .state-of-health-item {
+  align-items: center;
+}
+.tor2e.sheet.actor .flexrow > h2,
+.tor2e.sheet.actor .flexcol > h2 {
+  flex: 0;
+}
+.tor2e.sheet.actor #armours {
+  flex: 1.9;
+}
+.tor2e.sheet.actor .state-of-health {
+  margin-top: 2em;
+  text-align: center;
+}
+.tor2e.sheet.actor .skill-container {
+  justify-content: space-around;
+}
+.tor2e.sheet.actor .skill-container .skill-column {
+  flex: none;
+}
+.tor2e.sheet.actor .item-data {
+  text-align: center;
+  align-items: center;
+}
+.tor2e.sheet.actor .item-data .identification {
+  text-align: left;
+}
+.tor2e.sheet.actor .item-data .identification p {
+  flex: none;
+  margin-left: 0.2em;
+}
+.tor2e.sheet.actor .item-data .identification img {
+  border: none;
+}
+.tor2e.sheet.actor .item-data .attribute-container {
+  display: flex;
+  justify-content: center;
+}
+.tor2e.sheet.actor .item-data .skill-value {
+  justify-content: center;
+  align-items: center;
+}
+.tor2e.sheet.actor .item-data .skill-value .checkbox {
+  flex: none;
+}
+.tor2e.sheet.actor .item-data .attribute-value {
+  flex: none;
+  width: 3em;
+}
+.tor2e.sheet.actor .table-caption {
+  font-weight: bold;
+  text-align: center;
+}
+.tor2e.sheet.actor .table-main-column {
+  flex: 3;
+}
+.tor2e.sheet.actor .table-complex-column {
+  flex: 2;
+}
+.tor2e.sheet.actor .attribute-value {
+  text-align: center;
+}
+.tor2e.sheet.actor .item-description h3 {
+  margin: 0;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.05);
+}
+.tor2e.sheet.actor .simple-stat-row {
+  justify-content: space-around;
+  align-items: center;
+}
+.tor2e.sheet.actor .double-biography-element {
+  flex: 2;
+  margin-left: 0.25em;
+  margin-bottom: 0.25em;
+}
+.tor2e.sheet.actor .biography-element {
+  margin-left: 0.25em;
+  margin-bottom: 0.25em;
+}
+.tor2e.sheet.actor .common-skill-column {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+.tor2e.sheet.actor .common-skill-column:not(:last-child) {
+  border-right: 3px double #AC323BFF;
+}
+.tor2e.sheet.actor .pips-value {
+  margin-bottom: 0.25em;
+  margin-right: 0;
+}
+.tor2e.sheet.actor .skill-element-row {
+  cursor: pointer;
+  justify-content: center;
+}
+.tor2e.sheet.actor .skill-element-row > * {
+  font-size: 1em;
+  width: 0.7em;
+  height: 0.7em;
+  transform: rotate(45deg);
+  border: 1.5px solid #AC323BFF;
+  margin: 0 0.1em;
+  flex: none;
+}
+.tor2e.sheet.actor .skill-element-row .skill-display-element-full {
+  background-color: #AC323BFF;
+}
+.tor2e.sheet.actor .skill-element-row.inactive {
+  cursor: initial;
+}
+.tor2e.sheet.actor .skill-element-row.inactive > * {
+  border: 1.5px solid #D67177FF;
+}
+.tor2e.sheet.actor .skill-element-row.inactive .skill-display-element-full {
+  background-color: #D67177FF;
+}
+.tor2e.sheet.actor .skill-element-row.inactive .skill-display-element {
+  visibility: hidden;
+}
+.tor2e.sheet.actor .skillBonus-element-row {
+  cursor: initial;
+  justify-content: center;
+}
+.tor2e.sheet.actor .skillBonus-element-row > * {
+  font-size: 1em;
+  width: 0.7em;
+  height: 0.7em;
+  transform: rotate(45deg);
+  border: 1.5px solid #018572;
+  margin: 0 0.1em;
+  flex: none;
+}
+.tor2e.sheet.actor .skillBonus-element-row .skill-display-element-full {
+  background-color: #018572;
+}
+.tor2e.sheet.actor .skillBonus-element-row .skill-display-element {
+  visibility: hidden;
+}
+.tor2e.sheet.actor .skillBonus-element-row.inactive {
+  cursor: initial;
+}
+.tor2e.sheet.actor .skillBonus-element-row.inactive > * {
+  border: 1.5px solid #6ac7bb;
+}
+.tor2e.sheet.actor .skillBonus-element-row.inactive .skill-display-element-full {
+  background-color: #6ac7bb;
+}
+.tor2e.sheet.actor .skillBonus-element-row.inactive .skill-display-element {
+  visibility: hidden;
+}
+.tor2e.sheet.actor .rollable a > * {
+  cursor: pointer;
+}
+.tor2e.sheet.actor .character-actor-drop {
+  border-style: inset;
+  min-height: 50px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.tor2e.sheet.actor .actor-emblem {
+  min-height: 50px;
+  margin: 0.05em;
+  width: 120px;
+  flex: none;
+}
+.tor2e.sheet.actor .actor-emblem .list-actor {
+  flex: none;
+}
+.tor2e.sheet.actor .actor-emblem .actor-wrapper {
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0.5em;
+  padding-top: 0.5em;
+  border: 1px solid #777;
+  box-shadow: 3px 3px 5px 0 rgba(3, 3, 3, 0.5);
+  -webkit-box-shadow: 3px 3px 5px 0 rgba(3, 3, 3, 0.5);
+  -moz-box-shadow: 3px 3px 5px 0 rgba(3, 3, 3, 0.5);
+  align-items: center;
+  height: 140px;
+}
+.tor2e.sheet.actor .actor-emblem .actor-wrapper .token-wrapper {
+  flex: none;
+}
+.tor2e.sheet.actor #unassigned-members .actor-drop {
+  width: 100%;
+  border-style: inset;
+  background: rgba(0, 0, 0, 0.1);
+}
+.tor2e.sheet.actor #travel-roles .actor-drop {
+  border-style: inset;
+  min-height: 50px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.tor2e.sheet.actor .role-label + .actor-drop {
+  margin-right: 0.1em;
+  margin-left: 0.1em;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.tor2e.sheet.actor .role-label {
+  margin-right: 0.5em;
+  flex: none;
+  text-align: center;
+}
+.tor2e.sheet.actor .role-label .label {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+.tor2e.sheet.actor .role-label .skill {
+  margin-top: 0;
+  font-style: italic;
+}
+.tor2e.sheet.actor .actor-row {
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.1);
+}
+.tor2e.sheet.actor .big-row {
+  margin-bottom: 2em;
+}
+.tor2e.sheet.actor .primary-section {
+  flex: 2.2;
+}
+.tor2e.sheet.actor .secondary-section {
+  flex: 1.6;
+}
+.tor2e.sheet.actor .primary-block {
+  flex: 2.5;
+}
+.tor2e.sheet.actor .secondary-block {
+  flex: 1.25;
+}
+.tor2e.sheet.actor .section-elements {
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.tor2e.sheet.actor .section-elements .main-stat {
+  padding-bottom: 0.75em;
+}
+.tor2e.sheet.actor .rest-actions {
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px 5px 0 5px;
+}
+.tor2e.sheet.actor .rest-actions .rest-action {
+  text-align: center;
+  flex: none;
+  width: 3.5em;
+  align-items: center;
+}
+.tor2e.sheet.actor .rest-actions .rest-action img {
+  border: none;
+  width: 30px;
+}
+.tor2e.sheet.actor .rest-actions .rest-action a {
+  flex: none;
+  width: 30px;
+  height: 30px;
+}
+.tor2e.sheet.actor .rest-actions .rest-action a i {
+  font-size: 2em;
+}
+.tor2e.sheet.actor .rest-actions .rest-action p {
+  flex: none;
+  padding: 0;
+  font-size: 0.8em;
+}
+.tor2e.sheet.actor .tor2e-round-checkbox {
+  position: relative;
+}
+.tor2e.sheet.actor .tor2e-round-checkbox p {
+  min-height: 0.5rem;
+  margin-top: 0;
+}
+.tor2e.sheet.actor .tor2e-round-checkbox .label {
+  background-color: #c7b798;
+  border: 1px solid #a19989;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1.5em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1.5em;
+}
+.tor2e.sheet.actor .tor2e-round-checkbox .label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 0.2em;
+  left: 3px;
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  transform: rotate(-45deg);
+  width: 0.4em;
+}
+.tor2e.sheet.actor .tor2e-round-checkbox .active > .label {
+  background-color: #7f6623;
+  border-color: #3B2F0FFF;
+}
+.tor2e.sheet.actor .tor2e-round-checkbox .active > .label:after {
+  opacity: 1;
+}
+.tor2e.sheet.actor .tor2e-round-checkbox.big-check-box .label:after {
+  height: 0.4em;
+  width: 0.7em;
+}
+.tor2e.sheet.actor .activable-item {
+  opacity: 0.4;
+}
+.tor2e.sheet.actor .dropped {
+  opacity: 0.15;
+}
+.tor2e.sheet.actor .equipped {
+  opacity: 1;
+}
+.message-content div > input + * {
+  display: none;
+}
+.message-content div > input:checked + * {
+  display: block;
+}
+.message-content div > input {
+  display: none;
+}
+.display-description-message {
+  margin-top: 0.2em;
+}
+.display-description-message img {
+  border: none;
+  flex: none;
+  margin-right: 0.5em;
+}
+.display-description-message p {
+  margin: 0;
+}
+.display-description-message .display-description-message-header {
+  padding-bottom: 0.2em;
+}
+.display-description-message .display-description-message-header .summary {
+  height: 100%;
+}
+.display-description-message .display-description-message-header .summary .block {
+  flex: none;
+  margin-bottom: 0.1em;
+  text-align: left;
+  width: 100%;
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+.display-description-message .display-description-message-header .summary .block .title {
+  background: #333333;
+  color: white;
+  padding: 0.1em 0.2em;
+  min-width: 6em;
+  flex: none;
+}
+.display-description-message .display-description-message-header .summary .block .value {
+  padding-left: 0.2em;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.display-description-message .display-description-message-body {
+  flex: 3;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid #333333;
+  padding: 0.3em;
+  border-radius: 10px;
+}
+.display-description-message .display-description-message-body .header {
+  margin-bottom: 0.1em;
+}
+.display-description-message .display-description-message-body img {
+  flex: none;
+  margin-right: 1em;
+}
+.rest-message {
+  margin-top: 0.2em;
+}
+.rest-message img {
+  border: none;
+}
+.rest-message p {
+  margin: 0;
+}
+.rest-message .rest-message-sidebar {
+  flex: none;
+  padding-right: 0.2em;
+}
+.rest-message .rest-message-body {
+  flex: 1;
+}
+.rest-message .rest-message-body img {
+  float: right;
+  width: 2em;
+}
+.success {
+  color: darkgreen;
+}
+.failure {
+  color: crimson;
+}
+.skill-roll-item {
+  margin-bottom: 0.5em;
+}
+.skill-roll-item .context {
+  align-items: center;
+}
+.message-content .roll-message-sidebar {
+  flex: 1;
+  margin-right: 0.1em;
+}
+.message-content .roll-message-sidebar img {
+  border: none;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+.message-content .roll-message-content {
+  flex: 3;
+}
+.roll-message-body {
+  flex: none;
+}
+.roll-message-body .roll-information-row {
+  margin-bottom: 0.1em;
+  text-align: left;
+  flex: 3;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+.roll-message-body .roll-information-row p {
+  margin: 0;
+}
+.roll-message-body .roll-information-row .label {
+  background: #333333;
+  color: white;
+  padding: 0.1em 0.2em;
+  min-width: 6em;
+  flex: none;
+}
+.roll-message-body .roll-information-row .value {
+  text-align: center;
+  padding-left: 0.2em;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.tor2e-dice-tooltip .tor2e-tooltip-part {
+  flex: 2.5;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  border-left: 1px solid #999;
+  padding-left: 0.25em;
+  margin-bottom: 0.2em;
+}
+.tor2e-dice-tooltip .tor2e-tooltip-part .dice .dice-rolls {
+  margin-bottom: 0;
+}
+.tor2e-dice-tooltip .tor2e-tooltip-part .dice .dice-rolls .mandatory {
+  margin-bottom: 0;
+  opacity: 1;
+}
+.tor2e-dice-tooltip .tor2e-tooltip-part .dice .dice-rolls .optional {
+  opacity: 0.2;
+}
+.tor2e-dice-tooltip .tor2e-tooltip-part:first-of-type {
+  flex: 1.25;
+}
+/* Flaired edges, by Tomas Theunissen */
+hr.style-seven {
+  overflow: visible;
+  /* For IE */
+  height: 15px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 0.75em;
+  width: 100%;
+  flex: none;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+hr.style-seven:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 15px;
+  margin-top: -16px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 0.75em;
+}
+.dialog .dialog-buttons {
+  flex: none;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.25em;
+  height: 1.7em;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2e6635;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.25em;
+  width: 1.25em;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #e50b28;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #e50b28;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 1em;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.form-group label.switch {
+  flex: none;
+}
+.mandatory {
+  margin-bottom: 2em;
+}
+.formula p.label {
+  font-size: 1em;
+  margin: 0;
+}
+.formula div.value {
+  font-size: 1.4em;
+  justify-content: center;
+  padding: 0.1em 0;
+}
+.formula div.value div {
+  flex: none;
+  margin: 0 0.2em;
+}
+.formula div.value div img {
+  border: none;
+}
+.formula div.value div * {
+  margin: 0 0.1em;
+}
+.damage-card,
+.warn-card {
+  border: 1px solid #333;
+}
+.damage-card .block-title,
+.warn-card .block-title {
+  font-size: 1em;
+  margin-top: 0;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background: #333;
+  margin-bottom: 0.1em;
+}
+.damage-card .block-content,
+.warn-card .block-content {
+  margin-bottom: 0.1em;
+  line-height: 1.3em;
+}
+.damage-card .block-content img,
+.warn-card .block-content img {
+  margin: 0;
+  padding: 0;
+  vertical-align: text-top;
+  border: none;
+}
+.damage-card .block-content a,
+.warn-card .block-content a {
+  border: 1px dashed #666;
+  background: rgba(0, 0, 0, 0.1);
+}
+.damage-card .block-content .actor-name,
+.warn-card .block-content .actor-name,
+.damage-card .block-content .key-point,
+.warn-card .block-content .key-point {
+  font-weight: bold;
+}
+.damage-card .block-content .line-label,
+.warn-card .block-content .line-label {
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+.damage-card .block-content .collapsible,
+.warn-card .block-content .collapsible {
+  display: none;
+  visibility: hidden;
+}
+.damage-card .block-content .collapsible.show,
+.warn-card .block-content .collapsible.show {
+  display: block;
+  visibility: visible;
+}
+.warn-lm-message .warn-card .block-title {
+  background: #AE5653;
+}
+.tor2e-roll {
+  position: relative;
+  width: 24px;
+  line-height: 24px;
+  float: left;
+  margin-right: 1px;
+  font-size: 16px;
+}
+.tor2e-roll img {
+  border: none;
+}
+.roll-event-message {
+  padding-top: 0.2em;
+}
+.roll-event-message h4 {
+  padding: 0.1em 0 0.1em 0.2em;
+  background: #262626;
+  color: #e0e0e0;
+  font-weight: bold;
+}
+.roll-event-message .roll-event-message-sidebar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5em;
+}
+.roll-event-message .roll-event-message-sidebar img {
+  border: none;
+}
+.roll-event-message .roll-event-message-body {
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid black;
+  padding-left: 0.25em;
+}
+.roll-event-message .roll-event-message-body .event-attribute-row {
+  flex: none;
+}
+.roll-event-message .roll-event-message-body .event-attribute-row .label {
+  flex: 1;
+  margin: 0.2em 0;
+}
+.roll-event-message .roll-event-message-body .event-attribute-row .value {
+  padding-left: 0.2em;
+  font-weight: bold;
+  flex: 1.25;
+  margin: 0.2em 0;
+}
+.roll-event-message .roll-event-message-body .event-attribute-row .value span {
+  font-weight: normal;
+  padding-right: 0.2em;
+}
+.active-effects header {
+  height: 28px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #7a7971;
+  font-weight: bold;
+  align-content: center;
+}
+.active-effects header .title {
+  padding-left: 4px;
+  flex: 6;
+}
+.active-effects header .effect-actions {
+  text-align: center;
+}
+.active-effects ul {
+  margin: 0;
+  padding: 0;
+}
+.active-effects ul .active-effect {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.1em 0.2em;
+}
+.active-effects ul .active-effect .data {
+  align-items: center;
+  flex: 6;
+}
+.active-effects ul .active-effect .data img {
+  flex: 0 0 32px;
+  height: 32px;
+  margin-right: 6px;
+  border: none;
+}
+.active-effects ul .active-effect .data p {
+  padding-left: 0.5em;
+}
+.active-effects ul .active-effect .actions {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.active-effects ul .active-effect .actions a {
+  flex: none;
+  padding: 0.2em;
+}
+.raw-mode-switch {
+  width: 60%;
+}
+.popup .content {
+  justify-content: space-evenly;
+}
+.popup .content div {
+  flex: none;
+}
+.popup .content h2 {
+  flex: none;
+}
+.popup .content .hope {
+  justify-content: space-evenly;
+}
+.popup .content .hope .actor-stats span.label {
+  margin-right: 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+  flex: none;
+  color: #AC323BFF;
+}
+.popup .content .hope .actor-stats span.value {
+  margin-right: 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+  flex: none;
+  color: black;
+}
+@font-face {
+  font-family: "TOR2E-Dice-Font-Regular";
+  src: url("../assets/fonts/Tor2e-Dice-Font.woff2") format("woff2"), url("../assets/fonts/Tor2e-Dice-Font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#logo {
+  content: url("images/TOR-Logo-2nd_ed.jpg");
+  padding-left: 18px;
+}

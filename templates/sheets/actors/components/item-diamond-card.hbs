@@ -1,0 +1,58 @@
+{{! This component is used to display a Complex Stat in an Actor, display as a big circle, possibly with a szecondary stat in a circle around it.
+Parameters :
+- rollable {Boolean} : can we use the label of the stat to make a roll
+- stat {Object} : stat object
+- reference {String} : the stat name value. Used by FVTT to save the stat value to the System
+- extension-stat {Object} : extension-stat object
+- extension-reference {String} : the  extension stat name value. Used by FVTT to save the stat value to the System
+}}
+<div class="{{#if draggable}} special-draggable {{/if}}main-stat flexcol {{extra-css}}" {{#if draggable}}
+     data-skill-id="{{localize stat.roll.label}}" data-skill-key="{{key}}" {{/if}}>
+    {{#if rollable}}
+        <a class="skill-name {{#if stat.favoured.state}} favoured-attribute{{/if}}"
+           title="{{localize stat.roll.label}}"
+           data-action-name="{{localize stat.roll.label}}"
+           data-action-value="{{stat.protectionTotalValue}}"
+           data-associate-attribute-name="{{stat.roll.associatedAttribute}}"
+           data-action-value-bonus="{{stat.roll.bonus}}"
+           data-action-favoured-name="{{stat.favoured.name}}"
+           data-action-favoured-value="{{stat.favoured.state}}">
+            <p class="label">{{localize title}}</p>
+        </a>
+    {{else}}
+        <p class="label">{{localize title}}</p>
+    {{/if}}
+    <div class="main-stat-value flexrow">
+        <div class="flexrow item" data-item-id="{{stat.id}}">
+            <p class="item-name" title="{{stat.name}}">
+                {{#if canBeDeleted}}
+                    <a class="item-delete action" title="{{ localize 'tor2e.sheet.item.delete' }}">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                {{/if}}
+                {{stat.name}}
+            </p>
+            <div class="item-value input-stat-wrapper main-stat-value">
+                <div class="input-stat-value">
+                    <p {{#if stat.css}} class="{{stat.css}}" {{/if}}>
+                        {{stat.value}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{#if extension-stat}}
+            {{> "systems/tor2e/templates/sheets/actors/components/extensions/stat-diamond-ext.hbs"
+                    position="secondary"
+                    stat=extension-stat
+                    reference=extension-reference}}
+        {{else}}
+            {{#if extension-item}}
+                {{> "systems/tor2e/templates/sheets/actors/components/extensions/item-diamond-ext.hbs"
+                        position="secondary"
+                        css-class=extension-item.css
+                        canBeDeleted=extension-canBeDeleted
+                        item=extension-item}}
+            {{/if}}
+        {{/if}}
+    </div>
+</div>

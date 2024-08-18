@@ -1,0 +1,31 @@
+<li class="item" data-item-id="{{id}}">
+    <div class="skill-item-row flexrow">
+        <div class="identification table-complex-column editor-toggle flexrow">
+            <img src="{{img}}" title="{{name}}" height="32" width="32"
+                 alt="{{localize 'tor2e.traits.details.tech.alt'}}"/>
+            <p>{{name}}</p>
+        </div>
+        <div class="stat-value">
+            <p class="attribute-value">{{system.load.value}}</p>
+        </div>
+        <div class="actions">
+            <a class="item-edit action" title="{{localize "tor2e.sheet.skill.edit"}}">
+                <i class="fas fa-edit"></i>
+            </a>
+            <a class="item-delete action" title="{{localize "tor2e.sheet.skill.delete"}}">
+                <i class="fas fa-trash"></i>
+            </a>
+        </div>
+    </div>
+    <div class="editor-container-toggelable">
+        <div class="flexrow">
+            <h3>{{localize 'tor2e.common.description'}}</h3>
+            <div class="actions">
+                <a class="item-display" data-tooltip="tor2e.sheet.skill.chat">
+                    <i class="fas fa-comments"></i>
+                </a>
+            </div>
+        </div>
+        {{{description}}}
+    </div>
+</li>

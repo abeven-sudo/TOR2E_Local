@@ -1,0 +1,26 @@
+<div class="item year-container" data-item-id="{{log.id}}">
+    <div class="data-row skill-item-row flexrow">
+        <div class="stat-value">
+            <p class="attribute-value">{{log.season}}</p>
+        </div>
+        <div class="stat-value">
+            <p class="attribute-value">{{log.from}}</p>
+        </div>
+        <div class="stat-value">
+            <p class="attribute-value">{{log.to}}</p>
+        </div>
+        <div class="stat-value">
+            <p class="attribute-value">{{log.duration}}</p>
+        </div>
+        <div class="actions">
+            {{#if user.isGM}}
+                <a class="journey-log-edit action" title="{{localize "tor2e.sheet.skill.edit"}}">
+                    <i class="fas fa-edit"></i>
+                </a>
+                <a class="journey-log-delete action" title="{{localize "tor2e.sheet.skill.delete"}}">
+                    <i class="fas fa-trash"></i>
+                </a>
+            {{/if}}
+        </div>
+    </div>
+</div>

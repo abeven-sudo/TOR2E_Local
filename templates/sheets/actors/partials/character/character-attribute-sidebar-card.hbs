@@ -1,0 +1,23 @@
+<section id="heroic-stature" class="flexcol complex-stat-container">
+
+    <h2 class="section-title">{{localize "tor2e.actors.sections.heroicStature"}}</h2>
+
+    <div class="section-elements">
+        {{> "systems/tor2e/templates/sheets/actors/components/stat-diamond-card.hbs"
+                stat=model.stature.valour
+                reference="system.stature.valour.value"
+                favoured-reference="system.stature.valour.favoured.value"
+                rollable=true
+                draggable=true
+                key="valour"}}
+
+        {{> "systems/tor2e/templates/sheets/actors/components/stat-diamond-card.hbs"
+                stat=model.stature.wisdom
+                reference="system.stature.wisdom.value"
+                favoured-reference="system.stature.wisdom.favoured.value"
+                rollable=true
+                draggable=true
+                key="wisdom"}}
+    </div>
+
+</section>

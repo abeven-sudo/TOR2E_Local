@@ -1,0 +1,23 @@
+<div class="skill-roll-item item flexcol">
+    <div class="header flexrow">
+        <div class="sidebar">
+            <img src="{{flavor.owner.img}}" title="{{flavor.owner.name}}" height="125" width="100"
+                 alt="{{localize 'tor2e.skills.details.tech.alt'}}"/>
+        </div>
+        <div class="main flexcol">
+            <div class="headings flexrow">
+                <h2>{{flavor.owner.name}}</h2>
+                <i class="fas fa-hand-sparkles"></i>
+            </div>
+            <div class="roll-type">
+                <p>
+                    {{flavor.action}} against {{flavor.roll.difficulty}} difficulty.
+                </p>
+                <p>
+                    {{localize resultMessage}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,445 @@
+@import "variables";
+
+.display-description-message {
+  margin-top: 0.2em;
+
+  img {
+    border: none;
+    flex: none;
+    margin-right: 0.5em;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .display-description-message-header {
+    padding-bottom: 0.2em;
+
+    .summary {
+      height: 100%;
+
+      .block {
+        flex: none;
+        margin-bottom: 0.1em;
+        text-align: left;
+        width: 100%;
+        border: 1px solid #333333;
+        border-radius: 5px;
+
+        .title {
+          background: #333333;
+          color: white;
+          padding: 0.1em 0.2em;
+          min-width: 6em;
+          flex: none;
+        }
+
+        .value {
+          padding-left: 0.2em;
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+  }
+
+  .display-description-message-body {
+    flex: 3;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid #333333;
+    padding: 0.3em;
+    border-radius: 10px;
+
+    .header {
+      margin-bottom: 0.1em;
+
+    }
+
+    img {
+      flex: none;
+      margin-right: 1em;
+    }
+  }
+}
+
+.rest-message {
+  margin-top: 0.2em;
+
+  img {
+    border: none;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .rest-message-sidebar {
+    flex: none;
+    padding-right: 0.2em;
+  }
+
+  .rest-message-body {
+    flex: 1;
+
+    img {
+      float: right;
+      width: 2em;
+    }
+  }
+}
+
+.success {
+  color: darkgreen;
+}
+
+.failure {
+  color: crimson;
+}
+
+.skill-roll-item {
+  margin-bottom: 0.5em;
+
+  .context {
+    align-items: center;
+  }
+}
+
+
+.message-content {
+  .roll-message-sidebar {
+    flex: 1;
+    margin-right: 0.1em;
+
+    img {
+      border: none;
+      width: auto;
+      height: auto;
+      border-radius: 10px;
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+    }
+
+  }
+
+  .roll-message-content {
+    flex: 3;
+  }
+}
+
+.roll-message-body {
+  flex: none;
+
+  .roll-information-row {
+    margin-bottom: 0.1em;
+    text-align: left;
+    flex: 3;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid #333333;
+    border-radius: 5px;
+
+    p {
+      margin: 0;
+    }
+
+    .label {
+      background: #333333;
+      color: white;
+      padding: 0.1em 0.2em;
+      min-width: 6em;
+      flex: none;
+    }
+
+    .value {
+      text-align: center;
+      padding-left: 0.2em;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+.tor2e-dice-tooltip {
+  .tor2e-tooltip-part {
+    flex: 2.5;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    border-left: 1px solid #999;
+    padding-left: 0.25em;
+    margin-bottom: 0.2em;
+
+    .dice {
+      .dice-rolls {
+        margin-bottom: 0;
+
+        .mandatory {
+          margin-bottom: 0;
+          opacity: 1;
+        }
+
+        .optional {
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+
+  .tor2e-tooltip-part:first-of-type {
+    flex: 1.25;
+  }
+
+}
+
+/* Flaired edges, by Tomas Theunissen */
+
+hr.style-seven {
+  overflow: visible; /* For IE */
+  height: 15px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 0.75em;
+  width: 100%;
+  flex: none;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+hr.style-seven:before { /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 15px;
+  margin-top: -16px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 0.75em;
+}
+
+.dialog {
+  .dialog-buttons {
+    flex: none;
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.25em;
+  height: 1.7em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2e6635;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.25em;
+  width: 1.25em;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #e50b28;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #e50b28;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 1em;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.form-group {
+  label.switch {
+    flex: none;
+  }
+}
+
+.mandatory {
+  margin-bottom: 2em;
+}
+
+.formula {
+  p.label {
+    font-size: @normal;
+    margin: 0;
+  }
+
+  div.value {
+    font-size: @large;
+    justify-content: center;
+    padding: 0.1em 0;
+
+    div {
+      flex: none;
+      margin: 0 0.2em;
+
+      img {
+        border: none;
+      }
+
+      * {
+        margin: 0 0.1em;
+      }
+    }
+  }
+
+}
+
+.damage-card, .warn-card {
+  border: 1px solid #333;
+
+  .block-title {
+    font-size: @normal;
+    margin-top: 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: #333;
+    margin-bottom: 0.1em;
+  }
+
+  .block-content {
+    margin-bottom: 0.1em;
+    line-height: 1.3em;
+
+    img {
+      margin: 0;
+      padding: 0;
+      vertical-align: text-top;
+      border: none;
+    }
+
+    a {
+      border: 1px dashed #666;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .actor-name, .key-point {
+      font-weight: bold;
+    }
+
+    .line-label {
+      font-weight: bold;
+      text-decoration-line: underline;
+    }
+
+    .collapsible {
+      display: none;
+      visibility: hidden;
+    }
+
+    .collapsible.show {
+      display: block;
+      visibility: visible;
+    }
+  }
+
+}
+
+.warn-lm-message {
+  .warn-card {
+    .block-title {
+      background: @tor2e-light-red;
+    }
+  }
+}
+
+.tor2e-roll {
+  position: relative;
+  width: 24px;
+  line-height: 24px;
+  float: left;
+  margin-right: 1px;
+  font-size: 16px;
+
+  img {
+    border: none;
+  }
+}
+
+.roll-event-message {
+  padding-top: 0.2em;
+
+  h4 {
+    padding: 0.1em 0 0.1em 0.2em;
+    background: @tor2e-dark-grey;
+    color: @gainsboro;
+    font-weight: bold;
+  }
+
+  .roll-event-message-sidebar {
+    flex: none;
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+
+    img {
+      border: none;
+    }
+  }
+
+  .roll-event-message-body {
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid black;
+    padding-left: 0.25em;
+
+    .event-attribute-row {
+      flex: none;
+
+      .label {
+        flex: 1;
+        margin: 0.2em 0;
+      }
+
+      .value {
+        padding-left: 0.2em;
+        font-weight: bold;
+        flex: 1.25;
+        margin: 0.2em 0;
+
+        span {
+          font-weight: normal;
+          padding-right: 0.2em;
+        }
+      }
+    }
+
+  }
+}

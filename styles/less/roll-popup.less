@@ -1,0 +1,454 @@
+@import "./variables.less";
+
+
+.dialog.window-app > .window-content {
+  background: url("../assets/images/sheet/Tor2e-Background-Sheet.webp") repeat;
+}
+
+/* Flaired edges, by Tomas Theunissen */
+
+hr.style-seven {
+  overflow: visible; /* For IE */
+  height: 15px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 0.75em;
+  width: 100%;
+  flex: none;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+hr.style-seven:before { /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 15px;
+  margin-top: -16px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 0.75em;
+}
+
+.popup {
+
+  .header {
+    flex: none;
+    width: 155px;
+    border-right: 1px solid #333;
+    padding-right: 0.5em;
+  }
+
+  .content {
+    margin-left: 1em;
+    flex: 2;
+
+    .best-worst {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+      label {
+        flex: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      span.right-align {
+        text-align: right;
+        padding-right: 0.5em;
+        flex: none;
+      }
+
+      span.left-align {
+        text-align: left;
+        padding-left: 0.5em;
+        flex: none;
+      }
+    }
+
+    .input {
+      flex: 1;
+    }
+
+    .principal {
+      flex: 2;
+    }
+  }
+
+  img {
+    border: none;
+    object-fit: contain;
+    object-position: 50% 0;
+  }
+
+  input {
+    width: 3em;
+    flex: none;
+    text-align: center;
+  }
+
+  .form-group {
+
+    .label, label {
+      margin-right: 0.5em;
+      font-weight: bold;
+      font-size: @bigger;
+      flex: none;
+      color: @tor2e-red;
+    }
+  }
+
+  .double-attribute {
+    flex: 2;
+    text-align: center;
+  }
+
+  .tor-dice {
+    align-items: center;
+  }
+
+}
+
+.dialog {
+  .dialog-buttons {
+    flex: none;
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.25em;
+  height: 1.7em;
+}
+
+.switch + span {
+  margin-left: 0.2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2e6635;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.25em;
+  width: 1.25em;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #e50b28;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #e50b28;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 1em;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.form-group {
+  label.switch {
+    flex: none;
+  }
+}
+
+/* The Dice - the box around the slider */
+.tor-dice {
+
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+
+  /* Hide default HTML checkbox */
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .feat-dice, .bonus-dice, .penalty-dice {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .feat-dice:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 4px;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/chat/dice_icons/chat_f_gandalf.png");
+    background-size: 2em;
+    opacity: 0.25;
+  }
+
+  .bonus-dice:before, .penalty-dice:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 4px;
+    background: url("../assets/images/chat/dice_icons/chat_s_6.png") no-repeat;
+    background-size: 2em;
+    opacity: 0.25;
+  }
+
+  .minus-three:before {
+    background-image: url("../assets/images/chat/dice_icons/chat_s_three_penalty.png");
+  }
+
+  .minus-two:before {
+    background-image: url("../assets/images/chat/dice_icons/chat_s_two_penalty.png");
+  }
+
+  .minus-one:before {
+    background-image: url("../assets/images/chat/dice_icons/chat_s_one_penalty.png");
+  }
+
+  .blank:before {
+    background-image: url("../assets/images/chat/dice_icons/chat_s_zero.png");
+  }
+
+  .plus-one:before {
+    background-image: url("../assets/images/chat/dice_icons/chat_s_one_bonus.png");
+  }
+
+  .plus-two:before {
+    background-image: url("../assets/images/chat/dice_icons/chat_s_two_bonus.png");
+  }
+
+  .plus-three:before {
+    background-image: url("../assets/images/chat/dice_icons/chat_s_three_bonus.png");
+  }
+
+  input:checked + .feat-dice:before, input:checked + .bonus-dice:before, input:checked + .penalty-dice:before {
+    opacity: 1;
+  }
+
+}
+
+.state {
+
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+
+  /* Hide default HTML checkbox */
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .state-dice {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .state-dice:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 4px;
+    background: url("../assets/images/icons/miscellaneous/inspired.svg") no-repeat;
+    background-size: 2em;
+    opacity: 0.2;
+  }
+
+  input:checked + .state-dice:before {
+    opacity: 1;
+  }
+
+}
+
+.mandatory {
+  margin-bottom: 2em;
+}
+
+.formula, .roll-characteristic-card {
+  p.label {
+    text-align: center;
+    font-size: @large;
+    font-weight: bold;
+    color: white;
+    background: #333;
+    margin-bottom: 0;
+  }
+
+  div.value, div.roll-characteristics {
+    text-align: center;
+    border: 1px solid #333333;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: @xlarge;
+    align-items: center;
+
+    div {
+      align-items: center;
+      display: flex;
+      justify-content: flex-start;
+
+      span {
+        display: inline-block;
+      }
+    }
+
+    div.part.positive:before {
+      content: "+";
+    }
+
+    div.part.negative:before {
+      content: "-";
+    }
+  }
+
+  div.roll-characteristics {
+    font-size: @normal;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+}
+
+li.roll-characteristic {
+  color: @silver-chalice;
+  opacity: 0.5;
+}
+
+li.roll-characteristic.active {
+  color: unset;
+  opacity: 1;
+}
+
+li.roll-characteristic.active.positive {
+  color: @tor2e-green;
+}
+
+li.roll-characteristic.active.negative {
+  color: @tor2e-red;
+}
+
+
+.roll-characteristic-card {
+  p.label {
+    font-size: @normal;
+  }
+}
+
+div#modify-roll {
+  flex: 1;
+
+  hr {
+    text-align: center;
+    width: 80%;
+  }
+}
+
+div.roll-option-wrapper {
+  flex: 0.75 !important;
+}
+
+section#weary-not-weary {
+  padding-left: 0.5em;
+}
+
+.separation:not(:last-child) {
+  border-right: 1px solid @tor2e-red;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+}
+
+.centered {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+section#favoured-ill-favoured {
+  .form-group {
+
+    .best-worst {
+      display: none;
+    }
+
+    .best-worst.active {
+      display: block;
+    }
+
+
+    justify-content: flex-start;
+  }
+
+  .input {
+    flex: none;
+    margin: 0 2em 0 1em;
+  }
+}
+
+section#hope {
+  .form-group {
+
+    .inspiration {
+      display: none;
+    }
+
+    .inspiration.active {
+      display: flex;
+    }
+
+  }
+
+}

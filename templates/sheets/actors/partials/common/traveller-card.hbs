@@ -1,0 +1,28 @@
+<div class="list-actor {{#if actor.owner}} {{draggable-css-class}} {{/if}}  actor-emblem actor"
+     data-actor-id="{{actor.id}}"
+     data-role={{role}} data-value={{attribute}}>
+    <div class="flexcol actor-wrapper">
+        <div class="token-wrapper">
+            <img class="member-token" src="{{actor.token}}" title="{{actor.name}}" height="75" width="75"
+                 alt="{{localize 'tor2e.traits.details.tech.alt'}}"/>
+        </div>
+        <div class="member-name flexcol">
+            <p>{{actor.name}}</p>
+            {{#if actor.owner}}
+                {{#if skill}}
+                    <div class="actions">
+                        <a class="skill-roll action" data-rolled-skill="{{skill}}"
+                           data-rolled-skill-label="{{localize skillLabel}}"
+                           data-associate-attribute-name="{{skillAssociatedAttribute}}"
+                           title="{{localize skillLabel}}{{localize "tor2e.sheet.actions.roll.skill"}}">
+                            <i class="fas fa-dice"></i>
+                        </a>
+                        <a class="actor-edit action" title="{{localize "tor2e.sheet.skill.edit"}}">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                    </div>
+                {{/if}}
+            {{/if}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+<div id="unassigned-members" class="flexcol">
+    <h3>{{localize "tor2e.actors.sections.available-members"}}</h3>
+    <div class="actor-drop actor-emblem" data-role="unassigned" data-value="travel.unassignedLists">
+        {{#each unassignedLists as |members id|}}
+            <div class="flexrow actor-row">
+                {{#each members as |member id|}}
+                    {{> "systems/tor2e/templates/sheets/actors/partials/common/traveller-card.hbs"
+                            actor=member
+                            draggable-css-class="actor-drag"
+                            role="unassigned"
+                            attribute="travel.unassignedLists"
+                    }}
+                {{/each}}
+            </div>
+        {{/each}}
+    </div>
+</div>
+<hr class="style-seven">
+<div id="travel-roles" class="flexrow">
+    <div>
+        <div class="role-label">
+            <p class="label">{{localize "tor2e.travel.roles.guide.label"}}</p>
+            <p class="skill">({{localize "tor2e.travel.roles.guide.skill"}})</p>
+        </div>
+        <div class="actor-drop" data-role="guide" data-value="system.travel.guide">
+            {{#if assigned.guide.id}}
+                {{> "systems/tor2e/templates/sheets/actors/partials/common/traveller-card.hbs"
+                        actor=assigned.guide
+                        draggable-css-class="actor-drag"
+                        role="guide"
+                        skill="travel"
+                        skillLabel="tor2e.commonSkills.travel"
+                        skillAssociatedAttribute="heart"
+                        attribute="system.travel.guide"
+                }}
+            {{/if}}
+        </div>
+    </div>
+    <div>
+        <div class="role-label">
+            <p class="label">{{localize "tor2e.travel.roles.hunters.label"}}</p>
+            <p class="skill">({{localize "tor2e.travel.roles.hunters.skill"}})</p>
+        </div>
+        <div class="actor-drop" data-role="hunters" data-value="system.travel.hunters">
+            {{#each assigned.hunters as |hunter id|}}
+                {{> "systems/tor2e/templates/sheets/actors/partials/common/traveller-card.hbs"
+                        actor=hunter
+                        draggable-css-class="actor-drag"
+                        role="hunters"
+                        skill="hunting"
+                        skillLabel="tor2e.commonSkills.hunting"
+                        skillAssociatedAttribute="strength"
+                        attribute="system.travel.hunters"
+                }}
+            {{/each}}
+        </div>
+    </div>
+    <div>
+        <div class="role-label">
+            <p class="label">{{localize "tor2e.travel.roles.scouts.label"}}</p>
+            <p class="skill">({{localize "tor2e.travel.roles.scouts.skill"}})</p>
+        </div>
+        <div class="actor-drop" data-role="scouts" data-value="system.travel.scouts">
+            {{#each assigned.scouts as |scout id|}}
+                {{> "systems/tor2e/templates/sheets/actors/partials/common/traveller-card.hbs"
+                        actor=scout
+                        draggable-css-class="actor-drag"
+                        role="scouts"
+                        skill="explore"
+                        skillLabel="tor2e.commonSkills.explore"
+                        skillAssociatedAttribute="wits"
+                        attribute="system.travel.scouts"
+                }}
+            {{/each}}
+        </div>
+    </div>
+    <div>
+        <div class="role-label">
+            <p class="label">{{localize "tor2e.travel.roles.lookouts.label"}}</p>
+            <p class="skill">({{localize "tor2e.travel.roles.lookouts.skill"}})</p>
+        </div>
+        <div class="actor-drop" data-role="lookouts" data-value="system.travel.lookouts">
+            {{#each assigned.lookouts as |lookout id|}}
+                {{> "systems/tor2e/templates/sheets/actors/partials/common/traveller-card.hbs"
+                        actor=lookout
+                        draggable-css-class="actor-drag"
+                        role="lookouts"
+                        skill="awareness"
+                        skillLabel="tor2e.commonSkills.awareness"
+                        skillAssociatedAttribute="strength"
+                        attribute="system.travel.lookouts"
+                }}
+            {{/each}}
+        </div>
+    </div>
+</div>
+

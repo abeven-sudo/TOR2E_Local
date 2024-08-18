@@ -1,0 +1,12 @@
+{{! This component is used to display a Complex Stat in an Actor, display as a big circle, possibly with a szecondary stat in a circle around it.
+Parameters :
+ - stat {Object} : stat object
+ - reference {String} : the stat name value. Used by FVTT to save the stat value to the System
+ - secondary-stat {Object} : the secondary stat object
+ - secondary-reference (String} : the name of the secondary name value. Used by FVTT to save the seondary stat value to the System
+ }}
+<div class="{{position}}-stat flexcol">
+    <input id={{reference}} name={{reference}} type="number"
+           value="{{stat.value}}" data-dtype="{{stat.type}}"/>
+    <label for={{reference}}>{{#unless hide-label}}{{localize stat.label}}{{/unless}}</label>
+</div>

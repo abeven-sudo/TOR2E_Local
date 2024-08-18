@@ -1,0 +1,896 @@
+{
+  "tor2e": {
+    "actors": {
+      "biography": {
+        "age": "Edad",
+        "fellowshipFocus": "Vínculo de comunidad",
+        "title": "Título",
+        "years": "Años",
+        "culture": "Cultura",
+        "standardOfLiving": "Nivel de vida",
+        "culturalBlessing": "Bendición cultural",
+        "calling": "Ocupación",
+        "shadowPath": "Senda de la Sombra"
+      },
+      "sections": {
+        "biography": "Biografía",
+        "traits": "Rasgos",
+        "effects": "Efectos",
+        "attributes": "Atributos",
+        "skillGroups": "Grupos de Habilidades",
+        "combatProficiencies": "Competencias de Combate",
+        "commonSkills": "Habilidades Comunes",
+        "weaponSkills": "Habilidades de Armas",
+        "rewards": "Recompensas",
+        "virtues": "Virtudes",
+        "war-gear": "Equipo de guerra",
+        "equipment-gear": "Equipo",
+        "resources": "Recursos",
+        "combat": "Combate",
+        "fellowship": "Comunidad",
+        "skillPoints": "Puntos de Habilidad",
+        "heroicStature": "Talla heroica",
+        "treasure": "Riqueza",
+        "background": "Trasfondo",
+        "company": "Compañía",
+        "fellowshipPhase": "Fase de Comunidad",
+        "members": "Miembros",
+        "available-members": "Miembros Disponibles",
+        "patrons": "Mecenas",
+        "name": "Nombre",
+        "location": "Localización",
+        "connections": "Conexiones",
+        "travel": "Viaje",
+        "taleOfYears": "Cómputo de los Años",
+        "notes": "Notas",
+        "occupation": "Ocupación"
+      },
+      "details": {
+        "tech": {
+          "alt": "Imagen representativa del actor"
+        }
+      },
+      "fellAbilities": {
+        "title": "Aptitud terrible"
+      },
+      "traits": {
+        "distinctiveFeatures": "Rasgos distintivos",
+        "flaws": "Defectos"
+      },
+      "combatSkills": {
+        "title": "Habilidades de Combate"
+      },
+      "skills": {
+        "title": "Habilidades",
+        "commonSkills": "Habilidades Comunes",
+        "combatSkills": "Habilidades de Combate",
+        "relevantSkills": "Habilidades Relevantes",
+        "favoured": "(fav.)"
+      },
+      "types": {
+        "community": {
+          "title": "Comunidad"
+        },
+        "lore": {
+          "title": "PNJ del Maestro de Saber"
+        },
+        "npc": {
+          "title": "PNJ"
+        },
+        "adversary": {
+          "title": "Adversario"
+        },
+        "character": {
+          "title": "Personaje"
+        }
+      },
+      "faction": {
+        "hostile": "Hostil",
+        "friendly": "Amistoso"
+      },
+      "stats": {
+        "attributeLevel": "Nivel de Atributo",
+        "damage": {
+          "closedCombat": "Daño melee",
+          "rangedCombat": "Daño a distancia"
+        },
+        "hate": "Odio",
+        "might": "Poder",
+        "parry": "Parada",
+        "noShield": "Sin escudo",
+        "noHeadgear": "Sin cubrecabezas",
+        "noArmour": "Sin armadura",
+        "armour": "Armadura",
+        "endurance": "Aguante",
+        "load": "Carga",
+        "hope": "Esperanza",
+        "maxHope": "Esperanza Máxima",
+        "rating": "Valor Inicial",
+        "travelLoad": "Fatiga",
+        "shadow": "Sombra",
+        "temporary": "Temporal",
+        "shadowScars": "Cicatrices de la Sombra",
+        "canBeAPatron": "¿Puede ser un Mecenas?",
+        "initial": "Inicial",
+        "fellowshipPoints": "Puntos de Comunidad",
+        "eyeAwareness": "Atención del Ojo",
+        "current": "Actual",
+        "faction": "Facción",
+        "health": "Salud",
+        "state": "Estado",
+        "rest": "Descanso",
+        "max": "Máx.",
+        "min": "Mín.",
+        "bonus": {
+          "combat": {
+            "injury": "Herida",
+            "piercingBlow": "Golpe Perforante",
+            "heavyBlow": "Golpe Potente"
+          },
+          "defense": {
+            "protection": "Protección",
+            "shieldParry": "Parada"
+          },
+          "tn": {
+            "strength": "NO Fuerza",
+            "heart": "NO Corazón",
+            "wits": "NO Mente"
+          }
+        }
+      },
+      "stateOfHealth": {
+        "weary": "Cansado",
+        "poisoned": "Envenenado",
+        "miserable": "Desanimado",
+        "wounded": "Herido",
+        "temporary": "Temporal"
+      },
+      "combatAttributes": {
+        "damage": "Daño",
+        "ranged": "A distancia",
+        "parry": "Parada",
+        "shield": "Escudo",
+        "armour": "Armadura",
+        "headGear": "Cubrecabezas"
+      },
+      "chat": {
+        "warn": {
+          "title": "Aviso",
+          "hint": "Haga clic con el botón derecho del ratón para utilizar el menú contextual y aplicar los cambios necesarios.",
+          "weary": "<strong>{name}</strong> debería estar <strong>Cansado</strong>.",
+          "miserable": "<strong>{name}</strong> debería estar <strong>Desanimado</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> debería estar <strong>Cansado</strong> y <strong>Desanimado</strong>."
+        },
+        "result": {
+          "title": "Resultado",
+          "weary": "<strong>{name}</strong> está <strong>Cansado</strong>.",
+          "miserable": "<strong>{name}</strong> está <strong>Desanimado</strong>.",
+          "wearyAndMiserable": "<strong>{name}</strong> está <strong>Cansado</strong> y <strong>Desanimado</strong>."
+        }
+      },
+      "community": {
+        "messages": {
+          "setDefaultActorManually": "(es) You have set the Community '{name}' as active for this world.",
+          "setDefaultActorAutomatically": "(es) The Community '{name}' has been automatically set as active for this world.",
+          "displayDefaultActor": "(es) The active Community is '{name}' .",
+          "warnNoCommunityActor": "(es) Warning, there is no Community in this World, some features features won't work properly till you create one.",
+          "warnTooManyCommunityActors": "(es) Warning, there is {size} Communities in this world. The system can't guess the good one. Please set it manually in the Community Sheets."
+        },
+        "journey-log": {
+          "year": "Year",
+          "season": "Season",
+          "from": "Journey from",
+          "to": "Destination",
+          "duration": "Days of travel"
+        },
+        "make-default": {
+          "title": "Make default",
+          "description": "2 characters connected each other",
+          "label": "to make this community actor the community by default."
+        }
+      }
+    },
+    "travel": {
+      "roles": {
+        "guide": {
+          "label": "Guía",
+          "skill": "Viajar"
+        },
+        "scouts": {
+          "label": "Exploradores",
+          "skill": "Explorar"
+        },
+        "hunters": {
+          "label": "Cazadores",
+          "skill": "Cazar"
+        },
+        "lookouts": {
+          "label": "Vigías",
+          "skill": "Alerta"
+        }
+      }
+    },
+    "common": {
+      "description": "Descripción"
+    },
+    "items": {
+      "common": {
+        "load": "Carga",
+        "equipped": "Equipado",
+        "dropped": "Desechado"
+      },
+      "shields": {
+        "none": "Ninguno",
+        "buckler": "Broquel",
+        "shield": "Escudo",
+        "greatShield": "Pavés"
+      },
+      "armours": {
+        "title": "Armadura",
+        "armour": "Armadura",
+        "protection": "Prot.",
+        "group": "Tipo",
+        "protection-roll": "Tirada de Armadura",
+        "tech": {
+          "title": "Imagen de fondo de una armadura que representa a un Icono de Armadura.",
+          "alt": "Imagen representando un Icono de Armadura."
+        }
+      },
+      "miscellaneous": {
+        "title": "Miscelánea",
+        "equipment": "Equipo",
+        "tech": {
+          "title": "Imagen de fondo de un objeto que representa a un Icono Misceláneo.",
+          "alt": "Imagen representando un Icono Misceláneo."
+        }
+      },
+      "traits": {
+        "title": "Rasgo",
+        "tech": {
+          "title": "Imagen de fondo de un objeto que representa a un Icono de Rasgo.",
+          "alt": "Imagen representando un Icono de Rasgo."
+        }
+      },
+      "special-abilities": {
+        "title": "Habilidad Especial",
+        "tech": {
+          "title": "Imagen de fondo de un objeto que representa a un Icono de Habilidad Especial.",
+          "alt": "Imagen representando un Icono de Habilidad Especial."
+        }
+      },
+      "fellowship": {
+        "title": "Comunidad",
+        "tech": {
+          "title": "Imagen de fondo de dos anillos unidos que representa un Icono de Comunidad.",
+          "alt": "Imagen representando un Icono de Comunidad."
+        }
+      },
+      "skills": {
+        "title": "Habilidad",
+        "tech": {
+          "title": "Imagen de fondo de un objeto que representa a un Icono de Habilidad.",
+          "alt": "Imagen representando un Icono de Habilidad."
+        }
+      },
+      "virtues": {
+        "title": "Virtud",
+        "tech": {
+          "title": "Imagen de fondo de un objeto que representa a un Icono de Virtud.",
+          "alt": "Imagen representando un Icono de Virtud."
+        }
+      },
+      "rewards": {
+        "title": "Recompensa",
+        "tech": {
+          "title": "Imagen de fondo de un objeto que representa a un Icono de Recompensa.",
+          "alt": "Imagen representando un Icono de Recompensa."
+        }
+      },
+      "weapons": {
+        "title": "Arma",
+        "tech": {
+          "title": "Imagen de fondo de un objeto que representa a un Icono de Arma.",
+          "alt": "Imagen representando un Icono de Arma."
+        }
+      }
+    },
+    "skills": {
+      "groups": {
+        "personality": "Personalidad",
+        "movement": "Movimiento",
+        "perception": "Percepción",
+        "survival": "Supervivencia",
+        "custom": "Costumbres",
+        "vocation": "Vocación",
+        "combat": "Combate"
+      },
+      "details": {
+        "skillGroup": "Grupo de Habilidades",
+        "associatedStat": "Atributo Asociado",
+        "tech": {
+          "alt": "Imagen representando la habilidad."
+        }
+      }
+    },
+    "traits": {
+      "groups": {
+        "distinctiveFeature": "Rasgo distintivo",
+        "flaw": "Defecto"
+      },
+      "details": {
+        "traitGroup": "Grupo de Rasgos",
+        "tech": {
+          "alt": "Imagen representado un rasgo."
+        }
+      }
+    },
+    "reward": {
+      "groups": {
+        "cultural": "Recompensa cultural",
+        "qualities": "Cualidades"
+      },
+      "details": {
+        "type": "Tipo de Recompensa",
+        "tech": {
+          "alt": "Imagen de una recompensa."
+        }
+      }
+    },
+    "virtues": {
+      "groups": {
+        "cultural": "Virtudes culturales",
+        "masteries": "Virtudes iniciales"
+      },
+      "details": {
+        "type": "Tipo de Virtud",
+        "tech": {
+          "alt": "Imagen representando una virtud."
+        }
+      }
+    },
+    "specialAbilities": {
+      "groups": {
+        "hate": "Odio",
+        "virtues": "Virtudes",
+        "valour": "Valores"
+      },
+      "details": {
+        "specialAbilityGroup": "Grupo de Habilidades Especiales",
+        "active": "Activo",
+        "cost": "Coste",
+        "tech": {
+          "alt": "Imagen representando una habilidad especial."
+        }
+      }
+    },
+    "fellAbilities": {
+      "groups": {
+        "hate": "Odio"
+      },
+      "details": {
+        "fellAbilityGroup": "Grupo de Aptitudes Terribles",
+        "active": "Activo",
+        "cost": "Coste",
+        "tech": {
+          "alt": "Imagen representando una aptitud terrible."
+        }
+      }
+    },
+    "weapons": {
+      "groups": {
+        "none": "-",
+        "brawling": "Pelea",
+        "swords": "Espadas",
+        "axes": "Hachas",
+        "bows": "Arcos",
+        "spears": "Lanzas",
+        "bestial": "Bestial"
+      },
+      "details": {
+        "weapon": "Arma",
+        "damage": "Daño",
+        "edge": "Filo",
+        "injury": "Herida",
+        "extendedWeaponSelectionHint": "(Optional. Dedicado a armas personalizadas de PJ.)",
+        "group": "Grupo",
+        "ranks": "Rangos",
+        "notes": "Notas",
+        "skill-name": "Habilidad",
+        "ranged": "A distancia",
+        "actions": "Acciones",
+        "twoHandWeapon": "A dos manos",
+        "short": "Corto alcance",
+        "medium": "Medio alcance",
+        "long": "Largo alcance",
+        "description": "Descripción",
+        "tech": {
+          "alt": "Imagen representando un arma.",
+          "title": "Imagen de fondo de un objeto que representa a un Icono de Arma.",
+          "caption": "Atributos"
+        }
+      }
+    },
+    "callings": {
+      "groups": {
+        "captain": "Capitán",
+        "scholar": "Erudito",
+        "champion": "Campeón",
+        "treasure-hunter": "Buscador de tesoros",
+        "messenger": "Mensajero",
+        "warden": "Guardián"
+      }
+    },
+    "armour": {
+      "title": {
+        "group": "Grupo de Armaduras"
+      },
+      "groups": {
+        "leather": "Cuero",
+        "mail": "Malla",
+        "head": "Cubrecabezas",
+        "shield": "Escudo"
+      }
+    },
+    "stats": {
+      "strength": "Fuerza",
+      "heart": "Corazón",
+      "wits": "Mente",
+      "favoured": "Favorecida"
+    },
+    "statureStats": {
+      "adventurePoints": "Puntos de Aventura",
+      "total": "Total",
+      "valour": "Valor",
+      "wisdom": "Sabiduría"
+    },
+    "commonSkills": {
+      "awe": "Impresionar",
+      "enhearten": "Alentar",
+      "persuade": "Persuadir",
+      "athletics": "Atletismo",
+      "travel": "Viajar",
+      "stealth": "Sigilo",
+      "awareness": "Alerta",
+      "insight": "Perspicacia",
+      "scan": "Inspeccionar",
+      "explore": "Explorar",
+      "healing": "Curar",
+      "hunting": "Cazar",
+      "song": "Cantar",
+      "courtesy": "Cortesía",
+      "riddle": "Acertijos",
+      "craft": "Oficio",
+      "battle": "Guerrear",
+      "lore": "Saber"
+    },
+    "combatProficiencies": {
+      "brawling": "Pelea",
+      "axes": "Hachas",
+      "swords": "Espadas",
+      "spears": "Lanzas",
+      "bows": "Arcos"
+    },
+    "standardOfLivingGroups": {
+      "poor": "Pobre",
+      "frugal": "Frugal",
+      "common": "Común",
+      "prosperous": "Próspero",
+      "rich": "Rico",
+      "veryRich": "Muy Rico"
+    },
+    "skillGroups": {
+      "personality": "Personalidad",
+      "movement": "Movimiento",
+      "perception": "Percepción",
+      "survival": "Supervivencia",
+      "custom": "Costumbres",
+      "vocation": "Vocación",
+      "combat": "Combate"
+    },
+    "sheet": {
+      "actions": {
+        "rest": {
+          "dialog-box": {
+            "title": "Recuperar punto(s) de Esperanza de la Comunidad",
+            "community-point-label": "Puntos de Comunidad disponibles",
+            "required-hope-points": "¿Cuántos puntos desea recuperar?",
+            "actor-hope-points": "Puntos de Esperanza (actuales/máximos):",
+            "submit-button": "Recuperar",
+            "cancel-button": "Cancelar",
+            "warn": {
+              "one-community_actor_expected": "¡Solamente un Actor de Comunidad debe existir en el Mundo!",
+              "not-enough-hope-points-available": "No hay suficientes puntos de Esperanza disponibles en la Reserva (requeridos: {required}, disponibles: : {available})",
+              "too-many-hope-points-required": "Demasiados puntos de Esperanza requeridos (total: {target}, número máximo: {max})"
+            }
+          },
+          "short": {
+            "label": "Corto",
+            "noRestoredMessage": "Tras un descanso corto, {name} <b>no ha recuperado</b> nada de aguante ({name} está <b>completamente sano</b>).",
+            "restoredMessage": "Tras un descanso corto, {name} <b>recupera {amount} de aguante</b> ({name} <b>tiene {endurance}</b> aguante).",
+            "woundedRestoredMessage": "Tras un descanso corto, {name} <b>no ha recuperado</b> nada de aguante ({name} está <b>herido</b>).",
+            "description": "Pulse para recuperar aguante después de un descanso corto (una hora)",
+            "title": "Descanso corto"
+          },
+          "prolonged": {
+            "label": "Largo",
+            "noRestoredMessage": "Tras un descanso largo, {name} <b>no ha recuperado</b> nada de aguante ({name} está <b>completamente sano</b>).",
+            "restoredMessage": "Tras un descanso largo, {name} <b>recupera todo su aguante</b> ({name} está <b>completamente sanado</b>).",
+            "woundedRestoredMessage": "Tras un descanso largo, {name} <b>recovers {amount} endurance</b>, they are wounded ({name} <b>has {endurance}</b> endurance).",
+            "description": "Pulse para recuperar aguante después de un descanso largo (una noche)",
+            "title": "Descanso largo"
+          }
+        },
+        "roll": {
+          "hope": "Gasta un punto de Esperanza para añadir",
+          "lore": "Haz una tirada de Saber",
+          "fatigue": "Haz una tirada de Fatiga",
+          "skill": " tirada"
+        },
+        "toggle": {
+          "favoured": "Presiona ALT+Click para marcar como favorecida."
+        }
+      },
+      "skill": {
+        "delete": "Eliminar Objeto",
+        "edit": "Editar Objeto",
+        "roll": "Lanzar Objeto",
+        "chat": "Enviar al chat"
+      }
+    },
+    "roll": {
+      "warn": {
+        "noSkillFound": "La habilidad {skillName} no está presente en actor {actorName}",
+        "clickOnWeaponInstead": "Debería seleccionar el arma que utilizas en vez de su habilidad de combate.",
+        "impossibleToFavouredAWeapon": "Es imposible marcar como predilecta esta arma para un personaje."
+      },
+      "difficulty": "Dificultad (NO)",
+      "target": "Objetivo",
+      "result": {
+        "success": "Éxito",
+        "great-success": "Gran Éxito",
+        "extraordinary-success": "Éxito Extraordinario",
+        "automatic-success": "Éxito automático",
+        "failure": "Fallo",
+        "hidden": "Oculto",
+        "automatic-failure": "Fallo automático"
+      },
+      "details": {
+        "tech": {
+          "title": "Chequeo de una tarea."
+        }
+      },
+      "special-success": {
+        "title": "Uso de éxito(s) especiales",
+        "label": "Número de éxito(s) especiales",
+        "actions": {
+          "submit": "Enviar",
+          "cancel": "Cancelar"
+        },
+        "tech": {
+          "title": "Chequeo de una tarea con Tengwar(s)."
+        }
+      }
+    },
+    "dice": {
+      "tengwar": "Runa Tengwar",
+      "gandalf": "Runa de Gandalf",
+      "sauron": "Ojo de Sauron",
+      "standard": {
+        "1": "uno en el dado de éxito",
+        "2": "dos en el dado de éxito",
+        "3": "tres en el dado de éxito",
+        "4": "cuatro en el dado de éxito",
+        "5": "cinco en el dado de éxito",
+        "6": "seis con runa tengwar en el dado de éxito"
+      },
+      "weary": {
+        "1": "uno en el dado por Cansancio",
+        "2": "dos en el dado por Cansancio",
+        "3": "tres en el dado por Cansancio",
+        "4": "cuatro en el dado de éxito",
+        "5": "cinco en el dado de éxito",
+        "6": "seis con runa tengwar en el dado de éxito"
+      },
+      "feat": {
+        "description": "Un D12, Dado de Proeza",
+        "1": "uno en el dado de proeza",
+        "2": "dos en el dado de proeza",
+        "3": "tres en el dado de proeza",
+        "4": "cuatro en el dado de proeza",
+        "5": "cinco en el dado de proeza",
+        "6": "seis en el dado de proeza",
+        "7": "siete en el dado de proeza",
+        "8": "ocho en el dado de proeza",
+        "9": "nueve en el dado de proeza",
+        "10": "diez en el dado de proeza",
+        "11": "Ojo de Sauron",
+        "12": "Runa de Gandalf"
+      }
+    },
+    "popup": {
+      "actions": {
+        "save": "Guardar",
+        "cancel": "Cancelar"
+      },
+      "taskCheck": {
+        "armour": {
+        },
+        "title": "Edición de {type}"
+      }
+    },
+    "chat": {
+      "actions": {
+        "roll": "Tirar",
+        "roll-result": "Roll result",
+        "test": "Chequeo",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "hidden": "Acción oculta"
+      },
+      "taskCheck": {
+        "options": {
+          "roll-formula": "Fórmula de la tirada",
+          "difficulty": "Dificultad",
+          "tn": "NO",
+          "feat-die-value": "Valor Dado de Proeza",
+          "feat-dice": "Dado de Proeza",
+          "bonus-success-dice": "Dados Extra de Bonificación",
+          "bonus-penalty-dice": "Dados Extra de Penalización",
+          "extended-penalty-dice": {
+            "label": "Valor de los Dados de Bonificación/Penalización",
+            "hint": "Introduzca un valor negativo para la penalización y un valor positivo para bonificaciones"
+          },
+          "hope-point-bonus-dice": "Dado extra por Punto de Esperanza",
+          "inspired": "Inspirado",
+          "mastery-dice": "Dado de maestría",
+          "favoured-ill-favoured": "Favorecida/Desfavorecida",
+          "bonus-penalty": "Bonificación/Penalización",
+          "support-die": "Apoyo de un Compañero",
+          "advanced": "Avanzado",
+          "hope": "Esperanza",
+          "worst": "Peor",
+          "best": "Mejor",
+          "weary-not-weary": "¿Cansado?",
+          "weary": "Cansado",
+          "not-weary": "No Cansado"
+        },
+        "title": "Tirada de {type}"
+      },
+      "error": {
+        "actorNotFound": "No se ha encontrado un actor con actorId: {actorId} y tokenId:{tokenId}"
+      },
+      "warn": {
+        "characterHasNotBeenUsedToCreateTheAction": "La acción que quiere realizar gastando punto de Esperanza no se ha creado por un Personaje, ¡sino por {actorName}!"
+      }
+    },
+    "rolls": {
+      "protection": "Protección",
+      "fear": "Miedo",
+      "corruption": "Corrupción"
+    },
+    "combat": {
+      "error": {
+        "unableToRerollPrepBattle": "Es imposible relanzar la tirada de preparación de combate para el token {token} porque no es un personaje. Es un {type}",
+        "itemNotFound": "El objeto (nombre: {name}, tipo: {type}) no existe en éste actor.",
+        "noActorAttachedToToken": "No es posible añadir el token '{name}' al combate porque este token no está enlazado a ningún Actor. Elimina este actor y enlazalo a un token."
+      },
+      "warn": {
+        "noActorFound": "No se ha encontrado ningún Actor con nombre {name}.",
+        "combatantNotInCombat": "El Token ({name}) con ID ({id}) con el que quieres interactuar no es parte activa del Combate o está Fuera de Combate.",
+        "combatantDoesntExistInCombat": "El Actor con ID ({id}) no es parte de activa del Combate.",
+        "noSkillNameAvailableWithExtendedWeaponSelection": "El personaje {actorName} no tiene la competencia de combate ({name}) o la habilidad ({name}).",
+        "noSkillNameFoundWithExtendedWeaponSelection": "El personaje {actorName} no tiene la competencia de combate ({name}) y no posee la habilidad llamada ({name}).",
+        "noCombatProficiencyFound": "El personaje {actorName} no tiene la competencia de combate ({name}). Añada dicha competencia.",
+        "incompleteItem": "{element} inválido para éste objeto ({item}). Debe seleccionar un {element} válido.",
+        "noValidTarget": "Seleccione un token al que atacar.",
+        "noValidCombatTarget": "Seleccione un token presente en el Combate.",
+        "noValidWeaponEquipped": "No posee ningún arma válida para dicha habilidad ({skill}).",
+        "tnIsWeird": "El NO calculado tiene un valor incorrecto. Quizá se haya olvidado de cumplimentar el atributo de Parada del objetivo ({foeName}).",
+        "noTokenSelectedForEngagement": "Seleccione varios tokens para interactuar entre ellos.",
+        "numberOfTengwarNotCorrect": "Algo extraño ha ocurrido. El número de Tengwar ({tengwar}) es igual o menor que 0! Esto no debería ocurrir.",
+        "impossibleForMonoFaction": "Seleccione al menos un token de cada facción.",
+        "impossibleForComplexEngagement": "Seleccione solamente un token para cada facción, no múltiples de ambas."
+      },
+      "actions": {
+        "applyDamage": "Aplicar daño",
+        "applyWeary": "Aplicar Cansado",
+        "applyWounded": "Aplicar Herido",
+        "applyAll": "Aplicar todo (Daño y todos los estados)",
+        "applyAllStates": "Aplicar todos los estados (Cansado, Herido y Fuera de Combate)",
+        "applyOutOfCombat": "Aplicar Fuera de Combate",
+        "applyWearyState": "Aplicar Cansado",
+        "applyMiserableState": "Aplicar Desanimado",
+        "applyWearyAndMiserableState": "Aplicar Cansado y Desanimado"
+      },
+      "special-success-action": {
+        "heavy-blow": {
+          "title": "Golpe Potente",
+          "alt": "Un espadazo potente",
+          "label": "Golpe potente",
+          "description": "Añade {amount} de daño."
+        },
+        "fend-off": {
+          "title": "Rechazar",
+          "alt": "El personaje rechaza el golpe",
+          "label": "Rechazar",
+          "description": "Añada un +2 a tu parada ante el siguiente ataque."
+        },
+        "piercing-blow": {
+          "title": "Golpe Perforante",
+          "alt": "Una lanzada penetra la defensa rival",
+          "label": "Golpe Perforante",
+          "description": "Añade {amount} al Daño de Proeza (enfrentada a {edge})."
+        },
+        "shield-thrust": {
+          "title": "Golpe de Escudo",
+          "alt": "Un escudo golpea violentamente a alguien",
+          "label": "Golpe de escudo",
+          "description": "Empuja hacía atrás en vez de dañar."
+        },
+        "seize": {
+          "title": "Atrapar",
+          "alt": "Una mano agarra firmemente a algo o alguien",
+          "label": "Atrapar",
+          "description": "El atacante atrapar fuertemente a su objetivo."
+        },
+        "break-shield": {
+          "title": "Romper Escudo",
+          "alt": "El escudo se ha roto en pedazos",
+          "label": "Romper Escudo",
+          "description": "El atacante hace añicos el escudo del defensor."
+        }
+      },
+      "dicePool": {
+        "label": "Tamaño de la reserva de Dados de Éxito."
+      },
+      "step": {
+        "initiative": {
+          "att": "Ata.",
+          "def": "Def."
+        },
+        "preparation": {
+          "label": "Preparación",
+          "roll": {
+            "reroll": "Relanzar tirada de preparación",
+            "label": "Preparación de combate",
+            "title": "Tirada de preparación de combate."
+          }
+        },
+        "openingVolley": {
+          "label": "Voleas Iniciales",
+          "roll": {
+            "label": "Voleas Iniciales",
+            "title": "Tirada de voleas."
+          }
+        },
+        "closeCombat": {
+          "engagement": "Combate",
+          "label": "Combate cuerpo a cuerpo"
+        },
+        "default": {
+          "label": "Fase de Combate desconocida."
+        }
+      },
+      "stance": {
+        "forward": {
+          "label": "Vanguardia"
+        },
+        "open": {
+          "label": "Abierta"
+        },
+        "defensive": {
+          "label": "Defensiva"
+        },
+        "rearward": {
+          "label": "Retaguardia"
+        },
+        "default": {
+          "label": "Posición de Combate desconocida."
+        }
+      },
+      "chat": {
+        "warn": {
+          "impossibleToRollInjury": "Error lanzando en la tabla de heridas."
+        },
+        "preparation-roll": {
+          "title": "Resultado de la tirada de preparación de combate",
+          "message": " consigue <span class='key-point'>{successDiceBonus} dados extra</span> para el combate."
+        },
+        "result": {
+          "title": "Resultado del ataque",
+          "help": "Utiliza el click derecho para desplegar el menú contextual",
+          "paragraph": "<span class='actor-name'>{attackerName}</span> ataca a <span class='actor-name'>{targetName}</span> con su {weaponName} y realiza <a class='apply-damage-element' title='{hint}'>{totalDamage} de daño <i class='fas fa-external-link-alt'></i></a>",
+          "specialResult": " con <a class='apply-special-result' title='{hint}'>{quantity} resultado(s) especial(es) <i class='fas fa-external-link-alt'></i></a> (<img src='systems/tor2e/assets/images/tengwar.png' data-edit='img' title='tengwar' height='15' width='15' alt='tengwar'/>)"
+        },
+        "details": {
+          "attackerRoll": "Tirada del atacante:",
+          "successLevel": "Grado de éxito :",
+          "specialDamage": "Daño especial :",
+          "damage": {
+            "title": "Daño :",
+            "weapon": "[Weapon({weaponDamage})",
+            "bonus": " + Extra ({bonusDamage})"
+          }
+        },
+        "piercing": {
+          "title": "Golpe Perforante",
+          "description": "<span class='actor-name'>{targetName}</span> debe realizar una <a class='button-protection-roll' data-tn-test={weaponInjuryValue}>Tirada de Protección<i class='fas fa-dice'></i></a> contra {weaponInjuryValue} NO (vs Filo {edge})."
+        },
+        "injuryRoll": {
+          "title": "Tirada por Herida",
+          "description": "<span class='actor-name'>{targetName}</span> está herido y debe realizar una <a class='button-injury-roll'>Tirada por Herida<i class='fas fa-dice'></i></a>."
+        },
+        "injury": {
+          "title": "Herida",
+          "moderate": {
+            "type": "Moderada",
+            "title": "Herida Moderada",
+            "message": "<span class='actor-name'>{targetName}</span> sufre una <b>Herida Moderada</b> afectándole sólo a éste combate."
+          },
+          "severe": {
+            "type": "Grave",
+            "title": "Herida Grave",
+            "message": "<span class='actor-name'>{targetName}</span> sufre una <b>Herida Grave</b> con una afectación de {duration} días."
+          },
+          "grievous": {
+            "type": "Muy Grave",
+            "title": "Herida Muy Grave",
+            "message": "<span class='actor-name'>{targetName}</span> sufre una <b>Herida Muy Grave</b> y cae inconsciente, muriéndose."
+          }
+        },
+        "effects": {
+          "title": "Efectos del ataque",
+          "damageDealt": "Daño causado:",
+          "protection": {
+            "is": " es ",
+            "wounded": "herido",
+            "protected": "protegido"
+          },
+          "weary": {
+            "is": " está cansado."
+          },
+          "ooc": {
+            "is": " está fuera de combate."
+          }
+        }
+      }
+    },
+    "macro": {
+      "error": {
+        "noActorAvailable": "Por favor, selecciona una actor antes de usar la macro",
+        "itemIsMissing": "Objeto {itemName} de tipo {itemType} no está disponible en el actor {actorName} seleccionado",
+        "missingLoremasterRole": "Only the Lore Master can do this action.",
+        "wrongStatusEffect": "The status '{statusEffect}' doesn't exist."
+      }
+    },
+    "effects": {
+      "wounded": "Herido",
+      "poisoned": "Envenenado",
+      "miserable": "Desanimado",
+      "weary": "Cansado",
+      "unit": {
+        "days": "Días"
+      }
+    }
+  },
+  "SETTINGS": {
+    "setTnBaseValue": "Introduce el NO base",
+    "setTnBaseValueDescription": "Esta opción permite al Maestro de Saber marcar el valor base que él desee. El Manual aconseja 20 para una campaña, 18 para una aventura",
+    "setExtendedWeaponSelection": "Lista de armas extendida",
+    "setExtendedWeaponSelectionDescription": "Este parámetro debería ser activado sólo si el Maestro de Saber desea utilizar reglas caseras para el combate (ej. nuevas competencias de combate). Activándolo, un nuevo campo aparecerá en las fichas de arma para realizar la relación con la nueva competencia de combate en vez de utilizar el grupo del arma.",
+    "setUseAdversarySkills": "Permite a los Adversarios utilizar Habilidades.",
+    "setUseAdversarySkillsDescription": "En la 2da edición los adversarios no poseen habilidades en su ficha. Seleccionar esta opción permite recuperar el bloque de habilidades a la ficha de Adversario.",
+    "setOverrideEyeAwareness": "Sobreescribe el valor máximo de Atención del Ojo",
+    "setOverrideEyeAwarenessDescription": "Por defecto el valor es 24.",
+    "setRawModeForActiveEffectName": "Cambiar el modo de los Efectos Activos",
+    "setRawModeForActiveEffectDescription": "Solamente tocar con conocimiento de causa. (Marcado: Modo Lista / Desmarcado: Modo crudo (introducción de texto)).",
+    "setAlwaysShowShieldThrustName": "Mostrar siempre Golpe de Escudo",
+    "setAlwaysShowShieldThrustDescription": "Mostrar el valor de Golpe de Escudo a los jugadores que carguen un escudo.",
+    "setWarnLoreMasterForCharacterStateName": "Activar mensajes de advertencia",
+    "setWarnLoreMasterForCharacterStateDescription": "Activar los mensajes de advertencia en el Chat para cada uno de los personajes cuando estén Cansados o Desanimados.",
+    "setShowHideRangeBlockName": "Mostrar Distancia de Rango",
+    "setShowHideRangeBlockDescription": "Mostrar el valor de Distancia de Rango de las fichas de Armas de los Personajes/Adversarios.",
+    "setDisplayCommunityInfoAtStartValue": "Display the current active Community",
+    "setDisplayCommunityInfoAtStartDescription": "Display, when connecting to the game, the name of the active Community"
+  }
+}

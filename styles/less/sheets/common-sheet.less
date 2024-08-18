@@ -1,0 +1,268 @@
+@import "../variables.less";
+
+.unmutable {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.hide {
+  display: none !important;
+  visibility: hidden;
+}
+
+
+.tor2e.sheet {
+
+  input {
+    background: @input-background-colour-with-transparency;
+    padding: 1px 3px;
+    margin: 0;
+    color: @tor2e-red;
+    border-radius: 0;
+    border: unset;
+    border-bottom: 2px solid @computed-background-colour;
+  }
+
+  select {
+    background: @input-background-colour-with-transparency;
+    border: unset;
+    border-bottom: 2px solid @computed-background-colour;
+    border-radius: 0;
+    padding: 0 3px;
+    color: @tor2e-red;
+  }
+
+  .window-content {
+    background: url("../assets/images/sheet/Tor2e-Background-Sheet.webp") repeat;
+    background-size: cover;
+    background-origin: padding-box;
+  }
+
+  .sheet-container {
+    position: relative;
+    padding: 0.2em;
+
+    img.background {
+      width: auto;
+      height: 100%;
+      opacity: 0.075;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border: none;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+  }
+
+  section {
+    margin: 0.5em 0;
+  }
+
+  .toggle, .editor-toggle {
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .toggle::after {
+    margin-left: 0.25em;
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 400;
+    content: "\f151";
+  }
+
+  .toggle.expanded::after {
+    margin-left: 0.25em;
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 400;
+    content: "\F150";
+  }
+
+  .toggle + .editor-container {
+    display: none;
+  }
+
+  div.editor-container-toggelable {
+    display: none;
+  }
+
+  div.editor-container-toggelable.show {
+    display: block;
+  }
+
+  .favoured-attribute p, .favoured-attribute label {
+    text-decoration-line: underline;
+  }
+
+  .skill-item-row:hover, .list-actor:hover {
+
+    .action {
+      visibility: visible;
+      margin-left: 0.25em;
+      margin-right: 0.25em;
+      text-align: right;
+      flex: 0;
+      font-size: @small;
+    }
+  }
+
+  .action {
+    visibility: hidden;
+  }
+
+  .collapsibleList, .connectionsList {
+    padding-inline-start: 0;
+    list-style-type: none;
+    background: rgba(0, 0, 0, 0.05);
+    margin-right: 0.2em;
+    padding: 0.2em;
+    flex: none;
+
+    li {
+      margin-bottom: 0.25em;
+
+      .skill-item-row, .list-actor-row {
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+
+        .identification {
+          display: flex;
+          flex: 1.7;
+          align-items: center;
+          align-content: center;
+          text-align: left;
+
+          img {
+            width: auto;
+            border-style: none;
+            margin: 0 0.25em;
+            max-width: unset;
+            flex: none;
+            height: 32px;
+          }
+
+          a, p {
+            flex: none;
+            font-weight: bold;
+          }
+
+          div {
+            align-items: center;
+          }
+        }
+
+        .identification.table-complex-column {
+          flex: 2;
+        }
+
+        .identification.table-main-column {
+          flex: 3;
+        }
+
+        .stat-value {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          flex: 1.1;
+
+          input[type=text] {
+            width: 3em;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+
+        label {
+          cursor: pointer;
+        }
+
+      }
+    }
+
+  }
+
+  .table-main-column, .object-name {
+    flex: 3;
+  }
+
+  .table-caption-row {
+    background: rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.25em;
+  }
+
+  .table-caption {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .table-row {
+    text-align: center;
+
+    select, input {
+      margin: 0 0.5em;
+    }
+  }
+
+  .table-attribute {
+    width: 3em;
+    text-align: center;
+  }
+
+  .editor {
+    min-height: 150px;
+    height: 100%;
+
+    .tox-tinymce {
+      min-height: 150px;
+    }
+  }
+
+  .tox {
+    .tox-editor-container {
+      background-color: rgba(177, 177, 130, 0.50);
+    }
+
+    .tox-toolbar__primary {
+      background-color: rgba(130, 130, 100, 0.5);
+      border: 1px solid #333333;
+    }
+
+    .tox-sidebar-wrap {
+      border: 1px solid #333333;
+      min-height: 100px;
+    }
+  }
+
+  .attribute-table-caption {
+    text-align: center;
+
+    label, p {
+      margin: 0.5em 0 0 0;
+      text-transform: uppercase;
+      font-size: @large;
+    }
+  }
+
+  .actions {
+    text-align: right;
+    flex: 0.5;
+  }
+}
+
+input.number-value:invalid + span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+input.number-value:valid + span:after {
+  content: '✓';
+  padding-left: 5px;
+}

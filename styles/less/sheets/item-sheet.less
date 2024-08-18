@@ -1,0 +1,182 @@
+@import "../variables.less";
+
+.tor2e.sheet.item {
+  h2 {
+    color: #800000;
+  }
+
+  span.hint {
+    flex: none;
+  }
+
+  .hint {
+    color: @charcoal;
+    opacity: 0.75;
+    font-style: italic;
+    font-size: @small;
+  }
+
+  form {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: none;
+    margin: auto;
+    position: absolute;
+  }
+
+  .sheet-header {
+    flex: 1;
+    border-right: 5px double @tor2e-red;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 0.5em;
+    min-width: 180px;
+    flex-direction: column;
+
+    .title {
+
+      h2 {
+        text-align: center;
+        flex: none;
+      }
+
+      h2 > label {
+        border: none;
+      }
+
+      input {
+        flex: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    img {
+      width: 100%;
+      flex: 0 0 164px;
+      height: 164px;
+      margin-right: 6px;
+      border: none;
+      object-fit: contain;
+      object-position: 50% 0;
+    }
+  }
+
+  .sheet-content {
+    height: 100%;
+    flex: 3;
+    margin-left: 1em;
+
+    select.auto-sizeable {
+      width: fit-content;
+      block-size: fit-content;
+    }
+
+    .item-row {
+      justify-content: space-evenly;
+      flex: none;
+
+      .item-element {
+        align-items: center;
+        align-content: center;
+        margin-bottom: 0.5em;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .item-row.separated > .item-element:not(:last-child) {
+      border-right: 1px solid @tor2e-red;
+      padding-right: 0.5em;
+    }
+
+    .description {
+      flex: none;
+      height: 80%;
+
+      h2 {
+        flex: none;
+      }
+
+    }
+
+    .separated {
+      display: flex;
+      justify-content: space-around;
+      margin: 0.5em 0;
+
+      label {
+        flex: none;
+        padding: 0 0.5em;
+      }
+    }
+
+    input.number-value {
+      width: 3em;
+      text-align: center;
+    }
+
+    select {
+      width: 10em;
+    }
+
+  }
+}
+
+.item-sheet {
+
+  section {
+    margin-top: 2em;
+  }
+
+  .item-row {
+    justify-content: space-evenly;
+    margin: 1em 0.5em;
+    align-items: center;
+  }
+
+  .simple-attribute {
+    flex: 1;
+  }
+
+  .double-attribute {
+    flex: 2;
+  }
+
+  .attribute {
+    flex: none;
+    align-items: center;
+  }
+
+  .attribute-label {
+    flex: none;
+    font-weight: bold;
+    margin-right: 0.5em;
+  }
+
+  .attribute-number-value {
+    flex: none;
+    width: 4em;
+    text-align: center;
+  }
+
+  .attribute-text-value {
+    flex: none;
+    text-align: left;
+  }
+
+  .description-label {
+    font-size: @bigger;
+    font-weight: bold;
+    border-bottom: 1px solid #782e22;
+  }
+
+}
+
+.weapon-details-container {
+  display: flex; /* or inline-flex */
+  justify-content: space-around;
+}

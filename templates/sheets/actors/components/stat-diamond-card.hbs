@@ -1,0 +1,47 @@
+{{! This component is used to display a Complex Stat in an Actor, display as a big circle, possibly with a szecondary stat in a circle around it.
+Parameters :
+- rollable {Boolean} : can we use the label of the stat to make a roll
+- stat {Object} : stat object
+- reference {String} : the stat name value. Used by FVTT to save the stat value to the System
+- extension-stat {Object} : extension-stat object
+- extension-reference {String} : the  extension stat name value. Used by FVTT to save the stat value to the System
+}}
+<div class="{{#if draggable}} stature-draggable {{/if}}main-stat flexcol {{extra-css}}" {{#if draggable}}
+     data-skill-id="{{localize stat.label}}" data-skill-key="{{key}}" {{/if}}>
+    {{#if rollable}}
+        <a class="skill-name{{#if stat.favoured.value}} favoured-attribute{{/if}}" title="{{localize stat.roll.label}}"
+           data-action-name="{{localize stat.roll.label}}"
+           data-action-value="{{stat.value}}"
+           data-associate-attribute-name="{{stat.roll.associatedAttribute}}"
+           data-action-favoured-name="{{favoured-reference}}"
+           data-action-favoured-value="{{stat.favoured.value}}">
+            <label for={{reference}}>{{localize stat.label}}</label>
+        </a>
+    {{else}}
+        {{#if statLabel}}
+            <label for={{reference}}>{{localize statLabel}}</label>
+        {{else}}
+            <label for={{reference}}>{{localize stat.label}}</label>
+        {{/if}}
+    {{/if}}
+    <div class="main-stat-value flexrow">
+        {{#if extension-stat}}
+            {{> "systems/tor2e/templates/sheets/actors/components/extensions/stat-diamond-ext.hbs"
+                    position="secondary"
+                    stat=extension-stat
+                    reference=extension-reference}}
+        {{else}}
+            {{#if extension-item}}
+                {{> "systems/tor2e/templates/sheets/actors/components/extensions/item-diamond-ext.hbs"
+                        position="secondary"
+                        css-class=extension-css-class
+                        canBeDeleted=extension-canBeDeleted
+                        item=extension-item}}
+            {{/if}}
+        {{/if}}
+        <div class="input-stat-wrapper">
+            <input id={{reference}} name={{reference}} type="number" value="{{stat.value}}"
+                   data-dtype="{{stat.type}}"/>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+{{! This component is used to display and save a Simple Skill in an Actor, with a checkbox side of it (favoured)
+Parameters :
+ - skill : skill object
+ - reference : the skill name value. Used by FVTT to save the skill value to the System
+  - checkbox-reference (String} : the name of the checkbox object value. Used by FVTT to save the checkbox value to the System
+
+ }}
+<div class="active-effect flexrow">
+    <div class="active-effect-header flexcol">
+        <img class="{{#if effect.value}}active{{/if}} toggleTor2eEffect"
+             src="{{effect.icon}}" title="{{localize effect.name}} ({{localize "tor2e.active-effect.toggle.help"}})"
+             alt="{{localize effect.name}}" data-effect-id="{{id}}"/>
+        <p class="label">{{localize effect.name}}</p>
+    </div>
+    {{#if effect.value}}
+        {{#if effect.duration}}
+            <div class="active-effect-value flexcol">
+                <input id="{{id}}" name="{{reference}}" type="number"
+                       value="{{stat.value}}" data-dtype="Number"/>
+                <label for="{{id}}" class="label">{{localize effect.duration.unit}}</label>
+            </div>
+        {{/if}}
+    {{/if}}
+</div>

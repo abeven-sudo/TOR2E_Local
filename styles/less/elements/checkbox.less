@@ -1,0 +1,49 @@
+// Not use right now and not imported.
+
+.tor2e.sheet {
+  .round {
+    //position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .round label {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 4px double #aaa;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2em;
+    width: 2em;
+    flex: none;
+  }
+
+  /*  .round label:after {
+      border: 2px solid #fff;
+      border-top: none;
+      border-right: none;
+      content: "";
+      height: 0.5em;
+      right: 1.9em;
+      opacity: 0;
+      position: absolute;
+      transform: rotate(-45deg);
+      width: 1em;
+    }*/
+
+  .round input[type="checkbox"] {
+    visibility: hidden;
+    flex: none;
+    display: none;
+  }
+
+  .round input[type="checkbox"]:checked + label {
+    border-color: #555;
+    background-size: 1.5em;
+    background: rgba(0, 0, 0, 0.20) url("../assets/images/dice/f_gandalf.png");
+  }
+
+  .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+
+}

@@ -1,0 +1,17 @@
+<div class="roll-characteristic-card">
+    <p class="label">{{localize "tor2e.chat.taskCheck.options.roll-characteristics.title"}}</p>
+    <div class="roll-characteristics">
+        <ul>
+            <li class="roll-characteristic{{#if this.isIllFavoured}} negative active{{/if}}">{{localize
+                    "tor2e.chat.taskCheck.options.roll-characteristics.is-ill-favoured"}}</li>
+            <li class="roll-characteristic{{#if this.isFavoured}} positive active{{/if}}">{{localize
+                    "tor2e.chat.taskCheck.options.roll-characteristics.is-favoured"}}</li>
+            <li class="roll-characteristic{{#if this.isInspired}} active{{/if}}">{{localize
+                    "tor2e.chat.taskCheck.options.roll-characteristics.is-inspired"}}</li>
+            <li class="roll-characteristic{{#if this.wearyRoll}} active{{/if}}">{{localize
+                    "tor2e.chat.taskCheck.options.roll-characteristics.is-weary"}}</li>
+            <li class="roll-characteristic{{#if this.miserableRoll}} active{{/if}}">{{localize
+                    "tor2e.chat.taskCheck.options.roll-characteristics.is-miserable"}}</li>
+        </ul>
+    </div>
+</div>

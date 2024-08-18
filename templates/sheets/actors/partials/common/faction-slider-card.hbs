@@ -1,0 +1,11 @@
+<!-- Rounded switch -->
+<div class="flexrow hf-slider">
+    <span>{{localize "tor2e.actors.faction.friendly"}}</span>
+    <label class="switch">
+        <input type="checkbox" name={{reference}} value="{{attribute.value}}"
+               data-dtype="{{attribute.type}}"
+            {{checked attribute.value}}>
+        <span class="slider round"></span>
+    </label>
+    <span>{{localize "tor2e.actors.faction.hostile"}}</span>
+</div>
